@@ -1,0 +1,47 @@
+Empreintes des 20 fichiers du kit : PASS.
+/usr/local/lib/python3.13/dist-packages/jax/_src/cloud_tpu_init.py:88: UserWarning: Transparent hugepages are not enabled. TPU runtime startup and shutdown time should be significantly improved on TPU v5e and newer. If not already set, you may need to enable transparent hugepages in your VM image (sudo sh -c "echo always > /sys/kernel/mm/transparent_hugepage/enabled")
+  warnings.warn(
+tpu: historical vectors PASS.
+tpu: seed 0, boundary checks PASS.
+tpu: seed 42, boundary checks PASS.
+tpu: seed 18446744073709551615, boundary checks PASS.
+tpu: seed 9223372036854775809, boundary checks PASS.
+/usr/local/lib/python3.13/dist-packages/jax/_src/cloud_tpu_init.py:88: UserWarning: Transparent hugepages are not enabled. TPU runtime startup and shutdown time should be significantly improved on TPU v5e and newer. If not already set, you may need to enable transparent hugepages in your VM image (sudo sh -c "echo always > /sys/kernel/mm/transparent_hugepage/enabled")
+  warnings.warn(
+Partition sur 1 devices tpu: PASS.
+/usr/local/lib/python3.13/dist-packages/jax/_src/cloud_tpu_init.py:88: UserWarning: Transparent hugepages are not enabled. TPU runtime startup and shutdown time should be significantly improved on TPU v5e and newer. If not already set, you may need to enable transparent hugepages in your VM image (sudo sh -c "echo always > /sys/kernel/mm/transparent_hugepage/enabled")
+  warnings.warn(
+tpu: 65536 words, 11 pipelines compiled before timing.
+  seed 1/5: all timed outputs checked.
+  seed 2/5: all timed outputs checked.
+  seed 3/5: all timed outputs checked.
+  seed 4/5: all timed outputs checked.
+  seed 5/5: all timed outputs checked.
+montmory_jax_portable             1.808 GB/s  ratio=1.000
+montmory_jax_mulhi                1.823 GB/s  ratio=1.018
+threefry2x32                      1.850 GB/s  ratio=1.027
+threefry4x32                      1.648 GB/s  ratio=0.928
+philox4x32                        1.535 GB/s  ratio=0.864
+philox2x32                        1.752 GB/s  ratio=0.976
+write_baseline_NOT_PRNG           1.933 GB/s  ratio=1.066
+montmory_pallas_8x128             1.895 GB/s  ratio=1.053
+montmory_pallas_16x128            1.886 GB/s  ratio=1.043
+montmory_pallas_32x128            1.920 GB/s  ratio=1.062
+rbg_same_device_only              1.855 GB/s  ratio=1.030
+tpu: 1048576 words, 11 pipelines compiled before timing.
+  seed 1/5: all timed outputs checked.
+  seed 2/5: all timed outputs checked.
+  seed 3/5: all timed outputs checked.
+  seed 4/5: all timed outputs checked.
+  seed 5/5: all timed outputs checked.
+montmory_jax_portable            14.450 GB/s  ratio=1.000
+montmory_jax_mulhi               14.199 GB/s  ratio=0.965
+threefry2x32                     13.157 GB/s  ratio=0.885
+threefry4x32                     10.560 GB/s  ratio=0.734
+philox4x32                        7.740 GB/s  ratio=0.520
+philox2x32                       10.538 GB/s  ratio=0.716
+write_baseline_NOT_PRNG          16.961 GB/s  ratio=1.174
+montmory_pallas_8x128            12.462 GB/s  ratio=0.815
+montmory_pallas_16x128           14.278 GB/s  ratio=0.988
+montmory_pallas_32x128           15.254 GB/s  ratio=1.070
+rbg_same_device_only             17.608 GB/s  ratio=1.205

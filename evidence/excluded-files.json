@@ -1,0 +1,279 @@
+{
+  "policy": "Generated caches/builds/installations and duplicate bundles omitted; original source file bytes retained. Counts refer to assembly time.",
+  "excluded_directories": [
+    {
+      "origin": "audit-2026-10-21/build",
+      "files": 21
+    },
+    {
+      "origin": "audit-2026-10-21/deps/TestU01-1.2.3",
+      "files": 602
+    },
+    {
+      "origin": "audit-2026-10-21/deps/testu01-install",
+      "files": 137
+    },
+    {
+      "origin": "audit-2026-10-21/mac-metal-benchmark-v3/tools/__pycache__",
+      "files": 1
+    },
+    {
+      "origin": "audit-2026-10-21/mac-metal-benchmark/tools/__pycache__",
+      "files": 2
+    },
+    {
+      "origin": "audit-2026-10-21/snapshot/cuda-ovh/build",
+      "files": 8
+    },
+    {
+      "origin": "audit-2026-10-21/snapshot/montmory_gpu_test/montmory_gpu_test/build",
+      "files": 6
+    },
+    {
+      "origin": "audit-2026-10-21/tools/__pycache__",
+      "files": 4
+    },
+    {
+      "origin": "jax-port-2026-10-21/.venv",
+      "files": 6948
+    },
+    {
+      "origin": "jax-port-2026-10-21/montmory-jax-check/__pycache__",
+      "files": 1
+    },
+    {
+      "origin": "jax-tpu-2026-10-21/montmory-jax-tpu/__pycache__",
+      "files": 2
+    },
+    {
+      "origin": "lanes-study-2026-10-21/build",
+      "files": 1
+    },
+    {
+      "origin": "lanes-study-2026-10-21/mac/montmory-lanes-m3/tools/__pycache__",
+      "files": 2
+    },
+    {
+      "origin": "metal-opt-2026-10-21/montmory-metal-opt-m3/tools/__pycache__",
+      "files": 3
+    },
+    {
+      "origin": "tacm-comparison-2026-10-21/__pycache__",
+      "files": 7
+    },
+    {
+      "origin": "tacm-comparison-2026-10-21/build",
+      "files": 3
+    },
+    {
+      "origin": "tpu-opt-2026-10-21/montmory-tpu-opt/__pycache__",
+      "files": 5
+    }
+  ],
+  "other_excluded_files": [
+    {
+      "origin": "audit-2026-10-21/mac-conformance-kit.tar.gz",
+      "reason": "duplicate archive or backup; extracted source or original log retained"
+    },
+    {
+      "origin": "audit-2026-10-21/mac-metal-benchmark-kit.tar.gz",
+      "reason": "duplicate archive or backup; extracted source or original log retained"
+    },
+    {
+      "origin": "audit-2026-10-21/mac-metal-benchmark-v2-kit.tar.gz",
+      "reason": "duplicate archive or backup; extracted source or original log retained"
+    },
+    {
+      "origin": "audit-2026-10-21/mac-metal-benchmark-v3-kit.tar.gz",
+      "reason": "duplicate archive or backup; extracted source or original log retained"
+    },
+    {
+      "origin": "audit-2026-10-21/mac-testu01-repair-v1.tar.gz",
+      "reason": "duplicate archive or backup; extracted source or original log retained"
+    },
+    {
+      "origin": "audit-2026-10-21/montmory-audit-kit.tar.gz",
+      "reason": "duplicate archive or backup; extracted source or original log retained"
+    },
+    {
+      "origin": "audit-2026-10-21/snapshot/cuda-ovh/.DS_Store",
+      "reason": "generated binary or operating system metadata"
+    },
+    {
+      "origin": "audit-2026-10-21/snapshot/cuda-ovh/logs/bigcrush_gpu.log.bak",
+      "reason": "duplicate archive or backup; extracted source or original log retained"
+    },
+    {
+      "origin": "audit-2026-10-21/snapshot/cuda-ovh/logs/bigcrush_gpu.log.gz",
+      "reason": "duplicate archive or backup; extracted source or original log retained"
+    },
+    {
+      "origin": "audit-2026-10-21/snapshot/montmory_gpu_test/montmory_gpu_test/Montmory_GPU3R_Certified/mmc_test_gpu",
+      "reason": "compiled executable; source retained"
+    },
+    {
+      "origin": "audit-2026-10-21/snapshot/montmory_gpu_test/montmory_gpu_test/src/mmc_gpu_wrap.mm.bak",
+      "reason": "duplicate archive or backup; extracted source or original log retained"
+    },
+    {
+      "origin": "jax-port-2026-10-21/montmory-jax-check/montmory-jax-results-20261021T172909Z-2.tar.gz",
+      "reason": "duplicate archive or backup; extracted source or original log retained"
+    },
+    {
+      "origin": "jax-port-2026-10-21/montmory-jax-check/results/20261021T172909Z-2/oracle.so",
+      "reason": "generated binary or operating system metadata"
+    },
+    {
+      "origin": "jax-port-2026-10-21/results/vps-confirmed/oracle.so",
+      "reason": "generated binary or operating system metadata"
+    },
+    {
+      "origin": "jax-port-2026-10-21/results/vps-initial/oracle.so",
+      "reason": "generated binary or operating system metadata"
+    },
+    {
+      "origin": "jax-tpu-2026-10-21/20261021T180635Z-colab-tpu/.DS_Store",
+      "reason": "generated binary or operating system metadata"
+    },
+    {
+      "origin": "jax-tpu-2026-10-21/20261021T180635Z-colab-tpu/benchmark/oracle.so",
+      "reason": "generated binary or operating system metadata"
+    },
+    {
+      "origin": "jax-tpu-2026-10-21/20261021T180635Z-colab-tpu/conformance/oracle.so",
+      "reason": "generated binary or operating system metadata"
+    },
+    {
+      "origin": "jax-tpu-2026-10-21/20261021T180635Z-colab-tpu/sharding/oracle.so",
+      "reason": "generated binary or operating system metadata"
+    },
+    {
+      "origin": "jax-tpu-2026-10-21/results/audit-20261021T180635Z-colab-tpu/local-reference/oracle.so",
+      "reason": "generated binary or operating system metadata"
+    },
+    {
+      "origin": "jax-tpu-2026-10-21/results/cpu-benchmark/oracle.so",
+      "reason": "generated binary or operating system metadata"
+    },
+    {
+      "origin": "jax-tpu-2026-10-21/results/cpu-sharding/oracle.so",
+      "reason": "generated binary or operating system metadata"
+    },
+    {
+      "origin": "jax-tpu-2026-10-21/results/delivery-smoke/benchmark/oracle.so",
+      "reason": "generated binary or operating system metadata"
+    },
+    {
+      "origin": "jax-tpu-2026-10-21/results/delivery-smoke/native-harness-on-cpu/oracle.so",
+      "reason": "generated binary or operating system metadata"
+    },
+    {
+      "origin": "jax-tpu-2026-10-21/results/delivery-smoke/original-protocol/oracle.so",
+      "reason": "generated binary or operating system metadata"
+    },
+    {
+      "origin": "jax-tpu-2026-10-21/results/delivery-smoke/virtual-cpu-sharding/oracle.so",
+      "reason": "generated binary or operating system metadata"
+    },
+    {
+      "origin": "jax-tpu-2026-10-21/results/delivery-smoke.tar.gz",
+      "reason": "duplicate archive or backup; extracted source or original log retained"
+    },
+    {
+      "origin": "jax-tpu-2026-10-21/results/native-harness-on-cpu/oracle.so",
+      "reason": "generated binary or operating system metadata"
+    },
+    {
+      "origin": "jax-tpu-2026-10-21/results/no-tpu-guard.tar.gz",
+      "reason": "duplicate archive or backup; extracted source or original log retained"
+    },
+    {
+      "origin": "jax-tpu-2026-10-21/results/parallel-grid-cpu/oracle.so",
+      "reason": "generated binary or operating system metadata"
+    },
+    {
+      "origin": "jax-tpu-2026-10-21/results/prepared-cpu/oracle.so",
+      "reason": "generated binary or operating system metadata"
+    },
+    {
+      "origin": "jax-tpu-2026-10-21/results/reference-generation/oracle.so",
+      "reason": "generated binary or operating system metadata"
+    },
+    {
+      "origin": "metal-opt-2026-10-21/results/cpu_benchmark",
+      "reason": "compiled executable; source retained"
+    },
+    {
+      "origin": "metal-opt-2026-10-21/results/cpu_confirm",
+      "reason": "compiled executable; source retained"
+    },
+    {
+      "origin": "metal-opt-2026-10-21/results/verify_cpu",
+      "reason": "compiled executable; source retained"
+    },
+    {
+      "origin": "tpu-opt-2026-10-21/20261021T185102Z-tpu-opt/.DS_Store",
+      "reason": "generated binary or operating system metadata"
+    },
+    {
+      "origin": "tpu-opt-2026-10-21/20261021T185102Z-tpu-opt/campaign/candidate-conformance/oracle.so",
+      "reason": "generated binary or operating system metadata"
+    },
+    {
+      "origin": "tpu-opt-2026-10-21/20261021T185102Z-tpu-opt/historical-conformance/oracle.so",
+      "reason": "generated binary or operating system metadata"
+    },
+    {
+      "origin": "tpu-opt-2026-10-21/results/api-smoke/oracle.so",
+      "reason": "generated binary or operating system metadata"
+    },
+    {
+      "origin": "tpu-opt-2026-10-21/results/audit-20261021T185102Z-tpu-opt/oracle-rebuilt.so",
+      "reason": "generated binary or operating system metadata"
+    },
+    {
+      "origin": "tpu-opt-2026-10-21/results/candidate-cpu/oracle.so",
+      "reason": "generated binary or operating system metadata"
+    },
+    {
+      "origin": "tpu-opt-2026-10-21/results/no-tpu-guard.tar.gz",
+      "reason": "duplicate archive or backup; extracted source or original log retained"
+    },
+    {
+      "origin": "tpu-opt-2026-10-21/results/original-protocol/oracle.so",
+      "reason": "generated binary or operating system metadata"
+    },
+    {
+      "origin": "tpu-opt-2026-10-21/results/reference-build/oracle.so",
+      "reason": "generated binary or operating system metadata"
+    },
+    {
+      "origin": "tpu-opt-2026-10-21/results/runner-smoke/historical-conformance/oracle.so",
+      "reason": "generated binary or operating system metadata"
+    },
+    {
+      "origin": "tpu-opt-2026-10-21/results/runner-smoke.tar.gz",
+      "reason": "duplicate archive or backup; extracted source or original log retained"
+    },
+    {
+      "origin": "vector-opt-2026-10-21/confirm_pool",
+      "reason": "compiled executable; source retained"
+    },
+    {
+      "origin": "vector-opt-2026-10-21/cpu_benchmark",
+      "reason": "compiled executable; source retained"
+    },
+    {
+      "origin": "vector-opt-2026-10-21/verify",
+      "reason": "compiled executable; source retained"
+    },
+    {
+      "origin": "vector-opt-2026-10-21/verify_asan",
+      "reason": "compiled executable; source retained"
+    },
+    {
+      "origin": "vector-opt-2026-10-21/verify_repair1",
+      "reason": "compiled executable; source retained"
+    }
+  ]
+}

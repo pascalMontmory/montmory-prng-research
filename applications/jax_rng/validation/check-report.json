@@ -1,0 +1,15 @@
+{
+  "status": "pass",
+  "recorded_utc": "2026-10-21T20:25:45.193203+00:00",
+  "command": "python applications/jax_rng/check.py",
+  "record_kind": "recorded successful tool stdout",
+  "endpoint_checks": true,
+  "corruptions_rejected": 3,
+  "interpreted_pallas_application_cases": 18,
+  "paired_summary_checked": true,
+  "native_tpu_run": false,
+  "source_sha256": {
+    "applications/jax_rng/check.py": "66d953822c486beedb4e994c38b2ec77c39ed9dbc02781d3fde70dcd012912fc",
+    "applications/jax_rng/benchmark.py": "5ec1bda44a06bd128d5e229965efeb27dade1319c6681bcbe3433b1f8c41f272"
+  }
+}

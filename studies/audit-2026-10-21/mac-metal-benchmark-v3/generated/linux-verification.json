@@ -1,0 +1,20 @@
+{
+  "status": "pass",
+  "scope": "Generated Metal arithmetic emulated on x86 C++ with UBSan; not a native Metal run",
+  "generated_source_sha256": "1ed2856aa953187eadc99e53efd2f1810b6f00a0d14239898718004a0f8da242",
+  "words_compared": 199824000,
+  "reduction_words_compared": 73967040,
+  "component_checks": {
+    "feistel_f": 1140736,
+    "product_mod_64": 1048657,
+    "xor_right": 3145728,
+    "mixer": 1048585,
+    "permutation": 1048576,
+    "feistel_mulhi": 1140736,
+    "feistel_dual": 1140736
+  },
+  "official_known_answer_vectors": 6,
+  "specialization_scope": "Seed rotations supplied as mutable globals in CPU emulation; native Metal function-constant compilation still required",
+  "guards": "all preserved",
+  "native_Mac_status": "not run on this VPS"
+}

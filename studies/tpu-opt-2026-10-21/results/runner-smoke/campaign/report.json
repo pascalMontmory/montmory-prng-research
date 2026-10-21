@@ -1,0 +1,236 @@
+{
+  "status": "pass",
+  "backend_requested": "cpu",
+  "cpu_smoke": true,
+  "jax": "0.10.2",
+  "jaxlib": "0.10.2",
+  "platform": "Linux-6.1.0-50-cloud-amd64-x86_64-with-glibc2.36",
+  "logical_lanes": 2048,
+  "draws_per_lane": 4096,
+  "base": 4294963199,
+  "timing": "host wall time: dispatch/allocation/wait included; keys/compilation/transfers/checks excluded",
+  "comparisons": "same eight output bytes; Montmory and Threefry Pallas preserve their respective reference streams",
+  "compilation": [
+    {
+      "words": 65536,
+      "engine": "jax_original",
+      "status": "pass",
+      "seconds": 0.45194096863269806
+    },
+    {
+      "words": 65536,
+      "engine": "jax_mulhi",
+      "status": "pass",
+      "seconds": 0.12257814593613148
+    },
+    {
+      "words": 65536,
+      "engine": "jax_carry",
+      "status": "pass",
+      "seconds": 0.14099007844924927
+    },
+    {
+      "words": 65536,
+      "engine": "jax_carry_mulhi",
+      "status": "pass",
+      "seconds": 0.13161004520952702
+    },
+    {
+      "words": 65536,
+      "engine": "threefry2x32",
+      "status": "pass",
+      "seconds": 0.2264622487127781
+    },
+    {
+      "words": 65536,
+      "engine": "threefry4x32",
+      "status": "pass",
+      "seconds": 0.6623015329241753
+    },
+    {
+      "words": 65536,
+      "engine": "philox2x32",
+      "status": "pass",
+      "seconds": 0.12616489827632904
+    },
+    {
+      "words": 65536,
+      "engine": "philox4x32",
+      "status": "pass",
+      "seconds": 0.20360805094242096
+    },
+    {
+      "words": 65536,
+      "engine": "write_NOT_PRNG",
+      "status": "pass",
+      "seconds": 0.043346136808395386
+    },
+    {
+      "words": 65536,
+      "engine": "rbg_same_backend",
+      "status": "pass",
+      "seconds": 0.23267647065222263
+    }
+  ],
+  "selection": {
+    "65536": {
+      "primary": "jax_carry_mulhi",
+      "secondary": "jax_mulhi",
+      "threefry": "threefry2x32",
+      "finalists": [
+        "jax_carry_mulhi",
+        "jax_mulhi",
+        "jax_original",
+        "threefry2x32",
+        "threefry4x32",
+        "philox2x32",
+        "philox4x32",
+        "write_NOT_PRNG",
+        "rbg_same_backend"
+      ],
+      "recommended_after_confirmation": "jax_carry_mulhi",
+      "rule": "Use search primary only if >=3% median gain and faster on every held-out seed; otherwise retain baseline"
+    }
+  },
+  "summary": [
+    {
+      "words": 65536,
+      "engine": "jax_carry_mulhi",
+      "GB_per_second": 1.967704586098898,
+      "primary": "jax_carry_mulhi",
+      "primary_speedup_vs_engine": 1.0,
+      "primary_faster_seeds": 0,
+      "seed_count": 2,
+      "ratios": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "words": 65536,
+      "engine": "jax_mulhi",
+      "GB_per_second": 1.9464355987199191,
+      "primary": "jax_carry_mulhi",
+      "primary_speedup_vs_engine": 1.011115860068118,
+      "primary_faster_seeds": 1,
+      "seed_count": 2,
+      "ratios": [
+        0.9940160438328501,
+        1.0282156763033858
+      ]
+    },
+    {
+      "words": 65536,
+      "engine": "jax_original",
+      "GB_per_second": 1.7320755153315153,
+      "primary": "jax_carry_mulhi",
+      "primary_speedup_vs_engine": 1.1356024952639316,
+      "primary_faster_seeds": 2,
+      "seed_count": 2,
+      "ratios": [
+        1.1751160969163323,
+        1.0960888936115307
+      ]
+    },
+    {
+      "words": 65536,
+      "engine": "threefry2x32",
+      "GB_per_second": 0.3322679980505822,
+      "primary": "jax_carry_mulhi",
+      "primary_speedup_vs_engine": 5.921282272202599,
+      "primary_faster_seeds": 2,
+      "seed_count": 2,
+      "ratios": [
+        5.9899995174228895,
+        5.852565026982308
+      ]
+    },
+    {
+      "words": 65536,
+      "engine": "threefry4x32",
+      "GB_per_second": 1.869122761359646,
+      "primary": "jax_carry_mulhi",
+      "primary_speedup_vs_engine": 1.0524123139227841,
+      "primary_faster_seeds": 2,
+      "seed_count": 2,
+      "ratios": [
+        1.0823128064828667,
+        1.0225118213627014
+      ]
+    },
+    {
+      "words": 65536,
+      "engine": "philox2x32",
+      "GB_per_second": 2.4191115571397264,
+      "primary": "jax_carry_mulhi",
+      "primary_speedup_vs_engine": 0.8128514514433398,
+      "primary_faster_seeds": 0,
+      "seed_count": 2,
+      "ratios": [
+        0.8625286298150987,
+        0.7631742730715809
+      ]
+    },
+    {
+      "words": 65536,
+      "engine": "philox4x32",
+      "GB_per_second": 1.9507918878241084,
+      "primary": "jax_carry_mulhi",
+      "primary_speedup_vs_engine": 1.0080068084004457,
+      "primary_faster_seeds": 1,
+      "seed_count": 2,
+      "ratios": [
+        1.0680693574671383,
+        0.9479442593337533
+      ]
+    },
+    {
+      "words": 65536,
+      "engine": "write_NOT_PRNG",
+      "GB_per_second": 4.861495665074876,
+      "primary": "jax_carry_mulhi",
+      "primary_speedup_vs_engine": 0.4039907677220609,
+      "primary_faster_seeds": 0,
+      "seed_count": 2,
+      "ratios": [
+        0.47305178052393027,
+        0.33492975492019156
+      ]
+    },
+    {
+      "words": 65536,
+      "engine": "rbg_same_backend",
+      "GB_per_second": 0.6981742252891869,
+      "primary": "jax_carry_mulhi",
+      "primary_speedup_vs_engine": 2.81905755389244,
+      "primary_faster_seeds": 2,
+      "seed_count": 2,
+      "ratios": [
+        2.755626663498981,
+        2.8824884442858987
+      ]
+    }
+  ],
+  "samples": 222,
+  "checked_words": 14548992,
+  "backend": "cpu",
+  "devices": [
+    "cpu:0"
+  ],
+  "device_kind": "cpu",
+  "sizes": [
+    65536
+  ],
+  "search_seeds": [
+    0,
+    42
+  ],
+  "confirm_seeds": [
+    7,
+    19
+  ],
+  "baseline": "jax_original",
+  "confirmation_blocks": 3,
+  "confirmation_repetitions_per_block": 3,
+  "selection_sha256": "3a58f11d756ddde75dd32fed5386dfd4982760e552fa294f4eb77d650153c141"
+}

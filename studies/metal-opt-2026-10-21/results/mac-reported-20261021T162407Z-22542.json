@@ -1,0 +1,356 @@
+{
+  "schema_version": 1,
+  "provenance": {
+    "source": "User-pasted terminal transcript; rounded summary only. No raw measurements received yet.",
+    "archive_reported": "/Users/enincaconsulting/Downloads/montmory-metal-opt-m3/montmory-metal-opt-results-20261021T162407Z-22542.tar.gz",
+    "archive_received": true,
+    "archive_sha256": "053d4930cf56681df3afdc242675e8308967b551f2e70ea752ac12c3eaaa0042",
+    "kit_sha256": "98b5c2bf6b162750871e81abb56aa0105f3565b036c4da69ec760cdf67be030b",
+    "subsequent_reanalysis": "results/mac-analysis-20261021T162407Z-22542/analysis.json"
+  },
+  "device_reported": "Apple M3",
+  "logical_lanes": 2048,
+  "draws_per_lane": 4096,
+  "words_per_buffer_from_kit": 8388608,
+  "validation_reported": {
+    "arm64_x86_vectors": 1600,
+    "metal_conformance_words": 7716864,
+    "reduction_checks": 4004592,
+    "official_cpu_gpu_vectors": 6,
+    "search_trials": 7,
+    "confirmation_trials": 5,
+    "all_reported_comparisons_pass": true
+  },
+  "cpu": [
+    {
+      "engine": "indexed",
+      "workers": 1,
+      "ns_per_word_displayed": 3.788,
+      "stored_GB_per_second_displayed": 2.112,
+      "ratio_vs_indexed_displayed": 1
+    },
+    {
+      "engine": "indexed",
+      "workers": 2,
+      "ns_per_word_displayed": 1.928,
+      "stored_GB_per_second_displayed": 4.149,
+      "ratio_vs_indexed_displayed": 1
+    },
+    {
+      "engine": "indexed",
+      "workers": 4,
+      "ns_per_word_displayed": 0.991,
+      "stored_GB_per_second_displayed": 8.074,
+      "ratio_vs_indexed_displayed": 1
+    },
+    {
+      "engine": "indexed",
+      "workers": 8,
+      "ns_per_word_displayed": 0.821,
+      "stored_GB_per_second_displayed": 9.746,
+      "ratio_vs_indexed_displayed": 1
+    },
+    {
+      "engine": "incremental",
+      "workers": 1,
+      "ns_per_word_displayed": 3.427,
+      "stored_GB_per_second_displayed": 2.334,
+      "ratio_vs_indexed_displayed": 1.105
+    },
+    {
+      "engine": "incremental",
+      "workers": 2,
+      "ns_per_word_displayed": 1.741,
+      "stored_GB_per_second_displayed": 4.596,
+      "ratio_vs_indexed_displayed": 1.108
+    },
+    {
+      "engine": "incremental",
+      "workers": 4,
+      "ns_per_word_displayed": 0.896,
+      "stored_GB_per_second_displayed": 8.924,
+      "ratio_vs_indexed_displayed": 1.105
+    },
+    {
+      "engine": "incremental",
+      "workers": 8,
+      "ns_per_word_displayed": 0.741,
+      "stored_GB_per_second_displayed": 10.794,
+      "ratio_vs_indexed_displayed": 1.108
+    },
+    {
+      "engine": "incremental_pair",
+      "workers": 1,
+      "ns_per_word_displayed": 2.975,
+      "stored_GB_per_second_displayed": 2.689,
+      "ratio_vs_indexed_displayed": 1.273
+    },
+    {
+      "engine": "incremental_pair",
+      "workers": 2,
+      "ns_per_word_displayed": 1.517,
+      "stored_GB_per_second_displayed": 5.273,
+      "ratio_vs_indexed_displayed": 1.271
+    },
+    {
+      "engine": "incremental_pair",
+      "workers": 4,
+      "ns_per_word_displayed": 0.779,
+      "stored_GB_per_second_displayed": 10.265,
+      "ratio_vs_indexed_displayed": 1.271
+    },
+    {
+      "engine": "incremental_pair",
+      "workers": 8,
+      "ns_per_word_displayed": 0.641,
+      "stored_GB_per_second_displayed": 12.487,
+      "ratio_vs_indexed_displayed": 1.281
+    },
+    {
+      "engine": "incremental_quad",
+      "workers": 1,
+      "ns_per_word_displayed": 3.46,
+      "stored_GB_per_second_displayed": 2.312,
+      "ratio_vs_indexed_displayed": 1.095
+    },
+    {
+      "engine": "incremental_quad",
+      "workers": 2,
+      "ns_per_word_displayed": 1.765,
+      "stored_GB_per_second_displayed": 4.532,
+      "ratio_vs_indexed_displayed": 1.092
+    },
+    {
+      "engine": "incremental_quad",
+      "workers": 4,
+      "ns_per_word_displayed": 0.906,
+      "stored_GB_per_second_displayed": 8.834,
+      "ratio_vs_indexed_displayed": 1.094
+    },
+    {
+      "engine": "incremental_quad",
+      "workers": 8,
+      "ns_per_word_displayed": 0.744,
+      "stored_GB_per_second_displayed": 10.751,
+      "ratio_vs_indexed_displayed": 1.103
+    }
+  ],
+  "metal": [
+    {
+      "engine": "threefry2x32_20",
+      "format": "raw64",
+      "dispatch_threads": 131072,
+      "threadgroup": 128,
+      "ns_per_word_displayed": 0.087,
+      "stored_GB_per_second_displayed": 92.474,
+      "median_paired_speedup_vs_v3_displayed": 1.086
+    },
+    {
+      "engine": "threefry2x32_20",
+      "format": "mantissa53",
+      "dispatch_threads": 65536,
+      "threadgroup": 64,
+      "ns_per_word_displayed": 0.087,
+      "stored_GB_per_second_displayed": 92.325,
+      "median_paired_speedup_vs_v3_displayed": 1.087
+    },
+    {
+      "engine": "philox4x32_10",
+      "format": "raw64",
+      "dispatch_threads": 131072,
+      "threadgroup": 64,
+      "ns_per_word_displayed": 0.09,
+      "stored_GB_per_second_displayed": 89.33,
+      "median_paired_speedup_vs_v3_displayed": 1.048
+    },
+    {
+      "engine": "philox4x32_10",
+      "format": "mantissa53",
+      "dispatch_threads": 131072,
+      "threadgroup": 128,
+      "ns_per_word_displayed": 0.09,
+      "stored_GB_per_second_displayed": 89.3,
+      "median_paired_speedup_vs_v3_displayed": 1.048
+    },
+    {
+      "engine": "write_baseline_NOT_PRNG",
+      "format": "raw64",
+      "dispatch_threads": 8192,
+      "threadgroup": 256,
+      "ns_per_word_displayed": 0.081,
+      "stored_GB_per_second_displayed": 99.2,
+      "median_paired_speedup_vs_v3_displayed": 1.165
+    },
+    {
+      "engine": "write_baseline_NOT_PRNG",
+      "format": "mantissa53",
+      "dispatch_threads": 8192,
+      "threadgroup": 128,
+      "ns_per_word_displayed": 0.08,
+      "stored_GB_per_second_displayed": 99.494,
+      "median_paired_speedup_vs_v3_displayed": 1.17
+    },
+    {
+      "engine": "montmory_mulhi_pair",
+      "format": "raw64",
+      "dispatch_threads": 131072,
+      "threadgroup": 64,
+      "ns_per_word_displayed": 0.094,
+      "stored_GB_per_second_displayed": 85.123,
+      "median_paired_speedup_vs_v3_displayed": 1
+    },
+    {
+      "engine": "montmory_mulhi_pair",
+      "format": "mantissa53",
+      "dispatch_threads": 131072,
+      "threadgroup": 64,
+      "ns_per_word_displayed": 0.094,
+      "stored_GB_per_second_displayed": 85.042,
+      "median_paired_speedup_vs_v3_displayed": 1
+    },
+    {
+      "engine": "montmory_mulhi_quad",
+      "format": "raw64",
+      "dispatch_threads": 131072,
+      "threadgroup": 512,
+      "ns_per_word_displayed": 0.096,
+      "stored_GB_per_second_displayed": 83.551,
+      "median_paired_speedup_vs_v3_displayed": 0.982
+    },
+    {
+      "engine": "montmory_mulhi_quad",
+      "format": "mantissa53",
+      "dispatch_threads": 131072,
+      "threadgroup": 512,
+      "ns_per_word_displayed": 0.096,
+      "stored_GB_per_second_displayed": 83.56,
+      "median_paired_speedup_vs_v3_displayed": 0.982
+    },
+    {
+      "engine": "montmory_stripe_pair",
+      "format": "raw64",
+      "dispatch_threads": 131072,
+      "threadgroup": 64,
+      "ns_per_word_displayed": 0.094,
+      "stored_GB_per_second_displayed": 85.101,
+      "median_paired_speedup_vs_v3_displayed": 0.999
+    },
+    {
+      "engine": "montmory_stripe_pair",
+      "format": "mantissa53",
+      "dispatch_threads": 131072,
+      "threadgroup": 256,
+      "ns_per_word_displayed": 0.094,
+      "stored_GB_per_second_displayed": 85.204,
+      "median_paired_speedup_vs_v3_displayed": 1.002
+    },
+    {
+      "engine": "montmory_stripe_quad",
+      "format": "raw64",
+      "dispatch_threads": 131072,
+      "threadgroup": 256,
+      "ns_per_word_displayed": 0.096,
+      "stored_GB_per_second_displayed": 83.703,
+      "median_paired_speedup_vs_v3_displayed": 0.982
+    },
+    {
+      "engine": "montmory_stripe_quad",
+      "format": "mantissa53",
+      "dispatch_threads": 131072,
+      "threadgroup": 256,
+      "ns_per_word_displayed": 0.096,
+      "stored_GB_per_second_displayed": 83.616,
+      "median_paired_speedup_vs_v3_displayed": 0.983
+    },
+    {
+      "engine": "montmory_const_pair",
+      "format": "raw64",
+      "dispatch_threads": 131072,
+      "threadgroup": 64,
+      "ns_per_word_displayed": 0.098,
+      "stored_GB_per_second_displayed": 81.529,
+      "median_paired_speedup_vs_v3_displayed": 0.958
+    },
+    {
+      "engine": "montmory_const_pair",
+      "format": "mantissa53",
+      "dispatch_threads": 131072,
+      "threadgroup": 128,
+      "ns_per_word_displayed": 0.371,
+      "stored_GB_per_second_displayed": 21.579,
+      "median_paired_speedup_vs_v3_displayed": 0.254
+    },
+    {
+      "engine": "montmory_const_stripe_pair",
+      "format": "raw64",
+      "dispatch_threads": 131072,
+      "threadgroup": 128,
+      "ns_per_word_displayed": 0.098,
+      "stored_GB_per_second_displayed": 81.48,
+      "median_paired_speedup_vs_v3_displayed": 0.957
+    },
+    {
+      "engine": "montmory_const_stripe_pair",
+      "format": "mantissa53",
+      "dispatch_threads": 131072,
+      "threadgroup": 128,
+      "ns_per_word_displayed": 0.371,
+      "stored_GB_per_second_displayed": 21.566,
+      "median_paired_speedup_vs_v3_displayed": 0.254
+    },
+    {
+      "engine": "montmory_split_stripe_pair",
+      "format": "raw64",
+      "dispatch_threads": 131072,
+      "threadgroup": 256,
+      "ns_per_word_displayed": 0.093,
+      "stored_GB_per_second_displayed": 85.58,
+      "median_paired_speedup_vs_v3_displayed": 1.005
+    },
+    {
+      "engine": "montmory_split_stripe_pair",
+      "format": "mantissa53",
+      "dispatch_threads": 131072,
+      "threadgroup": 512,
+      "ns_per_word_displayed": 0.094,
+      "stored_GB_per_second_displayed": 85.53,
+      "median_paired_speedup_vs_v3_displayed": 1.006
+    },
+    {
+      "engine": "montmory_const_stripe_quad",
+      "format": "raw64",
+      "dispatch_threads": 131072,
+      "threadgroup": 256,
+      "ns_per_word_displayed": 0.157,
+      "stored_GB_per_second_displayed": 51.054,
+      "median_paired_speedup_vs_v3_displayed": 0.858
+    },
+    {
+      "engine": "montmory_const_stripe_quad",
+      "format": "mantissa53",
+      "dispatch_threads": 131072,
+      "threadgroup": 64,
+      "ns_per_word_displayed": 0.097,
+      "stored_GB_per_second_displayed": 82.372,
+      "median_paired_speedup_vs_v3_displayed": 0.966
+    }
+  ],
+  "derived_from_rounded_throughput": {
+    "cpu_8_workers_pair_throughput_gain_pct": 28.12435871126615,
+    "cpu_8_workers_pair_time_reduction_pct": 21.950828862016493,
+    "cpu_pair_1_to_8_workers_throughput_factor": 4.6437337300111565,
+    "metal_raw64_split_vs_base_throughput_gain_pct": 0.5368701760981143,
+    "metal_raw64_philox_throughput_above_split_pct": 4.3818649217106875,
+    "metal_raw64_threefry_throughput_above_split_pct": 8.05562047207291,
+    "metal_raw64_split_throughput_below_philox_pct": 4.19791783275495,
+    "metal_raw64_split_throughput_below_threefry_pct": 7.455068451672908
+  },
+  "interpretation": {
+    "cpu": "Pair variant faster than indexed on all four displayed worker counts; 27.1-28.1% descriptive gain. No CPU Philox/Threefry comparison in this kit.",
+    "metal": "Philox and Threefry remain faster in displayed confirmation summaries. Split-counter best displayed Montmory throughput, approximately +0.5-0.6% vs tuned v3; significance unknown.",
+    "ratios": "Metal ratio/v3 is median of per-seed baseline_ns/candidate_ns. GB/s is 8/median(candidate_ns). These are different estimators.",
+    "anomalies": "Specialized pair mantissa53 ~21.6 GB/s vs ~81.5 raw64; specialized quad raw64 51.054 GB/s with paired ratio 0.858. Need per-seed CSV, wall timings, thermal states and pipeline metadata to diagnose; no cause established.",
+    "comparison_scope": "GPU generation and 64-bit stores; excludes CPU comparison and reference, pipeline creation from timing. mantissa53 is shifted integers stored as 64 bits, not normally distributed samples or an end-to-end VaR workload.",
+    "pending": "Rounded transcript retained as original report. Raw archive now received and analyzed separately; new native timing confirmation pending."
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "archive": "/home/pascal/prng-recovery/montmory-jax-tpu-kit.tar.gz",
+  "archive_bytes": 60184,
+  "archive_sha256": "92baf16a55f3822298d3b42b21677a0b5828343640e7281a7d826a0db624f172",
+  "notebook": "/home/pascal/prng-recovery/Montmory_TPU_validation.ipynb",
+  "notebook_bytes": 85904,
+  "notebook_sha256": "0a1daca474fecc0800bca4a92e92d5f5535d542a245075d728332c12f801fad4",
+  "files": 21,
+  "native_tpu_executed": false,
+  "native_mac_executed": false
+}

@@ -1,0 +1,37 @@
+name: Research record checks
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  cpu-evidence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Integrity and curated documentation
+        run: python scripts/check_repository.py
+      - name: Bilingual documentation and notebook equivalence
+        run: python scripts/check_translations.py
+      - name: C/Python reference and exact certificates (UBSan)
+        run: python scripts/check_reference.py
+      - name: Install CPU audit dependency
+        run: python -m pip install numpy==2.4.6
+      - name: Reanalyse archived TPU measurements on CPU
+        run: python scripts/replay_audit.py tpu --out build/ci-tpu-audit
+      - name: Save checks (not a native GPU or TPU benchmark)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cpu-record-verification
+          path: |
+            build/*.json
+            build/ci-tpu-audit/status.json
+            build/ci-tpu-audit/reanalysis.log
+            build/ci-tpu-audit/post-replay-integrity.json
+            build/ci-tpu-audit/analysis/audit.json

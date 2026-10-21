@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "archive": "/home/pascal/prng-recovery/mac-montmory-vector-kit.tar.gz",
+  "bytes": 135016,
+  "sha256": "4fc3984b80471f8ce76c76babbe3080815d348d82f0660267a4cba6f4c75d993",
+  "verified_manifest_files": 61,
+  "native_ARM64_Metal": "pending on user Mac",
+  "new_statistical_batteries": "none",
+  "portable_source_and_benchmark_checks": "pass as documented"
+}

@@ -1,0 +1,55 @@
+{
+  "system": "Linux-6.1.0-50-cloud-amd64-x86_64-with-glibc2.36",
+  "compiler": "c++ (Debian 12.2.0-14+deb12u1) 12.2.0",
+  "random123_commit": "9545ff6413f258be2f04c1d319d99aaef7521150",
+  "source_sha256": "3b2eeed668c66c5963e33ee9c5030eb7896642cecfe05ab95943722bbde6603d",
+  "flags": [
+    "-std=c++17",
+    "-O3",
+    "-march=native",
+    "-fopenmp",
+    "-Wall",
+    "-Wextra",
+    "-Werror"
+  ],
+  "env": {
+    "OMP_PROC_BIND": "true",
+    "OMP_PLACES": "cores"
+  },
+  "words_per_trial": 8388608,
+  "trials": 11,
+  "worker_counts": [
+    1,
+    4
+  ],
+  "key_expansion": "Repeated recovered SplitMix64, all key words populated before timer; Montmory initialization unchanged",
+  "output": "One requested word per precomputed random index; index array read and result write are timed, index generation is not. Other words of a counter block are not requested.",
+  "machine_note": "AMD EPYC-Milan under KVM, shared VPS; no GPU benchmark",
+  "source_file": "evidence/benchmark-sparse-source.cpp",
+  "scope": "Isolated random-index 64-bit CPU requests; all eight standard Random123 variants included",
+  "runs": [
+    {
+      "csv": "benchmark-sparse-native.csv",
+      "flags": [
+        "-std=c++17",
+        "-O3",
+        "-march=native",
+        "-fopenmp",
+        "-Wall",
+        "-Wextra",
+        "-Werror"
+      ]
+    },
+    {
+      "csv": "benchmark-sparse-portable.csv",
+      "flags": [
+        "-std=c++17",
+        "-O3",
+        "-fopenmp",
+        "-Wall",
+        "-Wextra",
+        "-Werror"
+      ]
+    }
+  ]
+}

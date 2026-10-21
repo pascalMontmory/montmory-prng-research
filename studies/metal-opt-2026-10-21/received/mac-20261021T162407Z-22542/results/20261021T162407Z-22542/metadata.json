@@ -1,0 +1,85 @@
+{
+  "device" : "Apple M3",
+  "os" : "Version 15.7.9 (Build 24G830)",
+  "fully_compared_words" : 43184553984,
+  "search_trials" : 7,
+  "draws_per_lane" : 4096,
+  "confirmation_trials" : 5,
+  "logical_lanes" : 2048,
+  "timing" : "GPU generation+writes; CPU comparison and reference excluded; host dispatch+wait also recorded",
+  "words" : 8388608,
+  "thermal" : [
+    {
+      "phase" : "search",
+      "trial" : 0,
+      "end" : 0,
+      "start" : 0
+    },
+    {
+      "phase" : "search",
+      "trial" : 1,
+      "end" : 0,
+      "start" : 0
+    },
+    {
+      "phase" : "search",
+      "trial" : 2,
+      "end" : 0,
+      "start" : 0
+    },
+    {
+      "phase" : "search",
+      "trial" : 3,
+      "end" : 0,
+      "start" : 0
+    },
+    {
+      "phase" : "search",
+      "trial" : 4,
+      "end" : 0,
+      "start" : 0
+    },
+    {
+      "phase" : "search",
+      "trial" : 5,
+      "end" : 0,
+      "start" : 0
+    },
+    {
+      "phase" : "search",
+      "trial" : 6,
+      "end" : 0,
+      "start" : 0
+    },
+    {
+      "phase" : "confirmation",
+      "trial" : 0,
+      "end" : 0,
+      "start" : 0
+    },
+    {
+      "phase" : "confirmation",
+      "trial" : 1,
+      "end" : 0,
+      "start" : 0
+    },
+    {
+      "phase" : "confirmation",
+      "trial" : 2,
+      "end" : 0,
+      "start" : 0
+    },
+    {
+      "phase" : "confirmation",
+      "trial" : 3,
+      "end" : 0,
+      "start" : 0
+    },
+    {
+      "phase" : "confirmation",
+      "trial" : 4,
+      "end" : 0,
+      "start" : 0
+    }
+  ]
+}

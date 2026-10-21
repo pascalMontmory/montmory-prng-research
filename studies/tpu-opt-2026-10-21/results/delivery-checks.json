@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "smoke_samples_recomputed": 222,
+  "smoke_summary_rows_recomputed": 9,
+  "frozen_selection_verified": true,
+  "adoption_rule_verified": true,
+  "notebook_code_cells_checked": 4,
+  "notebook_embedded_manifest_files_checked": 22,
+  "no_tpu_guard": "expected_failure_with_archive"
+}

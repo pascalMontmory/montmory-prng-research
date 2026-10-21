@@ -1,0 +1,59 @@
+{
+  "status": "pass",
+  "date": "2026-10-21",
+  "source_revision": "4d8a1a9316f6672d32949e8a4d7022006433fdcf",
+  "scope": "Local checks of the public scientific edition; no native GPU/TPU benchmark rerun",
+  "checks": {
+    "integrity": {
+      "status": "pass",
+      "imported_files": 884,
+      "curated_local_links": 488,
+      "evidence_records": 14,
+      "intact_json_kit_manifests": 3,
+      "intact_text_kit_manifests": 9,
+      "tpu_raw_rows": 3708,
+      "tpu_summary_rows": 44,
+      "scope": "integrity and documented data consistency; no new native execution"
+    },
+    "translations": {
+      "status": "pass",
+      "language_pairs": 23,
+      "files_checked": 46,
+      "local_links": 528,
+      "heading_links": 8,
+      "notebook_pairs": 2,
+      "identical_executable_cells": 8,
+      "private_legal_pairs": 0,
+      "frozen_references": 4,
+      "scope": "reading editions, hashes, links and notebook equivalence; no linguistic certification, native run or statistical test"
+    },
+    "reference": {
+      "status": "pass",
+      "scope": "CPU reference and exact integer certificates; no GPU/TPU or statistical battery",
+      "c_and_python_golden_vectors": 1600,
+      "ubsan": true,
+      "golden_sha256": "ca5b2731b89fea75c78585350c3263f11fc2695a6126251288b287ac94acdecf",
+      "noninjective_preimages_of_7": 4,
+      "mantissa_zero_exact_preimage_count": 2066,
+      "lane_same_state_at_2_to_63": true,
+      "logical_geometry_changes_stream": true,
+      "compiler": "cc (Debian 12.2.0-14+deb12u1) 12.2.0"
+    },
+    "publication_scan": {
+      "status": "pass",
+      "files": 948,
+      "archive_members": 359,
+      "unique_archives": 5,
+      "embedded_notebook_archives": 4,
+      "hits": [],
+      "scope": "filename and credential-pattern scan including ZIP/TAR and notebook embedded kits; no private Git history copied"
+    },
+    "tpu_reanalysis": {
+      "status": "pass",
+      "audit": "tpu",
+      "hardware_rebenchmarked": false,
+      "frozen_imports_unchanged": true,
+      "python": "3.11.2"
+    }
+  }
+}

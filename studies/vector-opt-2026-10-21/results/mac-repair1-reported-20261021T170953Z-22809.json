@@ -1,0 +1,194 @@
+{
+  "source": "user terminal transcript; rounded values; raw archive not received",
+  "run": "20261021T170953Z-22809",
+  "device": "Apple M3",
+  "native_build": "reported pass",
+  "CPU_verifier": {
+    "status": "reported pass",
+    "range_words": 7353208,
+    "component_checks": 120000,
+    "historical_words": 50331648,
+    "partitioned_words": 655445,
+    "pooled_words": 1918268
+  },
+  "GPU_conformance": {
+    "status": "reported pass",
+    "bulk_words": 8540160,
+    "reduction_words": 4004592,
+    "official_CPU_KATs": 6,
+    "official_GPU_KATs": 6
+  },
+  "geometry": {
+    "logical_lanes": 2048,
+    "draws_per_lane": 4096,
+    "words": 8388608,
+    "base": 0
+  },
+  "search_seeds": 5,
+  "confirmation_seeds": 7,
+  "timings_per_confirmation_seed_per_configuration": 15,
+  "results": [
+    {
+      "engine": "threefry2x32_20",
+      "format": "raw64",
+      "physical_threads": 65536,
+      "threadgroup": 64,
+      "GB_per_second": 92.5,
+      "median_paired_ratio_vs_v3": 1.09,
+      "seeds_faster_than_v3": 7,
+      "confirmation_seeds": 7
+    },
+    {
+      "engine": "threefry2x32_20",
+      "format": "mantissa53",
+      "physical_threads": 131072,
+      "threadgroup": 64,
+      "GB_per_second": 92.405,
+      "median_paired_ratio_vs_v3": 1.09,
+      "seeds_faster_than_v3": 7,
+      "confirmation_seeds": 7
+    },
+    {
+      "engine": "philox4x32_10",
+      "format": "raw64",
+      "physical_threads": 262144,
+      "threadgroup": 256,
+      "GB_per_second": 89.048,
+      "median_paired_ratio_vs_v3": 1.05,
+      "seeds_faster_than_v3": 7,
+      "confirmation_seeds": 7
+    },
+    {
+      "engine": "philox4x32_10",
+      "format": "mantissa53",
+      "physical_threads": 262144,
+      "threadgroup": 64,
+      "GB_per_second": 89.073,
+      "median_paired_ratio_vs_v3": 1.051,
+      "seeds_faster_than_v3": 7,
+      "confirmation_seeds": 7
+    },
+    {
+      "engine": "write_baseline_NOT_PRNG",
+      "format": "raw64",
+      "physical_threads": 8192,
+      "threadgroup": 128,
+      "GB_per_second": 96.369,
+      "median_paired_ratio_vs_v3": 1.137,
+      "seeds_faster_than_v3": 7,
+      "confirmation_seeds": 7
+    },
+    {
+      "engine": "write_baseline_NOT_PRNG",
+      "format": "mantissa53",
+      "physical_threads": 8192,
+      "threadgroup": 64,
+      "GB_per_second": 96.786,
+      "median_paired_ratio_vs_v3": 1.142,
+      "seeds_faster_than_v3": 7,
+      "confirmation_seeds": 7
+    },
+    {
+      "engine": "montmory_mulhi_pair",
+      "format": "raw64",
+      "physical_threads": 131072,
+      "threadgroup": 256,
+      "GB_per_second": 84.782,
+      "median_paired_ratio_vs_v3": 1.0,
+      "seeds_faster_than_v3": 0,
+      "confirmation_seeds": 7
+    },
+    {
+      "engine": "montmory_mulhi_pair",
+      "format": "mantissa53",
+      "physical_threads": 131072,
+      "threadgroup": 256,
+      "GB_per_second": 84.787,
+      "median_paired_ratio_vs_v3": 1.0,
+      "seeds_faster_than_v3": 0,
+      "confirmation_seeds": 7
+    },
+    {
+      "engine": "montmory_split_stripe_pair",
+      "format": "raw64",
+      "physical_threads": 262144,
+      "threadgroup": 64,
+      "GB_per_second": 85.218,
+      "median_paired_ratio_vs_v3": 1.004,
+      "seeds_faster_than_v3": 7,
+      "confirmation_seeds": 7
+    },
+    {
+      "engine": "montmory_split_stripe_pair",
+      "format": "mantissa53",
+      "physical_threads": 131072,
+      "threadgroup": 128,
+      "GB_per_second": 85.177,
+      "median_paired_ratio_vs_v3": 1.004,
+      "seeds_faster_than_v3": 7,
+      "confirmation_seeds": 7
+    },
+    {
+      "engine": "montmory_vector4",
+      "format": "raw64",
+      "physical_threads": 131072,
+      "threadgroup": 256,
+      "GB_per_second": 76.576,
+      "median_paired_ratio_vs_v3": 0.904,
+      "seeds_faster_than_v3": 0,
+      "confirmation_seeds": 7
+    },
+    {
+      "engine": "montmory_vector4",
+      "format": "mantissa53",
+      "physical_threads": 131072,
+      "threadgroup": 128,
+      "GB_per_second": 76.608,
+      "median_paired_ratio_vs_v3": 0.904,
+      "seeds_faster_than_v3": 0,
+      "confirmation_seeds": 7
+    },
+    {
+      "engine": "montmory_vector4_striped",
+      "format": "raw64",
+      "physical_threads": 131072,
+      "threadgroup": 64,
+      "GB_per_second": 76.729,
+      "median_paired_ratio_vs_v3": 0.905,
+      "seeds_faster_than_v3": 0,
+      "confirmation_seeds": 7
+    },
+    {
+      "engine": "montmory_vector4_striped",
+      "format": "mantissa53",
+      "physical_threads": 131072,
+      "threadgroup": 256,
+      "GB_per_second": 76.736,
+      "median_paired_ratio_vs_v3": 0.905,
+      "seeds_faster_than_v3": 0,
+      "confirmation_seeds": 7
+    }
+  ],
+  "derived": {
+    "raw64": {
+      "philox_throughput_advantage_over_split_pct": 4.494355652561666,
+      "threefry_throughput_advantage_over_split_pct": 8.54514304489662,
+      "split_ratio_of_median_throughputs_vs_v3": 1.0051426010238023,
+      "note": "Computed from rounded aggregate throughput figures, not paired per-seed ratios or significance tests."
+    },
+    "mantissa53": {
+      "philox_throughput_advantage_over_split_pct": 4.574004719583913,
+      "threefry_throughput_advantage_over_split_pct": 8.485858858612062,
+      "split_ratio_of_median_throughputs_vs_v3": 1.0045997617559295,
+      "note": "Computed from rounded aggregate throughput figures, not paired per-seed ratios or significance tests."
+    }
+  },
+  "decisions": {
+    "GPU": "Keep split_stripe_pair as the measured Montmory candidate for these bulk workloads; vector4 variants not retained for performance",
+    "CPU": "Retain reusable workers for small blocks based on separate native confirmation; no general SIMD speedup established",
+    "quality": "Every reported timed output identical to its reference; no new TestU01 or TACM campaign",
+    "claims": "No demonstrated speed advantage over Philox/Threefry on this M3; no optimum guarantee"
+  },
+  "archive_on_mac": "/Users/enincaconsulting/Downloads/montmory-vector-m3/montmory-vector-repair1-results-20261021T170953Z-22809.tar.gz",
+  "archive_received": false
+}

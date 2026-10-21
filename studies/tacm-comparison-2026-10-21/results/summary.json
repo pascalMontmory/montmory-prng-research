@@ -1,0 +1,22 @@
+{
+  "status": "complete",
+  "functional_words": 1342177280,
+  "functional_estimates": 122880,
+  "seeds_per_engine": 2048,
+  "primary_comparisons": 54,
+  "advantages": 0,
+  "diagnostic_comparisons": 93,
+  "diagnostic_flags": 0,
+  "duplicate_selected_lane_prefixes": 0,
+  "normalized_MSE_min": 0.9499962739270142,
+  "normalized_MSE_max": 1.0786070972970492,
+  "calibration_pilot_gate_pass": false,
+  "calibration_extension_gate_pass": true,
+  "analysis_sha256": "6d4ef44294aa62d62b977cbce022daad16431c34fa21ceb2e0253fbf7c342262",
+  "limitations": [
+    "t tests, ratio intervals, variance PIT and Pearson calibrations are approximate",
+    "no observed advantage does not prove equivalence or rule out other workloads",
+    "seed separation is deterministic and not a mathematical independence guarantee",
+    "initial calibration gate failure and independent extension must both be reported"
+  ]
+}

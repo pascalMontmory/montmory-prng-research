@@ -1,0 +1,43 @@
+Provenance : extraits du terminal Apple M3 colles par l'utilisateur le 21 octobre 2026.
+Lancement avec testu01-repair-v1/run.sh montmory_mulhi_pair all.
+Identifiant de cette execution et archive brute non encore recus.
+Les blocs intermediaires sont omis ; les quinze lignes de p-value sont conservees dans leur ordre.
+
+Chaque batterie repart de la seed 42. Crush et BigCrush peuvent durer longtemps.
+Verification seed 0...
+Verification seed 1...
+Verification seed 42...
+Verification seed 18446744073709551615...
+Conformite PASS: 4835328 mots, 4004592 reductions; 6 vecteurs officiels CPU et GPU.
+Native Metal TestU01: montmory_mulhi_pair battery=small seed=42 lanes=2048 draws=4096
+
+p-value of test                       :    0.53
+p-value of test                       :    0.66
+p-value of test                       :    0.30
+p-value of test                       :    0.06
+p-value of test                       :    0.44
+p-value of test                       :    0.19
+p-value of test                       :    0.97
+p-value of test                       :    0.20
+p-value of test                       :    0.84
+p-value of test                       :    0.62
+p-value of test                       :    0.25
+p-value of test                       :    0.43
+p-value of test                       :    0.64
+p-value of test                       :    0.37
+p-value of test                       :    0.45
+
+========= Summary results of SmallCrush =========
+
+ Version:          TestU01 1.2.3
+ Generator:        Montmory v3 native Metal montmory_mulhi_pair
+ Number of statistics:  15
+ Total CPU time:   00:00:04.74
+
+ All tests were passed
+
+Verification seed 0...
+Verification seed 1...
+Verification seed 42...
+Verification seed 18446744073709551615...
+Conformite PASS: 4835328 mots, 4004592 reductions; 6 vecteurs officiels CPU et GPU.

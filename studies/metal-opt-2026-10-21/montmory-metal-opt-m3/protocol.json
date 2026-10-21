@@ -1,0 +1,78 @@
+{
+  "kit": "montmory-metal-opt-m3-v1",
+  "date": "2026-10-21",
+  "words": 8388608,
+  "logical_lanes": 2048,
+  "draws_per_lane": 4096,
+  "base": 0,
+  "formats": [
+    "raw64",
+    "mantissa53"
+  ],
+  "engines": [
+    10,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    1,
+    2,
+    7
+  ],
+  "engine_names": {
+    "10": "montmory_mulhi_pair",
+    "13": "montmory_mulhi_quad",
+    "14": "montmory_stripe_pair",
+    "15": "montmory_stripe_quad",
+    "16": "montmory_const_pair",
+    "17": "montmory_const_stripe_pair",
+    "18": "montmory_split_stripe_pair",
+    "19": "montmory_const_stripe_quad",
+    "1": "threefry2x32_20",
+    "2": "philox4x32_10",
+    "7": "write_baseline_NOT_PRNG"
+  },
+  "workers": [
+    8192,
+    32768,
+    65536,
+    131072
+  ],
+  "groups": [
+    64,
+    128,
+    256,
+    512
+  ],
+  "search_trials": 7,
+  "confirmation_trials": 5,
+  "seed_rule": "search: 42 then splitmix64(trial); confirmation: splitmix64(1000+trial)",
+  "selection": "best median configuration per engine and format on search only; compare frozen choices on five fresh seeds",
+  "validation": "original C / official Random123; full comparison of every timed output, poisoned buffers on first warm-up; UBSan translation on Linux; native Metal validation on Mac",
+  "claim": "experimental equivalent implementations; no speedup claimed until measured on M3",
+  "cpu": {
+    "logical_lanes": 2048,
+    "draws_per_lane": 4096,
+    "format": "raw64",
+    "engines": [
+      "indexed",
+      "incremental",
+      "incremental_pair",
+      "incremental_quad"
+    ],
+    "workers": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "worker_limit": "reported hardware_concurrency",
+    "trials": 9,
+    "timing": "std::thread creation, generation, writes and join; no affinity requested; comparisons excluded",
+    "selection": "descriptive only, no automatic CPU implementation selection"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "repair": "vector-repair1",
+  "parent_kit_sha256": "4fc3984b80471f8ce76c76babbe3080815d348d82f0660267a4cba6f4c75d993",
+  "changed": [
+    "Objective-C++ mutable dictionary type explicitly declared",
+    "Test-generator argument draws sequenced for reproducible test cases"
+  ],
+  "unchanged": [
+    "Recovered C core",
+    "CPU optimized implementations",
+    "All Metal kernels",
+    "Benchmark seeds and geometry",
+    "Measurement, selection, and confirmation protocol"
+  ],
+  "host_original_sha256": "1d69be363881443a57b90926cac5e73ed70e7c69d9a2732e1d399d5c6c7a8f7f",
+  "host_repaired_sha256": "4495d352213c57276cfcf0a20b51fea71dc79aa5bd05b42e73dd271830c6cf6b",
+  "metal_sha256": "de85db0b0496e491506d37df3f382ca5c501d35cf6bc8854e9cc2b7cf8e77238",
+  "portable_corrected_verifier": {
+    "status": "pass",
+    "range_words": 7353208,
+    "component_checks": 120000,
+    "historical_words": 50331648,
+    "partitioned_words": 655445,
+    "pooled_words": 1918268
+  },
+  "native_metal": "pending",
+  "prior_user_run": "20261021T170347Z-22732"
+}

@@ -1,0 +1,3307 @@
+{
+  "selected" : [
+    {
+      "physical_threads" : 131072,
+      "threadgroup" : 128,
+      "engine" : "threefry2x32_20",
+      "format" : "raw64"
+    },
+    {
+      "physical_threads" : 65536,
+      "threadgroup" : 64,
+      "engine" : "threefry2x32_20",
+      "format" : "mantissa53"
+    },
+    {
+      "physical_threads" : 131072,
+      "threadgroup" : 64,
+      "engine" : "philox4x32_10",
+      "format" : "raw64"
+    },
+    {
+      "physical_threads" : 131072,
+      "threadgroup" : 128,
+      "engine" : "philox4x32_10",
+      "format" : "mantissa53"
+    },
+    {
+      "physical_threads" : 8192,
+      "threadgroup" : 256,
+      "engine" : "write_baseline_NOT_PRNG",
+      "format" : "raw64"
+    },
+    {
+      "physical_threads" : 8192,
+      "threadgroup" : 128,
+      "engine" : "write_baseline_NOT_PRNG",
+      "format" : "mantissa53"
+    },
+    {
+      "physical_threads" : 131072,
+      "threadgroup" : 64,
+      "engine" : "montmory_mulhi_pair",
+      "format" : "raw64"
+    },
+    {
+      "physical_threads" : 131072,
+      "threadgroup" : 64,
+      "engine" : "montmory_mulhi_pair",
+      "format" : "mantissa53"
+    },
+    {
+      "physical_threads" : 131072,
+      "threadgroup" : 512,
+      "engine" : "montmory_mulhi_quad",
+      "format" : "raw64"
+    },
+    {
+      "physical_threads" : 131072,
+      "threadgroup" : 512,
+      "engine" : "montmory_mulhi_quad",
+      "format" : "mantissa53"
+    },
+    {
+      "physical_threads" : 131072,
+      "threadgroup" : 64,
+      "engine" : "montmory_stripe_pair",
+      "format" : "raw64"
+    },
+    {
+      "physical_threads" : 131072,
+      "threadgroup" : 256,
+      "engine" : "montmory_stripe_pair",
+      "format" : "mantissa53"
+    },
+    {
+      "physical_threads" : 131072,
+      "threadgroup" : 256,
+      "engine" : "montmory_stripe_quad",
+      "format" : "raw64"
+    },
+    {
+      "physical_threads" : 131072,
+      "threadgroup" : 256,
+      "engine" : "montmory_stripe_quad",
+      "format" : "mantissa53"
+    },
+    {
+      "physical_threads" : 131072,
+      "threadgroup" : 64,
+      "engine" : "montmory_const_pair",
+      "format" : "raw64"
+    },
+    {
+      "physical_threads" : 131072,
+      "threadgroup" : 128,
+      "engine" : "montmory_const_pair",
+      "format" : "mantissa53"
+    },
+    {
+      "physical_threads" : 131072,
+      "threadgroup" : 128,
+      "engine" : "montmory_const_stripe_pair",
+      "format" : "raw64"
+    },
+    {
+      "physical_threads" : 131072,
+      "threadgroup" : 128,
+      "engine" : "montmory_const_stripe_pair",
+      "format" : "mantissa53"
+    },
+    {
+      "physical_threads" : 131072,
+      "threadgroup" : 256,
+      "engine" : "montmory_split_stripe_pair",
+      "format" : "raw64"
+    },
+    {
+      "physical_threads" : 131072,
+      "threadgroup" : 512,
+      "engine" : "montmory_split_stripe_pair",
+      "format" : "mantissa53"
+    },
+    {
+      "physical_threads" : 131072,
+      "threadgroup" : 256,
+      "engine" : "montmory_const_stripe_quad",
+      "format" : "raw64"
+    },
+    {
+      "physical_threads" : 131072,
+      "threadgroup" : 64,
+      "engine" : "montmory_const_stripe_quad",
+      "format" : "mantissa53"
+    }
+  ],
+  "search" : [
+    {
+      "engine" : "threefry2x32_20",
+      "q10_ns_per_word" : 0.08968314979540537,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.090840446276274633,
+      "physical_threads" : 8192,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.08992850908384753
+    },
+    {
+      "engine" : "threefry2x32_20",
+      "q10_ns_per_word" : 0.090624896476043659,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.093966701086856119,
+      "physical_threads" : 8192,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.091642138322356459
+    },
+    {
+      "engine" : "threefry2x32_20",
+      "q10_ns_per_word" : 0.08977256715780868,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.090807683594817945,
+      "physical_threads" : 8192,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.090474849834265569
+    },
+    {
+      "engine" : "threefry2x32_20",
+      "q10_ns_per_word" : 0.089820229032255838,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.093107410670256741,
+      "physical_threads" : 8192,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.090509655326087568
+    },
+    {
+      "engine" : "threefry2x32_20",
+      "q10_ns_per_word" : 0.090250384943146855,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.09212192120244822,
+      "physical_threads" : 8192,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.091433527416029392
+    },
+    {
+      "engine" : "threefry2x32_20",
+      "q10_ns_per_word" : 0.090461960144949671,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.094966101649163193,
+      "physical_threads" : 8192,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.091552765368874134
+    },
+    {
+      "engine" : "threefry2x32_20",
+      "q10_ns_per_word" : 0.089594731633724223,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.095749874695627568,
+      "physical_threads" : 8192,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.090325857904360873
+    },
+    {
+      "engine" : "threefry2x32_20",
+      "q10_ns_per_word" : 0.089863938512735331,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.091022256398787249,
+      "physical_threads" : 8192,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.090246421446948943
+    },
+    {
+      "engine" : "threefry2x32_20",
+      "q10_ns_per_word" : 0.083696827246626526,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.0850528314444432,
+      "physical_threads" : 32768,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.084191542626399496
+    },
+    {
+      "engine" : "threefry2x32_20",
+      "q10_ns_per_word" : 0.084041529291312145,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.093179930438225256,
+      "physical_threads" : 32768,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.085905227376059656
+    },
+    {
+      "engine" : "threefry2x32_20",
+      "q10_ns_per_word" : 0.085208828881633281,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.087699303374932924,
+      "physical_threads" : 32768,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.085711493458262566
+    },
+    {
+      "engine" : "threefry2x32_20",
+      "q10_ns_per_word" : 0.08389454686508202,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.09181996274421067,
+      "physical_threads" : 32768,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.085011109263177786
+    },
+    {
+      "engine" : "threefry2x32_20",
+      "q10_ns_per_word" : 0.085818774309132095,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.086532048193532773,
+      "physical_threads" : 32768,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.085979723341012004
+    },
+    {
+      "engine" : "threefry2x32_20",
+      "q10_ns_per_word" : 0.08626878100770341,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.092319651923133961,
+      "physical_threads" : 32768,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.087921836477988791
+    },
+    {
+      "engine" : "threefry2x32_20",
+      "q10_ns_per_word" : 0.085762152934876212,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.086599594162350968,
+      "physical_threads" : 32768,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.086252893716221024
+    },
+    {
+      "engine" : "threefry2x32_20",
+      "q10_ns_per_word" : 0.085174023389811282,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.08834301068461059,
+      "physical_threads" : 32768,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.085820739403885682
+    },
+    {
+      "engine" : "threefry2x32_20",
+      "q10_ns_per_word" : 0.08343756796591606,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.088902307737726005,
+      "physical_threads" : 65536,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.084251161602821867
+    },
+    {
+      "engine" : "threefry2x32_20",
+      "q10_ns_per_word" : 0.082414319813040038,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.088056939517855426,
+      "physical_threads" : 65536,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.082820639235592353
+    },
+    {
+      "engine" : "threefry2x32_20",
+      "q10_ns_per_word" : 0.082695461589565866,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.084570039859954704,
+      "physical_threads" : 65536,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.082800766243451562
+    },
+    {
+      "engine" : "threefry2x32_20",
+      "q10_ns_per_word" : 0.083066020728495005,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.085867435384301416,
+      "physical_threads" : 65536,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.083521023430677133
+    },
+    {
+      "engine" : "threefry2x32_20",
+      "q10_ns_per_word" : 0.084337625771979674,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.090167917576877699,
+      "physical_threads" : 65536,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.08511541471634132
+    },
+    {
+      "engine" : "threefry2x32_20",
+      "q10_ns_per_word" : 0.084512430387206905,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.088090701400034277,
+      "physical_threads" : 65536,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.085234652669186062
+    },
+    {
+      "engine" : "threefry2x32_20",
+      "q10_ns_per_word" : 0.085119400416999724,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.091770269161628448,
+      "physical_threads" : 65536,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.086297635704113418
+    },
+    {
+      "engine" : "threefry2x32_20",
+      "q10_ns_per_word" : 0.084647544529303786,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.085934970250889364,
+      "physical_threads" : 65536,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.085368712099409549
+    },
+    {
+      "engine" : "threefry2x32_20",
+      "q10_ns_per_word" : 0.082263351686151509,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.083311380016937164,
+      "physical_threads" : 131072,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.082587214844664913
+    },
+    {
+      "engine" : "threefry2x32_20",
+      "q10_ns_per_word" : 0.082812734447657022,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.085498919055737588,
+      "physical_threads" : 131072,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.083759443825215385
+    },
+    {
+      "engine" : "threefry2x32_20",
+      "q10_ns_per_word" : 0.08220574221340371,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.086942297805592261,
+      "physical_threads" : 131072,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.082492790376420544
+    },
+    {
+      "engine" : "threefry2x32_20",
+      "q10_ns_per_word" : 0.082249440591652956,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.085504880953379825,
+      "physical_threads" : 131072,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.083819007290486525
+    },
+    {
+      "engine" : "threefry2x32_20",
+      "q10_ns_per_word" : 0.083747520029930911,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.084814455458825933,
+      "physical_threads" : 131072,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.084524331978030887
+    },
+    {
+      "engine" : "threefry2x32_20",
+      "q10_ns_per_word" : 0.084087259377696455,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.11851191139555797,
+      "physical_threads" : 131072,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.08591510836097882
+    },
+    {
+      "engine" : "threefry2x32_20",
+      "q10_ns_per_word" : 0.083544859919015835,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.08709628573910777,
+      "physical_threads" : 131072,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.084564077962312467
+    },
+    {
+      "engine" : "threefry2x32_20",
+      "q10_ns_per_word" : 0.083887585766717621,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.085601203902996303,
+      "physical_threads" : 131072,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.084608819950204861
+    },
+    {
+      "engine" : "philox4x32_10",
+      "q10_ns_per_word" : 0.09139479173470022,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.092241203564213947,
+      "physical_threads" : 8192,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.091845808736223944
+    },
+    {
+      "engine" : "philox4x32_10",
+      "q10_ns_per_word" : 0.091714658090324974,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.092512353333518149,
+      "physical_threads" : 8192,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.092128915607503359
+    },
+    {
+      "engine" : "philox4x32_10",
+      "q10_ns_per_word" : 0.091078877773043132,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.092467677959007233,
+      "physical_threads" : 8192,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.091403717927818207
+    },
+    {
+      "engine" : "philox4x32_10",
+      "q10_ns_per_word" : 0.090919927142607548,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.092193463974155065,
+      "physical_threads" : 8192,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.091716634287308807
+    },
+    {
+      "engine" : "philox4x32_10",
+      "q10_ns_per_word" : 0.091388818734827737,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.11491679829944702,
+      "physical_threads" : 8192,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.09218853458392573
+    },
+    {
+      "engine" : "philox4x32_10",
+      "q10_ns_per_word" : 0.090846430378377363,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.096115493342097125,
+      "physical_threads" : 8192,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.092059360135010593
+    },
+    {
+      "engine" : "philox4x32_10",
+      "q10_ns_per_word" : 0.090894103355054767,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.094041241460729452,
+      "physical_threads" : 8192,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.091592511353155714
+    },
+    {
+      "engine" : "philox4x32_10",
+      "q10_ns_per_word" : 0.091342156061102742,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.094223029378781575,
+      "physical_threads" : 8192,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.092784557814695745
+    },
+    {
+      "engine" : "philox4x32_10",
+      "q10_ns_per_word" : 0.089789442547782983,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.090013929643362189,
+      "physical_threads" : 32768,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.089978191564199506
+    },
+    {
+      "engine" : "philox4x32_10",
+      "q10_ns_per_word" : 0.089983132056659088,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.090253349238622604,
+      "physical_threads" : 32768,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.090017882037329855
+    },
+    {
+      "engine" : "philox4x32_10",
+      "q10_ns_per_word" : 0.089684137893897287,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.090127194596334448,
+      "physical_threads" : 32768,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.090092433513433434
+    },
+    {
+      "engine" : "philox4x32_10",
+      "q10_ns_per_word" : 0.089937435276965516,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.092629581782688319,
+      "physical_threads" : 32768,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.090047747036692272
+    },
+    {
+      "engine" : "philox4x32_10",
+      "q10_ns_per_word" : 0.089928486879387037,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.093547491974987906,
+      "physical_threads" : 32768,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.090107310501963411
+    },
+    {
+      "engine" : "philox4x32_10",
+      "q10_ns_per_word" : 0.090128149388135625,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.090573237798707851,
+      "physical_threads" : 32768,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.0901619889859262
+    },
+    {
+      "engine" : "philox4x32_10",
+      "q10_ns_per_word" : 0.089853979812204443,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.090188778667510405,
+      "physical_threads" : 32768,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.090017882037329855
+    },
+    {
+      "engine" : "philox4x32_10",
+      "q10_ns_per_word" : 0.089469565089927983,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.092458729561428754,
+      "physical_threads" : 32768,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.090037810540621876
+    },
+    {
+      "engine" : "philox4x32_10",
+      "q10_ns_per_word" : 0.089260954183600916,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.089672225200843059,
+      "physical_threads" : 65536,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.089615592724356929
+    },
+    {
+      "engine" : "philox4x32_10",
+      "q10_ns_per_word" : 0.089303664463358245,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.091886542818997441,
+      "physical_threads" : 65536,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.089863949614965577
+    },
+    {
+      "engine" : "philox4x32_10",
+      "q10_ns_per_word" : 0.08964340381112379,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.089740770370383416,
+      "physical_threads" : 65536,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.089660279201098092
+    },
+    {
+      "engine" : "philox4x32_10",
+      "q10_ns_per_word" : 0.08940695961356937,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.090205665159714954,
+      "physical_threads" : 65536,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.089680152193238882
+    },
+    {
+      "engine" : "philox4x32_10",
+      "q10_ns_per_word" : 0.089328455743498125,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.090208651659651196,
+      "physical_threads" : 65536,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.0896752117007793
+    },
+    {
+      "engine" : "philox4x32_10",
+      "q10_ns_per_word" : 0.089135765435344183,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.091290464077076194,
+      "physical_threads" : 65536,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.089650342705027697
+    },
+    {
+      "engine" : "philox4x32_10",
+      "q10_ns_per_word" : 0.089603680031302702,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.091642149424586705,
+      "physical_threads" : 65536,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.089719842666369232
+    },
+    {
+      "engine" : "philox4x32_10",
+      "q10_ns_per_word" : 0.08950333807433708,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.089731833075035183,
+      "physical_threads" : 65536,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.08963546571649772
+    },
+    {
+      "engine" : "philox4x32_10",
+      "q10_ns_per_word" : 0.089061258368161589,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.08954210706235699,
+      "physical_threads" : 131072,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.089436735795089817
+    },
+    {
+      "engine" : "philox4x32_10",
+      "q10_ns_per_word" : 0.089338414444029013,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.090297069821332343,
+      "physical_threads" : 131072,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.089511287271193396
+    },
+    {
+      "engine" : "philox4x32_10",
+      "q10_ns_per_word" : 0.089446694495620704,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.19879144996792783,
+      "physical_threads" : 131072,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.089600715735826952
+    },
+    {
+      "engine" : "philox4x32_10",
+      "q10_ns_per_word" : 0.089445706397128788,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.089553009452458809,
+      "physical_threads" : 131072,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.089506291267582583
+    },
+    {
+      "engine" : "philox4x32_10",
+      "q10_ns_per_word" : 0.089363261235320124,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.19296407804958457,
+      "physical_threads" : 131072,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.089481477782982211
+    },
+    {
+      "engine" : "philox4x32_10",
+      "q10_ns_per_word" : 0.089249996282347865,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.090432128452277993,
+      "physical_threads" : 131072,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.089595664221064908
+    },
+    {
+      "engine" : "philox4x32_10",
+      "q10_ns_per_word" : 0.089432794503352397,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.091327212459191287,
+      "physical_threads" : 131072,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.089501350775123001
+    },
+    {
+      "engine" : "philox4x32_10",
+      "q10_ns_per_word" : 0.089275853376591385,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.089594731633724223,
+      "physical_threads" : 131072,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.089531160263334186
+    },
+    {
+      "engine" : "write_baseline_NOT_PRNG",
+      "q10_ns_per_word" : 0.079582163081681756,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.083860762778442677,
+      "physical_threads" : 8192,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.080426554305290665
+    },
+    {
+      "engine" : "write_baseline_NOT_PRNG",
+      "q10_ns_per_word" : 0.079913931028130492,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.081708062538154991,
+      "physical_threads" : 8192,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.080332185348197527
+    },
+    {
+      "engine" : "write_baseline_NOT_PRNG",
+      "q10_ns_per_word" : 0.079454987034210944,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.083044171539370382,
+      "physical_threads" : 8192,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.080456308282350619
+    },
+    {
+      "engine" : "write_baseline_NOT_PRNG",
+      "q10_ns_per_word" : 0.079482820325438297,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.080856665807260697,
+      "physical_threads" : 8192,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.079825479559758605
+    },
+    {
+      "engine" : "write_baseline_NOT_PRNG",
+      "q10_ns_per_word" : 0.079756956594678741,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.081654383254914364,
+      "physical_threads" : 8192,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.080247752887174784
+    },
+    {
+      "engine" : "write_baseline_NOT_PRNG",
+      "q10_ns_per_word" : 0.079535455999035776,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.085950879746832243,
+      "physical_threads" : 8192,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.080664919188677686
+    },
+    {
+      "engine" : "write_baseline_NOT_PRNG",
+      "q10_ns_per_word" : 0.081591811085246491,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.088015217336590013,
+      "physical_threads" : 8192,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.081906703641720924
+    },
+    {
+      "engine" : "write_baseline_NOT_PRNG",
+      "q10_ns_per_word" : 0.080820916625867767,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.083887563562257128,
+      "physical_threads" : 8192,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.081310624899799677
+    },
+    {
+      "engine" : "write_baseline_NOT_PRNG",
+      "q10_ns_per_word" : 0.079992434898201736,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.083273654638560402,
+      "physical_threads" : 32768,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.081082196512483051
+    },
+    {
+      "engine" : "write_baseline_NOT_PRNG",
+      "q10_ns_per_word" : 0.080212936293122539,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.085904194868646755,
+      "physical_threads" : 32768,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.080510986766313408
+    },
+    {
+      "engine" : "write_baseline_NOT_PRNG",
+      "q10_ns_per_word" : 0.080261619572752352,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.085087625834034952,
+      "physical_threads" : 32768,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.08070966117657008
+    },
+    {
+      "engine" : "write_baseline_NOT_PRNG",
+      "q10_ns_per_word" : 0.080260664780951174,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.083849827081650119,
+      "physical_threads" : 32768,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.080734474661170452
+    },
+    {
+      "engine" : "write_baseline_NOT_PRNG",
+      "q10_ns_per_word" : 0.080802076141139878,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.082215623198322874,
+      "physical_threads" : 32768,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.081812334684627785
+    },
+    {
+      "engine" : "write_baseline_NOT_PRNG",
+      "q10_ns_per_word" : 0.081049400524335624,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.081990159106481997,
+      "physical_threads" : 32768,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.081598727774689905
+    },
+    {
+      "engine" : "write_baseline_NOT_PRNG",
+      "q10_ns_per_word" : 0.080419582104696019,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.081964313114468723,
+      "physical_threads" : 32768,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.081121942496764632
+    },
+    {
+      "engine" : "write_baseline_NOT_PRNG",
+      "q10_ns_per_word" : 0.08066597390055108,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.084237239406093067,
+      "physical_threads" : 32768,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.081151751984975817
+    },
+    {
+      "engine" : "write_baseline_NOT_PRNG",
+      "q10_ns_per_word" : 0.080558648640760566,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.081280848718279231,
+      "physical_threads" : 65536,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.080987827555389913
+    },
+    {
+      "engine" : "write_baseline_NOT_PRNG",
+      "q10_ns_per_word" : 0.080855677708768781,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.081881879054890305,
+      "physical_threads" : 65536,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.08119643846171698
+    },
+    {
+      "engine" : "write_baseline_NOT_PRNG",
+      "q10_ns_per_word" : 0.080242779088024463,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.081725914924390963,
+      "physical_threads" : 65536,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.081434858856255232
+    },
+    {
+      "engine" : "write_baseline_NOT_PRNG",
+      "q10_ns_per_word" : 0.080773254751420609,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.082437223714038055,
+      "physical_threads" : 65536,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.08170308873900467
+    },
+    {
+      "engine" : "write_baseline_NOT_PRNG",
+      "q10_ns_per_word" : 0.081604711876792635,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.085777052127866682,
+      "physical_threads" : 65536,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.082612028329265286
+    },
+    {
+      "engine" : "write_baseline_NOT_PRNG",
+      "q10_ns_per_word" : 0.081015649744387019,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.085249518555485793,
+      "physical_threads" : 65536,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.081429862852644419
+    },
+    {
+      "engine" : "write_baseline_NOT_PRNG",
+      "q10_ns_per_word" : 0.081184514666432506,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.085678686367884893,
+      "physical_threads" : 65536,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.08150935482120758
+    },
+    {
+      "engine" : "write_baseline_NOT_PRNG",
+      "q10_ns_per_word" : 0.081364293080810057,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.084869045124946751,
+      "physical_threads" : 65536,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.08176265220427581
+    },
+    {
+      "engine" : "write_baseline_NOT_PRNG",
+      "q10_ns_per_word" : 0.080745432562423503,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.082430240411213163,
+      "physical_threads" : 131072,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.081330553403091699
+    },
+    {
+      "engine" : "write_baseline_NOT_PRNG",
+      "q10_ns_per_word" : 0.080949058567370002,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.084623719143195331,
+      "physical_threads" : 131072,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.081742779212135019
+    },
+    {
+      "engine" : "write_baseline_NOT_PRNG",
+      "q10_ns_per_word" : 0.080925233181261547,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.081953399622136658,
+      "physical_threads" : 131072,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.081583850786159928
+    },
+    {
+      "engine" : "write_baseline_NOT_PRNG",
+      "q10_ns_per_word" : 0.081180540068004348,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.086973062085604624,
+      "physical_threads" : 131072,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.081822271180698181
+    },
+    {
+      "engine" : "write_baseline_NOT_PRNG",
+      "q10_ns_per_word" : 0.080826867421279758,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.081619599967552858,
+      "physical_threads" : 131072,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.081434858856255232
+    },
+    {
+      "engine" : "write_baseline_NOT_PRNG",
+      "q10_ns_per_word" : 0.081047413225121545,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.082376616639123768,
+      "physical_threads" : 131072,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.0819563861220729
+    },
+    {
+      "engine" : "write_baseline_NOT_PRNG",
+      "q10_ns_per_word" : 0.081618611869060942,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.082620965624613518,
+      "physical_threads" : 131072,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.082060691575236433
+    },
+    {
+      "engine" : "write_baseline_NOT_PRNG",
+      "q10_ns_per_word" : 0.080936146673593612,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.082423301517309255,
+      "physical_threads" : 131072,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.081628592774052322
+    },
+    {
+      "engine" : "montmory_mulhi_pair",
+      "q10_ns_per_word" : 0.10101495195868893,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.10213555556859433,
+      "physical_threads" : 8192,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.10141731898727357
+    },
+    {
+      "engine" : "montmory_mulhi_pair",
+      "q10_ns_per_word" : 0.10110142723007698,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.10176105513792777,
+      "physical_threads" : 8192,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.10149181495222592
+    },
+    {
+      "engine" : "montmory_mulhi_pair",
+      "q10_ns_per_word" : 0.10086593782432374,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.12862980680594663,
+      "physical_threads" : 8192,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.10148687445976634
+    },
+    {
+      "engine" : "montmory_mulhi_pair",
+      "q10_ns_per_word" : 0.10101101066695151,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.10144912687692909,
+      "physical_threads" : 8192,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.1011838390851949
+    },
+    {
+      "engine" : "montmory_mulhi_pair",
+      "q10_ns_per_word" : 0.10126532945520239,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.10211766987566762,
+      "physical_threads" : 8192,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.10132789052264002
+    },
+    {
+      "engine" : "montmory_mulhi_pair",
+      "q10_ns_per_word" : 0.10109444392725209,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.10239186165605929,
+      "physical_threads" : 8192,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.10128320404589886
+    },
+    {
+      "engine" : "montmory_mulhi_pair",
+      "q10_ns_per_word" : 0.10117788828978291,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.10448893972281326,
+      "physical_threads" : 8192,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.1015663664283295
+    },
+    {
+      "engine" : "montmory_mulhi_pair",
+      "q10_ns_per_word" : 0.10127124694392364,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.10341207890007809,
+      "physical_threads" : 8192,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.10169048936248259
+    },
+    {
+      "engine" : "montmory_mulhi_pair",
+      "q10_ns_per_word" : 0.095196595051305621,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.096242602776186459,
+      "physical_threads" : 32768,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.09536743617033494
+    },
+    {
+      "engine" : "montmory_mulhi_pair",
+      "q10_ns_per_word" : 0.095156849067024041,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.096093599744051517,
+      "physical_threads" : 32768,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.09534756317819415
+    },
+    {
+      "engine" : "montmory_mulhi_pair",
+      "q10_ns_per_word" : 0.095107188791132558,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.095847252357117441,
+      "physical_threads" : 32768,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.095377372666405336
+    },
+    {
+      "engine" : "montmory_mulhi_pair",
+      "q10_ns_per_word" : 0.095283980705573867,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.096240637681432872,
+      "physical_threads" : 32768,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.095357499674264545
+    },
+    {
+      "engine" : "montmory_mulhi_pair",
+      "q10_ns_per_word" : 0.095137975275605413,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.095411134548584187,
+      "physical_threads" : 32768,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.095307872705063801
+    },
+    {
+      "engine" : "montmory_mulhi_pair",
+      "q10_ns_per_word" : 0.095202512540026873,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.095381336162603247,
+      "physical_threads" : 32768,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.095253194221101012
+    },
+    {
+      "engine" : "montmory_mulhi_pair",
+      "q10_ns_per_word" : 0.095183660953068738,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.095445940040406185,
+      "physical_threads" : 32768,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.095258134713560594
+    },
+    {
+      "engine" : "montmory_mulhi_pair",
+      "q10_ns_per_word" : 0.095048546810971857,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.095406171851664112,
+      "physical_threads" : 32768,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.095322749693593778
+    },
+    {
+      "engine" : "montmory_mulhi_pair",
+      "q10_ns_per_word" : 0.094234930969605557,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.097841035273660282,
+      "physical_threads" : 65536,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.094324381638699606
+    },
+    {
+      "engine" : "montmory_mulhi_pair",
+      "q10_ns_per_word" : 0.094043217657713285,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.097301566803764672,
+      "physical_threads" : 65536,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.094249830162596027
+    },
+    {
+      "engine" : "montmory_mulhi_pair",
+      "q10_ns_per_word" : 0.094211105583497101,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.094496210856220841,
+      "physical_threads" : 65536,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.094279639650807212
+    },
+    {
+      "engine" : "montmory_mulhi_pair",
+      "q10_ns_per_word" : 0.093825680558268232,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.094380014914463572,
+      "physical_threads" : 65536,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.094299568154099234
+    },
+    {
+      "engine" : "montmory_mulhi_pair",
+      "q10_ns_per_word" : 0.094131624717164186,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.096469132682130976,
+      "physical_threads" : 65536,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.094334318134770001
+    },
+    {
+      "engine" : "montmory_mulhi_pair",
+      "q10_ns_per_word" : 0.094044216858435448,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.094416741092118173,
+      "physical_threads" : 65536,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.094329322131159188
+    },
+    {
+      "engine" : "montmory_mulhi_pair",
+      "q10_ns_per_word" : 0.094150531815273553,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.094392904603779471,
+      "physical_threads" : 65536,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.094239893666525631
+    },
+    {
+      "engine" : "montmory_mulhi_pair",
+      "q10_ns_per_word" : 0.094176333398365841,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.094359131619370373,
+      "physical_threads" : 65536,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.094220076185536072
+    },
+    {
+      "engine" : "montmory_mulhi_pair",
+      "q10_ns_per_word" : 0.093543506274329502,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.094024332764064411,
+      "physical_threads" : 131072,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.093847540849623101
+    },
+    {
+      "engine" : "montmory_mulhi_pair",
+      "q10_ns_per_word" : 0.093596175254617719,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.09408890333517661,
+      "physical_threads" : 131072,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.09384748533847187
+    },
+    {
+      "engine" : "montmory_mulhi_pair",
+      "q10_ns_per_word" : 0.093678642620886876,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.093996510575067305,
+      "physical_threads" : 131072,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.093936913803105426
+    },
+    {
+      "engine" : "montmory_mulhi_pair",
+      "q10_ns_per_word" : 0.093437246828642628,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.094024354968524904,
+      "physical_threads" : 131072,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.093981600279846589
+    },
+    {
+      "engine" : "montmory_mulhi_pair",
+      "q10_ns_per_word" : 0.093936913803105426,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.093996532779527797,
+      "physical_threads" : 131072,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.093966723291316612
+    },
+    {
+      "engine" : "montmory_mulhi_pair",
+      "q10_ns_per_word" : 0.093796848066318717,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.09418723578846766,
+      "physical_threads" : 131072,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.093966723291316612
+    },
+    {
+      "engine" : "montmory_mulhi_pair",
+      "q10_ns_per_word" : 0.093439245230086954,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.094050156551617192,
+      "physical_threads" : 131072,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.093961727287705799
+    },
+    {
+      "engine" : "montmory_mulhi_pair",
+      "q10_ns_per_word" : 0.09350379359673866,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.094041241460729452,
+      "physical_threads" : 131072,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.09384748533847187
+    },
+    {
+      "engine" : "montmory_mulhi_quad",
+      "q10_ns_per_word" : 0.10427534391510562,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.10567305919195746,
+      "physical_threads" : 8192,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.10477502199179867
+    },
+    {
+      "engine" : "montmory_mulhi_quad",
+      "q10_ns_per_word" : 0.10402302352829906,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.10722578380750747,
+      "physical_threads" : 8192,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.10472533951144669
+    },
+    {
+      "engine" : "montmory_mulhi_quad",
+      "q10_ns_per_word" : 0.10430114549819791,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.10640919256843517,
+      "physical_threads" : 8192,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.10445216913623767
+    },
+    {
+      "engine" : "montmory_mulhi_quad",
+      "q10_ns_per_word" : 0.10402999572889371,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.1051008613472959,
+      "physical_threads" : 8192,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.10445710962869725
+    },
+    {
+      "engine" : "montmory_mulhi_quad",
+      "q10_ns_per_word" : 0.10397636085457407,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.10509393355562224,
+      "physical_threads" : 8192,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.10481476797608025
+    },
+    {
+      "engine" : "montmory_mulhi_quad",
+      "q10_ns_per_word" : 0.1039504926581003,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.10569688457806592,
+      "physical_threads" : 8192,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.10438261366374491
+    },
+    {
+      "engine" : "montmory_mulhi_quad",
+      "q10_ns_per_word" : 0.10399320293785763,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.10492008373219619,
+      "physical_threads" : 8192,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.10457135157793118
+    },
+    {
+      "engine" : "montmory_mulhi_quad",
+      "q10_ns_per_word" : 0.10386708160226021,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.10604559452787043,
+      "physical_threads" : 8192,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.1047402720111279
+    },
+    {
+      "engine" : "montmory_mulhi_quad",
+      "q10_ns_per_word" : 0.097319508007842614,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.097760533002144712,
+      "physical_threads" : 32768,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.097483410232968026
+    },
+    {
+      "engine" : "montmory_mulhi_quad",
+      "q10_ns_per_word" : 0.09740888096132494,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.098226471401119397,
+      "physical_threads" : 32768,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.097721830627506279
+    },
+    {
+      "engine" : "montmory_mulhi_quad",
+      "q10_ns_per_word" : 0.097477437233095543,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.098001950998849452,
+      "physical_threads" : 32768,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.097811203580988604
+    },
+    {
+      "engine" : "montmory_mulhi_quad",
+      "q10_ns_per_word" : 0.097447627744884358,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.12623765366370779,
+      "physical_threads" : 32768,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.097831076573129394
+    },
+    {
+      "engine" : "montmory_mulhi_quad",
+      "q10_ns_per_word" : 0.097159535972224376,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.09935400280269846,
+      "physical_threads" : 32768,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.097855945568880998
+    },
+    {
+      "engine" : "montmory_mulhi_quad",
+      "q10_ns_per_word" : 0.097553909395031724,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.098974495266190843,
+      "physical_threads" : 32768,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.097945374033514554
+    },
+    {
+      "engine" : "montmory_mulhi_quad",
+      "q10_ns_per_word" : 0.097361196882417289,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.09816888413283209,
+      "physical_threads" : 32768,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.097766517104247441
+    },
+    {
+      "engine" : "montmory_mulhi_quad",
+      "q10_ns_per_word" : 0.097300589807503002,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.097936414533705829,
+      "physical_threads" : 32768,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.097850949565270184
+    },
+    {
+      "engine" : "montmory_mulhi_quad",
+      "q10_ns_per_word" : 0.096070795763125716,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.097954255817711555,
+      "physical_threads" : 65536,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.09638068121375909
+    },
+    {
+      "engine" : "montmory_mulhi_quad",
+      "q10_ns_per_word" : 0.096079688649552963,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.096684704686822442,
+      "physical_threads" : 65536,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.09640055420589988
+    },
+    {
+      "engine" : "montmory_mulhi_quad",
+      "q10_ns_per_word" : 0.095819430168120334,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.098096308853712344,
+      "physical_threads" : 65536,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.096365804225229112
+    },
+    {
+      "engine" : "montmory_mulhi_quad",
+      "q10_ns_per_word" : 0.09587705074309838,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.097228092243994979,
+      "physical_threads" : 65536,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.095988328396856559
+    },
+    {
+      "engine" : "montmory_mulhi_quad",
+      "q10_ns_per_word" : 0.095820418266612251,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.096212826594666012,
+      "physical_threads" : 65536,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.096077701350338884
+    },
+    {
+      "engine" : "montmory_mulhi_quad",
+      "q10_ns_per_word" : 0.096107521940780316,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.099873531667071802,
+      "physical_threads" : 65536,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.096639030111589364
+    },
+    {
+      "engine" : "montmory_mulhi_quad",
+      "q10_ns_per_word" : 0.095889951534644524,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.098663588410374814,
+      "physical_threads" : 65536,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.096142260819220837
+    },
+    {
+      "engine" : "montmory_mulhi_quad",
+      "q10_ns_per_word" : 0.096103591751273143,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.096328045540161611,
+      "physical_threads" : 65536,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.096266494775676392
+    },
+    {
+      "engine" : "montmory_mulhi_quad",
+      "q10_ns_per_word" : 0.095823393664318246,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.099785146812081393,
+      "physical_threads" : 131072,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.096018137885067745
+    },
+    {
+      "engine" : "montmory_mulhi_quad",
+      "q10_ns_per_word" : 0.095769758789998605,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.096318120146321462,
+      "physical_threads" : 131072,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.095928709420434188
+    },
+    {
+      "engine" : "montmory_mulhi_quad",
+      "q10_ns_per_word" : 0.095519447906866617,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.095820440471072743,
+      "physical_threads" : 131072,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.095789598475448656
+    },
+    {
+      "engine" : "montmory_mulhi_quad",
+      "q10_ns_per_word" : 0.095737018313002409,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.097197294657291877,
+      "physical_threads" : 131072,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.095784657982989074
+    },
+    {
+      "engine" : "montmory_mulhi_quad",
+      "q10_ns_per_word" : 0.095577068481844663,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.098149977034722724,
+      "physical_threads" : 131072,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.095928709420434188
+    },
+    {
+      "engine" : "montmory_mulhi_quad",
+      "q10_ns_per_word" : 0.095473728922712553,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.096711527675097386,
+      "physical_threads" : 131072,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.095730035010177517
+    },
+    {
+      "engine" : "montmory_mulhi_quad",
+      "q10_ns_per_word" : 0.09525118471742644,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.096637009505684546,
+      "physical_threads" : 131072,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.095446928138898102
+    },
+    {
+      "engine" : "montmory_mulhi_quad",
+      "q10_ns_per_word" : 0.095433994040661219,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.09621378138646719,
+      "physical_threads" : 131072,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.095695285029506749
+    },
+    {
+      "engine" : "montmory_stripe_pair",
+      "q10_ns_per_word" : 0.10058583965744106,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.10548433238000143,
+      "physical_threads" : 8192,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.10083617274503354
+    },
+    {
+      "engine" : "montmory_stripe_pair",
+      "q10_ns_per_word" : 0.10061460553600909,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.10112822801389143,
+      "physical_threads" : 8192,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.10098016867132742
+    },
+    {
+      "engine" : "montmory_stripe_pair",
+      "q10_ns_per_word" : 0.10082022994239992,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.10115800419541188,
+      "physical_threads" : 8192,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.10105971615104181
+    },
+    {
+      "engine" : "montmory_stripe_pair",
+      "q10_ns_per_word" : 0.10054707066942115,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.10131000482971331,
+      "physical_threads" : 8192,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.1007069982961184
+    },
+    {
+      "engine" : "montmory_stripe_pair",
+      "q10_ns_per_word" : 0.10067721101236771,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.10114611370681814,
+      "physical_threads" : 8192,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.10083617274503354
+    },
+    {
+      "engine" : "montmory_stripe_pair",
+      "q10_ns_per_word" : 0.10091265600919996,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.10343489398323413,
+      "physical_threads" : 8192,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.1013676365069216
+    },
+    {
+      "engine" : "montmory_stripe_pair",
+      "q10_ns_per_word" : 0.10045366760635943,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.10335444722286979,
+      "physical_threads" : 8192,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.10099510117100863
+    },
+    {
+      "engine" : "montmory_stripe_pair",
+      "q10_ns_per_word" : 0.100615638043422,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.10261238525544059,
+      "physical_threads" : 8192,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.10116402160420535
+    },
+    {
+      "engine" : "montmory_stripe_pair",
+      "q10_ns_per_word" : 0.095058461102581759,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.095277019607209468,
+      "physical_threads" : 32768,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.095218388729279013
+    },
+    {
+      "engine" : "montmory_stripe_pair",
+      "q10_ns_per_word" : 0.095127039578812855,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.096294294760213006,
+      "physical_threads" : 32768,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.095208507744359849
+    },
+    {
+      "engine" : "montmory_stripe_pair",
+      "q10_ns_per_word" : 0.095035634917195466,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.095299901303746992,
+      "physical_threads" : 32768,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.095203511740749036
+    },
+    {
+      "engine" : "montmory_stripe_pair",
+      "q10_ns_per_word" : 0.095160812563221953,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.09539625756005421,
+      "physical_threads" : 32768,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.095263130717171407
+    },
+    {
+      "engine" : "montmory_stripe_pair",
+      "q10_ns_per_word" : 0.095164798263880357,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.095409125044909615,
+      "physical_threads" : 32768,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.095233321228960222
+    },
+    {
+      "engine" : "montmory_stripe_pair",
+      "q10_ns_per_word" : 0.095057495208550336,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.095321739390641369,
+      "physical_threads" : 32768,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.095248198217490199
+    },
+    {
+      "engine" : "montmory_stripe_pair",
+      "q10_ns_per_word" : 0.095114116582806219,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.095289964807676597,
+      "physical_threads" : 32768,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.095233321228960222
+    },
+    {
+      "engine" : "montmory_stripe_pair",
+      "q10_ns_per_word" : 0.095014773826562759,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.1345058620039197,
+      "physical_threads" : 32768,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.095124075283337106
+    },
+    {
+      "engine" : "montmory_stripe_pair",
+      "q10_ns_per_word" : 0.094013397067271853,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.11921426068539634,
+      "physical_threads" : 65536,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.094175334197643679
+    },
+    {
+      "engine" : "montmory_stripe_pair",
+      "q10_ns_per_word" : 0.093804808365405279,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.094383967308431238,
+      "physical_threads" : 65536,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.094125707228442934
+    },
+    {
+      "engine" : "montmory_stripe_pair",
+      "q10_ns_per_word" : 0.093939866996350929,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.11931361454387004,
+      "physical_threads" : 65536,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.094244834158985213
+    },
+    {
+      "engine" : "montmory_stripe_pair",
+      "q10_ns_per_word" : 0.094146546114615148,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.094253804761024185,
+      "physical_threads" : 65536,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.094220076185536072
+    },
+    {
+      "engine" : "montmory_stripe_pair",
+      "q10_ns_per_word" : 0.093890217822689692,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.094370078418393177,
+      "physical_threads" : 65536,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.094155461205502888
+    },
+    {
+      "engine" : "montmory_stripe_pair",
+      "q10_ns_per_word" : 0.093990581984115806,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.094392915706009717,
+      "physical_threads" : 65536,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.094185270693714074
+    },
+    {
+      "engine" : "montmory_stripe_pair",
+      "q10_ns_per_word" : 0.093879326534818119,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.2706328827706273,
+      "physical_threads" : 65536,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.094239893666525631
+    },
+    {
+      "engine" : "montmory_stripe_pair",
+      "q10_ns_per_word" : 0.094184260390761665,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.094444541076654787,
+      "physical_threads" : 65536,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.094215024670774028
+    },
+    {
+      "engine" : "montmory_stripe_pair",
+      "q10_ns_per_word" : 0.093780938570375838,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.093951812996095896,
+      "physical_threads" : 131072,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.093842544846012288
+    },
+    {
+      "engine" : "montmory_stripe_pair",
+      "q10_ns_per_word" : 0.093727314798286443,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.094026331165508736,
+      "physical_threads" : 131072,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.093862417838153078
+    },
+    {
+      "engine" : "montmory_stripe_pair",
+      "q10_ns_per_word" : 0.093507790399627311,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.093952845503508797,
+      "physical_threads" : 131072,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.093902108311283428
+    },
+    {
+      "engine" : "montmory_stripe_pair",
+      "q10_ns_per_word" : 0.093802809963960954,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.13671815901616927,
+      "physical_threads" : 131072,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.093907159826045472
+    },
+    {
+      "engine" : "montmory_stripe_pair",
+      "q10_ns_per_word" : 0.093677632317934467,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.094230012681606468,
+      "physical_threads" : 131072,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.093882290830293869
+    },
+    {
+      "engine" : "montmory_stripe_pair",
+      "q10_ns_per_word" : 0.093670682321800314,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.09389516941737952,
+      "physical_threads" : 131072,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.093782981380741148
+    },
+    {
+      "engine" : "montmory_stripe_pair",
+      "q10_ns_per_word" : 0.0936289601405349,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.093907104314894241,
+      "physical_threads" : 131072,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.093877294826683055
+    },
+    {
+      "engine" : "montmory_stripe_pair",
+      "q10_ns_per_word" : 0.093802798861730707,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.094169383402231688,
+      "physical_threads" : 131072,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.093847540849623101
+    },
+    {
+      "engine" : "montmory_stripe_quad",
+      "q10_ns_per_word" : 0.10262526384252624,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.10452864129817385,
+      "physical_threads" : 8192,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.1028279683623623
+    },
+    {
+      "engine" : "montmory_stripe_quad",
+      "q10_ns_per_word" : 0.10276535178377344,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.10325210686445985,
+      "physical_threads" : 8192,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.10310113873757132
+    },
+    {
+      "engine" : "montmory_stripe_quad",
+      "q10_ns_per_word" : 0.10257560356663475,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.10449586751448692,
+      "physical_threads" : 8192,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.10298195629587781
+    },
+    {
+      "engine" : "montmory_stripe_quad",
+      "q10_ns_per_word" : 0.10276136608311504,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.12609064903301714,
+      "physical_threads" : 8192,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.10451672860511962
+    },
+    {
+      "engine" : "montmory_stripe_quad",
+      "q10_ns_per_word" : 0.10288356833143553,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.10596516997196659,
+      "physical_threads" : 8192,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.10318063070613448
+    },
+    {
+      "engine" : "montmory_stripe_quad",
+      "q10_ns_per_word" : 0.10266700822825214,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.10329184174651118,
+      "physical_threads" : 8192,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.10304651576475976
+    },
+    {
+      "engine" : "montmory_stripe_quad",
+      "q10_ns_per_word" : 0.10274050499248233,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.10403298222882995,
+      "physical_threads" : 8192,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.10293721430798541
+    },
+    {
+      "engine" : "montmory_stripe_quad",
+      "q10_ns_per_word" : 0.10292432461866952,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.10323819576996129,
+      "physical_threads" : 8192,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.10303158326507855
+    },
+    {
+      "engine" : "montmory_stripe_quad",
+      "q10_ns_per_word" : 0.09669066658446468,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.12283326578099721,
+      "physical_threads" : 32768,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.096961882967150359
+    },
+    {
+      "engine" : "montmory_stripe_quad",
+      "q10_ns_per_word" : 0.096601227017600877,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.096994612341916309,
+      "physical_threads" : 32768,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.096857522002835594
+    },
+    {
+      "engine" : "montmory_stripe_quad",
+      "q10_ns_per_word" : 0.096756247458529288,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.10114612480904839,
+      "physical_threads" : 32768,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.096922136982868778
+    },
+    {
+      "engine" : "montmory_stripe_quad",
+      "q10_ns_per_word" : 0.096598251619894882,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.097134700283163511,
+      "physical_threads" : 32768,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.096961882967150359
+    },
+    {
+      "engine" : "montmory_stripe_quad",
+      "q10_ns_per_word" : 0.096656893600055582,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.097505248319862403,
+      "physical_threads" : 32768,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.096976759955680336
+    },
+    {
+      "engine" : "montmory_stripe_quad",
+      "q10_ns_per_word" : 0.096937047278089494,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.097069152715789642,
+      "physical_threads" : 32768,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.096991692455361544
+    },
+    {
+      "engine" : "montmory_stripe_quad",
+      "q10_ns_per_word" : 0.096761199053219116,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.097027419432293982,
+      "physical_threads" : 32768,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.096961882967150359
+    },
+    {
+      "engine" : "montmory_stripe_quad",
+      "q10_ns_per_word" : 0.096538643745702757,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.097313546110200377,
+      "physical_threads" : 32768,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.097021446432421499
+    },
+    {
+      "engine" : "montmory_stripe_quad",
+      "q10_ns_per_word" : 0.095504504304955162,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.09602905137739981,
+      "physical_threads" : 65536,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.095968455404715769
+    },
+    {
+      "engine" : "montmory_stripe_quad",
+      "q10_ns_per_word" : 0.095748864392675159,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.096091612444837438,
+      "physical_threads" : 65536,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.095918828435515024
+    },
+    {
+      "engine" : "montmory_stripe_quad",
+      "q10_ns_per_word" : 0.095912855435642541,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.096014141082179094,
+      "physical_threads" : 65536,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.095948582412574979
+    },
+    {
+      "engine" : "montmory_stripe_quad",
+      "q10_ns_per_word" : 0.09589790073150084,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.096078733857751786,
+      "physical_threads" : 65536,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.096038010877208535
+    },
+    {
+      "engine" : "montmory_stripe_quad",
+      "q10_ns_per_word" : 0.095580010572859919,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.096457208886846502,
+      "physical_threads" : 65536,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.096023133888678558
+    },
+    {
+      "engine" : "montmory_stripe_quad",
+      "q10_ns_per_word" : 0.095790619880631311,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.096059860066333158,
+      "physical_threads" : 65536,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.095948582412574979
+    },
+    {
+      "engine" : "montmory_stripe_quad",
+      "q10_ns_per_word" : 0.095739982608478158,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.09597538319638943,
+      "physical_threads" : 65536,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.095918772924363793
+    },
+    {
+      "engine" : "montmory_stripe_quad",
+      "q10_ns_per_word" : 0.095906838026849073,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.096082686251719451,
+      "physical_threads" : 65536,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.095963459401104956
+    },
+    {
+      "engine" : "montmory_stripe_quad",
+      "q10_ns_per_word" : 0.095185648252282817,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.095662500143589568,
+      "physical_threads" : 131072,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.09556117008813203
+    },
+    {
+      "engine" : "montmory_stripe_quad",
+      "q10_ns_per_word" : 0.09553433599762684,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.095822416668056576,
+      "physical_threads" : 131072,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.09562073355340317
+    },
+    {
+      "engine" : "montmory_stripe_quad",
+      "q10_ns_per_word" : 0.095483632112092209,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.096019125983559661,
+      "physical_threads" : 131072,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.095655539045225169
+    },
+    {
+      "engine" : "montmory_stripe_quad",
+      "q10_ns_per_word" : 0.095346575079702234,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.096054852960492099,
+      "physical_threads" : 131072,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.095590924065191984
+    },
+    {
+      "engine" : "montmory_stripe_quad",
+      "q10_ns_per_word" : 0.095141916567342832,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.095626695451045407,
+      "physical_threads" : 131072,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.095486618612028451
+    },
+    {
+      "engine" : "montmory_stripe_quad",
+      "q10_ns_per_word" : 0.095379393272310153,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.095869134852932802,
+      "physical_threads" : 131072,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.095536301092380427
+    },
+    {
+      "engine" : "montmory_stripe_quad",
+      "q10_ns_per_word" : 0.095545227285498413,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.09575188419930214,
+      "physical_threads" : 131072,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.095615793060943588
+    },
+    {
+      "engine" : "montmory_stripe_quad",
+      "q10_ns_per_word" : 0.095536301092380427,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.095656493837026346,
+      "physical_threads" : 131072,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.09562073355340317
+    },
+    {
+      "engine" : "montmory_const_pair",
+      "q10_ns_per_word" : 0.10441046915943275,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.10743342881980311,
+      "physical_threads" : 8192,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.10639922276567404
+    },
+    {
+      "engine" : "montmory_const_pair",
+      "q10_ns_per_word" : 0.10135471351091496,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.10631480140688154,
+      "physical_threads" : 8192,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.10562933860924772
+    },
+    {
+      "engine" : "montmory_const_pair",
+      "q10_ns_per_word" : 0.10359783031432812,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.30288399566202889,
+      "physical_threads" : 8192,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.10633960378925167
+    },
+    {
+      "engine" : "montmory_const_pair",
+      "q10_ns_per_word" : 0.10142426898340773,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.10609326750454784,
+      "physical_threads" : 8192,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.10557471563643617
+    },
+    {
+      "engine" : "montmory_const_pair",
+      "q10_ns_per_word" : 0.1017183115514797,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.10646979964334946,
+      "physical_threads" : 8192,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.10549028317541342
+    },
+    {
+      "engine" : "montmory_const_pair",
+      "q10_ns_per_word" : 0.10153551333047517,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.10655520910063387,
+      "physical_threads" : 8192,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.10561940211317733
+    },
+    {
+      "engine" : "montmory_const_pair",
+      "q10_ns_per_word" : 0.10104479475359085,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.1066416288608707,
+      "physical_threads" : 8192,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.10616085788228702
+    },
+    {
+      "engine" : "montmory_const_pair",
+      "q10_ns_per_word" : 0.10173423214965283,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.10698536501152489,
+      "physical_threads" : 8192,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.10624529034330976
+    },
+    {
+      "engine" : "montmory_const_pair",
+      "q10_ns_per_word" : 0.094527030647384436,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.099998720415328535,
+      "physical_threads" : 32768,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.099490082838826766
+    },
+    {
+      "engine" : "montmory_const_pair",
+      "q10_ns_per_word" : 0.094383934001740499,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.099974872824759586,
+      "physical_threads" : 32768,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.099524888330648764
+    },
+    {
+      "engine" : "montmory_const_pair",
+      "q10_ns_per_word" : 0.098183738916901575,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.10007025208480513,
+      "physical_threads" : 32768,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.099450336854545185
+    },
+    {
+      "engine" : "montmory_const_pair",
+      "q10_ns_per_word" : 0.098255292790838666,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.11894700779890856,
+      "physical_threads" : 32768,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.099524832819497533
+    },
+    {
+      "engine" : "montmory_const_pair",
+      "q10_ns_per_word" : 0.094571717124125598,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.10009605366789742,
+      "physical_threads" : 32768,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.099524832819497533
+    },
+    {
+      "engine" : "montmory_const_pair",
+      "q10_ns_per_word" : 0.094255780958008017,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.099905350658957559,
+      "physical_threads" : 32768,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.09953970980802751
+    },
+    {
+      "engine" : "montmory_const_pair",
+      "q10_ns_per_word" : 0.098729135977748683,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.20727217719951349,
+      "physical_threads" : 32768,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.099778130202565762
+    },
+    {
+      "engine" : "montmory_const_pair",
+      "q10_ns_per_word" : 0.094717744758554545,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.10002254580143699,
+      "physical_threads" : 32768,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.099524888330648764
+    },
+    {
+      "engine" : "montmory_const_pair",
+      "q10_ns_per_word" : 0.092187524280973321,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.098955654781462954,
+      "physical_threads" : 65536,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.098735075670930428
+    },
+    {
+      "engine" : "montmory_const_pair",
+      "q10_ns_per_word" : 0.097346297689426819,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.099080821325259194,
+      "physical_threads" : 65536,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.098789754154893217
+    },
+    {
+      "engine" : "montmory_const_pair",
+      "q10_ns_per_word" : 0.097355257189235545,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.11748968464786459,
+      "physical_threads" : 65536,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.098884123111986355
+    },
+    {
+      "engine" : "montmory_const_pair",
+      "q10_ns_per_word" : 0.09409586443354101,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.20875932094099892,
+      "physical_threads" : 65536,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.09885431362377517
+    },
+    {
+      "engine" : "montmory_const_pair",
+      "q10_ns_per_word" : 0.092796481609980219,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.21366476365969345,
+      "physical_threads" : 65536,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.098447028307191431
+    },
+    {
+      "engine" : "montmory_const_pair",
+      "q10_ns_per_word" : 0.092865037881750823,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.098963559569398285,
+      "physical_threads" : 65536,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.098412222815369432
+    },
+    {
+      "engine" : "montmory_const_pair",
+      "q10_ns_per_word" : 0.092989227429285393,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.098867203313091068,
+      "physical_threads" : 65536,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.098451968799651013
+    },
+    {
+      "engine" : "montmory_const_pair",
+      "q10_ns_per_word" : 0.092557062014719804,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.098970520667762685,
+      "physical_threads" : 65536,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.098541341753133338
+    },
+    {
+      "engine" : "montmory_const_pair",
+      "q10_ns_per_word" : 0.092095153725324508,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.098683405891364373,
+      "physical_threads" : 131072,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.097855890057729766
+    },
+    {
+      "engine" : "montmory_const_pair",
+      "q10_ns_per_word" : 0.093099472575630671,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.098538410764348328,
+      "physical_threads" : 131072,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.098059560471597251
+    },
+    {
+      "engine" : "montmory_const_pair",
+      "q10_ns_per_word" : 0.095525409804508854,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.098552332961077127,
+      "physical_threads" : 131072,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.098049679486678087
+    },
+    {
+      "engine" : "montmory_const_pair",
+      "q10_ns_per_word" : 0.092247154359625938,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.098496644174161929,
+      "physical_threads" : 131072,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.097841013069199789
+    },
+    {
+      "engine" : "montmory_const_pair",
+      "q10_ns_per_word" : 0.092353424907543058,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.098621844024648908,
+      "physical_threads" : 131072,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.098382413327158247
+    },
+    {
+      "engine" : "montmory_const_pair",
+      "q10_ns_per_word" : 0.092363339199152961,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.098553298855108551,
+      "physical_threads" : 131072,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.098362540335017457
+    },
+    {
+      "engine" : "montmory_const_pair",
+      "q10_ns_per_word" : 0.092018659358927835,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.098439045803644376,
+      "physical_threads" : 131072,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.098183738916901575
+    },
+    {
+      "engine" : "montmory_const_pair",
+      "q10_ns_per_word" : 0.092143814800493828,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.098713226481805805,
+      "physical_threads" : 131072,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.098139052440160413
+    },
+    {
+      "engine" : "montmory_const_stripe_pair",
+      "q10_ns_per_word" : 0.10452568810492835,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.10621545865063808,
+      "physical_threads" : 8192,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.10579326303883363
+    },
+    {
+      "engine" : "montmory_const_stripe_pair",
+      "q10_ns_per_word" : 0.10187326537902663,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.10628302682391677,
+      "physical_threads" : 8192,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.10561945762432856
+    },
+    {
+      "engine" : "montmory_const_stripe_pair",
+      "q10_ns_per_word" : 0.10418294005276607,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.12632013213220719,
+      "physical_threads" : 8192,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.10566414410106972
+    },
+    {
+      "engine" : "montmory_const_stripe_pair",
+      "q10_ns_per_word" : 0.10115207560446038,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.10612010159505303,
+      "physical_threads" : 8192,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.10570383457420007
+    },
+    {
+      "engine" : "montmory_const_stripe_pair",
+      "q10_ns_per_word" : 0.10088385682394119,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.10619365387043445,
+      "physical_threads" : 8192,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.10542072770292066
+    },
+    {
+      "engine" : "montmory_const_stripe_pair",
+      "q10_ns_per_word" : 0.10106664394271547,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.15510620565706296,
+      "physical_threads" : 8192,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.10548034667934303
+    },
+    {
+      "engine" : "montmory_const_stripe_pair",
+      "q10_ns_per_word" : 0.10068613720548569,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.10664957805772701,
+      "physical_threads" : 8192,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.10542572370653147
+    },
+    {
+      "engine" : "montmory_const_stripe_pair",
+      "q10_ns_per_word" : 0.10148586415681393,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.1065135202260592,
+      "physical_threads" : 8192,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.10539591421832029
+    },
+    {
+      "engine" : "montmory_const_stripe_pair",
+      "q10_ns_per_word" : 0.093542551482528324,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.10016560914039019,
+      "physical_threads" : 32768,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.099410590870263604
+    },
+    {
+      "engine" : "montmory_const_stripe_pair",
+      "q10_ns_per_word" : 0.098289065775247764,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.10428128360828737,
+      "physical_threads" : 32768,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.09992717764362169
+    },
+    {
+      "engine" : "montmory_const_stripe_pair",
+      "q10_ns_per_word" : 0.093478935703217303,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.1000374783011182,
+      "physical_threads" : 32768,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.099450392365696416
+    },
+    {
+      "engine" : "montmory_const_stripe_pair",
+      "q10_ns_per_word" : 0.093519714194911785,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.099733510339206077,
+      "physical_threads" : 32768,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.099425523369944813
+    },
+    {
+      "engine" : "montmory_const_stripe_pair",
+      "q10_ns_per_word" : 0.095102203889751991,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.21102128933137021,
+      "physical_threads" : 32768,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.099693697741543019
+    },
+    {
+      "engine" : "montmory_const_stripe_pair",
+      "q10_ns_per_word" : 0.093427288128111741,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.099989772017750056,
+      "physical_threads" : 32768,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.099420527366333999
+    },
+    {
+      "engine" : "montmory_const_stripe_pair",
+      "q10_ns_per_word" : 0.093243512910845538,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.10002156880517532,
+      "physical_threads" : 32768,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.099415586873874418
+    },
+    {
+      "engine" : "montmory_const_stripe_pair",
+      "q10_ns_per_word" : 0.093435259529428549,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.10000070771454261,
+      "physical_threads" : 32768,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.09948014634275637
+    },
+    {
+      "engine" : "montmory_const_stripe_pair",
+      "q10_ns_per_word" : 0.092431884368693318,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.099048025337111767,
+      "physical_threads" : 65536,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.098466901299332221
+    },
+    {
+      "engine" : "montmory_const_stripe_pair",
+      "q10_ns_per_word" : 0.093868401940255808,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.21381280079779696,
+      "physical_threads" : 65536,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.098412222815369432
+    },
+    {
+      "engine" : "montmory_const_stripe_pair",
+      "q10_ns_per_word" : 0.092095120418633769,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.098996322250854973,
+      "physical_threads" : 65536,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.098511587776073384
+    },
+    {
+      "engine" : "montmory_const_stripe_pair",
+      "q10_ns_per_word" : 0.09320773042276187,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.098989394459181312,
+      "physical_threads" : 65536,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.098496655276392175
+    },
+    {
+      "engine" : "montmory_const_stripe_pair",
+      "q10_ns_per_word" : 0.0924657017620234,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.098982466667507651,
+      "physical_threads" : 65536,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.098437091811121036
+    },
+    {
+      "engine" : "montmory_const_stripe_pair",
+      "q10_ns_per_word" : 0.092272955942718227,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.12495814383228779,
+      "physical_threads" : 65536,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.098943742088408726
+    },
+    {
+      "engine" : "montmory_const_stripe_pair",
+      "q10_ns_per_word" : 0.092484542246751289,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.099113595108946129,
+      "physical_threads" : 65536,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.098442032303580618
+    },
+    {
+      "engine" : "montmory_const_stripe_pair",
+      "q10_ns_per_word" : 0.092502450144138493,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.099003294451449619,
+      "physical_threads" : 65536,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.098486774291473012
+    },
+    {
+      "engine" : "montmory_const_stripe_pair",
+      "q10_ns_per_word" : 0.092281904340296705,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.098804631143423194,
+      "physical_threads" : 131072,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.098134056436549599
+    },
+    {
+      "engine" : "montmory_const_stripe_pair",
+      "q10_ns_per_word" : 0.092142793395311173,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.098586083741025732,
+      "physical_threads" : 131072,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.098104302459489645
+    },
+    {
+      "engine" : "montmory_const_stripe_pair",
+      "q10_ns_per_word" : 0.09201467365826943,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.098785757352004566,
+      "physical_threads" : 131072,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.097990060510255717
+    },
+    {
+      "engine" : "montmory_const_stripe_pair",
+      "q10_ns_per_word" : 0.091949114988665315,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.09835862124774053,
+      "physical_threads" : 131072,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.098054619979137669
+    },
+    {
+      "engine" : "montmory_const_stripe_pair",
+      "q10_ns_per_word" : 0.096759211754005037,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.10722279730757124,
+      "physical_threads" : 131072,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.098228480904793969
+    },
+    {
+      "engine" : "montmory_const_stripe_pair",
+      "q10_ns_per_word" : 0.092136853702129429,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.098373498236270507,
+      "physical_threads" : 131072,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.098178742913290762
+    },
+    {
+      "engine" : "montmory_const_stripe_pair",
+      "q10_ns_per_word" : 0.092151741792889652,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.12494624224146381,
+      "physical_threads" : 131072,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.098079433463738042
+    },
+    {
+      "engine" : "montmory_const_stripe_pair",
+      "q10_ns_per_word" : 0.091841845240026032,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.099278485432563457,
+      "physical_threads" : 131072,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.09828809988121634
+    },
+    {
+      "engine" : "montmory_split_stripe_pair",
+      "q10_ns_per_word" : 0.10030765107416073,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.10147590545628304,
+      "physical_threads" : 8192,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.10081130374928193
+    },
+    {
+      "engine" : "montmory_split_stripe_pair",
+      "q10_ns_per_word" : 0.10048152310204728,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.10090371871385173,
+      "physical_threads" : 8192,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.10076162126892996
+    },
+    {
+      "engine" : "montmory_split_stripe_pair",
+      "q10_ns_per_word" : 0.10050932308658389,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.10508097725292487,
+      "physical_threads" : 8192,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.10113915260845374
+    },
+    {
+      "engine" : "montmory_split_stripe_pair",
+      "q10_ns_per_word" : 0.10063644362290347,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.10099511227323887,
+      "physical_threads" : 8192,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.10076162126892996
+    },
+    {
+      "engine" : "montmory_split_stripe_pair",
+      "q10_ns_per_word" : 0.10044275411402737,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.10108053283275353,
+      "physical_threads" : 8192,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.10083617274503354
+    },
+    {
+      "engine" : "montmory_split_stripe_pair",
+      "q10_ns_per_word" : 0.10030172248320923,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.10112127801775728,
+      "physical_threads" : 8192,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.10076167678008119
+    },
+    {
+      "engine" : "montmory_split_stripe_pair",
+      "q10_ns_per_word" : 0.1004626382083984,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.10274647799235481,
+      "physical_threads" : 8192,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.10092060520605628
+    },
+    {
+      "engine" : "montmory_split_stripe_pair",
+      "q10_ns_per_word" : 0.10053614607485883,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.13172327673061093,
+      "physical_threads" : 8192,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.10062756183870647
+    },
+    {
+      "engine" : "montmory_split_stripe_pair",
+      "q10_ns_per_word" : 0.094409779993753773,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.12029804929980517,
+      "physical_threads" : 32768,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.094821095419916901
+    },
+    {
+      "engine" : "montmory_split_stripe_pair",
+      "q10_ns_per_word" : 0.094640262293665955,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.094887586676861702,
+      "physical_threads" : 32768,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.094711793963142554
+    },
+    {
+      "engine" : "montmory_split_stripe_pair",
+      "q10_ns_per_word" : 0.094696872565691592,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.095111152287330469,
+      "physical_threads" : 32768,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.094855845400587668
+    },
+    {
+      "engine" : "montmory_split_stripe_pair",
+      "q10_ns_per_word" : 0.094609453604732607,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.094896546176670427,
+      "physical_threads" : 32768,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.094830976404836065
+    },
+    {
+      "engine" : "montmory_split_stripe_pair",
+      "q10_ns_per_word" : 0.094748553447487893,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.095202512540026873,
+      "physical_threads" : 32768,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.094880658885188041
+    },
+    {
+      "engine" : "montmory_split_stripe_pair",
+      "q10_ns_per_word" : 0.09455980443107137,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.095045560311035615,
+      "physical_threads" : 32768,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.094786289928094902
+    },
+    {
+      "engine" : "montmory_split_stripe_pair",
+      "q10_ns_per_word" : 0.094634311498253965,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.098081442967412613,
+      "physical_threads" : 32768,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.094895535873718018
+    },
+    {
+      "engine" : "montmory_split_stripe_pair",
+      "q10_ns_per_word" : 0.094521046545281706,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.09499193653894622,
+      "physical_threads" : 32768,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.094806162920235693
+    },
+    {
+      "engine" : "montmory_split_stripe_pair",
+      "q10_ns_per_word" : 0.093704455306209411,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.093954810598262384,
+      "physical_threads" : 65536,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.09384748533847187
+    },
+    {
+      "engine" : "montmory_split_stripe_pair",
+      "q10_ns_per_word" : 0.09376108778269554,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.13657510677944631,
+      "physical_threads" : 65536,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.093812735357801103
+    },
+    {
+      "engine" : "montmory_split_stripe_pair",
+      "q10_ns_per_word" : 0.093564378467192455,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.094323349131286705,
+      "physical_threads" : 65536,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.093817731361411916
+    },
+    {
+      "engine" : "montmory_split_stripe_pair",
+      "q10_ns_per_word" : 0.093536600687116334,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.094115726323451554,
+      "physical_threads" : 65536,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.093946850299175821
+    },
+    {
+      "engine" : "montmory_split_stripe_pair",
+      "q10_ns_per_word" : 0.093543528478789995,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.093988561378210989,
+      "physical_threads" : 65536,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.093812735357801103
+    },
+    {
+      "engine" : "montmory_split_stripe_pair",
+      "q10_ns_per_word" : 0.093528640388029771,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.094357122115695802,
+      "physical_threads" : 65536,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.093773044884670753
+    },
+    {
+      "engine" : "montmory_split_stripe_pair",
+      "q10_ns_per_word" : 0.093796848066318717,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.094245844461937622,
+      "physical_threads" : 65536,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.093862417838153078
+    },
+    {
+      "engine" : "montmory_split_stripe_pair",
+      "q10_ns_per_word" : 0.093599161754553961,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.11903047436589989,
+      "physical_threads" : 65536,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.093817675850260684
+    },
+    {
+      "engine" : "montmory_split_stripe_pair",
+      "q10_ns_per_word" : 0.093385565946846327,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.11841354563557618,
+      "physical_threads" : 131072,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.093489882502240107
+    },
+    {
+      "engine" : "montmory_split_stripe_pair",
+      "q10_ns_per_word" : 0.093014040913885765,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.11834203617056008,
+      "physical_threads" : 131072,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.093465069017639735
+    },
+    {
+      "engine" : "montmory_split_stripe_pair",
+      "q10_ns_per_word" : 0.093320018379472458,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.095621743856355579,
+      "physical_threads" : 131072,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.093539564982592083
+    },
+    {
+      "engine" : "montmory_split_stripe_pair",
+      "q10_ns_per_word" : 0.093232577214052981,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.093589203054023073,
+      "physical_threads" : 131072,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.093474950002558899
+    },
+    {
+      "engine" : "montmory_split_stripe_pair",
+      "q10_ns_per_word" : 0.092995156020236891,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.093672691825474885,
+      "physical_threads" : 131072,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.093425323033358154
+    },
+    {
+      "engine" : "montmory_split_stripe_pair",
+      "q10_ns_per_word" : 0.093461061112520838,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.093555474478534961,
+      "physical_threads" : 131072,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.093499818998310502
+    },
+    {
+      "engine" : "montmory_split_stripe_pair",
+      "q10_ns_per_word" : 0.09339254924967122,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.093611096652068682,
+      "physical_threads" : 131072,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.093519691990451292
+    },
+    {
+      "engine" : "montmory_split_stripe_pair",
+      "q10_ns_per_word" : 0.093287211289094785,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.093498842002048832,
+      "physical_threads" : 131072,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.093420327029747341
+    },
+    {
+      "engine" : "montmory_const_stripe_quad",
+      "q10_ns_per_word" : 0.10278126127971632,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.11006888733788855,
+      "physical_threads" : 8192,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.10757644774983532
+    },
+    {
+      "engine" : "montmory_const_stripe_quad",
+      "q10_ns_per_word" : 0.10250211790463482,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.10807814643243319,
+      "physical_threads" : 8192,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.10788442361686634
+    },
+    {
+      "engine" : "montmory_const_stripe_quad",
+      "q10_ns_per_word" : 0.10282892315416348,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.10811090911388987,
+      "physical_threads" : 8192,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.10783973714012518
+    },
+    {
+      "engine" : "montmory_const_stripe_quad",
+      "q10_ns_per_word" : 0.10243952353050645,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.10881624490366448,
+      "physical_threads" : 8192,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.10758138824229491
+    },
+    {
+      "engine" : "montmory_const_stripe_quad",
+      "q10_ns_per_word" : 0.10204217470999311,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.10836423980364884,
+      "physical_threads" : 8192,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.10757145174622451
+    },
+    {
+      "engine" : "montmory_const_stripe_quad",
+      "q10_ns_per_word" : 0.10595520016920545,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.12895662315770554,
+      "physical_threads" : 8192,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.10819733997635694
+    },
+    {
+      "engine" : "montmory_const_stripe_quad",
+      "q10_ns_per_word" : 0.10225870150648575,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.10816953999182033,
+      "physical_threads" : 8192,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.10720391241392235
+    },
+    {
+      "engine" : "montmory_const_stripe_quad",
+      "q10_ns_per_word" : 0.10255178928275654,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.10921160642496375,
+      "physical_threads" : 8192,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.10797379657034867
+    },
+    {
+      "engine" : "montmory_const_stripe_quad",
+      "q10_ns_per_word" : 0.095102192787521744,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.10201035571810735,
+      "physical_threads" : 32768,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.10192890975702085
+    },
+    {
+      "engine" : "montmory_const_stripe_quad",
+      "q10_ns_per_word" : 0.097751606809026725,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.22059678528307824,
+      "physical_threads" : 32768,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.10146700146762555
+    },
+    {
+      "engine" : "montmory_const_stripe_quad",
+      "q10_ns_per_word" : 0.095242258524308454,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.14850893848006311,
+      "physical_threads" : 32768,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.10138750949906239
+    },
+    {
+      "engine" : "montmory_const_stripe_quad",
+      "q10_ns_per_word" : 0.095269081512583398,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.10191302246553846,
+      "physical_threads" : 32768,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.10163581087851981
+    },
+    {
+      "engine" : "montmory_const_stripe_quad",
+      "q10_ns_per_word" : 0.096323093945471783,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.10193885735532149,
+      "physical_threads" : 32768,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.10152662044404792
+    },
+    {
+      "engine" : "montmory_const_stripe_quad",
+      "q10_ns_per_word" : 0.095292895796461607,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.10196967714648508,
+      "physical_threads" : 32768,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.10155137841749706
+    },
+    {
+      "engine" : "montmory_const_stripe_quad",
+      "q10_ns_per_word" : 0.095572094682694342,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.10197761524111115,
+      "physical_threads" : 32768,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.10161105290507066
+    },
+    {
+      "engine" : "montmory_const_stripe_quad",
+      "q10_ns_per_word" : 0.095263108512710915,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.10202826361549455,
+      "physical_threads" : 32768,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.10161099739391943
+    },
+    {
+      "engine" : "montmory_const_stripe_quad",
+      "q10_ns_per_word" : 0.094151497709304977,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.10096132818659953,
+      "physical_threads" : 65536,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.10086592672209349
+    },
+    {
+      "engine" : "montmory_const_stripe_quad",
+      "q10_ns_per_word" : 0.094357122115695802,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.21835069308195909,
+      "physical_threads" : 65536,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.10083117674142272
+    },
+    {
+      "engine" : "montmory_const_stripe_quad",
+      "q10_ns_per_word" : 0.09418625879220599,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.10069608480378633,
+      "physical_threads" : 65536,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.10053813337407291
+    },
+    {
+      "engine" : "montmory_const_stripe_quad",
+      "q10_ns_per_word" : 0.094334284828079262,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.10100009717461944,
+      "physical_threads" : 65536,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.10059769683934405
+    },
+    {
+      "engine" : "montmory_const_stripe_quad",
+      "q10_ns_per_word" : 0.094282648355203946,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.10086096402517342,
+      "physical_threads" : 65536,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.10052325638554294
+    },
+    {
+      "engine" : "montmory_const_stripe_quad",
+      "q10_ns_per_word" : 0.098484731481107701,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.10105668524218459,
+      "physical_threads" : 65536,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.10056300236982452
+    },
+    {
+      "engine" : "montmory_const_stripe_quad",
+      "q10_ns_per_word" : 0.094288576946155445,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.10097426228483641,
+      "physical_threads" : 65536,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.10012085605026755
+    },
+    {
+      "engine" : "montmory_const_stripe_quad",
+      "q10_ns_per_word" : 0.094416741092118173,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.10094642899360906,
+      "physical_threads" : 65536,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.10059775235049528
+    },
+    {
+      "engine" : "montmory_const_stripe_quad",
+      "q10_ns_per_word" : 0.093961793901087276,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.1461843646133332,
+      "physical_threads" : 131072,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.10034439945627582
+    },
+    {
+      "engine" : "montmory_const_stripe_quad",
+      "q10_ns_per_word" : 0.095152863366365636,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.10035732245228246,
+      "physical_threads" : 131072,
+      "threadgroup" : 64,
+      "median_ns_per_word" : 0.10012085605026755
+    },
+    {
+      "engine" : "montmory_const_stripe_quad",
+      "q10_ns_per_word" : 0.094029284358754239,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.10058582855521081,
+      "physical_threads" : 131072,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.10012091156141878
+    },
+    {
+      "engine" : "montmory_const_stripe_quad",
+      "q10_ns_per_word" : 0.094030294661706648,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.10059474364609855,
+      "physical_threads" : 131072,
+      "threadgroup" : 128,
+      "median_ns_per_word" : 0.10022521701458231
+    },
+    {
+      "engine" : "montmory_const_stripe_quad",
+      "q10_ns_per_word" : 0.093946850299175821,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.10055102306338881,
+      "physical_threads" : 131072,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.099822872190458156
+    },
+    {
+      "engine" : "montmory_const_stripe_quad",
+      "q10_ns_per_word" : 0.0940501343471567,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.10056991905926793,
+      "physical_threads" : 131072,
+      "threadgroup" : 256,
+      "median_ns_per_word" : 0.10022027652212273
+    },
+    {
+      "engine" : "montmory_const_stripe_quad",
+      "q10_ns_per_word" : 0.095537311395332836,
+      "format" : "raw64",
+      "q90_ns_per_word" : 0.21223131030367892,
+      "physical_threads" : 131072,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.10048345489011012
+    },
+    {
+      "engine" : "montmory_const_stripe_quad",
+      "q10_ns_per_word" : 0.093923024913067366,
+      "format" : "mantissa53",
+      "q90_ns_per_word" : 0.1005440841694849,
+      "physical_threads" : 131072,
+      "threadgroup" : 512,
+      "median_ns_per_word" : 0.10019540752637113
+    }
+  ],
+  "rule" : "minimum median on seven search seeds, then frozen for five new seeds"
+}

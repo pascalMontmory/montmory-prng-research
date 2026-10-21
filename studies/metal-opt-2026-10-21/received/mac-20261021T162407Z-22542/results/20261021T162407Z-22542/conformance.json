@@ -1,0 +1,8 @@
+{
+  "status" : "pass",
+  "official_GPU_KATs" : 6,
+  "scope" : "Native Metal versus original C \/ official Random123; reductions checked per thread, including idle threads and guards.",
+  "reduction_words" : 4004592,
+  "bulk_words" : 7716864,
+  "official_CPU_KATs" : 6
+}

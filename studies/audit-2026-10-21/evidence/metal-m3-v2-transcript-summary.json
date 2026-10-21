@@ -1,0 +1,502 @@
+{
+  "provenance": "User-provided terminal output; raw CSV and metadata archive not yet received",
+  "source": "evidence/metal-m3-v2-user-console.log",
+  "source_sha256": "5425b9f601ec038096583b411a94479eb9ece11eaeea3d5580a6ace11ef1f90e",
+  "run_id": "20261021T131521Z-8925",
+  "device": "Apple M3",
+  "kit_version": 2,
+  "expected_kit_archive_sha256": "0ae5156dd3a6d8c5911a10a12fbf01863cce0bd55d2f7d2c52785e2d2832b7ba",
+  "words_per_run": 4194304,
+  "repetitions": 11,
+  "reported_conformance": {
+    "arm64_x86_golden_vectors": 1600,
+    "metal_reference_words_all_engines": 4153344,
+    "official_CPU_vectors": 6,
+    "official_GPU_vectors": 6,
+    "status": "PASS"
+  },
+  "rows": [
+    {
+      "engine": "montmory_indexed",
+      "format": "raw64",
+      "physical_threads": 8192,
+      "printed_median_ns_per_word": 0.158,
+      "printed_median_GB_per_second": 50.731
+    },
+    {
+      "engine": "montmory_indexed",
+      "format": "raw64",
+      "physical_threads": 65536,
+      "printed_median_ns_per_word": 0.149,
+      "printed_median_GB_per_second": 53.841
+    },
+    {
+      "engine": "montmory_indexed",
+      "format": "raw64",
+      "physical_threads": 262144,
+      "printed_median_ns_per_word": 0.149,
+      "printed_median_GB_per_second": 53.719
+    },
+    {
+      "engine": "montmory_indexed",
+      "format": "mantissa53",
+      "physical_threads": 8192,
+      "printed_median_ns_per_word": 0.157,
+      "printed_median_GB_per_second": 50.908
+    },
+    {
+      "engine": "montmory_indexed",
+      "format": "mantissa53",
+      "physical_threads": 65536,
+      "printed_median_ns_per_word": 0.149,
+      "printed_median_GB_per_second": 53.859
+    },
+    {
+      "engine": "montmory_indexed",
+      "format": "mantissa53",
+      "physical_threads": 262144,
+      "printed_median_ns_per_word": 0.15,
+      "printed_median_GB_per_second": 53.353
+    },
+    {
+      "engine": "threefry2x32_20",
+      "format": "raw64",
+      "physical_threads": 8192,
+      "printed_median_ns_per_word": 0.097,
+      "printed_median_GB_per_second": 82.825
+    },
+    {
+      "engine": "threefry2x32_20",
+      "format": "raw64",
+      "physical_threads": 65536,
+      "printed_median_ns_per_word": 0.102,
+      "printed_median_GB_per_second": 78.269
+    },
+    {
+      "engine": "threefry2x32_20",
+      "format": "raw64",
+      "physical_threads": 262144,
+      "printed_median_ns_per_word": 0.093,
+      "printed_median_GB_per_second": 85.68
+    },
+    {
+      "engine": "threefry2x32_20",
+      "format": "mantissa53",
+      "physical_threads": 8192,
+      "printed_median_ns_per_word": 0.104,
+      "printed_median_GB_per_second": 77.225
+    },
+    {
+      "engine": "threefry2x32_20",
+      "format": "mantissa53",
+      "physical_threads": 65536,
+      "printed_median_ns_per_word": 0.096,
+      "printed_median_GB_per_second": 83.219
+    },
+    {
+      "engine": "threefry2x32_20",
+      "format": "mantissa53",
+      "physical_threads": 262144,
+      "printed_median_ns_per_word": 0.098,
+      "printed_median_GB_per_second": 81.221
+    },
+    {
+      "engine": "philox4x32_10",
+      "format": "raw64",
+      "physical_threads": 8192,
+      "printed_median_ns_per_word": 0.1,
+      "printed_median_GB_per_second": 80.178
+    },
+    {
+      "engine": "philox4x32_10",
+      "format": "raw64",
+      "physical_threads": 65536,
+      "printed_median_ns_per_word": 0.098,
+      "printed_median_GB_per_second": 81.94
+    },
+    {
+      "engine": "philox4x32_10",
+      "format": "raw64",
+      "physical_threads": 262144,
+      "printed_median_ns_per_word": 0.096,
+      "printed_median_GB_per_second": 83.599
+    },
+    {
+      "engine": "philox4x32_10",
+      "format": "mantissa53",
+      "physical_threads": 8192,
+      "printed_median_ns_per_word": 0.099,
+      "printed_median_GB_per_second": 81.123
+    },
+    {
+      "engine": "philox4x32_10",
+      "format": "mantissa53",
+      "physical_threads": 65536,
+      "printed_median_ns_per_word": 0.103,
+      "printed_median_GB_per_second": 77.966
+    },
+    {
+      "engine": "philox4x32_10",
+      "format": "mantissa53",
+      "physical_threads": 262144,
+      "printed_median_ns_per_word": 0.104,
+      "printed_median_GB_per_second": 76.96
+    },
+    {
+      "engine": "montmory_historical",
+      "format": "mantissa53",
+      "physical_threads": 8192,
+      "printed_median_ns_per_word": 0.145,
+      "printed_median_GB_per_second": 55.332
+    },
+    {
+      "engine": "montmory_u32_indexed",
+      "format": "raw64",
+      "physical_threads": 8192,
+      "printed_median_ns_per_word": 0.14,
+      "printed_median_GB_per_second": 56.956
+    },
+    {
+      "engine": "montmory_u32_indexed",
+      "format": "raw64",
+      "physical_threads": 65536,
+      "printed_median_ns_per_word": 0.131,
+      "printed_median_GB_per_second": 60.943
+    },
+    {
+      "engine": "montmory_u32_indexed",
+      "format": "raw64",
+      "physical_threads": 262144,
+      "printed_median_ns_per_word": 0.131,
+      "printed_median_GB_per_second": 61.161
+    },
+    {
+      "engine": "montmory_u32_indexed",
+      "format": "mantissa53",
+      "physical_threads": 8192,
+      "printed_median_ns_per_word": 0.139,
+      "printed_median_GB_per_second": 57.542
+    },
+    {
+      "engine": "montmory_u32_indexed",
+      "format": "mantissa53",
+      "physical_threads": 65536,
+      "printed_median_ns_per_word": 0.132,
+      "printed_median_GB_per_second": 60.486
+    },
+    {
+      "engine": "montmory_u32_indexed",
+      "format": "mantissa53",
+      "physical_threads": 262144,
+      "printed_median_ns_per_word": 0.13,
+      "printed_median_GB_per_second": 61.413
+    },
+    {
+      "engine": "montmory_u64_tiled",
+      "format": "raw64",
+      "physical_threads": 8192,
+      "printed_median_ns_per_word": 0.149,
+      "printed_median_GB_per_second": 53.816
+    },
+    {
+      "engine": "montmory_u64_tiled",
+      "format": "raw64",
+      "physical_threads": 65536,
+      "printed_median_ns_per_word": 0.144,
+      "printed_median_GB_per_second": 55.378
+    },
+    {
+      "engine": "montmory_u64_tiled",
+      "format": "raw64",
+      "physical_threads": 262144,
+      "printed_median_ns_per_word": 0.145,
+      "printed_median_GB_per_second": 55.234
+    },
+    {
+      "engine": "montmory_u64_tiled",
+      "format": "mantissa53",
+      "physical_threads": 8192,
+      "printed_median_ns_per_word": 0.148,
+      "printed_median_GB_per_second": 53.935
+    },
+    {
+      "engine": "montmory_u64_tiled",
+      "format": "mantissa53",
+      "physical_threads": 65536,
+      "printed_median_ns_per_word": 0.144,
+      "printed_median_GB_per_second": 55.665
+    },
+    {
+      "engine": "montmory_u64_tiled",
+      "format": "mantissa53",
+      "physical_threads": 262144,
+      "printed_median_ns_per_word": 0.144,
+      "printed_median_GB_per_second": 55.504
+    },
+    {
+      "engine": "montmory_u32_tiled",
+      "format": "raw64",
+      "physical_threads": 8192,
+      "printed_median_ns_per_word": 0.131,
+      "printed_median_GB_per_second": 61.217
+    },
+    {
+      "engine": "montmory_u32_tiled",
+      "format": "raw64",
+      "physical_threads": 65536,
+      "printed_median_ns_per_word": 0.127,
+      "printed_median_GB_per_second": 62.969
+    },
+    {
+      "engine": "montmory_u32_tiled",
+      "format": "raw64",
+      "physical_threads": 262144,
+      "printed_median_ns_per_word": 0.128,
+      "printed_median_GB_per_second": 62.292
+    },
+    {
+      "engine": "montmory_u32_tiled",
+      "format": "mantissa53",
+      "physical_threads": 8192,
+      "printed_median_ns_per_word": 0.132,
+      "printed_median_GB_per_second": 60.458
+    },
+    {
+      "engine": "montmory_u32_tiled",
+      "format": "mantissa53",
+      "physical_threads": 65536,
+      "printed_median_ns_per_word": 0.129,
+      "printed_median_GB_per_second": 62.033
+    },
+    {
+      "engine": "montmory_u32_tiled",
+      "format": "mantissa53",
+      "physical_threads": 262144,
+      "printed_median_ns_per_word": 0.127,
+      "printed_median_GB_per_second": 62.983
+    },
+    {
+      "engine": "write_baseline_NOT_PRNG",
+      "format": "raw64",
+      "physical_threads": 8192,
+      "printed_median_ns_per_word": 0.094,
+      "printed_median_GB_per_second": 85.029
+    },
+    {
+      "engine": "write_baseline_NOT_PRNG",
+      "format": "raw64",
+      "physical_threads": 65536,
+      "printed_median_ns_per_word": 0.09,
+      "printed_median_GB_per_second": 89.33
+    },
+    {
+      "engine": "write_baseline_NOT_PRNG",
+      "format": "raw64",
+      "physical_threads": 262144,
+      "printed_median_ns_per_word": 0.092,
+      "printed_median_GB_per_second": 87.051
+    },
+    {
+      "engine": "write_baseline_NOT_PRNG",
+      "format": "mantissa53",
+      "physical_threads": 8192,
+      "printed_median_ns_per_word": 0.092,
+      "printed_median_GB_per_second": 86.685
+    },
+    {
+      "engine": "write_baseline_NOT_PRNG",
+      "format": "mantissa53",
+      "physical_threads": 65536,
+      "printed_median_ns_per_word": 0.088,
+      "printed_median_GB_per_second": 90.535
+    },
+    {
+      "engine": "write_baseline_NOT_PRNG",
+      "format": "mantissa53",
+      "physical_threads": 262144,
+      "printed_median_ns_per_word": 0.085,
+      "printed_median_GB_per_second": 93.859
+    }
+  ],
+  "comparisons": [
+    {
+      "format": "raw64",
+      "best_displayed_rows": {
+        "montmory_indexed": {
+          "engine": "montmory_indexed",
+          "format": "raw64",
+          "physical_threads": 65536,
+          "printed_median_ns_per_word": 0.149,
+          "printed_median_GB_per_second": 53.841
+        },
+        "threefry2x32_20": {
+          "engine": "threefry2x32_20",
+          "format": "raw64",
+          "physical_threads": 262144,
+          "printed_median_ns_per_word": 0.093,
+          "printed_median_GB_per_second": 85.68
+        },
+        "philox4x32_10": {
+          "engine": "philox4x32_10",
+          "format": "raw64",
+          "physical_threads": 262144,
+          "printed_median_ns_per_word": 0.096,
+          "printed_median_GB_per_second": 83.599
+        },
+        "montmory_u32_indexed": {
+          "engine": "montmory_u32_indexed",
+          "format": "raw64",
+          "physical_threads": 262144,
+          "printed_median_ns_per_word": 0.131,
+          "printed_median_GB_per_second": 61.161
+        },
+        "montmory_u64_tiled": {
+          "engine": "montmory_u64_tiled",
+          "format": "raw64",
+          "physical_threads": 65536,
+          "printed_median_ns_per_word": 0.144,
+          "printed_median_GB_per_second": 55.378
+        },
+        "montmory_u32_tiled": {
+          "engine": "montmory_u32_tiled",
+          "format": "raw64",
+          "physical_threads": 65536,
+          "printed_median_ns_per_word": 0.127,
+          "printed_median_GB_per_second": 62.969
+        }
+      },
+      "montmory_u32_tiled_throughput_gain_over": {
+        "montmory_indexed": 0.1695362270388736,
+        "montmory_u32_indexed": 0.02956132175732895,
+        "montmory_u64_tiled": 0.1370760952002601
+      },
+      "competitor_throughput_gain_over_montmory_u32_tiled": {
+        "philox4x32_10": 0.32762152805348665,
+        "threefry2x32_20": 0.36066953580333183
+      }
+    },
+    {
+      "format": "mantissa53",
+      "best_displayed_rows": {
+        "montmory_indexed": {
+          "engine": "montmory_indexed",
+          "format": "mantissa53",
+          "physical_threads": 65536,
+          "printed_median_ns_per_word": 0.149,
+          "printed_median_GB_per_second": 53.859
+        },
+        "threefry2x32_20": {
+          "engine": "threefry2x32_20",
+          "format": "mantissa53",
+          "physical_threads": 65536,
+          "printed_median_ns_per_word": 0.096,
+          "printed_median_GB_per_second": 83.219
+        },
+        "philox4x32_10": {
+          "engine": "philox4x32_10",
+          "format": "mantissa53",
+          "physical_threads": 8192,
+          "printed_median_ns_per_word": 0.099,
+          "printed_median_GB_per_second": 81.123
+        },
+        "montmory_u32_indexed": {
+          "engine": "montmory_u32_indexed",
+          "format": "mantissa53",
+          "physical_threads": 262144,
+          "printed_median_ns_per_word": 0.13,
+          "printed_median_GB_per_second": 61.413
+        },
+        "montmory_u64_tiled": {
+          "engine": "montmory_u64_tiled",
+          "format": "mantissa53",
+          "physical_threads": 65536,
+          "printed_median_ns_per_word": 0.144,
+          "printed_median_GB_per_second": 55.665
+        },
+        "montmory_u32_tiled": {
+          "engine": "montmory_u32_tiled",
+          "format": "mantissa53",
+          "physical_threads": 262144,
+          "printed_median_ns_per_word": 0.127,
+          "printed_median_GB_per_second": 62.983
+        },
+        "montmory_historical": {
+          "engine": "montmory_historical",
+          "format": "mantissa53",
+          "physical_threads": 8192,
+          "printed_median_ns_per_word": 0.145,
+          "printed_median_GB_per_second": 55.332
+        }
+      },
+      "montmory_u32_tiled_throughput_gain_over": {
+        "montmory_indexed": 0.16940529902151913,
+        "montmory_u32_indexed": 0.025564619868757354,
+        "montmory_u64_tiled": 0.1314650139225726,
+        "montmory_historical": 0.1382744162509939
+      },
+      "competitor_throughput_gain_over_montmory_u32_tiled": {
+        "philox4x32_10": 0.2880142260610008,
+        "threefry2x32_20": 0.321293047330232
+      }
+    }
+  ],
+  "comparisons_at_same_worker_count": [
+    {
+      "format": "raw64",
+      "physical_threads": 8192,
+      "u32_indexed_over_indexed": 0.1227060377284106,
+      "u64_tiled_over_indexed": 0.06081094399873854,
+      "u32_tiled_over_indexed": 0.20669807415584152,
+      "u32_tiled_over_u32_indexed": 0.0748121356836855
+    },
+    {
+      "format": "raw64",
+      "physical_threads": 65536,
+      "u32_indexed_over_indexed": 0.13190691109006147,
+      "u64_tiled_over_indexed": 0.02854701807172977,
+      "u32_tiled_over_indexed": 0.1695362270388736,
+      "u32_tiled_over_u32_indexed": 0.033244178986922224
+    },
+    {
+      "format": "raw64",
+      "physical_threads": 262144,
+      "u32_indexed_over_indexed": 0.1385357136208789,
+      "u64_tiled_over_indexed": 0.028202312031125,
+      "u32_tiled_over_indexed": 0.1595897168599565,
+      "u32_tiled_over_u32_indexed": 0.01849217638691325
+    },
+    {
+      "format": "mantissa53",
+      "physical_threads": 8192,
+      "u32_indexed_over_indexed": 0.13031350671800102,
+      "u64_tiled_over_indexed": 0.05946020271862973,
+      "u32_tiled_over_indexed": 0.18759330557083365,
+      "u32_tiled_over_u32_indexed": 0.050676027944805524
+    },
+    {
+      "format": "mantissa53",
+      "physical_threads": 65536,
+      "u32_indexed_over_indexed": 0.12304350247869422,
+      "u64_tiled_over_indexed": 0.03353200022280389,
+      "u32_tiled_over_indexed": 0.15176664995636746,
+      "u32_tiled_over_u32_indexed": 0.02557616638561
+    },
+    {
+      "format": "mantissa53",
+      "physical_threads": 262144,
+      "u32_indexed_over_indexed": 0.151069293198133,
+      "u64_tiled_over_indexed": 0.04031638333364573,
+      "u32_tiled_over_indexed": 0.18049594212134257,
+      "u32_tiled_over_u32_indexed": 0.025564619868757354
+    }
+  ],
+  "limits": [
+    "Ratios use rounded displayed GB/s medians, not paired per-trial timings or confidence intervals",
+    "Best displayed configurations selected among tested thread counts; not universal optima",
+    "No raw dispersion, thermal metadata, or kit manifest from Mac inspected yet",
+    "One output volume and three physical thread counts; logical lanes remain 8192",
+    "No SmallCrush, Crush or BigCrush rerun in this native benchmark",
+    "write_baseline_NOT_PRNG is excluded from generator ranking and is not a hardware bandwidth bound",
+    "Native CUDA correction still untested"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "protocol": "montmory-tpu-opt-v1",
+  "sha256": {
+    "README.md": "f3f5c1c99ac1dfcc25800a5814f1c64bdcce77e17b09929bec4a64f3fc22f83b",
+    "campaign.py": "4d87eeffdfb98176be7c0a06ecffec73f6b03241ed76854d928dbf5b93c5b94c",
+    "check_manifest.py": "6dc276f0f0cfe5343fcb956fd003c61cda8b2339ad89aa4552169960bcf3e943",
+    "export_candidates.py": "a29e0e2d80bfae94816d56705cfcf13df0d075bf9a4b14f6e1e1a0b875c83f95",
+    "kernels.py": "9540a50c8bcecf15ee76418d32eac94f0f831ff6cc12894e1c3bc14d851a5fc4",
+    "montmory_jax.py": "b6165bc908808708ee8466abe33a66efea75ca2a41ba765012f042e051ace8ab",
+    "prepare_references.py": "31b05a60ca5154fbddd9464b2fd07bae26c5f48ca714219cb2e7fa77e1fb8b13",
+    "reference/expected-output-hashes.json": "5c07da67ccdead53602248d7c04e2da8eb935616d8aa6cd21368056357cf1aa8",
+    "reference/golden-vectors.txt": "ca5b2731b89fea75c78585350c3263f11fc2695a6126251288b287ac94acdecf",
+    "reference/mmc_core.c": "5a0c515214226c50dd79b9774b616ca981621493d4f0c6bce7ececfdf5afbc8c",
+    "reference/mmc_core.h": "f3ca894f4242340aca0903bcb7e482746aee9b4d3fc1243269b4a557b52334bb",
+    "reference/optimization-hashes.json": "70ec999c0543e19d4dd49605d6bd11a521d1e13648a5ac02dc9df4619a0f6e62",
+    "reference/oracle.c": "48c9670947bef455f86e2a547e878dcbe4722b4fd5cae24be9f529cada054849",
+    "reference/vps-report.json": "c3a77aed1f3aed951083e1925de8c7e13c5aac280239936ed11de6f40f852a37",
+    "requirements-tpu.txt": "fd8806829730174f723000564db48ceb5002d245697ebc147ee1ec9d3ab2d4f1",
+    "requirements.txt": "b15c70468633e1b9c14348b2f769ce476dbf8bfb0841265874709f790c7311da",
+    "run.py": "a8c6480e3c9978ca13b57614c8d5c9cf6b502c834b24193c3f13f1ba22759576",
+    "support.py": "f22100ce975b7c8b6e8108c81a3086e0f91e2e12073566b845f9dca0b1b275e3",
+    "tuned.py": "379e6774f3e5833fc6883cb7bb6ea9c71780016a34a8cc1e04a565c1bfbab7a4",
+    "verify_candidates.py": "b5ca5054a47b28685973169449a6646706c4910bd8145fddbc30e24c5ff30482",
+    "verify_cpu.py": "6621e16c9a249cc6c304ae85add424f58ca09b00f56e94986d8ac98aadb0b91a",
+    "verify_native.py": "36e7fa173364c831f5d7fe69c6381c6967072abbd7c6b51cb42b18053957fbf5"
+  }
+}

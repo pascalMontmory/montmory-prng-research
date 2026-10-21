@@ -1,0 +1,45 @@
+{
+  "source": "user terminal transcript; raw archive not yet received",
+  "run": "20261021T170347Z-22732",
+  "device": "Apple M3",
+  "architecture_vectors": {
+    "words": 1600,
+    "status": "pass"
+  },
+  "cpu_verifier": {
+    "status": "pass",
+    "range_words": 7353208,
+    "component_checks": 120000,
+    "historical_words": 50331648,
+    "partitioned_words": 655445,
+    "pooled_words": 1918268
+  },
+  "pool_confirmation": {
+    "words_per_call": 65536,
+    "workers": 4,
+    "new_seeds": 7,
+    "checked_timed_words": 20643840,
+    "paired_ratio_vs_sequential": 3.454,
+    "paired_ratio_vs_spawn4": 1.307,
+    "wins_vs_both": 7
+  },
+  "small_block_9_seed_search": {
+    "pair_pool4_GB_s": 7.045,
+    "pair_spawn4_GB_s": 5.595,
+    "pair_pool8_GB_s": 7.673,
+    "pair_spawn8_GB_s": 4.942,
+    "pool4_paired_ratio": 1.259,
+    "pool8_paired_ratio": 1.559
+  },
+  "large_block_9_seed_search": {
+    "words": 8388608,
+    "pair_pool8_GB_s": 12.203,
+    "pair_spawn8_GB_s": 12.033,
+    "pool8_paired_ratio": 1.013,
+    "wins_pool8": 8,
+    "simd8_workers4_GB_s": 10.318,
+    "simd8_workers4_paired_ratio": 1.038
+  },
+  "metal_status": "host compilation failed at vector_benchmark.mm:136, auto deduced as id, -Werror,-Wauto-var-id; no new native Metal result",
+  "repair": "vector-repair1: explicit NSMutableDictionary*; test-case draw order made explicit; original engines and GPU kernels unchanged"
+}

@@ -1,0 +1,29 @@
+{
+  "checked_on": "2026-10-21",
+  "random123": {
+    "commit": "9545ff6413f258be2f04c1d319d99aaef7521150",
+    "readme": "https://github.com/DEShawResearch/random123/blob/9545ff6413f258be2f04c1d319d99aaef7521150/README.md",
+    "metal_test_present_at": "2021-01-17",
+    "metal_test": "https://github.com/DEShawResearch/random123/blob/d8a0c25e49992685c0b9d91b553c1d04f81b6b4b/tests/kat_metal_kernel.metal",
+    "paper": "https://www.thesalmons.org/john/random123/papers/random123sc11.pdf",
+    "known_vectors": "https://github.com/DEShawResearch/random123/blob/9545ff6413f258be2f04c1d319d99aaef7521150/tests/kat_vectors"
+  },
+  "mlx": {
+    "commit": "52a6c234ab35ddf46c8bd1517b849b59b610d078",
+    "cuda_introduced": "2025-06-10",
+    "commit_url": "https://github.com/ml-explore/mlx/commit/7c4eb5d03e8ebfa2d7531e92db322e1b201f9127",
+    "cpu": "https://github.com/ml-explore/mlx/blob/52a6c234ab35ddf46c8bd1517b849b59b610d078/mlx/backend/cpu/threefry.cpp",
+    "metal": "https://github.com/ml-explore/mlx/blob/52a6c234ab35ddf46c8bd1517b849b59b610d078/mlx/backend/metal/kernels/random.metal",
+    "cuda": "https://github.com/ml-explore/mlx/blob/52a6c234ab35ddf46c8bd1517b849b59b610d078/mlx/backend/cuda/random.cu"
+  },
+  "testu01": {
+    "source_zip": "https://www-labs.iro.umontreal.ca/~simul/testu01/TestU01.zip",
+    "sha256": "bc1d1dd2aea7ed3b3d28eaad2c8ee55913f11ce67aec8fe4f643c1c0d2ed1cac",
+    "manual": "https://www-labs.iro.umontreal.ca/~simul/testu01/guideshorttestu01.pdf"
+  },
+  "pcg": {
+    "reference": "https://github.com/imneme/pcg-cpp/blob/master/include/pcg_random.hpp",
+    "numpy": "https://numpy.org/doc/stable/reference/random/bit_generators/pcg64dxsm.html"
+  },
+  "cuda_memory": "https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html#coalesced-access-to-global-memory"
+}

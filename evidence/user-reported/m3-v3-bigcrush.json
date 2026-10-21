@@ -1,0 +1,17 @@
+{
+  "evidence_level": "user-terminal",
+  "source": "User-pasted terminal excerpt in the project conversation; whitespace normalized for transcription. Not a recovered complete log.",
+  "recorded_on": "2026-10-21",
+  "archive_received": false,
+  "archive_sha256": null,
+  "reported_status": "All tests were passed",
+  "statistics": 160,
+  "cpu_time_reported": "01:44:36.42",
+  "generator": "Montmory v3 native Metal montmory_mulhi_pair",
+  "configuration_from_preceding_launch": {
+    "seed": 42,
+    "lanes": 2048,
+    "draws": 4096
+  },
+  "limitation": "Full modern M3 v3 BigCrush log and result archive remain unavailable. Do not substitute historical complete logs for this execution."
+}

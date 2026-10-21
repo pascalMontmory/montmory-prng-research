@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "scope": "SmallCrush of v3 spec_dual generated Metal adapted to C++ on x86; not native GPU",
+  "seed": 42,
+  "logical_lanes": 2048,
+  "draws_per_lane": 4096,
+  "physical_threads": 65536,
+  "generated_source_sha256": "1ed2856aa953187eadc99e53efd2f1810b6f00a0d14239898718004a0f8da242",
+  "log_sha256": "1bbd561cc3f9dde0993caca9993ba9b01e0998e27e28424fca1e710a67a42be6",
+  "Crush": "not run",
+  "BigCrush": "not run",
+  "historical_printed_pvalues_identical": 15
+}

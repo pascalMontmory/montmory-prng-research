@@ -1,0 +1,3521 @@
+{
+  "status": "pass",
+  "source": "/home/pascal/prng-recovery/tpu-opt-2026-10-21/20261021T185102Z-tpu-opt",
+  "source_sha256": {
+    "campaign/candidate-conformance/oracle.so": "b7e44e79c1b4a8c5ac82504abfe609b3d61d01b14f65db7318beb6fb36eb709c",
+    "campaign/candidate-conformance/report.json": "d3e73c006a32c4c0a2aaebdfd49799c5f2ab6721c6798fd3630c480f03cbdf5e",
+    "campaign/frozen-selection.json": "c20774f845c2f28b58d4705d0227d13c850f0b0f0a92db7ea9d72399e1e5bbb1",
+    "campaign/measurements.csv": "a5809aabad02982f6fdafc20bc82a9a3201f891a07b2e10c7c4b2879db10619c",
+    "campaign/report.json": "8cafbc69de5287552e69eff7bee883c0d13e089ec2e22be6832f54af6a468674",
+    "historical-conformance/oracle.so": "b7e44e79c1b4a8c5ac82504abfe609b3d61d01b14f65db7318beb6fb36eb709c",
+    "historical-conformance/report.json": "3f940d653dc272c08a215919184a717b5b52e38a5e348f8f39b1a1f356328441",
+    "run-status.json": "adcbdb9ab2d67396e5e689684c99fd8d4d69ebd0ef24854defb25804981c0c23",
+    "run.log": "03e15ef3a488e7669e5598df3073b70a93cc033a3a0f9292591883539d0db583"
+  },
+  "backend": "tpu",
+  "device_kind": "TPU v5 lite",
+  "devices": [
+    "TPU_0(process=0,(0,0,0,0))"
+  ],
+  "jax": "0.10.2",
+  "jaxlib": "0.10.2",
+  "native_historical_words": 1972720,
+  "native_candidate_words": 1684047,
+  "native_component_values": 1048592,
+  "compilation_entries_checked": 104,
+  "samples_checked": 3708,
+  "summaries_recomputed": 44,
+  "phases": {
+    "search": 936,
+    "confirmation": 2772
+  },
+  "timed_output_checks": {
+    "fixed_cpu_reference": {
+      "samples": 3420,
+      "words": 22469345280
+    },
+    "montmory": {
+      "samples": 1584,
+      "words": 10406854656
+    },
+    "rbg_same_backend": {
+      "samples": 288,
+      "words": 1892155392
+    }
+  },
+  "fixed_cpu_reference_keys_checked": 240,
+  "montmory_hashes_rebuilt": 40,
+  "montmory_distinct_timed_seed_index_pairs": 167772160,
+  "selection_sha256": "c20774f845c2f28b58d4705d0227d13c850f0b0f0a92db7ea9d72399e1e5bbb1",
+  "random_order_verified": true,
+  "adoption_rules_verified": true,
+  "rbg_repeated_hashes_consistent_across_blocks": true,
+  "summary": [
+    {
+      "words": 65536,
+      "engine": "pallas_original_256",
+      "GB_per_second": 2.064369807457574,
+      "median_microseconds": 253.97,
+      "seed_min_microseconds": 243.85,
+      "seed_max_microseconds": 285.12,
+      "median_relative_MAD": 0.050084655667992285,
+      "retained": false,
+      "seed_medians_ns": [
+        253970,
+        256480,
+        252330,
+        255350,
+        285120,
+        243850,
+        244390
+      ],
+      "block_medians_ns": [
+        259000,
+        247640,
+        263280
+      ]
+    },
+    {
+      "words": 65536,
+      "engine": "pallas_original_8",
+      "GB_per_second": 2.0194438024805486,
+      "median_microseconds": 259.62,
+      "seed_min_microseconds": 244.44,
+      "seed_max_microseconds": 292.35,
+      "median_relative_MAD": 0.055139850346124605,
+      "retained": false,
+      "seed_medians_ns": [
+        267150,
+        251211,
+        268940,
+        259620,
+        292350,
+        249910,
+        244440
+      ],
+      "block_medians_ns": [
+        256410,
+        244980,
+        279150
+      ]
+    },
+    {
+      "words": 65536,
+      "engine": "pallas_original_32",
+      "GB_per_second": 2.1203057386662354,
+      "median_microseconds": 247.27,
+      "seed_min_microseconds": 239.68,
+      "seed_max_microseconds": 284.7,
+      "median_relative_MAD": 0.0305824432576769,
+      "retained": true,
+      "seed_medians_ns": [
+        254490,
+        247270,
+        239680,
+        253120,
+        284700,
+        245350,
+        242840
+      ],
+      "block_medians_ns": [
+        253229,
+        245350,
+        250420
+      ]
+    },
+    {
+      "words": 65536,
+      "engine": "jax_original",
+      "GB_per_second": 2.0262259856000555,
+      "median_microseconds": 258.751,
+      "seed_min_microseconds": 248.94,
+      "seed_max_microseconds": 301.68,
+      "median_relative_MAD": 0.04065482194119016,
+      "retained": false,
+      "seed_medians_ns": [
+        273800,
+        257780,
+        258751,
+        267830,
+        301680,
+        258250,
+        248940
+      ],
+      "block_medians_ns": [
+        276220,
+        253650,
+        280740
+      ]
+    },
+    {
+      "words": 65536,
+      "engine": "threefry2x32",
+      "GB_per_second": 1.978968029290756,
+      "median_microseconds": 264.93,
+      "seed_min_microseconds": 246.87,
+      "seed_max_microseconds": 303.31,
+      "median_relative_MAD": 0.06129921111236931,
+      "retained": false,
+      "seed_medians_ns": [
+        264930,
+        255110,
+        274390,
+        278571,
+        303310,
+        257891,
+        246870
+      ],
+      "block_medians_ns": [
+        261509,
+        255860,
+        270960
+      ]
+    },
+    {
+      "words": 65536,
+      "engine": "threefry4x32",
+      "GB_per_second": 1.9207502930832356,
+      "median_microseconds": 272.96,
+      "seed_min_microseconds": 266.08,
+      "seed_max_microseconds": 318.2,
+      "median_relative_MAD": 0.06432646204458754,
+      "retained": false,
+      "seed_medians_ns": [
+        285730,
+        271520,
+        272960,
+        291200,
+        318200,
+        268860,
+        266080
+      ],
+      "block_medians_ns": [
+        271770,
+        268860,
+        280520
+      ]
+    },
+    {
+      "words": 65536,
+      "engine": "philox2x32",
+      "GB_per_second": 1.884843255680184,
+      "median_microseconds": 278.16,
+      "seed_min_microseconds": 263.67,
+      "seed_max_microseconds": 321.22,
+      "median_relative_MAD": 0.0549434927855569,
+      "retained": false,
+      "seed_medians_ns": [
+        278160,
+        280280,
+        264440,
+        281380,
+        321220,
+        267150,
+        263670
+      ],
+      "block_medians_ns": [
+        284140,
+        267150,
+        297020
+      ]
+    },
+    {
+      "words": 65536,
+      "engine": "philox4x32",
+      "GB_per_second": 1.664353512586902,
+      "median_microseconds": 315.01,
+      "seed_min_microseconds": 296.9,
+      "seed_max_microseconds": 333.49,
+      "median_relative_MAD": 0.07564618608828715,
+      "retained": false,
+      "seed_medians_ns": [
+        315010,
+        300760,
+        321450,
+        317440,
+        333490,
+        296900,
+        300610
+      ],
+      "block_medians_ns": [
+        315010,
+        289470,
+        323090
+      ]
+    },
+    {
+      "words": 65536,
+      "engine": "threefry_pallas_16",
+      "GB_per_second": 2.0126218809980805,
+      "median_microseconds": 260.5,
+      "seed_min_microseconds": 237.55,
+      "seed_max_microseconds": 279.83,
+      "median_relative_MAD": 0.048145257363513126,
+      "retained": false,
+      "seed_medians_ns": [
+        260500,
+        252310,
+        267920,
+        262750,
+        279830,
+        243430,
+        237550
+      ],
+      "block_medians_ns": [
+        262750,
+        249020,
+        267920
+      ]
+    },
+    {
+      "words": 65536,
+      "engine": "write_NOT_PRNG",
+      "GB_per_second": 2.1308189392399917,
+      "median_microseconds": 246.05,
+      "seed_min_microseconds": 234.8,
+      "seed_max_microseconds": 286.52,
+      "median_relative_MAD": 0.050301977331016795,
+      "retained": false,
+      "seed_medians_ns": [
+        253330,
+        245400,
+        247220,
+        246050,
+        286520,
+        241740,
+        234800
+      ],
+      "block_medians_ns": [
+        245400,
+        241740,
+        274420
+      ]
+    },
+    {
+      "words": 65536,
+      "engine": "rbg_same_backend",
+      "GB_per_second": 2.096313474610156,
+      "median_microseconds": 250.1,
+      "seed_min_microseconds": 238.76,
+      "seed_max_microseconds": 290.8,
+      "median_relative_MAD": 0.05603000821984417,
+      "retained": false,
+      "seed_medians_ns": [
+        254140,
+        248050,
+        248200,
+        259129,
+        290800,
+        250100,
+        238760
+      ],
+      "block_medians_ns": [
+        250860,
+        248650,
+        261720
+      ]
+    },
+    {
+      "words": 1048576,
+      "engine": "pallas_carry_128",
+      "GB_per_second": 16.294254302474652,
+      "median_microseconds": 514.82,
+      "seed_min_microseconds": 481.36,
+      "seed_max_microseconds": 548.02,
+      "median_relative_MAD": 0.08306406361859799,
+      "retained": false,
+      "seed_medians_ns": [
+        481910,
+        516830,
+        514820,
+        512040,
+        548020,
+        525410,
+        481360
+      ],
+      "block_medians_ns": [
+        476069,
+        525390,
+        525410
+      ]
+    },
+    {
+      "words": 1048576,
+      "engine": "pallas_carry_64",
+      "GB_per_second": 16.727368442042714,
+      "median_microseconds": 501.49,
+      "seed_min_microseconds": 465.14,
+      "seed_max_microseconds": 530.0,
+      "median_relative_MAD": 0.05877800232188159,
+      "retained": false,
+      "seed_medians_ns": [
+        500590,
+        465140,
+        528390,
+        501490,
+        530000,
+        505640,
+        470340
+      ],
+      "block_medians_ns": [
+        527950,
+        495620,
+        501490
+      ]
+    },
+    {
+      "words": 1048576,
+      "engine": "pallas_original_32",
+      "GB_per_second": 15.859280825802548,
+      "median_microseconds": 528.94,
+      "seed_min_microseconds": 495.949,
+      "seed_max_microseconds": 560.55,
+      "median_relative_MAD": 0.057015236216156964,
+      "retained": true,
+      "seed_medians_ns": [
+        495949,
+        519160,
+        528940,
+        512220,
+        547380,
+        534050,
+        560550
+      ],
+      "block_medians_ns": [
+        524950,
+        534050,
+        519160
+      ]
+    },
+    {
+      "words": 1048576,
+      "engine": "jax_original",
+      "GB_per_second": 15.138066192658895,
+      "median_microseconds": 554.14,
+      "seed_min_microseconds": 534.27,
+      "seed_max_microseconds": 594.43,
+      "median_relative_MAD": 0.04168621647959,
+      "retained": false,
+      "seed_medians_ns": [
+        548670,
+        549580,
+        534270,
+        563409,
+        559080,
+        554140,
+        594430
+      ],
+      "block_medians_ns": [
+        551630,
+        579220,
+        565240
+      ]
+    },
+    {
+      "words": 1048576,
+      "engine": "threefry2x32",
+      "GB_per_second": 12.98164316996549,
+      "median_microseconds": 646.19,
+      "seed_min_microseconds": 622.54,
+      "seed_max_microseconds": 673.18,
+      "median_relative_MAD": 0.04111337324136254,
+      "retained": false,
+      "seed_medians_ns": [
+        622540,
+        631690,
+        658180,
+        667450,
+        673180,
+        646190,
+        625000
+      ],
+      "block_medians_ns": [
+        631120,
+        657410,
+        639210
+      ]
+    },
+    {
+      "words": 1048576,
+      "engine": "threefry4x32",
+      "GB_per_second": 10.690632610693172,
+      "median_microseconds": 784.669,
+      "seed_min_microseconds": 735.38,
+      "seed_max_microseconds": 858.66,
+      "median_relative_MAD": 0.040609787343069435,
+      "retained": false,
+      "seed_medians_ns": [
+        823070,
+        808930,
+        784669,
+        777720,
+        858660,
+        784510,
+        735380
+      ],
+      "block_medians_ns": [
+        777720,
+        842040,
+        808930
+      ]
+    },
+    {
+      "words": 1048576,
+      "engine": "philox2x32",
+      "GB_per_second": 10.650442466640428,
+      "median_microseconds": 787.63,
+      "seed_min_microseconds": 765.69,
+      "seed_max_microseconds": 843.05,
+      "median_relative_MAD": 0.03248917620544452,
+      "retained": false,
+      "seed_medians_ns": [
+        765690,
+        777890,
+        843050,
+        787630,
+        777200,
+        796320,
+        792840
+      ],
+      "block_medians_ns": [
+        787630,
+        803729,
+        781480
+      ]
+    },
+    {
+      "words": 1048576,
+      "engine": "philox4x32",
+      "GB_per_second": 7.86650787250204,
+      "median_microseconds": 1066.37,
+      "seed_min_microseconds": 1040.071,
+      "seed_max_microseconds": 1106.6,
+      "median_relative_MAD": 0.01525953516634922,
+      "retained": false,
+      "seed_medians_ns": [
+        1049930,
+        1083510,
+        1085400,
+        1040071,
+        1106600,
+        1060690,
+        1066370
+      ],
+      "block_medians_ns": [
+        1037011,
+        1096530,
+        1083510
+      ]
+    },
+    {
+      "words": 1048576,
+      "engine": "threefry_pallas_32",
+      "GB_per_second": 15.917058176160298,
+      "median_microseconds": 527.02,
+      "seed_min_microseconds": 473.81,
+      "seed_max_microseconds": 549.109,
+      "median_relative_MAD": 0.03732116428219043,
+      "retained": false,
+      "seed_medians_ns": [
+        473810,
+        520810,
+        549109,
+        508190,
+        534150,
+        528249,
+        527020
+      ],
+      "block_medians_ns": [
+        490860,
+        527020,
+        508190
+      ]
+    },
+    {
+      "words": 1048576,
+      "engine": "write_NOT_PRNG",
+      "GB_per_second": 17.789812105017603,
+      "median_microseconds": 471.54,
+      "seed_min_microseconds": 425.0,
+      "seed_max_microseconds": 493.04,
+      "median_relative_MAD": 0.05009119056707809,
+      "retained": false,
+      "seed_medians_ns": [
+        425000,
+        471540,
+        485409,
+        463850,
+        470300,
+        491150,
+        493040
+      ],
+      "block_medians_ns": [
+        470300,
+        485140,
+        491150
+      ]
+    },
+    {
+      "words": 1048576,
+      "engine": "rbg_same_backend",
+      "GB_per_second": 18.46450221214589,
+      "median_microseconds": 454.31,
+      "seed_min_microseconds": 421.92,
+      "seed_max_microseconds": 494.89,
+      "median_relative_MAD": 0.05187073896987025,
+      "retained": false,
+      "seed_medians_ns": [
+        433140,
+        421920,
+        494890,
+        452100,
+        477270,
+        455729,
+        454310
+      ],
+      "block_medians_ns": [
+        461029,
+        475290,
+        452100
+      ]
+    },
+    {
+      "words": 8388608,
+      "engine": "pallas_carry_128",
+      "GB_per_second": 62.457643303209956,
+      "median_microseconds": 1074.47,
+      "seed_min_microseconds": 1031.38,
+      "seed_max_microseconds": 1134.77,
+      "median_relative_MAD": 0.04043449192219729,
+      "retained": true,
+      "seed_medians_ns": [
+        1088850,
+        1134770,
+        1031380,
+        1071011,
+        1066441,
+        1074470,
+        1097500
+      ],
+      "block_medians_ns": [
+        1075750,
+        1066441,
+        1107110
+      ]
+    },
+    {
+      "words": 8388608,
+      "engine": "pallas_carry_64",
+      "GB_per_second": 63.98999179968343,
+      "median_microseconds": 1048.74,
+      "seed_min_microseconds": 1022.579,
+      "seed_max_microseconds": 1078.4,
+      "median_relative_MAD": 0.05357762648511547,
+      "retained": false,
+      "seed_medians_ns": [
+        1048740,
+        1065671,
+        1042750,
+        1022579,
+        1070520,
+        1023200,
+        1078400
+      ],
+      "block_medians_ns": [
+        1048740,
+        1037300,
+        1084530
+      ]
+    },
+    {
+      "words": 8388608,
+      "engine": "pallas_original_32",
+      "GB_per_second": 54.20004038217692,
+      "median_microseconds": 1238.17,
+      "seed_min_microseconds": 1217.92,
+      "seed_max_microseconds": 1279.03,
+      "median_relative_MAD": 0.0497003075378146,
+      "retained": false,
+      "seed_medians_ns": [
+        1274640,
+        1243790,
+        1229630,
+        1236160,
+        1217920,
+        1279030,
+        1238170
+      ],
+      "block_medians_ns": [
+        1186871,
+        1250960,
+        1245500
+      ]
+    },
+    {
+      "words": 8388608,
+      "engine": "jax_original",
+      "GB_per_second": 51.07487683904254,
+      "median_microseconds": 1313.931,
+      "seed_min_microseconds": 1263.41,
+      "seed_max_microseconds": 1375.74,
+      "median_relative_MAD": 0.018521303456518468,
+      "retained": false,
+      "seed_medians_ns": [
+        1299580,
+        1263410,
+        1299370,
+        1313931,
+        1352450,
+        1375740,
+        1334900
+      ],
+      "block_medians_ns": [
+        1313931,
+        1328350,
+        1323590
+      ]
+    },
+    {
+      "words": 8388608,
+      "engine": "threefry2x32",
+      "GB_per_second": 31.953863002218856,
+      "median_microseconds": 2100.18,
+      "seed_min_microseconds": 2059.35,
+      "seed_max_microseconds": 2162.531,
+      "median_relative_MAD": 0.0223265474914942,
+      "retained": false,
+      "seed_medians_ns": [
+        2128670,
+        2082840,
+        2162531,
+        2059350,
+        2127960,
+        2069610,
+        2100180
+      ],
+      "block_medians_ns": [
+        2100180,
+        2110210,
+        2078980
+      ]
+    },
+    {
+      "words": 8388608,
+      "engine": "threefry4x32",
+      "GB_per_second": 20.396219143775873,
+      "median_microseconds": 3290.26,
+      "seed_min_microseconds": 3231.56,
+      "seed_max_microseconds": 3354.14,
+      "median_relative_MAD": 0.01574162324078773,
+      "retained": false,
+      "seed_medians_ns": [
+        3354140,
+        3290260,
+        3348570,
+        3231560,
+        3255449,
+        3248850,
+        3299670
+      ],
+      "block_medians_ns": [
+        3246020,
+        3267380,
+        3298850
+      ]
+    },
+    {
+      "words": 8388608,
+      "engine": "philox2x32",
+      "GB_per_second": 20.30212100402056,
+      "median_microseconds": 3305.51,
+      "seed_min_microseconds": 3300.229,
+      "seed_max_microseconds": 3346.07,
+      "median_relative_MAD": 0.012120992069615522,
+      "retained": false,
+      "seed_medians_ns": [
+        3305510,
+        3346070,
+        3342380,
+        3305010,
+        3300229,
+        3329590,
+        3305180
+      ],
+      "block_medians_ns": [
+        3287329,
+        3329590,
+        3311580
+      ]
+    },
+    {
+      "words": 8388608,
+      "engine": "philox4x32",
+      "GB_per_second": 12.193300239527638,
+      "median_microseconds": 5503.749,
+      "seed_min_microseconds": 5437.849,
+      "seed_max_microseconds": 5571.82,
+      "median_relative_MAD": 0.006540047076670064,
+      "retained": false,
+      "seed_medians_ns": [
+        5571820,
+        5503749,
+        5484670,
+        5437849,
+        5492740,
+        5543129,
+        5538710
+      ],
+      "block_medians_ns": [
+        5490970,
+        5472500,
+        5526400
+      ]
+    },
+    {
+      "words": 8388608,
+      "engine": "threefry_pallas_128",
+      "GB_per_second": 65.24926008750607,
+      "median_microseconds": 1028.5,
+      "seed_min_microseconds": 1004.169,
+      "seed_max_microseconds": 1146.09,
+      "median_relative_MAD": 0.035772303721556944,
+      "retained": false,
+      "seed_medians_ns": [
+        1072990,
+        1022480,
+        1028500,
+        1004169,
+        1019480,
+        1146090,
+        1053860
+      ],
+      "block_medians_ns": [
+        1066520,
+        1028470,
+        1053860
+      ]
+    },
+    {
+      "words": 8388608,
+      "engine": "write_NOT_PRNG",
+      "GB_per_second": 91.32197153199249,
+      "median_microseconds": 734.86,
+      "seed_min_microseconds": 685.99,
+      "seed_max_microseconds": 804.31,
+      "median_relative_MAD": 0.06418599627359382,
+      "retained": false,
+      "seed_medians_ns": [
+        781430,
+        721390,
+        724600,
+        685990,
+        734860,
+        740660,
+        804310
+      ],
+      "block_medians_ns": [
+        684260,
+        743780,
+        780610
+      ]
+    },
+    {
+      "words": 8388608,
+      "engine": "rbg_same_backend",
+      "GB_per_second": 86.81050902270228,
+      "median_microseconds": 773.05,
+      "seed_min_microseconds": 725.55,
+      "seed_max_microseconds": 808.12,
+      "median_relative_MAD": 0.04674752771378753,
+      "retained": false,
+      "seed_medians_ns": [
+        808120,
+        788960,
+        773050,
+        750120,
+        725550,
+        769160,
+        785710
+      ],
+      "block_medians_ns": [
+        742191,
+        789350,
+        776990
+      ]
+    },
+    {
+      "words": 16777216,
+      "engine": "pallas_carry_64",
+      "GB_per_second": 89.48803072327715,
+      "median_microseconds": 1499.84,
+      "seed_min_microseconds": 1462.309,
+      "seed_max_microseconds": 1542.39,
+      "median_relative_MAD": 0.03068503305388943,
+      "retained": true,
+      "seed_medians_ns": [
+        1462309,
+        1501509,
+        1475020,
+        1501630,
+        1499840,
+        1477150,
+        1542390
+      ],
+      "block_medians_ns": [
+        1479980,
+        1477150,
+        1480040
+      ]
+    },
+    {
+      "words": 16777216,
+      "engine": "pallas_carry_128",
+      "GB_per_second": 88.989635601761,
+      "median_microseconds": 1508.24,
+      "seed_min_microseconds": 1459.49,
+      "seed_max_microseconds": 1551.12,
+      "median_relative_MAD": 0.021409478804358586,
+      "retained": false,
+      "seed_medians_ns": [
+        1478970,
+        1508240,
+        1506970,
+        1459490,
+        1551120,
+        1515170,
+        1544070
+      ],
+      "block_medians_ns": [
+        1493049,
+        1498150,
+        1524150
+      ]
+    },
+    {
+      "words": 16777216,
+      "engine": "pallas_original_32",
+      "GB_per_second": 73.49764696218821,
+      "median_microseconds": 1826.15,
+      "seed_min_microseconds": 1802.15,
+      "seed_max_microseconds": 1877.9,
+      "median_relative_MAD": 0.029122587307341616,
+      "retained": false,
+      "seed_medians_ns": [
+        1805840,
+        1802150,
+        1847210,
+        1826150,
+        1877900,
+        1820580,
+        1850480
+      ],
+      "block_medians_ns": [
+        1789711,
+        1811760,
+        1872550
+      ]
+    },
+    {
+      "words": 16777216,
+      "engine": "jax_original",
+      "GB_per_second": 66.76934189645652,
+      "median_microseconds": 2010.17,
+      "seed_min_microseconds": 1949.54,
+      "seed_max_microseconds": 2097.35,
+      "median_relative_MAD": 0.021858243151018815,
+      "retained": false,
+      "seed_medians_ns": [
+        1970800,
+        2051400,
+        2010170,
+        2003220,
+        2050410,
+        1949540,
+        2097350
+      ],
+      "block_medians_ns": [
+        1996030,
+        2010170,
+        1993030
+      ]
+    },
+    {
+      "words": 16777216,
+      "engine": "threefry2x32",
+      "GB_per_second": 33.364089867307015,
+      "median_microseconds": 4022.82,
+      "seed_min_microseconds": 3970.75,
+      "seed_max_microseconds": 4042.44,
+      "median_relative_MAD": 0.008239826283574135,
+      "retained": false,
+      "seed_medians_ns": [
+        3979300,
+        4041379,
+        4022820,
+        4042440,
+        4015740,
+        4025331,
+        3970750
+      ],
+      "block_medians_ns": [
+        4013569,
+        4008410,
+        4042440
+      ]
+    },
+    {
+      "words": 16777216,
+      "engine": "threefry4x32",
+      "GB_per_second": 21.33138716757549,
+      "median_microseconds": 6292.03,
+      "seed_min_microseconds": 6206.77,
+      "seed_max_microseconds": 6360.0,
+      "median_relative_MAD": 0.0074968553459119494,
+      "retained": false,
+      "seed_medians_ns": [
+        6206770,
+        6292030,
+        6286510,
+        6314110,
+        6360000,
+        6281110,
+        6309209
+      ],
+      "block_medians_ns": [
+        6257480,
+        6335490,
+        6259910
+      ]
+    },
+    {
+      "words": 16777216,
+      "engine": "philox2x32",
+      "GB_per_second": 20.924704243739672,
+      "median_microseconds": 6414.319,
+      "seed_min_microseconds": 6364.12,
+      "seed_max_microseconds": 6452.46,
+      "median_relative_MAD": 0.01020045931610199,
+      "retained": false,
+      "seed_medians_ns": [
+        6364120,
+        6430450,
+        6391399,
+        6378610,
+        6452460,
+        6414319,
+        6415290
+      ],
+      "block_medians_ns": [
+        6415290,
+        6390209,
+        6430450
+      ]
+    },
+    {
+      "words": 16777216,
+      "engine": "philox4x32",
+      "GB_per_second": 12.46269489772051,
+      "median_microseconds": 10769.559,
+      "seed_min_microseconds": 10722.879,
+      "seed_max_microseconds": 10796.209,
+      "median_relative_MAD": 0.003706651312277504,
+      "retained": false,
+      "seed_medians_ns": [
+        10773390,
+        10776530,
+        10736520,
+        10746289,
+        10769559,
+        10796209,
+        10722879
+      ],
+      "block_medians_ns": [
+        10739040,
+        10749890,
+        10801929
+      ]
+    },
+    {
+      "words": 16777216,
+      "engine": "threefry_pallas_128",
+      "GB_per_second": 93.00588867099528,
+      "median_microseconds": 1443.11,
+      "seed_min_microseconds": 1416.61,
+      "seed_max_microseconds": 1458.25,
+      "median_relative_MAD": 0.020274961714630207,
+      "retained": false,
+      "seed_medians_ns": [
+        1457230,
+        1443110,
+        1457189,
+        1458250,
+        1416800,
+        1416610,
+        1440230
+      ],
+      "block_medians_ns": [
+        1443110,
+        1447870,
+        1438000
+      ]
+    },
+    {
+      "words": 16777216,
+      "engine": "write_NOT_PRNG",
+      "GB_per_second": 151.7544751481163,
+      "median_microseconds": 884.44,
+      "seed_min_microseconds": 850.09,
+      "seed_max_microseconds": 901.28,
+      "median_relative_MAD": 0.0554988460855672,
+      "retained": false,
+      "seed_medians_ns": [
+        858490,
+        884440,
+        901280,
+        893110,
+        886570,
+        862930,
+        850090
+      ],
+      "block_medians_ns": [
+        851160,
+        855870,
+        886810
+      ]
+    },
+    {
+      "words": 16777216,
+      "engine": "rbg_same_backend",
+      "GB_per_second": 90.79132793527745,
+      "median_microseconds": 1478.31,
+      "seed_min_microseconds": 1443.17,
+      "seed_max_microseconds": 1514.04,
+      "median_relative_MAD": 0.030100403971812052,
+      "retained": false,
+      "seed_medians_ns": [
+        1474070,
+        1514040,
+        1443170,
+        1488270,
+        1491220,
+        1478310,
+        1470050
+      ],
+      "block_medians_ns": [
+        1510809,
+        1454800,
+        1491220
+      ]
+    }
+  ],
+  "decisions": {
+    "65536": {
+      "primary": "pallas_original_256",
+      "secondary": "pallas_original_8",
+      "retained": "pallas_original_32",
+      "primary_vs_previous": {
+        "speedup": 0.9936576783010761,
+        "gain_percent": -0.6342321698923903,
+        "elapsed_time_reduction_percent": -0.6382803492011258,
+        "faster_seeds": 2,
+        "total_seeds": 7,
+        "min_ratio": 0.9498672373479174,
+        "max_ratio": 1.0061513225343448,
+        "ratios": [
+          1.0020474859235342,
+          0.9640907673112913,
+          0.9498672373479174,
+          0.991266888584296,
+          0.998526936026936,
+          1.0061513225343448,
+          0.9936576783010761
+        ],
+        "faster_seed_blocks": 7,
+        "total_seed_blocks": 21,
+        "min_block_ratio": 0.9388224842513326,
+        "max_block_ratio": 1.090201465201465,
+        "block_ratios": [
+          1.0055119617224881,
+          0.9542540027747572,
+          1.028935814342463,
+          0.9777181467181467,
+          0.9589249899719213,
+          0.972393723701286,
+          1.0274740295243303,
+          0.9388224842513326,
+          0.9941927990708479,
+          0.991266888584296,
+          1.0145417515274948,
+          1.090201465201465,
+          0.998526936026936,
+          0.9588763615516912,
+          0.9527334124032805,
+          0.9430476271619664,
+          1.0061513225343448,
+          1.0677433376801417,
+          0.981995990015958,
+          0.9937944355402129,
+          0.9511546642357946
+        ]
+      },
+      "retained_comparisons": {
+        "pallas_original_32": {
+          "speedup": 1.0,
+          "gain_percent": 0.0,
+          "elapsed_time_reduction_percent": 0.0,
+          "faster_seeds": 0,
+          "total_seeds": 7,
+          "min_ratio": 1.0,
+          "max_ratio": 1.0,
+          "ratios": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "faster_seed_blocks": 0,
+          "total_seed_blocks": 21,
+          "min_block_ratio": 1.0,
+          "max_block_ratio": 1.0,
+          "block_ratios": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "jax_original": {
+          "speedup": 1.058114728192162,
+          "gain_percent": 5.81147281921619,
+          "elapsed_time_reduction_percent": 5.492289885375056,
+          "faster_seeds": 7,
+          "total_seeds": 7,
+          "min_ratio": 1.0251194201943667,
+          "max_ratio": 1.0795685914552737,
+          "ratios": [
+            1.0758772446854494,
+            1.0425041452663082,
+            1.0795685914552737,
+            1.058114728192162,
+            1.059641728134879,
+            1.0525779498675363,
+            1.0251194201943667
+          ],
+          "faster_seed_blocks": 19,
+          "total_seed_blocks": 21,
+          "min_block_ratio": 0.9509809803803924,
+          "max_block_ratio": 1.1210765913265714,
+          "block_ratios": [
+            1.0846244622939587,
+            1.0758772446854494,
+            1.0278376071849473,
+            1.090791339064641,
+            1.033338910733707,
+            1.0425041452663082,
+            1.0018624451243847,
+            1.0910146672975183,
+            1.0795685914552737,
+            0.9832490518331226,
+            1.059661942425824,
+            0.9509809803803924,
+            1.059641728134879,
+            1.0159033839531268,
+            1.086081557517706,
+            1.1150512036355258,
+            1.0269818626452007,
+            1.0635706009457302,
+            1.0335430642943455,
+            1.001860888263998,
+            1.1210765913265714
+          ]
+        },
+        "threefry2x32": {
+          "speedup": 1.051114734053393,
+          "gain_percent": 5.111473405339306,
+          "elapsed_time_reduction_percent": 4.862907197226729,
+          "faster_seeds": 7,
+          "total_seeds": 7,
+          "min_ratio": 1.0165952890792291,
+          "max_ratio": 1.144818090787717,
+          "ratios": [
+            1.0410232229164211,
+            1.03170623205403,
+            1.144818090787717,
+            1.1005491466498103,
+            1.065367053038286,
+            1.051114734053393,
+            1.0165952890792291
+          ],
+          "faster_seed_blocks": 21,
+          "total_seed_blocks": 21,
+          "min_block_ratio": 1.005283049538749,
+          "max_block_ratio": 1.1003914146845026,
+          "block_ratios": [
+            1.0703490806654232,
+            1.0410232229164211,
+            1.005283049538749,
+            1.032697676806369,
+            1.0223793189994144,
+            1.0267319124843288,
+            1.0472928029799122,
+            1.1003914146845026,
+            1.0854889853137517,
+            1.011694058154235,
+            1.0284658931224153,
+            1.0607187856242875,
+            1.065367053038286,
+            1.0290565586512017,
+            1.0186577641883248,
+            1.0863211531772454,
+            1.0428367638068066,
+            1.0161588325556634,
+            1.0246676944872704,
+            1.00942850053759,
+            1.0820222026994648
+          ]
+        },
+        "threefry_pallas_16": {
+          "speedup": 1.0203825777490192,
+          "gain_percent": 2.0382577749019193,
+          "elapsed_time_reduction_percent": 1.9975427054020778,
+          "faster_seeds": 4,
+          "total_seeds": 7,
+          "min_ratio": 0.9782161093724263,
+          "max_ratio": 1.1178237650200267,
+          "ratios": [
+            1.023615859169319,
+            1.0203825777490192,
+            1.1178237650200267,
+            1.038045195954488,
+            0.9828942746750966,
+            0.9921744446708783,
+            0.9782161093724263
+          ],
+          "faster_seed_blocks": 10,
+          "total_seed_blocks": 21,
+          "min_block_ratio": 0.9552048689636823,
+          "max_block_ratio": 1.1178237650200267,
+          "block_ratios": [
+            1.0017549202482012,
+            1.023615859169319,
+            0.9823221034664933,
+            0.9963708737940757,
+            1.064920940349703,
+            0.99846321834432,
+            0.9552048689636823,
+            1.0136349950535506,
+            1.1178237650200267,
+            1.038045195954488,
+            0.9997992532219858,
+            0.9664036719265615,
+            0.9828942746750966,
+            1.0060185738769978,
+            1.0267698355745531,
+            1.0467044012088305,
+            0.987894844100265,
+            0.9591645006732847,
+            0.9684153506396099,
+            0.9753122156976264,
+            1.0317067326890823
+          ]
+        },
+        "threefry4x32": {
+          "speedup": 1.1176677204074463,
+          "gain_percent": 11.766772040744634,
+          "elapsed_time_reduction_percent": 10.527969830295403,
+          "faster_seeds": 7,
+          "total_seeds": 7,
+          "min_ratio": 1.0957008730028002,
+          "max_ratio": 1.1504424778761062,
+          "ratios": [
+            1.12275531455067,
+            1.0980709346058963,
+            1.1388518024032044,
+            1.1504424778761062,
+            1.1176677204074463,
+            1.0958222946810678,
+            1.0957008730028002
+          ],
+          "faster_seed_blocks": 21,
+          "total_seed_blocks": 21,
+          "min_block_ratio": 1.051774046811678,
+          "max_block_ratio": 1.2382411882588706,
+          "block_ratios": [
+            1.0998515360310632,
+            1.2382411882588706,
+            1.0690453935871906,
+            1.072231063582765,
+            1.0896009370032629,
+            1.1130788207222875,
+            1.2049022216309697,
+            1.134027269990107,
+            1.1388518024032044,
+            1.0736804677623262,
+            1.1227767294334925,
+            1.2000359992800145,
+            1.1176677204074463,
+            1.074379210012356,
+            1.08879286137718,
+            1.1295969210059131,
+            1.0958222946810678,
+            1.0765665612375912,
+            1.1087128630359597,
+            1.051774046811678,
+            1.120198067247025
+          ]
+        },
+        "philox2x32": {
+          "speedup": 1.1033044058744994,
+          "gain_percent": 10.33044058744994,
+          "elapsed_time_reduction_percent": 9.363182574497053,
+          "faster_seeds": 7,
+          "total_seeds": 7,
+          "min_ratio": 1.085776643057157,
+          "max_ratio": 1.1334977959315728,
+          "ratios": [
+            1.0930095485087823,
+            1.1334977959315728,
+            1.1033044058744994,
+            1.1116466498103665,
+            1.1282753775904462,
+            1.0888526594660688,
+            1.085776643057157
+          ],
+          "faster_seed_blocks": 21,
+          "total_seed_blocks": 21,
+          "min_block_ratio": 1.0449391012179756,
+          "max_block_ratio": 1.1860873732130022,
+          "block_ratios": [
+            1.0816551829152232,
+            1.0930095485087823,
+            1.0952615109521682,
+            1.1542911751813576,
+            1.072450430854179,
+            1.1375823998058803,
+            1.0650525475588666,
+            1.1195320228827046,
+            1.1033044058744994,
+            1.1116466498103665,
+            1.0908579917292327,
+            1.0449391012179756,
+            1.1282753775904462,
+            1.093068675515166,
+            1.1107297744220148,
+            1.1448654069412887,
+            1.0888526594660688,
+            1.0701468700090815,
+            1.0986707779490812,
+            1.0483003887188818,
+            1.1860873732130022
+          ]
+        },
+        "philox4x32": {
+          "speedup": 1.237808951235805,
+          "gain_percent": 23.780895123580503,
+          "elapsed_time_reduction_percent": 19.21208850512682,
+          "faster_seeds": 7,
+          "total_seeds": 7,
+          "min_ratio": 1.1713733754829645,
+          "max_ratio": 1.341163217623498,
+          "ratios": [
+            1.237808951235805,
+            1.2163222388482227,
+            1.341163217623498,
+            1.2541087231352719,
+            1.1713733754829645,
+            1.2101080089667822,
+            1.2378932630538626
+          ],
+          "faster_seed_blocks": 21,
+          "total_seed_blocks": 21,
+          "min_block_ratio": 1.137537970124949,
+          "max_block_ratio": 1.3178049085378558,
+          "block_ratios": [
+            1.1991701244813278,
+            1.299933199732799,
+            1.2310318202137602,
+            1.2081159740787983,
+            1.1691207228310885,
+            1.2290209083188417,
+            1.1684847678595185,
+            1.2450858101423716,
+            1.206650534045394,
+            1.1456226295828065,
+            1.18107359376882,
+            1.1588468230635387,
+            1.1713733754829645,
+            1.1606281637370959,
+            1.1697918941686687,
+            1.315569790080905,
+            1.179498675361728,
+            1.137537970124949,
+            1.3178049085378558,
+            1.1379124968985195,
+            1.290192476639246
+          ]
+        },
+        "write_NOT_PRNG": {
+          "speedup": 0.9924374165891535,
+          "gain_percent": -0.756258341084648,
+          "elapsed_time_reduction_percent": -0.7620211898940576,
+          "faster_seeds": 2,
+          "total_seeds": 7,
+          "min_ratio": 0.9668917805962773,
+          "max_ratio": 1.031458611481976,
+          "ratios": [
+            0.9954418641203977,
+            0.9924374165891535,
+            1.031458611481976,
+            0.9720685840707964,
+            1.006392694063927,
+            0.9852863256572244,
+            0.9668917805962773
+          ],
+          "faster_seed_blocks": 9,
+          "total_seed_blocks": 21,
+          "min_block_ratio": 0.8418131637367252,
+          "max_block_ratio": 1.0958389904959667,
+          "block_ratios": [
+            0.9901404697552247,
+            0.9954418641203977,
+            0.9712683382777259,
+            0.9690833198409345,
+            1.0094955241362,
+            1.0197314676264813,
+            0.9971398164161235,
+            1.0325175276355971,
+            1.031458611481976,
+            0.965352402022756,
+            0.9878748946079415,
+            0.8418131637367252,
+            1.006392694063927,
+            1.0231177009844952,
+            1.0126985117469034,
+            1.0370825446874252,
+            0.9852863256572244,
+            0.9857827325963736,
+            0.9783740989207884,
+            0.9612935241088413,
+            1.0958389904959667
+          ]
+        },
+        "rbg_same_backend": {
+          "speedup": 1.0193600978194417,
+          "gain_percent": 1.9360097819441702,
+          "elapsed_time_reduction_percent": 1.8992403038784578,
+          "faster_seeds": 5,
+          "total_seeds": 7,
+          "min_ratio": 0.9831988140339318,
+          "max_ratio": 1.035547396528705,
+          "ratios": [
+            0.9986247003811545,
+            1.0031544465563957,
+            1.035547396528705,
+            1.0237397281921619,
+            1.021426062521953,
+            1.0193600978194417,
+            0.9831988140339318
+          ],
+          "faster_seed_blocks": 11,
+          "total_seed_blocks": 21,
+          "min_block_ratio": 0.9237415251694966,
+          "max_block_ratio": 1.1024305013884121,
+          "block_ratios": [
+            1.0020556549545092,
+            0.9986247003811545,
+            0.9853293778193197,
+            0.9906448313581778,
+            0.9989124069271312,
+            1.0062684514902738,
+            0.9893241984834376,
+            1.0397436448879522,
+            1.035547396528705,
+            0.9895701643489254,
+            0.9983137270646806,
+            0.9237415251694966,
+            1.021426062521953,
+            1.0087289250269043,
+            1.1024305013884121,
+            1.0657674221103939,
+            1.0193600978194417,
+            1.018789340181004,
+            0.9948747864494354,
+            0.9454139442560582,
+            1.0451241913585176
+          ]
+        }
+      }
+    },
+    "1048576": {
+      "primary": "pallas_carry_128",
+      "secondary": "pallas_carry_64",
+      "retained": "pallas_original_32",
+      "primary_vs_previous": {
+        "speedup": 1.016444300641404,
+        "gain_percent": 1.6444300641403897,
+        "elapsed_time_reduction_percent": 1.617826046250359,
+        "faster_seeds": 6,
+        "total_seeds": 7,
+        "min_ratio": 0.9988321594102405,
+        "max_ratio": 1.1645130463686222,
+        "ratios": [
+          1.0291319956008382,
+          1.0045082522299402,
+          1.0274270618857075,
+          1.0003515350363252,
+          0.9988321594102405,
+          1.016444300641404,
+          1.1645130463686222
+        ],
+        "faster_seed_blocks": 15,
+        "total_seed_blocks": 21,
+        "min_block_ratio": 0.9081753869612241,
+        "max_block_ratio": 1.2099412802358456,
+        "block_ratios": [
+          1.0490183217455944,
+          1.1570875255987891,
+          1.0401920466746348,
+          1.0393871476613683,
+          1.1314849221094756,
+          1.0045082522299402,
+          1.0666463476582342,
+          0.952117244862282,
+          0.9963185359925656,
+          1.0913288532408412,
+          1.039113801176269,
+          0.9081753869612241,
+          1.098230408089563,
+          1.0359110981351045,
+          0.9258356299908134,
+          1.1815230417256781,
+          0.965313426361073,
+          0.9938143545041016,
+          1.1241024865845364,
+          1.0611808210071465,
+          1.2099412802358456
+        ]
+      },
+      "retained_comparisons": {
+        "pallas_original_32": {
+          "speedup": 1.0,
+          "gain_percent": 0.0,
+          "elapsed_time_reduction_percent": 0.0,
+          "faster_seeds": 0,
+          "total_seeds": 7,
+          "min_ratio": 1.0,
+          "max_ratio": 1.0,
+          "ratios": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "faster_seed_blocks": 0,
+          "total_seed_blocks": 21,
+          "min_block_ratio": 1.0,
+          "max_block_ratio": 1.0,
+          "block_ratios": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "jax_original": {
+          "speedup": 1.0585946529008399,
+          "gain_percent": 5.859465290083987,
+          "elapsed_time_reduction_percent": 5.535135921976786,
+          "faster_seeds": 7,
+          "total_seeds": 7,
+          "min_ratio": 1.0100767572881613,
+          "max_ratio": 1.1063032690861359,
+          "ratios": [
+            1.1063032690861359,
+            1.0585946529008399,
+            1.0100767572881613,
+            1.0999355745578072,
+            1.0213745478461032,
+            1.0376182005430203,
+            1.0604406386584604
+          ],
+          "faster_seed_blocks": 17,
+          "total_seed_blocks": 21,
+          "min_block_ratio": 0.9143299229506126,
+          "max_block_ratio": 1.1977909659729604,
+          "block_ratios": [
+            1.1799499791579824,
+            0.9975760373982802,
+            1.124018930025123,
+            1.0172992199183541,
+            0.9143299229506126,
+            1.0887587641574852,
+            1.004286122487856,
+            1.1977909659729604,
+            1.0459372197309418,
+            1.1051963530182944,
+            1.0463237718430596,
+            1.1082152200226465,
+            0.9644853666557054,
+            1.104438964241677,
+            0.9936056940045033,
+            1.0172795338029728,
+            1.0845800954966764,
+            1.0232304274551862,
+            1.1310764472534123,
+            1.1637007889430513,
+            1.0699406842283956
+          ]
+        },
+        "threefry2x32": {
+          "speedup": 1.2298220614563922,
+          "gain_percent": 22.982206145639218,
+          "elapsed_time_reduction_percent": 18.6874238688018,
+          "faster_seeds": 7,
+          "total_seeds": 7,
+          "min_ratio": 1.1149763625011149,
+          "max_ratio": 1.3030533755027136,
+          "ratios": [
+            1.2552500357899703,
+            1.2167539872101087,
+            1.2443377320679094,
+            1.3030533755027136,
+            1.2298220614563922,
+            1.209980338919577,
+            1.1149763625011149
+          ],
+          "faster_seed_blocks": 20,
+          "total_seed_blocks": 21,
+          "min_block_ratio": 0.9756220790703549,
+          "max_block_ratio": 1.3608410448635353,
+          "block_ratios": [
+            1.2231554814506045,
+            1.262961466689752,
+            1.2124174732701034,
+            1.2766056343720948,
+            0.9756220790703549,
+            1.2312389244163648,
+            1.2022478331269644,
+            1.2520579636819138,
+            1.2124843049327354,
+            1.2217587350773693,
+            1.2481591383668535,
+            1.3608410448635353,
+            1.2415323906609668,
+            1.2289941870706358,
+            1.2369194367057208,
+            1.1916608269096005,
+            1.244171894017414,
+            1.1826643174505898,
+            1.0554528339944866,
+            1.2869951645425892,
+            1.2350062910666852
+          ]
+        },
+        "threefry_pallas_32": {
+          "speedup": 0.9891377211871547,
+          "gain_percent": -1.0862278812845294,
+          "elapsed_time_reduction_percent": -1.0981563618672308,
+          "faster_seeds": 2,
+          "total_seeds": 7,
+          "min_ratio": 0.9401837481045402,
+          "max_ratio": 1.03813097893901,
+          "ratios": [
+            0.9553603293887073,
+            1.00317821095616,
+            1.03813097893901,
+            0.9921322869079693,
+            0.9758303189740217,
+            0.9891377211871547,
+            0.9401837481045402
+          ],
+          "faster_seed_blocks": 8,
+          "total_seed_blocks": 21,
+          "min_block_ratio": 0.8267967664519389,
+          "max_block_ratio": 1.1052316364276906,
+          "block_ratios": [
+            0.9984576907044602,
+            0.8906927531213328,
+            0.9227608234171422,
+            0.9919970898508549,
+            0.8267967664519389,
+            0.9677556052084136,
+            0.9251166777788361,
+            0.9949017583731325,
+            1.041863677130045,
+            1.0036747909341914,
+            1.0048173791991795,
+            0.9921322869079693,
+            0.9758303189740217,
+            1.1052316364276906,
+            0.9641052551234591,
+            0.8859218824917936,
+            1.0893549293137346,
+            1.049697410755324,
+            0.8713272372756001,
+            1.0317339128051526,
+            1.0560803658804498
+          ]
+        },
+        "threefry4x32": {
+          "speedup": 1.5183319667330444,
+          "gain_percent": 51.833196673304435,
+          "elapsed_time_reduction_percent": 34.13825027002005,
+          "faster_seeds": 7,
+          "total_seeds": 7,
+          "min_ratio": 1.3118901079297118,
+          "max_ratio": 1.6595859654924197,
+          "ratios": [
+            1.6595859654924197,
+            1.5581516295554356,
+            1.4834744961621356,
+            1.5183319667330444,
+            1.5686725857722241,
+            1.4689823050276192,
+            1.3118901079297118
+          ],
+          "faster_seed_blocks": 21,
+          "total_seed_blocks": 21,
+          "min_block_ratio": 1.2842230888186648,
+          "max_block_ratio": 1.7585448030069917,
+          "block_ratios": [
+            1.7154439349729054,
+            1.4394105538562167,
+            1.7585448030069917,
+            1.6190331837840022,
+            1.3738474169508652,
+            1.5581516295554356,
+            1.452176397752167,
+            1.6095265102444258,
+            1.485829596412556,
+            1.5448423812645253,
+            1.5423672931091328,
+            1.4827417906368356,
+            1.5049691256531113,
+            1.513281662850097,
+            1.6384765103232455,
+            1.3637553940913953,
+            1.580020597322348,
+            1.5024322046882181,
+            1.2842230888186648,
+            1.4346430179518803,
+            1.468674482235226
+          ]
+        },
+        "philox2x32": {
+          "speedup": 1.498362739810463,
+          "gain_percent": 49.83627398104631,
+          "elapsed_time_reduction_percent": 33.26048670120454,
+          "faster_seeds": 7,
+          "total_seeds": 7,
+          "min_ratio": 1.4143965747926144,
+          "max_ratio": 1.5938480735055016,
+          "ratios": [
+            1.5438885853182485,
+            1.498362739810463,
+            1.5938480735055016,
+            1.5376791222521573,
+            1.4198545799992692,
+            1.4910963392940735,
+            1.4143965747926144
+          ],
+          "faster_seed_blocks": 21,
+          "total_seed_blocks": 21,
+          "min_block_ratio": 1.2689923582164961,
+          "max_block_ratio": 1.6640383214768784,
+          "block_ratios": [
+            1.5874739474781159,
+            1.4845424289644293,
+            1.4821703312754397,
+            1.5054181318459239,
+            1.2689923582164961,
+            1.5903382386932738,
+            1.6197161634441375,
+            1.6640383214768784,
+            1.5260430493273542,
+            1.5645273424309238,
+            1.5365607942264718,
+            1.4816875561282261,
+            1.4839051481603274,
+            1.399982385062533,
+            1.4561500591535321,
+            1.44250175192712,
+            1.660799550603876,
+            1.496629385628926,
+            1.3731257984266791,
+            1.5164151054208022,
+            1.5666573465678737
+          ]
+        },
+        "philox4x32": {
+          "speedup": 2.0305161844519932,
+          "gain_percent": 103.05161844519932,
+          "elapsed_time_reduction_percent": 50.75143908444713,
+          "faster_seeds": 7,
+          "total_seeds": 7,
+          "min_ratio": 1.9023637498885024,
+          "max_ratio": 2.1170120314790433,
+          "ratios": [
+            2.1170120314790433,
+            2.087044456429617,
+            2.0520285854728324,
+            2.0305161844519932,
+            2.0216303116664838,
+            1.9861248946727834,
+            1.9023637498885024
+          ],
+          "faster_seed_blocks": 21,
+          "total_seed_blocks": 21,
+          "min_block_ratio": 1.7392758690244066,
+          "max_block_ratio": 2.2108089250850216,
+          "block_ratios": [
+            2.122259274697791,
+            2.109482310844347,
+            2.1306989697548055,
+            2.0690958328280993,
+            1.7422476948339016,
+            2.087044456429617,
+            2.070387655967235,
+            2.2108089250850216,
+            2.0472645739910313,
+            2.059891146733409,
+            2.015789280873356,
+            2.0305161844519932,
+            1.992984763783843,
+            1.957865069579003,
+            2.1115902759226044,
+            1.9560542912993766,
+            2.002640202228256,
+            2.0155124865941474,
+            1.7392758690244066,
+            2.1223546915682934,
+            2.0497293842743303
+          ]
+        },
+        "write_NOT_PRNG": {
+          "speedup": 0.9055679200343603,
+          "gain_percent": -9.443207996563974,
+          "elapsed_time_reduction_percent": -10.427940066831942,
+          "faster_seeds": 0,
+          "total_seeds": 7,
+          "min_ratio": 0.8569429517954467,
+          "max_ratio": 0.9196704428424305,
+          "ratios": [
+            0.8569429517954467,
+            0.9082749056167655,
+            0.9177014406170833,
+            0.9055679200343603,
+            0.8591837480360992,
+            0.9196704428424305,
+            0.8795647132280796
+          ],
+          "faster_seed_blocks": 3,
+          "total_seed_blocks": 21,
+          "min_block_ratio": 0.7659782745989643,
+          "max_block_ratio": 1.052265782588724,
+          "block_ratios": [
+            0.994768653605669,
+            0.779707970219888,
+            0.9711180789530061,
+            0.8729457176346954,
+            0.7659782745989643,
+            0.9082749056167655,
+            0.872083055529098,
+            1.0429464123598187,
+            0.8706887892376681,
+            0.9016943765766839,
+            0.8762501373777338,
+            1.0358830190152668,
+            0.8591837480360992,
+            0.8751100933591686,
+            0.8795748578407052,
+            0.8920259654040498,
+            0.9569141466154855,
+            0.9406120729278382,
+            0.8287500840449136,
+            0.9183277539593978,
+            1.052265782588724
+          ]
+        },
+        "rbg_same_backend": {
+          "speedup": 0.8719171325221966,
+          "gain_percent": -12.80828674778034,
+          "elapsed_time_reduction_percent": -14.68979822741845,
+          "faster_seeds": 0,
+          "total_seeds": 7,
+          "min_ratio": 0.8104718579966105,
+          "max_ratio": 0.93562596891897,
+          "ratios": [
+            0.873355929742776,
+            0.8126974343169736,
+            0.93562596891897,
+            0.8826285580414666,
+            0.8719171325221966,
+            0.8533451923977156,
+            0.8104718579966105
+          ],
+          "faster_seed_blocks": 1,
+          "total_seed_blocks": 21,
+          "min_block_ratio": 0.615116205633447,
+          "max_block_ratio": 1.008167039063102,
+          "block_ratios": [
+            0.9573989162150897,
+            0.8332660010388411,
+            0.8194831246226654,
+            0.8504304595610525,
+            0.615116205633447,
+            1.008167039063102,
+            0.942737403562244,
+            0.9959014135940869,
+            0.8940107623318385,
+            0.8674095703474167,
+            0.9442063230391619,
+            0.8826285580414666,
+            0.8713690671928094,
+            0.8564030297692443,
+            0.8936553066442774,
+            0.8501991664515177,
+            0.8899728489841775,
+            0.8206488432664317,
+            0.8380622604719963,
+            0.9102405982654999,
+            0.8504923009326756
+          ]
+        }
+      }
+    },
+    "8388608": {
+      "primary": "pallas_carry_128",
+      "secondary": "pallas_carry_64",
+      "retained": "pallas_carry_128",
+      "primary_vs_previous": {
+        "speedup": 1.1541991632205457,
+        "gain_percent": 15.419916322054572,
+        "elapsed_time_reduction_percent": 13.359840150142366,
+        "faster_seeds": 7,
+        "total_seeds": 7,
+        "min_ratio": 1.0960723318381698,
+        "max_ratio": 1.192218193100506,
+        "ratios": [
+          1.1706295633007302,
+          1.0960723318381698,
+          1.192218193100506,
+          1.1541991632205457,
+          1.142041613178788,
+          1.1903822349623536,
+          1.1281731207289294
+        ],
+        "faster_seed_blocks": 21,
+        "total_seed_blocks": 21,
+        "min_block_ratio": 1.0092404313702594,
+        "max_block_ratio": 1.3125930030889854,
+        "block_ratios": [
+          1.0092404313702594,
+          1.2859848299005996,
+          1.1706295633007302,
+          1.0905232691689255,
+          1.0960723318381698,
+          1.0629137206468673,
+          1.174385065299255,
+          1.192218193100506,
+          1.0748187780462548,
+          1.1860190564722286,
+          1.13880999198893,
+          1.1568686022085402,
+          1.111321414011997,
+          1.1814718301340628,
+          1.1000894220086532,
+          1.0903236014034827,
+          1.3125930030889854,
+          1.1770992366412214,
+          1.1436534538035559,
+          1.102123006833713,
+          1.128461019667888
+        ]
+      },
+      "retained_comparisons": {
+        "pallas_original_32": {
+          "speedup": 1.1541991632205457,
+          "gain_percent": 15.419916322054572,
+          "elapsed_time_reduction_percent": 13.359840150142366,
+          "faster_seeds": 7,
+          "total_seeds": 7,
+          "min_ratio": 1.0960723318381698,
+          "max_ratio": 1.192218193100506,
+          "ratios": [
+            1.1706295633007302,
+            1.0960723318381698,
+            1.192218193100506,
+            1.1541991632205457,
+            1.142041613178788,
+            1.1903822349623536,
+            1.1281731207289294
+          ],
+          "faster_seed_blocks": 21,
+          "total_seed_blocks": 21,
+          "min_block_ratio": 1.0092404313702594,
+          "max_block_ratio": 1.3125930030889854,
+          "block_ratios": [
+            1.0092404313702594,
+            1.2859848299005996,
+            1.1706295633007302,
+            1.0905232691689255,
+            1.0960723318381698,
+            1.0629137206468673,
+            1.174385065299255,
+            1.192218193100506,
+            1.0748187780462548,
+            1.1860190564722286,
+            1.13880999198893,
+            1.1568686022085402,
+            1.111321414011997,
+            1.1814718301340628,
+            1.1000894220086532,
+            1.0903236014034827,
+            1.3125930030889854,
+            1.1770992366412214,
+            1.1436534538035559,
+            1.102123006833713,
+            1.128461019667888
+          ]
+        },
+        "jax_original": {
+          "speedup": 1.2268137302044517,
+          "gain_percent": 22.68137302044517,
+          "elapsed_time_reduction_percent": 18.48803323766621,
+          "faster_seeds": 7,
+          "total_seeds": 7,
+          "min_ratio": 1.113362179119998,
+          "max_ratio": 1.2803894012862156,
+          "ratios": [
+            1.193534462965514,
+            1.113362179119998,
+            1.2598363357831255,
+            1.2268137302044517,
+            1.2681901764842125,
+            1.2803894012862156,
+            1.2163097949886106
+          ],
+          "faster_seed_blocks": 21,
+          "total_seed_blocks": 21,
+          "min_block_ratio": 1.0300058851321667,
+          "max_block_ratio": 1.3166316748887186,
+          "block_ratios": [
+            1.0630290999774807,
+            1.2752107230819048,
+            1.2987463837994213,
+            1.1593145587357008,
+            1.2087383346404998,
+            1.0300058851321667,
+            1.3013480490345324,
+            1.2723923287246215,
+            1.1139109423541596,
+            1.221409249360911,
+            1.2092618891559246,
+            1.2416198538531513,
+            1.3127268844757634,
+            1.3166316748887186,
+            1.1955361255882433,
+            1.2803894012862156,
+            1.2747144484467843,
+            1.2128367114152847,
+            1.2052244243660741,
+            1.226897494305239,
+            1.2166201855598695
+          ]
+        },
+        "threefry2x32": {
+          "speedup": 1.9261682503932172,
+          "gain_percent": 92.61682503932171,
+          "elapsed_time_reduction_percent": 48.08345533699586,
+          "faster_seeds": 7,
+          "total_seeds": 7,
+          "min_ratio": 1.8354732677106373,
+          "max_ratio": 2.096735441835211,
+          "ratios": [
+            1.9549708407953346,
+            1.8354732677106373,
+            2.096735441835211,
+            1.9228093829101662,
+            1.995384648564712,
+            1.9261682503932172,
+            1.913603644646925
+          ],
+          "faster_seed_blocks": 21,
+          "total_seed_blocks": 21,
+          "min_block_ratio": 1.7144136004575483,
+          "max_block_ratio": 2.163588654755228,
+          "block_ratios": [
+            1.7754155650266479,
+            2.102765157833796,
+            1.9029251044680167,
+            1.960986814903294,
+            1.8373864307304564,
+            1.7144136004575483,
+            2.163588654755228,
+            2.0460063216273343,
+            1.918545046599931,
+            1.883783406925401,
+            1.8747268953462968,
+            2.00976567975492,
+            2.001330732048221,
+            2.0348242425038046,
+            1.9292662879027378,
+            1.9261682503932172,
+            2.078794782590848,
+            1.8669395454944284,
+            1.9128716117749927,
+            1.965749430523918,
+            1.880771404093983
+          ]
+        },
+        "threefry_pallas_128": {
+          "speedup": 0.9602369020501139,
+          "gain_percent": -3.9763097949886084,
+          "elapsed_time_reduction_percent": -4.140967490938063,
+          "faster_seeds": 1,
+          "total_seeds": 7,
+          "min_ratio": 0.9010460269481921,
+          "max_ratio": 1.0666561188306793,
+          "ratios": [
+            0.9854341736694678,
+            0.9010460269481921,
+            0.9972076247357908,
+            0.9375898100019514,
+            0.9559647462916373,
+            1.0666561188306793,
+            0.9602369020501139
+          ],
+          "faster_seed_blocks": 7,
+          "total_seed_blocks": 21,
+          "min_block_ratio": 0.8726076108850078,
+          "max_block_ratio": 1.1003089895483356,
+          "block_ratios": [
+            0.8895301800712277,
+            1.0528696607824475,
+            1.0204711392753822,
+            0.9209252538245969,
+            0.9063246296606361,
+            0.8726076108850078,
+            1.0258492909222017,
+            0.9686633442572088,
+            0.9286503279254401,
+            1.031819660701836,
+            0.9127421527929502,
+            0.9867667402331118,
+            0.9895366218236173,
+            0.9527671948096519,
+            0.9285798159171176,
+            1.1003089895483356,
+            1.066151493693749,
+            1.0324120382556814,
+            0.9942063174001748,
+            0.9385148063781321,
+            0.9604819452798892
+          ]
+        },
+        "threefry4x32": {
+          "speedup": 3.0236767894869097,
+          "gain_percent": 202.36767894869098,
+          "elapsed_time_reduction_percent": 66.92768210289795,
+          "faster_seeds": 7,
+          "total_seeds": 7,
+          "min_ratio": 2.8994950518607294,
+          "max_ratio": 3.2466889022474743,
+          "ratios": [
+            3.080442668870827,
+            2.8994950518607294,
+            3.2466889022474743,
+            3.0172986085110236,
+            3.052629259377687,
+            3.0236767894869097,
+            3.0065330296127564
+          ],
+          "faster_seed_blocks": 21,
+          "total_seed_blocks": 21,
+          "min_block_ratio": 2.7723945856784065,
+          "max_block_ratio": 3.3147060332707325,
+          "block_ratios": [
+            2.8091194942325495,
+            3.206111214687325,
+            3.080442668870827,
+            3.0231635043873752,
+            2.873965649426756,
+            2.7723945856784065,
+            3.206283550997516,
+            3.21660299792511,
+            3.0159647911632725,
+            3.004006507088078,
+            3.0015566965261087,
+            3.1000861336434533,
+            3.1477306699279795,
+            2.990638957054352,
+            2.979694881267444,
+            3.0210429327947734,
+            3.3147060332707325,
+            2.8915328595244363,
+            3.0528818128825415,
+            3.0065330296127564,
+            3.0031078543956546
+          ]
+        },
+        "philox2x32": {
+          "speedup": 3.085878669780236,
+          "gain_percent": 208.58786697802358,
+          "elapsed_time_reduction_percent": 67.59431892793063,
+          "faster_seeds": 7,
+          "total_seeds": 7,
+          "min_ratio": 2.9486768243785084,
+          "max_ratio": 3.2406872345789135,
+          "ratios": [
+            3.035780869724939,
+            2.9486768243785084,
+            3.2406872345789135,
+            3.085878669780236,
+            3.094619392915314,
+            3.098820813982708,
+            3.0115535307517085
+          ],
+          "faster_seed_blocks": 21,
+          "total_seed_blocks": 21,
+          "min_block_ratio": 2.7417942066940793,
+          "max_block_ratio": 3.416961710948965,
+          "block_ratios": [
+            2.7417942066940793,
+            3.2077008370048374,
+            3.1306516049042568,
+            3.0144714476041714,
+            2.9667157221287135,
+            2.827872317498736,
+            3.3513139972758594,
+            3.2406872345789135,
+            2.852131515360718,
+            3.02272832907274,
+            3.025680940936567,
+            3.1949781475756422,
+            3.2760662357074914,
+            3.15239192791725,
+            2.942200865316003,
+            3.0416856682829674,
+            3.416961710948965,
+            2.9713257874879355,
+            2.9971400466336346,
+            3.0112801822323463,
+            3.018154973478427
+          ]
+        },
+        "philox4x32": {
+          "speedup": 5.1171603067456495,
+          "gain_percent": 411.71603067456493,
+          "elapsed_time_reduction_percent": 80.45791141853111,
+          "faster_seeds": 7,
+          "total_seeds": 7,
+          "min_ratio": 4.85010090150427,
+          "max_ratio": 5.317797514010355,
+          "ratios": [
+            5.1171603067456495,
+            4.85010090150427,
+            5.317797514010355,
+            5.077304528151438,
+            5.150533409724495,
+            5.158942548419221,
+            5.046660592255125
+          ],
+          "faster_seed_blocks": 21,
+          "total_seed_blocks": 21,
+          "min_block_ratio": 4.579739276212082,
+          "max_block_ratio": 5.640405159939657,
+          "block_ratios": [
+            4.579739276212082,
+            5.502075340247863,
+            5.1171603067456495,
+            4.953883401479303,
+            4.85010090150427,
+            4.580787944596868,
+            5.493019389471997,
+            5.275018906707518,
+            4.7640144977563,
+            5.095653265163839,
+            4.9162388027091986,
+            5.241420712096121,
+            5.331411488362161,
+            5.118210946503369,
+            4.988871927812051,
+            5.169050787830279,
+            5.640405159939657,
+            4.863673773800123,
+            5.06251821626348,
+            4.9863325740318905,
+            5.056460873844808
+          ]
+        },
+        "write_NOT_PRNG": {
+          "speedup": 0.6893259002112669,
+          "gain_percent": -31.067409978873307,
+          "elapsed_time_reduction_percent": -45.06926254961792,
+          "faster_seeds": 0,
+          "total_seeds": 7,
+          "min_ratio": 0.6357147263322083,
+          "max_ratio": 0.7328564920273348,
+          "ratios": [
+            0.7176654268264683,
+            0.6357147263322083,
+            0.7025538598770579,
+            0.6405069602459732,
+            0.6890770328597644,
+            0.6893259002112669,
+            0.7328564920273348
+          ],
+          "faster_seed_blocks": 0,
+          "total_seed_blocks": 21,
+          "min_block_ratio": 0.5995830602286796,
+          "max_block_ratio": 0.801984084151858,
+          "block_ratios": [
+            0.6313177143715022,
+            0.801984084151858,
+            0.7176654268264683,
+            0.6241925851058943,
+            0.6884919410981961,
+            0.6470412705254346,
+            0.6853016585209518,
+            0.721150303476895,
+            0.6253020365895754,
+            0.6727213571926562,
+            0.5995830602286796,
+            0.6643891036590848,
+            0.6634538854269796,
+            0.6890770328597644,
+            0.6683256406319156,
+            0.6281422468752036,
+            0.7407499769095779,
+            0.691585504957445,
+            0.7109807636257651,
+            0.7484373576309795,
+            0.7817475073367237
+          ]
+        },
+        "rbg_same_backend": {
+          "speedup": 0.7158506054147626,
+          "gain_percent": -28.414939458523737,
+          "elapsed_time_reduction_percent": -39.69395184356961,
+          "faster_seeds": 0,
+          "total_seeds": 7,
+          "min_ratio": 0.6803470609250769,
+          "max_ratio": 0.7495297562489093,
+          "ratios": [
+            0.7421775267484043,
+            0.6952598323889423,
+            0.7495297562489093,
+            0.7003849633663893,
+            0.6803470609250769,
+            0.7158506054147626,
+            0.7159088838268792
+          ],
+          "faster_seed_blocks": 0,
+          "total_seed_blocks": 21,
+          "min_block_ratio": 0.6400357688034612,
+          "max_block_ratio": 0.8629009626046256,
+          "block_ratios": [
+            0.6740118601799878,
+            0.8629009626046256,
+            0.7104559856729578,
+            0.7249138604309275,
+            0.6873639592164051,
+            0.6766161318932719,
+            0.7587132441310792,
+            0.7244856405980337,
+            0.6705125992405937,
+            0.6870555426446665,
+            0.7185838613356639,
+            0.709814691828131,
+            0.6727622153631122,
+            0.7742575538637393,
+            0.6400357688034612,
+            0.664392677319981,
+            0.7893435136438739,
+            0.7599017285250504,
+            0.675997340425532,
+            0.7266870159453303,
+            0.7276024862835165
+          ]
+        }
+      }
+    },
+    "16777216": {
+      "primary": "pallas_carry_64",
+      "secondary": "pallas_carry_128",
+      "retained": "pallas_carry_64",
+      "primary_vs_previous": {
+        "speedup": 1.2324950072775276,
+        "gain_percent": 23.24950072775276,
+        "elapsed_time_reduction_percent": 18.863768689099068,
+        "faster_seeds": 7,
+        "total_seeds": 7,
+        "min_ratio": 1.199748442352453,
+        "max_ratio": 1.2523287819826172,
+        "ratios": [
+          1.2349236720829866,
+          1.200225906071825,
+          1.2523287819826172,
+          1.2161118251500036,
+          1.2520668871346277,
+          1.2324950072775276,
+          1.199748442352453
+        ],
+        "faster_seed_blocks": 21,
+        "total_seed_blocks": 21,
+        "min_block_ratio": 1.1338099783513322,
+        "max_block_ratio": 1.337740871868328,
+        "block_ratios": [
+          1.2955779235467089,
+          1.18969568227166,
+          1.282700277425763,
+          1.2320405671894075,
+          1.163071573837171,
+          1.2454216251330321,
+          1.226833525757326,
+          1.2560846632588032,
+          1.337740871868328,
+          1.2470115663322185,
+          1.1787791643352548,
+          1.1712780784882257,
+          1.2520668871346277,
+          1.2068517594295443,
+          1.2311728072011723,
+          1.154193633601902,
+          1.2484852587753443,
+          1.2587061580901417,
+          1.2017256989959324,
+          1.267635695045355,
+          1.1338099783513322
+        ]
+      },
+      "retained_comparisons": {
+        "pallas_original_32": {
+          "speedup": 1.2324950072775276,
+          "gain_percent": 23.24950072775276,
+          "elapsed_time_reduction_percent": 18.863768689099068,
+          "faster_seeds": 7,
+          "total_seeds": 7,
+          "min_ratio": 1.199748442352453,
+          "max_ratio": 1.2523287819826172,
+          "ratios": [
+            1.2349236720829866,
+            1.200225906071825,
+            1.2523287819826172,
+            1.2161118251500036,
+            1.2520668871346277,
+            1.2324950072775276,
+            1.199748442352453
+          ],
+          "faster_seed_blocks": 21,
+          "total_seed_blocks": 21,
+          "min_block_ratio": 1.1338099783513322,
+          "max_block_ratio": 1.337740871868328,
+          "block_ratios": [
+            1.2955779235467089,
+            1.18969568227166,
+            1.282700277425763,
+            1.2320405671894075,
+            1.163071573837171,
+            1.2454216251330321,
+            1.226833525757326,
+            1.2560846632588032,
+            1.337740871868328,
+            1.2470115663322185,
+            1.1787791643352548,
+            1.1712780784882257,
+            1.2520668871346277,
+            1.2068517594295443,
+            1.2311728072011723,
+            1.154193633601902,
+            1.2484852587753443,
+            1.2587061580901417,
+            1.2017256989959324,
+            1.267635695045355,
+            1.1338099783513322
+          ]
+        },
+        "jax_original": {
+          "speedup": 1.3598052373264868,
+          "gain_percent": 35.980523732648685,
+          "elapsed_time_reduction_percent": 26.46005673826496,
+          "faster_seeds": 7,
+          "total_seeds": 7,
+          "min_ratio": 1.319798260163152,
+          "max_ratio": 1.367085822487732,
+          "ratios": [
+            1.3477315669943903,
+            1.366225577069468,
+            1.362808639882849,
+            1.334030353682332,
+            1.367085822487732,
+            1.319798260163152,
+            1.3598052373264868
+          ],
+          "faster_seed_blocks": 21,
+          "total_seed_blocks": 21,
+          "min_block_ratio": 1.2768159638960854,
+          "max_block_ratio": 1.4297114068914043,
+          "block_ratios": [
+            1.393067179371183,
+            1.3452954270899786,
+            1.3473096551015515,
+            1.3256930194890606,
+            1.3277832447680902,
+            1.4297114068914043,
+            1.3989980207817911,
+            1.362808639882849,
+            1.3424231777519526,
+            1.3907678372352286,
+            1.3265754921989876,
+            1.3236670628456848,
+            1.389261521228931,
+            1.37117912886531,
+            1.3037929139627382,
+            1.2875049531105534,
+            1.3745787496191992,
+            1.311347561860909,
+            1.4229455803456803,
+            1.2768159638960854,
+            1.308496634162471
+          ]
+        },
+        "threefry2x32": {
+          "speedup": 2.6920346556741674,
+          "gain_percent": 169.20346556741674,
+          "elapsed_time_reduction_percent": 62.85337568399283,
+          "faster_seeds": 7,
+          "total_seeds": 7,
+          "min_ratio": 2.5744137345288807,
+          "max_ratio": 2.727298612900164,
+          "ratios": [
+            2.721244278739993,
+            2.6915449724244076,
+            2.727298612900164,
+            2.6920346556741674,
+            2.677445594196714,
+            2.725065836238703,
+            2.5744137345288807
+          ],
+          "faster_seed_blocks": 21,
+          "total_seed_blocks": 21,
+          "min_block_ratio": 2.5141756833155147,
+          "max_block_ratio": 2.805636451029179,
+          "block_ratios": [
+            2.805636451029179,
+            2.710192336405467,
+            2.725827996026989,
+            2.675128820406671,
+            2.637354851407203,
+            2.7972591947588836,
+            2.7645967342899556,
+            2.7148106466353,
+            2.7706548471662926,
+            2.796522435897436,
+            2.651732618511627,
+            2.5141756833155147,
+            2.6760987838702794,
+            2.7404371397903864,
+            2.6702945101528157,
+            2.5969819046361113,
+            2.725065836238703,
+            2.7906996038412877,
+            2.6683130853119637,
+            2.5526997576357595,
+            2.519823816029996
+          ]
+        },
+        "threefry_pallas_128": {
+          "speedup": 0.9611064602343375,
+          "gain_percent": -3.8893539765662455,
+          "elapsed_time_reduction_percent": -4.046746263278611,
+          "faster_seeds": 0,
+          "total_seeds": 7,
+          "min_ratio": 0.9337651307386589,
+          "max_ratio": 0.9965267258835171,
+          "ratios": [
+            0.9965267258835171,
+            0.9611064602343375,
+            0.9879113503545714,
+            0.9711113922870481,
+            0.9446340943033924,
+            0.9590156720712182,
+            0.9337651307386589
+          ],
+          "faster_seed_blocks": 6,
+          "total_seed_blocks": 21,
+          "min_block_ratio": 0.8985320082102728,
+          "max_block_ratio": 1.0300483487898666,
+          "block_ratios": [
+            1.0300483487898666,
+            0.9948692193883784,
+            0.9763742850292838,
+            0.9611064602343375,
+            1.002427343698747,
+            0.9292131414907879,
+            1.0031887404475233,
+            0.9586446285474095,
+            1.0152353990432692,
+            1.015649386845039,
+            0.9242085127978243,
+            0.9128039212393624,
+            0.9409597023682527,
+            1.0171191434958877,
+            0.940705463680134,
+            0.9173556993792101,
+            0.9601665369122974,
+            0.9647958019621264,
+            0.9712496114812362,
+            0.9308008305957531,
+            0.8985320082102728
+          ]
+        },
+        "threefry4x32": {
+          "speedup": 4.240452314913591,
+          "gain_percent": 324.04523149135906,
+          "elapsed_time_reduction_percent": 76.41761006289308,
+          "faster_seeds": 7,
+          "total_seeds": 7,
+          "min_ratio": 4.0905406544388905,
+          "max_ratio": 4.261982888367616,
+          "ratios": [
+            4.2444996235405785,
+            4.190471052787562,
+            4.261982888367616,
+            4.204837410014451,
+            4.240452314913591,
+            4.252181565853163,
+            4.0905406544388905
+          ],
+          "faster_seed_blocks": 21,
+          "total_seed_blocks": 21,
+          "min_block_ratio": 3.9352573826436275,
+          "max_block_ratio": 4.382987446279122,
+          "block_ratios": [
+            4.382987446279122,
+            4.214800537510349,
+            4.271390211323081,
+            4.20298513029226,
+            4.151111985829561,
+            4.310666058520269,
+            4.284931826928363,
+            4.29611734078182,
+            4.247527093862328,
+            4.317405239687848,
+            4.122038022615779,
+            3.9352573826436275,
+            4.25196020908897,
+            4.348153060457103,
+            4.0950845195729535,
+            4.153500198124422,
+            4.252181565853163,
+            4.324850144151992,
+            4.228084163299504,
+            4.08691040237607,
+            3.965830042361514
+          ]
+        },
+        "philox2x32": {
+          "speedup": 4.302098890548325,
+          "gain_percent": 330.2098890548325,
+          "elapsed_time_reduction_percent": 76.75553199864858,
+          "faster_seeds": 7,
+          "total_seeds": 7,
+          "min_ratio": 4.159317682298251,
+          "max_ratio": 4.352103420002202,
+          "ratios": [
+            4.352103420002202,
+            4.282658312404388,
+            4.33309311060189,
+            4.247790734068978,
+            4.302098890548325,
+            4.342361303862167,
+            4.159317682298251
+          ],
+          "faster_seed_blocks": 21,
+          "total_seed_blocks": 21,
+          "min_block_ratio": 3.9982032229687996,
+          "max_block_ratio": 4.5560040149287495,
+          "block_ratios": [
+            4.5560040149287495,
+            4.319167130427701,
+            4.31667637086002,
+            4.303484028400762,
+            4.175260775437906,
+            4.443926137855731,
+            4.386421051184782,
+            4.33228634188011,
+            4.402495878489771,
+            4.407120958751394,
+            4.131335476063449,
+            4.071874461628787,
+            4.302098890548325,
+            4.394642747267022,
+            4.26880756751099,
+            4.163525293884559,
+            4.358994685712352,
+            4.434709172491513,
+            4.334713982621387,
+            4.12946236282634,
+            3.9982032229687996
+          ]
+        },
+        "philox4x32": {
+          "speedup": 7.18047191700448,
+          "gain_percent": 618.047191700448,
+          "elapsed_time_reduction_percent": 86.07333875045394,
+          "faster_seeds": 7,
+          "total_seeds": 7,
+          "min_ratio": 6.9521191138428025,
+          "max_ratio": 7.3673826804047575,
+          "ratios": [
+            7.3673826804047575,
+            7.177133137397112,
+            7.278897913248634,
+            7.156416027916331,
+            7.18047191700448,
+            7.3088102088481195,
+            6.9521191138428025
+          ],
+          "faster_seed_blocks": 21,
+          "total_seed_blocks": 21,
+          "min_block_ratio": 6.69926902794337,
+          "max_block_ratio": 7.586610778104501,
+          "block_ratios": [
+            7.586610778104501,
+            7.311627054687606,
+            7.3993417131897115,
+            7.170493150557206,
+            7.063582628091583,
+            7.46893615844978,
+            7.378443015009071,
+            7.259813426258627,
+            7.357388989486771,
+            7.482608695652174,
+            7.006369633957501,
+            6.69926902794337,
+            7.205688606784724,
+            7.335552987987885,
+            7.045189841951015,
+            7.145165764099855,
+            7.277453203804623,
+            7.464244774922393,
+            7.243286395762105,
+            6.861170934291647,
+            6.765139406190147
+          ]
+        },
+        "write_NOT_PRNG": {
+          "speedup": 0.5890340983637128,
+          "gain_percent": -41.09659016362872,
+          "elapsed_time_reduction_percent": -69.76945864049569,
+          "faster_seeds": 0,
+          "total_seeds": 7,
+          "min_ratio": 0.5511511355753085,
+          "max_ratio": 0.6110290029965696,
+          "ratios": [
+            0.5870783808346937,
+            0.5890340983637128,
+            0.6110290029965696,
+            0.5947603604083562,
+            0.5911097183699595,
+            0.5841857631249365,
+            0.5511511355753085
+          ],
+          "faster_seed_blocks": 0,
+          "total_seed_blocks": 21,
+          "min_block_ratio": 0.5150207970376275,
+          "max_block_ratio": 0.6382835808363793,
+          "block_ratios": [
+            0.5855936156978059,
+            0.580857301860926,
+            0.5881083672980101,
+            0.5668697290525732,
+            0.5802269894377747,
+            0.6125831018230571,
+            0.6376793666501732,
+            0.5771175984054453,
+            0.6089565146887922,
+            0.6165760869565218,
+            0.5364994990175539,
+            0.6382835808363793,
+            0.5396175592063154,
+            0.6061229652216122,
+            0.6267204835670923,
+            0.5870096420552107,
+            0.5835155535998375,
+            0.5966094898333091,
+            0.5628859849457425,
+            0.5150207970376275,
+            0.5532638329995571
+          ]
+        },
+        "rbg_same_backend": {
+          "speedup": 0.9942527202901643,
+          "gain_percent": -0.5747279709835684,
+          "elapsed_time_reduction_percent": -0.578050187095136,
+          "faster_seeds": 3,
+          "total_seeds": 7,
+          "min_ratio": 0.9530987623104403,
+          "max_ratio": 1.008345604322052,
+          "ratios": [
+            1.0080427597723873,
+            1.008345604322052,
+            0.9784070724464753,
+            0.9911030014051397,
+            0.9942527202901643,
+            1.000785296009207,
+            0.9530987623104403
+          ],
+          "faster_seed_blocks": 10,
+          "total_seed_blocks": 21,
+          "min_block_ratio": 0.9171361370541591,
+          "max_block_ratio": 1.0734703686948655,
+          "block_ratios": [
+            1.0734703686948655,
+            0.975282668005918,
+            1.0097407267869987,
+            1.0475455025577602,
+            0.9534343633143082,
+            1.0463158767674254,
+            0.9619344109076915,
+            0.9729495193285514,
+            1.0140807005216075,
+            1.0369774247491639,
+            0.9465315098439797,
+            0.9471284484522585,
+            1.0261027842969916,
+            1.0061598835023142,
+            0.9755207243039564,
+            0.9977605336151103,
+            1.000785296009207,
+            1.0092914082647142,
+            0.991776915904269,
+            0.9871874819191133,
+            0.9171361370541591
+          ]
+        }
+      }
+    }
+  },
+  "search": {
+    "65536": [
+      {
+        "engine": "pallas_original_256",
+        "median_ns": 265600,
+        "GB_per_second": 1.9739759036144577
+      },
+      {
+        "engine": "rbg_same_backend",
+        "median_ns": 275390,
+        "GB_per_second": 1.903801880968808
+      },
+      {
+        "engine": "threefry_pallas_16",
+        "median_ns": 276990,
+        "GB_per_second": 1.8928047943969097
+      },
+      {
+        "engine": "threefry_pallas_128",
+        "median_ns": 278950,
+        "GB_per_second": 1.8795052876859653
+      },
+      {
+        "engine": "threefry_pallas_32",
+        "median_ns": 279209,
+        "GB_per_second": 1.877761819998639
+      },
+      {
+        "engine": "pallas_original_8",
+        "median_ns": 279320,
+        "GB_per_second": 1.8770156093369612
+      },
+      {
+        "engine": "pallas_carry_16",
+        "median_ns": 281030,
+        "GB_per_second": 1.8655944205244992
+      },
+      {
+        "engine": "pallas_original_32",
+        "median_ns": 281030,
+        "GB_per_second": 1.8655944205244992
+      },
+      {
+        "engine": "pallas_carry_8",
+        "median_ns": 284870,
+        "GB_per_second": 1.840446519465019
+      },
+      {
+        "engine": "pallas_carry_32",
+        "median_ns": 286200,
+        "GB_per_second": 1.8318937805730258
+      },
+      {
+        "engine": "write_NOT_PRNG",
+        "median_ns": 286270,
+        "GB_per_second": 1.8314458378453906
+      },
+      {
+        "engine": "pallas_original_64",
+        "median_ns": 286760,
+        "GB_per_second": 1.8283163621146603
+      },
+      {
+        "engine": "pallas_original_128",
+        "median_ns": 287480,
+        "GB_per_second": 1.8237373034645887
+      },
+      {
+        "engine": "pallas_carry_256",
+        "median_ns": 289700,
+        "GB_per_second": 1.8097618225750776
+      },
+      {
+        "engine": "pallas_carry_128",
+        "median_ns": 290300,
+        "GB_per_second": 1.8060213572166723
+      },
+      {
+        "engine": "threefry_pallas_64",
+        "median_ns": 292080,
+        "GB_per_second": 1.795015064365927
+      },
+      {
+        "engine": "pallas_original_16",
+        "median_ns": 293709,
+        "GB_per_second": 1.785059361476836
+      },
+      {
+        "engine": "philox2x32",
+        "median_ns": 296400,
+        "GB_per_second": 1.7688529014844805
+      },
+      {
+        "engine": "jax_carry_mulhi",
+        "median_ns": 296590,
+        "GB_per_second": 1.7677197477999933
+      },
+      {
+        "engine": "pallas_carry_64",
+        "median_ns": 296640,
+        "GB_per_second": 1.7674217907227616
+      },
+      {
+        "engine": "threefry2x32",
+        "median_ns": 297860,
+        "GB_per_second": 1.7601826361377828
+      },
+      {
+        "engine": "jax_original",
+        "median_ns": 298490,
+        "GB_per_second": 1.756467553351871
+      },
+      {
+        "engine": "jax_mulhi",
+        "median_ns": 311020,
+        "GB_per_second": 1.685705099350524
+      },
+      {
+        "engine": "threefry4x32",
+        "median_ns": 311510,
+        "GB_per_second": 1.6830535135308657
+      },
+      {
+        "engine": "jax_carry",
+        "median_ns": 325680,
+        "GB_per_second": 1.609825595676738
+      },
+      {
+        "engine": "philox4x32",
+        "median_ns": 333690,
+        "GB_per_second": 1.5711828343672272
+      }
+    ],
+    "1048576": [
+      {
+        "engine": "write_NOT_PRNG",
+        "median_ns": 409450,
+        "GB_per_second": 20.487502747588227
+      },
+      {
+        "engine": "pallas_carry_128",
+        "median_ns": 458180,
+        "GB_per_second": 18.308542494216248
+      },
+      {
+        "engine": "rbg_same_backend",
+        "median_ns": 459980,
+        "GB_per_second": 18.236897256402454
+      },
+      {
+        "engine": "threefry_pallas_32",
+        "median_ns": 462870,
+        "GB_per_second": 18.12303238490289
+      },
+      {
+        "engine": "threefry_pallas_64",
+        "median_ns": 479009,
+        "GB_per_second": 17.512422522332567
+      },
+      {
+        "engine": "pallas_carry_64",
+        "median_ns": 485490,
+        "GB_per_second": 17.278642196543696
+      },
+      {
+        "engine": "pallas_original_64",
+        "median_ns": 496000,
+        "GB_per_second": 16.91251612903226
+      },
+      {
+        "engine": "threefry_pallas_128",
+        "median_ns": 496670,
+        "GB_per_second": 16.889701411399923
+      },
+      {
+        "engine": "jax_carry_mulhi",
+        "median_ns": 503350,
+        "GB_per_second": 16.665556769643388
+      },
+      {
+        "engine": "pallas_original_32",
+        "median_ns": 505450,
+        "GB_per_second": 16.59631615392225
+      },
+      {
+        "engine": "pallas_original_128",
+        "median_ns": 507040,
+        "GB_per_second": 16.544272641211737
+      },
+      {
+        "engine": "pallas_carry_32",
+        "median_ns": 508290,
+        "GB_per_second": 16.503586535245628
+      },
+      {
+        "engine": "pallas_original_256",
+        "median_ns": 512300,
+        "GB_per_second": 16.374405621706032
+      },
+      {
+        "engine": "jax_carry",
+        "median_ns": 525710,
+        "GB_per_second": 15.95672138631565
+      },
+      {
+        "engine": "pallas_carry_16",
+        "median_ns": 526410,
+        "GB_per_second": 15.935502745008643
+      },
+      {
+        "engine": "jax_original",
+        "median_ns": 528600,
+        "GB_per_second": 15.86948164964056
+      },
+      {
+        "engine": "pallas_carry_256",
+        "median_ns": 539590,
+        "GB_per_second": 15.54626290331548
+      },
+      {
+        "engine": "threefry_pallas_16",
+        "median_ns": 542110,
+        "GB_per_second": 15.473996052461677
+      },
+      {
+        "engine": "jax_mulhi",
+        "median_ns": 545520,
+        "GB_per_second": 15.377269394339345
+      },
+      {
+        "engine": "pallas_original_16",
+        "median_ns": 549880,
+        "GB_per_second": 15.255342983923764
+      },
+      {
+        "engine": "threefry2x32",
+        "median_ns": 621591,
+        "GB_per_second": 13.495382011644313
+      },
+      {
+        "engine": "pallas_carry_8",
+        "median_ns": 630310,
+        "GB_per_second": 13.308702067236757
+      },
+      {
+        "engine": "pallas_original_8",
+        "median_ns": 664230,
+        "GB_per_second": 12.629071255438628
+      },
+      {
+        "engine": "threefry4x32",
+        "median_ns": 723730,
+        "GB_per_second": 11.590797673165406
+      },
+      {
+        "engine": "philox2x32",
+        "median_ns": 774890,
+        "GB_per_second": 10.825546851811225
+      },
+      {
+        "engine": "philox4x32",
+        "median_ns": 1030950,
+        "GB_per_second": 8.136774819341385
+      }
+    ],
+    "8388608": [
+      {
+        "engine": "write_NOT_PRNG",
+        "median_ns": 745950,
+        "GB_per_second": 89.96429251290301
+      },
+      {
+        "engine": "rbg_same_backend",
+        "median_ns": 794331,
+        "GB_per_second": 84.4847601314817
+      },
+      {
+        "engine": "threefry_pallas_128",
+        "median_ns": 982290,
+        "GB_per_second": 68.31878976676948
+      },
+      {
+        "engine": "pallas_carry_128",
+        "median_ns": 1005460,
+        "GB_per_second": 66.74443936108845
+      },
+      {
+        "engine": "pallas_carry_64",
+        "median_ns": 1037470,
+        "GB_per_second": 64.68511282253945
+      },
+      {
+        "engine": "threefry_pallas_64",
+        "median_ns": 1085600,
+        "GB_per_second": 61.81730287398673
+      },
+      {
+        "engine": "pallas_original_64",
+        "median_ns": 1113089,
+        "GB_per_second": 60.2906542064471
+      },
+      {
+        "engine": "pallas_original_128",
+        "median_ns": 1120090,
+        "GB_per_second": 59.91381406851235
+      },
+      {
+        "engine": "pallas_carry_256",
+        "median_ns": 1154610,
+        "GB_per_second": 58.12253834628143
+      },
+      {
+        "engine": "jax_carry",
+        "median_ns": 1171310,
+        "GB_per_second": 57.293853890088876
+      },
+      {
+        "engine": "threefry_pallas_32",
+        "median_ns": 1172340,
+        "GB_per_second": 57.24351638603136
+      },
+      {
+        "engine": "pallas_carry_32",
+        "median_ns": 1202310,
+        "GB_per_second": 55.81660636607863
+      },
+      {
+        "engine": "jax_carry_mulhi",
+        "median_ns": 1212710,
+        "GB_per_second": 55.33793239933702
+      },
+      {
+        "engine": "pallas_original_256",
+        "median_ns": 1214110,
+        "GB_per_second": 55.27412178468178
+      },
+      {
+        "engine": "pallas_original_32",
+        "median_ns": 1247810,
+        "GB_per_second": 53.78131606574719
+      },
+      {
+        "engine": "jax_original",
+        "median_ns": 1332560,
+        "GB_per_second": 50.36085729723239
+      },
+      {
+        "engine": "jax_mulhi",
+        "median_ns": 1436110,
+        "GB_per_second": 46.7296126341297
+      },
+      {
+        "engine": "threefry_pallas_16",
+        "median_ns": 1534750,
+        "GB_per_second": 43.7262511809741
+      },
+      {
+        "engine": "pallas_original_16",
+        "median_ns": 1583110,
+        "GB_per_second": 42.39052497931287
+      },
+      {
+        "engine": "pallas_carry_16",
+        "median_ns": 1632850,
+        "GB_per_second": 41.099221606393726
+      },
+      {
+        "engine": "threefry2x32",
+        "median_ns": 2103840,
+        "GB_per_second": 31.89827363297589
+      },
+      {
+        "engine": "pallas_carry_8",
+        "median_ns": 2409719,
+        "GB_per_second": 27.849248812828385
+      },
+      {
+        "engine": "pallas_original_8",
+        "median_ns": 2445280,
+        "GB_per_second": 27.44424523980894
+      },
+      {
+        "engine": "threefry4x32",
+        "median_ns": 3241570,
+        "GB_per_second": 20.702580539676763
+      },
+      {
+        "engine": "philox2x32",
+        "median_ns": 3253940,
+        "GB_per_second": 20.623878743922752
+      },
+      {
+        "engine": "philox4x32",
+        "median_ns": 5504950,
+        "GB_per_second": 12.190640060309358
+      }
+    ],
+    "16777216": [
+      {
+        "engine": "write_NOT_PRNG",
+        "median_ns": 931190,
+        "GB_per_second": 144.135705924677
+      },
+      {
+        "engine": "rbg_same_backend",
+        "median_ns": 1448740,
+        "GB_per_second": 92.64445518174414
+      },
+      {
+        "engine": "threefry_pallas_128",
+        "median_ns": 1489369,
+        "GB_per_second": 90.11717579726717
+      },
+      {
+        "engine": "pallas_carry_64",
+        "median_ns": 1491900,
+        "GB_per_second": 89.96429251290301
+      },
+      {
+        "engine": "pallas_carry_128",
+        "median_ns": 1498650,
+        "GB_per_second": 89.55908851299503
+      },
+      {
+        "engine": "threefry_pallas_64",
+        "median_ns": 1504450,
+        "GB_per_second": 89.21381767423311
+      },
+      {
+        "engine": "pallas_original_128",
+        "median_ns": 1620620,
+        "GB_per_second": 82.81875331663191
+      },
+      {
+        "engine": "pallas_original_64",
+        "median_ns": 1630830,
+        "GB_per_second": 82.3002569243882
+      },
+      {
+        "engine": "pallas_carry_256",
+        "median_ns": 1703460,
+        "GB_per_second": 78.79124135582873
+      },
+      {
+        "engine": "pallas_carry_32",
+        "median_ns": 1759900,
+        "GB_per_second": 76.26440593215524
+      },
+      {
+        "engine": "threefry_pallas_32",
+        "median_ns": 1835580,
+        "GB_per_second": 73.12006450277296
+      },
+      {
+        "engine": "jax_carry",
+        "median_ns": 1862250,
+        "GB_per_second": 72.07288387703048
+      },
+      {
+        "engine": "pallas_original_256",
+        "median_ns": 1871060,
+        "GB_per_second": 71.73352431242184
+      },
+      {
+        "engine": "pallas_original_32",
+        "median_ns": 1887910,
+        "GB_per_second": 71.09328728594053
+      },
+      {
+        "engine": "jax_carry_mulhi",
+        "median_ns": 1892660,
+        "GB_per_second": 70.91486479346528
+      },
+      {
+        "engine": "jax_original",
+        "median_ns": 2001369,
+        "GB_per_second": 67.06295940428777
+      },
+      {
+        "engine": "jax_mulhi",
+        "median_ns": 2163830,
+        "GB_per_second": 62.027852465304576
+      },
+      {
+        "engine": "pallas_carry_16",
+        "median_ns": 2522640,
+        "GB_per_second": 53.20526432626138
+      },
+      {
+        "engine": "threefry_pallas_16",
+        "median_ns": 2531020,
+        "GB_per_second": 53.029106052105476
+      },
+      {
+        "engine": "pallas_original_16",
+        "median_ns": 2554520,
+        "GB_per_second": 52.54127115857382
+      },
+      {
+        "engine": "threefry2x32",
+        "median_ns": 3997349,
+        "GB_per_second": 33.57668494794925
+      },
+      {
+        "engine": "pallas_carry_8",
+        "median_ns": 4272040,
+        "GB_per_second": 31.417713317291035
+      },
+      {
+        "engine": "pallas_original_8",
+        "median_ns": 4358950,
+        "GB_per_second": 30.79129790431182
+      },
+      {
+        "engine": "threefry4x32",
+        "median_ns": 6276730,
+        "GB_per_second": 21.383384023209537
+      },
+      {
+        "engine": "philox2x32",
+        "median_ns": 6359610,
+        "GB_per_second": 21.104710508977753
+      },
+      {
+        "engine": "philox4x32",
+        "median_ns": 10760070,
+        "GB_per_second": 12.47368539424
+      }
+    ]
+  },
+  "rebuilt_montmory_hashes": {
+    "montmory/65536/0": "ad2930c555b19d53bb3d67b1395dea83a8efac70a810f087e1a9fe6053a45671",
+    "montmory/1048576/0": "4e9061f562741a54a972803984d7a41840349a57fc65537ec0bf013107985209",
+    "montmory/8388608/0": "0d9302b2e81c00b69c61f8132106895279880f774eb87f3fb19c063d15f8219e",
+    "montmory/16777216/0": "46a529c131f67595f9589ef0a3d610e686ce8f81a0f0ff9339a26b7abfb8792f",
+    "montmory/65536/42": "d76fea647412269accffda0ee72f58535fdc614588ca0b899765091a73c2f94d",
+    "montmory/1048576/42": "6d9e7c956bdf275fcd6949956e34351434e39ad7b4942ad0ad920f5be8757559",
+    "montmory/8388608/42": "0e81173734146d67bb24967fd19251f857433f7b8196fa7e887eea404e0889f8",
+    "montmory/16777216/42": "a901e3a67ecbb13120eabd7e51f5ff366c4f0d580c5221ac0a4533846ecde92c",
+    "montmory/65536/18446744073709551615": "6d5ba81003dce8d66c8cddf51c5d2bbbffed6612edc9cba866128e6d71b98b9a",
+    "montmory/1048576/18446744073709551615": "1421bdf5b8d9a00fe986cf1040139c7da31611fb21ea08cf20c21b440988ee6e",
+    "montmory/8388608/18446744073709551615": "7f2d79bd7b4867ea2bdd8dec28e7b6abe7cf2bcc0456823711ed32bb54b517a5",
+    "montmory/16777216/18446744073709551615": "d934eb1ebcde692db1bc0926f1b6d2640e17f25f86f64ecf5d633eafeaffc1e4",
+    "montmory/65536/7": "32e6bd8194755b8102b7f18aa279530d1f2e2c088e9610ef306987c6fb35c014",
+    "montmory/1048576/7": "e7eb1bf875f97b8e2d764cb908ea828bb50faf7adff9c7fc787978f62b5f54f9",
+    "montmory/8388608/7": "73685d9eb9ae8b1ad0611c2034fde31f14d5c9fdbace2be4c64cd1d856add4cf",
+    "montmory/16777216/7": "a8acc30d77bac9f23fb582f3a93e1462777042080bf74425a10233488c0dc7cd",
+    "montmory/65536/19": "6b48e1b34f374261c6096186ec2ef0e23476bd65e25c775f6340a72d2ae11f86",
+    "montmory/1048576/19": "ba6562b94fc656e96361a8179e2a1f30d98252936306fbdf251193d8e2107087",
+    "montmory/8388608/19": "7806b5e616e50499faf3a6c429f7c20c8511f982fdd9ba71ebe435c8d3127cc3",
+    "montmory/16777216/19": "4bc6558a8741e282847975c8e0fedbc93565926f08dac2cfb0c06c730327ef20",
+    "montmory/65536/20261021": "bae52401eb89a8532c019717d08752a1af1b542e0e36773dfec2011cc3fe96ee",
+    "montmory/1048576/20261021": "157e36ce2cd05b9d5abbbc6a247fe5078cd0f6bab2dcdab9cf0ebbdde3ca4db3",
+    "montmory/8388608/20261021": "08c8776ca84892128f679ec384c1bfd039b215dcb6241aa9b5525a324896db3b",
+    "montmory/16777216/20261021": "bd092e969b82a840e78cd6d1e71dc01798c0b66e8e1bf4a4382958c642ad120b",
+    "montmory/65536/1393753992385309920": "7df86b014e903484f39e3d414c450de0362ced47a3949d22b3405989ddde9f1d",
+    "montmory/1048576/1393753992385309920": "8664fb6948b95df36cc60ef33fc5377eca21ac7c53fea88de1d6b046e15359a7",
+    "montmory/8388608/1393753992385309920": "0f21bf1765614e762169ed7543e303997f52c903db2a4b490539ef0b9cd0597c",
+    "montmory/16777216/1393753992385309920": "29ed262f28ba5004a33de205a5ee1c7be3303f92dd2ff27bdc3564b66903d7c8",
+    "montmory/65536/16045690981116495207": "3fc7480f6a7153f86f82ac9a11aa5385f6ca92c4365802d541a05347b3e2314b",
+    "montmory/1048576/16045690981116495207": "f6fe893d2d74c424c7d9467d246325a3cd9304e9d6d4243bc63092abf39c0a90",
+    "montmory/8388608/16045690981116495207": "6eb0aa9c1ec4b31059d974414b993283181a4f651ad57a4f957e54bde96d302e",
+    "montmory/16777216/16045690981116495207": "c34c6ecb874d94f16fa878ec8ae41c1f6a55bd4c92f4fd473de05a1794720825",
+    "montmory/65536/18446744073709551612": "5b02c8e8093db77df6e692d114575ee62ae924fe50650929f280ffaded483a23",
+    "montmory/1048576/18446744073709551612": "01d2c67d0a56e2c6858f2ef9fcdba75d33342fc7dbc72de371db3e221bfff9c8",
+    "montmory/8388608/18446744073709551612": "040dbc7fafb28c57dbe632339b2dc144c8a9ddbefcd2bae1d3455804fa7f3f32",
+    "montmory/16777216/18446744073709551612": "1a799076af94860de7597983bc49becdd93ee210842f859ae4d49d42ecb47603",
+    "montmory/65536/9223372036854788153": "b8a0a4ec162d8fc23d56c8da707aabc683c082baaa5a7ce3e9f6890834f99504",
+    "montmory/1048576/9223372036854788153": "10de86a74d56cc1e888f8e1e696475510c4494dcd1285a060b38765b51a92a93",
+    "montmory/8388608/9223372036854788153": "0290be17cb5f9b0bbaf9926f9b0836c00aa2f413c185c389036e289dcd07cf61",
+    "montmory/16777216/9223372036854788153": "c3800da5f4927af897328024cf62e2293a337eed7438ad99a232688e1ddef7f5"
+  },
+  "limits": [
+    "One TPU device and one session; held-out seeds share the same session.",
+    "Output hashes verified against frozen CPU references; uploaded arrays are not retained.",
+    "No new TestU01/TACM run, no simultaneous new native ARM/GPU run.",
+    "Host dispatch/allocation/wait included; compilation, key setup, output transfers/checks excluded.",
+    "Montmory large volumes cover all logical lanes, not an explicit physical-core affinity sweep.",
+    "Warmup checks are reported by the runner but not present as individual CSV rows."
+  ]
+}

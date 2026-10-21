@@ -1,0 +1,82 @@
+[
+  {
+    "path": "snapshot/crush.log",
+    "sha256": "86aeb64bb386945338f498d115582bf53fed867199cbf1b288f506154fab4a69",
+    "battery": "Crush",
+    "generator": "Montmory-REAL-MMC+DXSM",
+    "statistics": "144",
+    "all_passed": true
+  },
+  {
+    "path": "snapshot/crush_3r.log",
+    "sha256": "a86d58b0f2d0ea87cd246b893516b6d175100ab50adc9746de2aac8a2a13916d",
+    "battery": "Crush",
+    "generator": "Montmory-REAL-MMC-3R+DXSM",
+    "statistics": "144",
+    "all_passed": true
+  },
+  {
+    "path": "snapshot/montmory_gpu_test/montmory_gpu_test/Montmory_GPU3R_Certified/bigcrush_gpu.log",
+    "sha256": "250ef4c07f65d2bc56b406ff65a7362ce0614102320e0a18b655691b8872fefb",
+    "battery": "BigCrush",
+    "generator": "Montmory-GPU-3R+DXSM",
+    "statistics": "160",
+    "all_passed": true
+  },
+  {
+    "path": "snapshot/montmory_gpu_test/montmory_gpu_test/Montmory_GPU3R_Certified/crush_gpu.log",
+    "sha256": "a71e1080b158459cead91db61087722c06cef73c0fba59dfda7f6423b928d874",
+    "battery": "Crush",
+    "generator": "Montmory-GPU-3R+DXSM",
+    "statistics": "144",
+    "all_passed": true
+  },
+  {
+    "path": "snapshot/montmory_gpu_test/montmory_gpu_test/Montmory_GPU3R_Certified/smallcrush_gpu.log",
+    "sha256": "ce22d09e38bd56dda00680568602d786cdec6ec85a8a2b5ca22d56e755726196",
+    "battery": "SmallCrush",
+    "generator": "Montmory-GPU-3R+DXSM",
+    "statistics": "15",
+    "all_passed": true
+  },
+  {
+    "path": "snapshot/montmory_gpu_test/montmory_gpu_test/logs/bigcrush_gpu.log",
+    "sha256": "250ef4c07f65d2bc56b406ff65a7362ce0614102320e0a18b655691b8872fefb",
+    "battery": "BigCrush",
+    "generator": "Montmory-GPU-3R+DXSM",
+    "statistics": "160",
+    "all_passed": true
+  },
+  {
+    "path": "snapshot/montmory_gpu_test/montmory_gpu_test/logs/crush_gpu.log",
+    "sha256": "a71e1080b158459cead91db61087722c06cef73c0fba59dfda7f6423b928d874",
+    "battery": "Crush",
+    "generator": "Montmory-GPU-3R+DXSM",
+    "statistics": "144",
+    "all_passed": true
+  },
+  {
+    "path": "snapshot/montmory_gpu_test/montmory_gpu_test/logs/smallcrush_gpu.log",
+    "sha256": "ce22d09e38bd56dda00680568602d786cdec6ec85a8a2b5ca22d56e755726196",
+    "battery": "SmallCrush",
+    "generator": "Montmory-GPU-3R+DXSM",
+    "statistics": "15",
+    "all_passed": true
+  },
+  {
+    "path": "snapshot/smallcrush.log",
+    "sha256": "296ea7207bad1ba496adb1cea69a2901f624f2b603cb04013d17a01b8f20c4e8",
+    "battery": "SmallCrush",
+    "generator": "Montmory-REAL-MMC+DXSM",
+    "statistics": "15",
+    "all_passed": true
+  },
+  {
+    "path": "snapshot/smallcrush_3r.log",
+    "sha256": "bfeab59f54cd882debe150507abb9d7abb9b2c93654783f685ad4bfb3f5c8308",
+    "battery": "SmallCrush",
+    "generator": "Montmory-REAL-MMC-3R+DXSM",
+    "statistics": "15",
+    "all_passed": true
+  }
+]

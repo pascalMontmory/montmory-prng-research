@@ -1,0 +1,55 @@
+{
+  "one_worker": {
+    "baseline": [
+      "indexed",
+      1
+    ],
+    "candidate": [
+      "incremental_pair",
+      1
+    ],
+    "baseline_median_ns": 3.76593613625,
+    "candidate_median_ns": 2.60650146008,
+    "baseline_GBps": 2.124305806196211,
+    "candidate_GBps": 3.069248232745843,
+    "median_paired_speedup": 1.439050318110141,
+    "faster_seeds": 5,
+    "paired_speedups": [
+      1.2692875159814598,
+      1.4722999431169381,
+      1.4563299859386187,
+      1.407507634996306,
+      1.439050318110141
+    ]
+  },
+  "selected_workers": {
+    "baseline": [
+      "indexed",
+      16
+    ],
+    "candidate": [
+      "incremental_pair",
+      8
+    ],
+    "baseline_median_ns": 0.724198818207,
+    "candidate_median_ns": 0.448040604591,
+    "baseline_GBps": 11.046690216654476,
+    "candidate_GBps": 17.85552451725421,
+    "median_paired_speedup": 1.4180663398130826,
+    "faster_seeds": 4,
+    "paired_speedups": [
+      1.4180663398130826,
+      0.8219055156318047,
+      1.1946251288519973,
+      1.8980537328901081,
+      2.204370524668515
+    ]
+  },
+  "verification": {
+    "search_timed_runs": 180,
+    "search_compared_words_including_warmup": 3019898880,
+    "confirmation_runs": 20,
+    "confirmation_compared_words": 167772160,
+    "native_Metal": "pending"
+  }
+}

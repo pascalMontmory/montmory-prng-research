@@ -1,0 +1,12 @@
+# Preserve archived hashes across platforms, including Windows checkouts.
+studies/** -text -whitespace
+src/reference/** -text -whitespace
+notebooks/** -text
+results/*.xlsx -text
+third_party/** -text -whitespace
+studies/**/vendor/** linguist-vendored
+studies/**/deps/** linguist-vendored
+*.png binary
+*.pdf binary
+*.zip binary
+applications/jax_rng/validation/**/*.csv -text whitespace=cr-at-eol

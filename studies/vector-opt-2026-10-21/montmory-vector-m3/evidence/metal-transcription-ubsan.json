@@ -1,0 +1,8 @@
+{
+  "status": "pass",
+  "words": 65526272,
+  "cases": 1204,
+  "source_sha256": "de85db0b0496e491506d37df3f382ca5c501d35cf6bc8854e9cc2b7cf8e77238",
+  "scope": "Actual generated shader bodies transcribed to x86 C++ SIMD with UBSan; not native Metal",
+  "native_metal_status": "pending"
+}

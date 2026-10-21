@@ -1,0 +1,8 @@
+{
+  "archive": "/home/pascal/prng-recovery/mac-montmory-lanes-kit.tar.gz",
+  "bytes": 3204853,
+  "sha256": "5b8b821c858b4a7d1e82afb306a62827a6dfdb23da505f1b491e2c743b8aefea",
+  "manifest_files": 49,
+  "integrity_verified_inside_archive": true,
+  "native_M3_compilation_and_execution": "pending"
+}

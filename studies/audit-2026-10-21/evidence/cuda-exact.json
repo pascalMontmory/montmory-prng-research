@@ -1,0 +1,729 @@
+{
+  "scope": "Original CUDA functions mechanically compiled on x86 C++; no CUDA compiler or GPU execution",
+  "status": "checks passed; defects reproduced",
+  "cuda_metal_reference_equal_mantissas": 251904,
+  "C_source_byte_identical_to_Metal_archive": true,
+  "missing_thread_guard_witnesses": [
+    {
+      "requested_lanes": 1,
+      "launched_threads": 256,
+      "draws": 3,
+      "writes_beyond_requested_allocation": 765,
+      "corrected_extra_writes": 0,
+      "corrected_preserves_valid_outputs": true
+    },
+    {
+      "requested_lanes": 7,
+      "launched_threads": 256,
+      "draws": 3,
+      "writes_beyond_requested_allocation": 747,
+      "corrected_extra_writes": 0,
+      "corrected_preserves_valid_outputs": true
+    },
+    {
+      "requested_lanes": 255,
+      "launched_threads": 256,
+      "draws": 3,
+      "writes_beyond_requested_allocation": 3,
+      "corrected_extra_writes": 0,
+      "corrected_preserves_valid_outputs": true
+    },
+    {
+      "requested_lanes": 257,
+      "launched_threads": 512,
+      "draws": 3,
+      "writes_beyond_requested_allocation": 765,
+      "corrected_extra_writes": 0,
+      "corrected_preserves_valid_outputs": true
+    },
+    {
+      "requested_lanes": 511,
+      "launched_threads": 512,
+      "draws": 3,
+      "writes_beyond_requested_allocation": 3,
+      "corrected_extra_writes": 0,
+      "corrected_preserves_valid_outputs": true
+    }
+  ],
+  "corrected_kernel_preserves_all_compared_valid_outputs": true,
+  "corrected_wrapper_note": "Wrapper reviewed statically only; no nvcc or GPU on this VPS",
+  "historical_logs": [
+    {
+      "battery": "smallcrush",
+      "sha256": "a3a1710026e04804fef60c3834f78acd205365338af45c5302970f2374866f1b",
+      "statistics": 15,
+      "printed_p_values": 15,
+      "same_printed_p_values_as_metal": true,
+      "total_CPU_time": "00:00:06.00",
+      "header": "mmc_test_gpu: seed=42 threads=2048 draws=4096 mode=small",
+      "status": "historical log: all tests passed"
+    },
+    {
+      "battery": "crush",
+      "sha256": "88b3b4f45f810a222709a0c51bf323f439a61f4b041d2c13eac3327df113e3fa",
+      "statistics": 144,
+      "printed_p_values": 186,
+      "same_printed_p_values_as_metal": true,
+      "total_CPU_time": "00:20:52.80",
+      "header": "mmc_test_gpu: seed=42 threads=4096 draws=8192 mode=crush",
+      "status": "historical log: all tests passed"
+    },
+    {
+      "battery": "bigcrush",
+      "sha256": "ce5b40982dbae5cf3f43a31f8ed96219c9ee8b13259d7cac79dd11a7c31f57d2",
+      "statistics": 160,
+      "printed_p_values": 254,
+      "same_printed_p_values_as_metal": true,
+      "total_CPU_time": "02:37:03.42",
+      "header": "mmc_test_gpu: seed=42 threads=8192 draws=16384 mode=big",
+      "status": "historical log: all tests passed"
+    }
+  ],
+  "benchmarks": [
+    {
+      "file": "snapshot/cuda-ovh/src/bench_montmory_vs_philox_raw64.cu",
+      "sha256": "9c4b8acb4b7dfa9206b423fbaf028e96ed0c5fee86c79f2cafa7451be1d11e6d",
+      "montmory_values_verified": 1581,
+      "philox_divergence_cases": [
+        {
+          "seed": 0,
+          "lane": 0,
+          "first_block_equal": true,
+          "second_block_archived": [
+            8978463501184708498,
+            13248641701627552039
+          ],
+          "second_block_standard": [
+            17934684622398030043,
+            12800766068695957351
+          ]
+        },
+        {
+          "seed": 0,
+          "lane": 1,
+          "first_block_equal": true,
+          "second_block_archived": [
+            16202341634400579447,
+            12022435276146129940
+          ],
+          "second_block_standard": [
+            358778518190371494,
+            2600005994793743844
+          ]
+        },
+        {
+          "seed": 0,
+          "lane": 65535,
+          "first_block_equal": true,
+          "second_block_archived": [
+            16883279133464578818,
+            545043149698048060
+          ],
+          "second_block_standard": [
+            17807605734640117020,
+            3836916441811996292
+          ]
+        },
+        {
+          "seed": 0,
+          "lane": 4294967296,
+          "first_block_equal": true,
+          "second_block_archived": [
+            5431955681635997006,
+            3402364755862760131
+          ],
+          "second_block_standard": [
+            7899621845429820707,
+            18162265155606237763
+          ]
+        },
+        {
+          "seed": 42,
+          "lane": 0,
+          "first_block_equal": true,
+          "second_block_archived": [
+            15975524149308847631,
+            171054742698651287
+          ],
+          "second_block_standard": [
+            18220193170249641213,
+            9479895171082356475
+          ]
+        },
+        {
+          "seed": 42,
+          "lane": 1,
+          "first_block_equal": true,
+          "second_block_archived": [
+            15863908785126583545,
+            57793695661806444
+          ],
+          "second_block_standard": [
+            15234554000252034507,
+            11118663562267567449
+          ]
+        },
+        {
+          "seed": 42,
+          "lane": 65535,
+          "first_block_equal": true,
+          "second_block_archived": [
+            8178974116269312956,
+            5212458500948376655
+          ],
+          "second_block_standard": [
+            9695129843592212032,
+            13577646077015787440
+          ]
+        },
+        {
+          "seed": 42,
+          "lane": 4294967296,
+          "first_block_equal": true,
+          "second_block_archived": [
+            14258545143638429692,
+            13190512596240327126
+          ],
+          "second_block_standard": [
+            2450947381550710718,
+            10659796459367742221
+          ]
+        },
+        {
+          "seed": 1311768467463790320,
+          "lane": 0,
+          "first_block_equal": true,
+          "second_block_archived": [
+            418920792060975270,
+            895281716220634332
+          ],
+          "second_block_standard": [
+            4079585725792449815,
+            392018778834169564
+          ]
+        },
+        {
+          "seed": 1311768467463790320,
+          "lane": 1,
+          "first_block_equal": true,
+          "second_block_archived": [
+            11512933106796324297,
+            5219997952748324455
+          ],
+          "second_block_standard": [
+            9586360507214035279,
+            11866643565365503857
+          ]
+        },
+        {
+          "seed": 1311768467463790320,
+          "lane": 65535,
+          "first_block_equal": true,
+          "second_block_archived": [
+            3576688616079812739,
+            16071517772049091798
+          ],
+          "second_block_standard": [
+            6824809313983583890,
+            15432710094424080835
+          ]
+        },
+        {
+          "seed": 1311768467463790320,
+          "lane": 4294967296,
+          "first_block_equal": true,
+          "second_block_archived": [
+            8159912514817426832,
+            14871050193658961587
+          ],
+          "second_block_standard": [
+            9956019118277693352,
+            12524628421813841387
+          ]
+        },
+        {
+          "seed": 18446744073709551615,
+          "lane": 0,
+          "first_block_equal": true,
+          "second_block_archived": [
+            16937248952040590522,
+            14852351417390637370
+          ],
+          "second_block_standard": [
+            1873168765288964148,
+            11325430335298623412
+          ]
+        },
+        {
+          "seed": 18446744073709551615,
+          "lane": 1,
+          "first_block_equal": true,
+          "second_block_archived": [
+            7074260870141642911,
+            1771479059288840306
+          ],
+          "second_block_standard": [
+            1684999930755515926,
+            16339434014763094162
+          ]
+        },
+        {
+          "seed": 18446744073709551615,
+          "lane": 65535,
+          "first_block_equal": true,
+          "second_block_archived": [
+            5631146801411686473,
+            2911039807058694223
+          ],
+          "second_block_standard": [
+            3665650215527847663,
+            4716057355945359384
+          ]
+        },
+        {
+          "seed": 18446744073709551615,
+          "lane": 4294967296,
+          "first_block_equal": true,
+          "second_block_archived": [
+            8889004386477910991,
+            2208262291814824848
+          ],
+          "second_block_standard": [
+            10024098534047918162,
+            5806684690337049005
+          ]
+        }
+      ]
+    },
+    {
+      "file": "snapshot/cuda-ovh/src/bench_montmory_vs_philox_mant53.cu",
+      "sha256": "db167da7d0cb49b56a1c6dd101082253fc6b1060783bcc683b05eaff8d66a8d3",
+      "montmory_values_verified": 1581,
+      "philox_divergence_cases": [
+        {
+          "seed": 0,
+          "lane": 0,
+          "first_block_equal": true,
+          "second_block_archived": [
+            4384015381437845,
+            6469063330872828
+          ],
+          "second_block_standard": [
+            8757170225780288,
+            6250374056980447
+          ]
+        },
+        {
+          "seed": 0,
+          "lane": 1,
+          "first_block_equal": true,
+          "second_block_archived": [
+            7911299626172157,
+            5870329724680727
+          ],
+          "second_block_standard": [
+            175184823335142,
+            1269534177145382
+          ]
+        },
+        {
+          "seed": 0,
+          "lane": 65535,
+          "first_block_equal": true,
+          "second_block_archived": [
+            8243788639387001,
+            266134350438500
+          ],
+          "second_block_standard": [
+            8695119987617244,
+            1873494356353513
+          ]
+        },
+        {
+          "seed": 0,
+          "lane": 4294967296,
+          "first_block_equal": true,
+          "second_block_archived": [
+            2652322110173826,
+            1661310915948613
+          ],
+          "second_block_standard": [
+            3857237229213779,
+            8868293533010858
+          ]
+        },
+        {
+          "seed": 42,
+          "lane": 0,
+          "first_block_equal": true,
+          "second_block_archived": [
+            7800548901029710,
+            83522823583325
+          ],
+          "second_block_standard": [
+            8896578696410957,
+            4628855064005056
+          ]
+        },
+        {
+          "seed": 42,
+          "lane": 1,
+          "first_block_equal": true,
+          "second_block_archived": [
+            7746049211487589,
+            28219577959866
+          ],
+          "second_block_standard": [
+            7438747070435563,
+            5429034942513460
+          ]
+        },
+        {
+          "seed": 42,
+          "lane": 65535,
+          "first_block_equal": true,
+          "second_block_archived": [
+            3993639705209625,
+            2545145752416199
+          ],
+          "second_block_standard": [
+            4733950118941509,
+            6629709998542864
+          ]
+        },
+        {
+          "seed": 42,
+          "lane": 4294967296,
+          "first_block_equal": true,
+          "second_block_archived": [
+            6962180245917201,
+            6440679978632972
+          ],
+          "second_block_standard": [
+            1196751651147807,
+            5204978739925655
+          ]
+        },
+        {
+          "seed": 1311768467463790320,
+          "lane": 0,
+          "first_block_equal": true,
+          "second_block_archived": [
+            204551167998523,
+            437149275498356
+          ],
+          "second_block_standard": [
+            1991985217672094,
+            191415419352621
+          ]
+        },
+        {
+          "seed": 1311768467463790320,
+          "lane": 1,
+          "first_block_equal": true,
+          "second_block_archived": [
+            5621549368552892,
+            2548827125365392
+          ],
+          "second_block_standard": [
+            4680840091413103,
+            5794259553401124
+          ]
+        },
+        {
+          "seed": 1311768467463790320,
+          "lane": 65535,
+          "first_block_equal": true,
+          "second_block_archived": [
+            1746429988320221,
+            7847420787133345
+          ],
+          "second_block_standard": [
+            3332426422843546,
+            7535502975793008
+          ]
+        },
+        {
+          "seed": 1311768467463790320,
+          "lane": 4294967296,
+          "first_block_equal": true,
+          "second_block_archived": [
+            3984332282625696,
+            7261254977372539
+          ],
+          "second_block_standard": [
+            4861337460096529,
+            6115541221588789
+          ]
+        },
+        {
+          "seed": 18446744073709551615,
+          "lane": 0,
+          "first_block_equal": true,
+          "second_block_archived": [
+            8270141089863569,
+            7252124715522772
+          ],
+          "second_block_standard": [
+            914633186176252,
+            5529995280907530
+          ]
+        },
+        {
+          "seed": 18446744073709551615,
+          "lane": 1,
+          "first_block_equal": true,
+          "second_block_archived": [
+            3454228940498849,
+            864980009418379
+          ],
+          "second_block_standard": [
+            822753872439216,
+            7978239265021042
+          ]
+        },
+        {
+          "seed": 18446744073709551615,
+          "lane": 65535,
+          "first_block_equal": true,
+          "second_block_archived": [
+            2749583399126800,
+            1421406155790378
+          ],
+          "second_block_standard": [
+            1789868269300706,
+            2302762380832695
+          ]
+        },
+        {
+          "seed": 18446744073709551615,
+          "lane": 4294967296,
+          "first_block_equal": true,
+          "second_block_archived": [
+            4340334173084917,
+            1078253072175207
+          ],
+          "second_block_standard": [
+            4894579362328085,
+            2835295258953637
+          ]
+        }
+      ]
+    },
+    {
+      "file": "snapshot/cuda-ovh/src/bench_montmory_vs_philox_double.cu",
+      "sha256": "e990959e8b6ceda56da7f1fd1835fc739c0fac36fdfc0c9cc1eb2ca5168e244c",
+      "montmory_values_verified": 1581,
+      "philox_divergence_cases": [
+        {
+          "seed": 0,
+          "lane": 0,
+          "first_block_equal": true,
+          "second_block_archived": [
+            0.48672348167831336,
+            0.7182103057693321
+          ],
+          "second_block_standard": [
+            0.9722412015223156,
+            0.6939309190579442
+          ]
+        },
+        {
+          "seed": 0,
+          "lane": 1,
+          "first_block_equal": true,
+          "second_block_archived": [
+            0.8783306999684722,
+            0.6517375222481999
+          ],
+          "second_block_standard": [
+            0.019449422443156505,
+            0.14094660740153553
+          ]
+        },
+        {
+          "seed": 0,
+          "lane": 65535,
+          "first_block_equal": true,
+          "second_block_archived": [
+            0.915244395759074,
+            0.029546848350048283
+          ],
+          "second_block_standard": [
+            0.965352241213107,
+            0.2079996570928958
+          ]
+        },
+        {
+          "seed": 0,
+          "lane": 4294967296,
+          "first_block_equal": true,
+          "second_block_archived": [
+            0.2944669075437363,
+            0.18444256299472583
+          ],
+          "second_block_standard": [
+            0.428239358331448,
+            0.984578366948303
+          ]
+        },
+        {
+          "seed": 42,
+          "lane": 0,
+          "first_block_equal": true,
+          "second_block_archived": [
+            0.8660348994637646,
+            0.009272896182391244
+          ],
+          "second_block_standard": [
+            0.9877186509145105,
+            0.5139061469711166
+          ]
+        },
+        {
+          "seed": 42,
+          "lane": 1,
+          "first_block_equal": true,
+          "second_block_archived": [
+            0.859984218447306,
+            0.0031330025196247835
+          ],
+          "second_block_standard": [
+            0.8258668271960493,
+            0.6027439594672956
+          ]
+        },
+        {
+          "seed": 42,
+          "lane": 65535,
+          "first_block_equal": true,
+          "second_block_archived": [
+            0.44338307527809484,
+            0.2825679415359382
+          ],
+          "second_block_standard": [
+            0.5255740419475862,
+            0.7360456686969901
+          ]
+        },
+        {
+          "seed": 42,
+          "lane": 4294967296,
+          "first_block_equal": true,
+          "second_block_archived": [
+            0.7729572810607711,
+            0.7150591206520587
+          ],
+          "second_block_standard": [
+            0.13286612378624685,
+            0.5778687239749897
+          ]
+        },
+        {
+          "seed": 1311768467463790320,
+          "lane": 0,
+          "first_block_equal": true,
+          "second_block_archived": [
+            0.022709741642592873,
+            0.04853331908564806
+          ],
+          "second_block_standard": [
+            0.2211547853372513,
+            0.02125138058335596
+          ]
+        },
+        {
+          "seed": 1311768467463790320,
+          "lane": 1,
+          "first_block_equal": true,
+          "second_block_archived": [
+            0.6241173543034431,
+            0.28297665603698086
+          ],
+          "second_block_standard": [
+            0.5196776444075349,
+            0.6432920366840205
+          ]
+        },
+        {
+          "seed": 1311768467463790320,
+          "lane": 65535,
+          "first_block_equal": true,
+          "second_block_archived": [
+            0.19389267839289526,
+            0.8712387241797509
+          ],
+          "second_block_standard": [
+            0.36997365425101525,
+            0.8366088905856781
+          ]
+        },
+        {
+          "seed": 1311768467463790320,
+          "lane": 4294967296,
+          "first_block_equal": true,
+          "second_block_archived": [
+            0.4423497437928354,
+            0.8061612463553013
+          ],
+          "second_block_standard": [
+            0.5397168778671945,
+            0.678961467225213
+          ]
+        },
+        {
+          "seed": 18446744073709551615,
+          "lane": 0,
+          "first_block_equal": true,
+          "second_block_archived": [
+            0.918170105486512,
+            0.8051475836626545
+          ],
+          "second_block_standard": [
+            0.10154468223791424,
+            0.6139528086932
+          ]
+        },
+        {
+          "seed": 18446744073709551615,
+          "lane": 1,
+          "first_block_equal": true,
+          "second_block_archived": [
+            0.3834964502068382,
+            0.09603207222967691
+          ],
+          "second_block_standard": [
+            0.09134402927815266,
+            0.8857624927994847
+          ]
+        },
+        {
+          "seed": 18446744073709551615,
+          "lane": 65535,
+          "first_block_equal": true,
+          "second_block_archived": [
+            0.3052650797837675,
+            0.157807784150241
+          ],
+          "second_block_standard": [
+            0.1987152963623624,
+            0.2556579815441101
+          ]
+        },
+        {
+          "seed": 18446744073709551615,
+          "lane": 4294967296,
+          "first_block_equal": true,
+          "second_block_archived": [
+            0.4818738933526264,
+            0.11971013871017255
+          ],
+          "second_block_standard": [
+            0.5434074703911757,
+            0.31478100781008733
+          ]
+        }
+      ]
+    }
+  ]
+}

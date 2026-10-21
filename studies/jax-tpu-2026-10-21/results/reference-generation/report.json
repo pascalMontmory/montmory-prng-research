@@ -1,0 +1,22 @@
+{
+  "status": "references_prepared",
+  "requested_backend": "cpu",
+  "jax": "0.10.2",
+  "jaxlib": "0.10.2",
+  "platform": "Linux-6.1.0-50-cloud-amd64-x86_64-with-glibc2.36",
+  "scope": "single-device generation of two uint32 arrays, 8 stored bytes per word",
+  "timing": "host wall clock including dispatch, allocation and block_until_ready; excluding setup, compilation, transfers and checking",
+  "seed_setup": "all seed/key derivation is outside timed calls, including Montmory splitmix",
+  "logical_lanes": 2048,
+  "draws_per_lane": 4096,
+  "base": 4294963199,
+  "quick": false,
+  "samples": 0,
+  "checked_timed_words": 0,
+  "summary": [],
+  "backend": "cpu",
+  "devices": [
+    "cpu:0"
+  ],
+  "device_kind": "cpu"
+}

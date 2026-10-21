@@ -1,0 +1,631 @@
+cd . && /bin/sh /home/pascal/prng-recovery/audit-2026-10-21/deps/TestU01-1.2.3/missing --run autoconf
+ cd . && /bin/sh /home/pascal/prng-recovery/audit-2026-10-21/deps/TestU01-1.2.3/missing --run automake-1.10 --gnu 
+/home/pascal/prng-recovery/audit-2026-10-21/deps/TestU01-1.2.3/missing: 46: automake-1.10: not found
+/home/pascal/prng-recovery/audit-2026-10-21/deps/TestU01-1.2.3/missing: 46: autoconf: not found
+WARNING: `automake-1.10' is missing on your system.  You should only need it if
+         you modified `Makefile.am', `acinclude.m4' or `configure.ac'.
+         You might want to install the `Automake' and `Perl' packages.
+         Grab them from any GNU archive site.
+WARNING: `autoconf' is missing on your system.  You should only need it if
+         you modified `configure.ac'.  You might want to install the
+         `Autoconf' and `GNU m4' packages.  Grab them from any GNU
+         archive site.
+/bin/sh ./config.status --recheck
+running CONFIG_SHELL=/bin/sh /bin/sh configure  --prefix=/home/pascal/prng-recovery/audit-2026-10-21/deps/testu01-install --disable-shared  --no-create --no-recursion
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking for gcc... gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for style of include used by make... GNU
+checking dependency style of gcc... gcc3
+checking how to run the C preprocessor... gcc -E
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether ln -s works... yes
+checking whether make sets $(MAKE)... (cached) yes
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for /usr/bin/ld option to reload object files... -r
+checking for BSD-compatible nm... /usr/bin/nm -B
+checking how to recognise dependent libraries... pass_all
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking dlfcn.h usability... yes
+checking dlfcn.h presence... yes
+checking for dlfcn.h... yes
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... gcc3
+checking how to run the C++ preprocessor... g++ -E
+checking for g77... no
+checking for xlf... no
+checking for f77... no
+checking for frt... no
+checking for pgf77... no
+checking for cf77... no
+checking for fort77... no
+checking for fl32... no
+checking for af77... no
+checking for xlf90... no
+checking for f90... no
+checking for pgf90... no
+checking for pghpf... no
+checking for epcf90... no
+checking for gfortran... no
+checking for g95... no
+checking for xlf95... no
+checking for f95... no
+checking for fort... no
+checking for ifort... no
+checking for ifc... no
+checking for efc... no
+checking for pgf95... no
+checking for lf95... no
+checking for ftn... no
+checking whether we are using the GNU Fortran 77 compiler... no
+checking whether  accepts -g... no
+checking the maximum length of command line arguments... 32768
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for objdir... .libs
+checking for ar... ar
+checking for ranlib... ranlib
+checking for strip... strip
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC
+checking if gcc PIC flag -fPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... no
+checking whether to build static libraries... yes
+configure: creating libtool
+appending configuration tag "CXX" to libtool
+checking for ld used by g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC
+checking if g++ PIC flag -fPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+appending configuration tag "F77" to libtool
+checking for math... no
+checking for cos in -lm... yes
+checking for ANSI C header files... (cached) yes
+checking sys/utsname.h usability... yes
+checking sys/utsname.h presence... yes
+checking for sys/utsname.h... yes
+checking for unistd.h... (cached) yes
+checking windows.h usability... no
+checking windows.h presence... no
+checking for windows.h... no
+checking gmp.h usability... no
+checking gmp.h presence... no
+checking for gmp.h... no
+checking for stdint.h... (cached) yes
+checking for an ANSI C-conforming const... yes
+checking for size_t... yes
+checking whether byte ordering is bigendian... no
+checking for long long... yes
+checking for uint32_t... yes
+checking for uint8_t... yes
+checking for random... yes
+checking for erf... yes
+checking for lgamma... yes
+checking for log1p... yes
+configure: creating ./config.status
+ /bin/sh ./config.status
+config.status: creating Makefile
+config.status: creating include/Makefile
+config.status: creating mylib/Makefile
+config.status: creating probdist/Makefile
+config.status: creating testu01/Makefile
+config.status: creating examples/Makefile
+config.status: creating doc/Makefile
+config.status: creating param/Makefile
+config.status: creating include/config.h
+config.status: include/config.h is unchanged
+config.status: creating include/gdefconf.h
+config.status: include/gdefconf.h is unchanged
+config.status: executing depfiles commands
+Making all in .
+make[1]: Entering directory '/home/pascal/prng-recovery/audit-2026-10-21/deps/TestU01-1.2.3'
+gcc -DHAVE_CONFIG_H -I. -I./include -I.    -g -O2 -MT tcode.o -MD -MP -MF .deps/tcode.Tpo -c -o tcode.o `test -f './mylib/tcode.c' || echo './'`./mylib/tcode.c
+mv -f .deps/tcode.Tpo .deps/tcode.Po
+/bin/sh ./libtool --tag=CC   --mode=link gcc  -g -O2   -o tcode tcode.o  -lm 
+mkdir .libs
+gcc -g -O2 -o tcode tcode.o  -lm  
+make[1]: Leaving directory '/home/pascal/prng-recovery/audit-2026-10-21/deps/TestU01-1.2.3'
+Making all in include
+make[1]: Entering directory '/home/pascal/prng-recovery/audit-2026-10-21/deps/TestU01-1.2.3/include'
+cd .. && /bin/sh /home/pascal/prng-recovery/audit-2026-10-21/deps/TestU01-1.2.3/missing --run autoheader
+/home/pascal/prng-recovery/audit-2026-10-21/deps/TestU01-1.2.3/missing: 46: autoheader: not found
+WARNING: `autoheader' is missing on your system.  You should only need it if
+         you modified `acconfig.h' or `configure.ac'.  You might want
+         to install the `Autoconf' and `GNU m4' packages.  Grab them
+         from any GNU archive site.
+touch: cannot touch '[include/config.h].in': No such file or directory
+touch: cannot touch '[include/gdefconf.h].in': No such file or directory
+rm -f stamp-h1
+touch config.h.in
+cd .. && /bin/sh ./config.status include/config.h
+config.status: creating include/config.h
+config.status: include/config.h is unchanged
+make  all-am
+make[2]: Entering directory '/home/pascal/prng-recovery/audit-2026-10-21/deps/TestU01-1.2.3/include'
+../tcode ../mylib/gdef.tex gdef.h
+../tcode ../mylib/addstr.tex addstr.h
+../tcode ../mylib/bitset.tex bitset.h
+../tcode ../mylib/chrono.tex chrono.h
+../tcode ../mylib/mystr.tex mystr.h
+../tcode ../mylib/num.tex num.h
+../tcode ../mylib/num2.tex num2.h
+../tcode ../mylib/tables.tex tables.h
+../tcode ../mylib/util.tex util.h
+../tcode ../probdist/fmass.tex fmass.h
+../tcode ../probdist/fdist.tex fdist.h
+../tcode ../probdist/fbar.tex fbar.h
+../tcode ../probdist/finv.tex finv.h
+../tcode ../probdist/gofs.tex gofs.h
+../tcode ../probdist/gofw.tex gofw.h
+../tcode ../probdist/statcoll.tex statcoll.h
+../tcode ../probdist/wdist.tex wdist.h
+../tcode ../testu01/unif01.tex unif01.h
+../tcode ../testu01/ulcg.tex ulcg.h
+../tcode ../testu01/umrg.tex umrg.h
+../tcode ../testu01/ucarry.tex ucarry.h
+../tcode ../testu01/utaus.tex utaus.h
+../tcode ../testu01/ugfsr.tex ugfsr.h
+../tcode ../testu01/uinv.tex uinv.h
+../tcode ../testu01/uquad.tex uquad.h
+../tcode ../testu01/ucubic.tex ucubic.h
+../tcode ../testu01/ulec.tex ulec.h
+../tcode ../testu01/utezuka.tex utezuka.h
+../tcode ../testu01/umarsa.tex umarsa.h
+../tcode ../testu01/uweyl.tex uweyl.h
+../tcode ../testu01/uknuth.tex uknuth.h
+../tcode ../testu01/uwu.tex uwu.h
+../tcode ../testu01/unumrec.tex unumrec.h
+../tcode ../testu01/uvaria.tex uvaria.h
+../tcode ../testu01/usoft.tex usoft.h
+../tcode ../testu01/ugranger.tex ugranger.h
+../tcode ../testu01/ucrypto.tex ucrypto.h
+../tcode ../testu01/ufile.tex ufile.h
+../tcode ../testu01/udeng.tex udeng.h
+../tcode ../testu01/utouzin.tex utouzin.h
+../tcode ../testu01/uautomata.tex uautomata.h
+../tcode ../testu01/uxorshift.tex uxorshift.h
+../tcode ../testu01/ubrent.tex ubrent.h
+../tcode ../testu01/rijndael-alg-fst.tex rijndael-alg-fst.h
+../tcode ../testu01/tu01_sha1.tex tu01_sha1.h
+../tcode ../testu01/scatter.tex scatter.h
+../tcode ../testu01/swrite.tex swrite.h
+../tcode ../testu01/sres.tex sres.h
+../tcode ../testu01/smultin.tex smultin.h
+../tcode ../testu01/sknuth.tex sknuth.h
+../tcode ../testu01/smarsa.tex smarsa.h
+../tcode ../testu01/sstring.tex sstring.h
+../tcode ../testu01/svaria.tex svaria.h
+../tcode ../testu01/snpair.tex snpair.h
+../tcode ../testu01/swalk.tex swalk.h
+../tcode ../testu01/sentrop.tex sentrop.h
+../tcode ../testu01/sspectral.tex sspectral.h
+../tcode ../testu01/scomp.tex scomp.h
+../tcode ../testu01/sspacings.tex sspacings.h
+../tcode ../testu01/vectorsF2.tex vectorsF2.h
+../tcode ../testu01/bbattery.tex bbattery.h
+../tcode ../testu01/ffam.tex ffam.h
+../tcode ../testu01/fcong.tex fcong.h
+../tcode ../testu01/ffsr.tex ffsr.h
+../tcode ../testu01/ftab.tex ftab.h
+../tcode ../testu01/fres.tex fres.h
+../tcode ../testu01/fcho.tex fcho.h
+../tcode ../testu01/fmultin.tex fmultin.h
+../tcode ../testu01/fmarsa.tex fmarsa.h
+../tcode ../testu01/fknuth.tex fknuth.h
+../tcode ../testu01/fwalk.tex fwalk.h
+../tcode ../testu01/fstring.tex fstring.h
+../tcode ../testu01/fspectral.tex fspectral.h
+../tcode ../testu01/fvaria.tex fvaria.h
+../tcode ../testu01/fnpair.tex fnpair.h
+make[2]: Leaving directory '/home/pascal/prng-recovery/audit-2026-10-21/deps/TestU01-1.2.3/include'
+make[1]: Leaving directory '/home/pascal/prng-recovery/audit-2026-10-21/deps/TestU01-1.2.3/include'
+Making all in mylib
+make[1]: Entering directory '/home/pascal/prng-recovery/audit-2026-10-21/deps/TestU01-1.2.3/mylib'
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT gdef.lo -MD -MP -MF .deps/gdef.Tpo -c -o gdef.lo gdef.c
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT addstr.lo -MD -MP -MF .deps/addstr.Tpo -c -o addstr.lo addstr.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT addstr.lo -MD -MP -MF .deps/addstr.Tpo -c addstr.c -o addstr.o
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT gdef.lo -MD -MP -MF .deps/gdef.Tpo -c gdef.c -o gdef.o
+gdef.c: In function 'gdef_GetHostName':
+gdef.c:74:10: warning: 'strncat' specified bound 2 equals source length [-Wstringop-overflow=]
+   74 |          strncat (machine, ", ", (size_t) 2);
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mv -f .deps/gdef.Tpo .deps/gdef.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT bitset.lo -MD -MP -MF .deps/bitset.Tpo -c -o bitset.lo bitset.c
+mv -f .deps/addstr.Tpo .deps/addstr.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT chrono.lo -MD -MP -MF .deps/chrono.Tpo -c -o chrono.lo chrono.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT bitset.lo -MD -MP -MF .deps/bitset.Tpo -c bitset.c -o bitset.o
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT chrono.lo -MD -MP -MF .deps/chrono.Tpo -c chrono.c -o chrono.o
+mv -f .deps/bitset.Tpo .deps/bitset.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT mystr.lo -MD -MP -MF .deps/mystr.Tpo -c -o mystr.lo mystr.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT mystr.lo -MD -MP -MF .deps/mystr.Tpo -c mystr.c -o mystr.o
+mv -f .deps/chrono.Tpo .deps/chrono.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT num.lo -MD -MP -MF .deps/num.Tpo -c -o num.lo num.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT num.lo -MD -MP -MF .deps/num.Tpo -c num.c -o num.o
+mv -f .deps/mystr.Tpo .deps/mystr.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT num2.lo -MD -MP -MF .deps/num2.Tpo -c -o num2.lo num2.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT num2.lo -MD -MP -MF .deps/num2.Tpo -c num2.c -o num2.o
+mv -f .deps/num.Tpo .deps/num.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT tables.lo -MD -MP -MF .deps/tables.Tpo -c -o tables.lo tables.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT tables.lo -MD -MP -MF .deps/tables.Tpo -c tables.c -o tables.o
+mv -f .deps/num2.Tpo .deps/num2.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT util.lo -MD -MP -MF .deps/util.Tpo -c -o util.lo util.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT util.lo -MD -MP -MF .deps/util.Tpo -c util.c -o util.o
+mv -f .deps/util.Tpo .deps/util.Plo
+mv -f .deps/tables.Tpo .deps/tables.Plo
+/bin/sh ../libtool --tag=CC   --mode=link gcc  -g -O2 -no-undefined -version-info 0:1:0  -o libmylib.la -rpath /home/pascal/prng-recovery/audit-2026-10-21/deps/testu01-install/lib gdef.lo addstr.lo bitset.lo chrono.lo mystr.lo num.lo num2.lo tables.lo util.lo -lm -lm 
+mkdir .libs
+ar cru .libs/libmylib.a  gdef.o addstr.o bitset.o chrono.o mystr.o num.o num2.o tables.o util.o
+ar: `u' modifier ignored since `D' is the default (see `U')
+ranlib .libs/libmylib.a
+creating libmylib.la
+(cd .libs && rm -f libmylib.la && ln -s ../libmylib.la libmylib.la)
+make[1]: Leaving directory '/home/pascal/prng-recovery/audit-2026-10-21/deps/TestU01-1.2.3/mylib'
+Making all in probdist
+make[1]: Entering directory '/home/pascal/prng-recovery/audit-2026-10-21/deps/TestU01-1.2.3/probdist'
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT fmass.lo -MD -MP -MF .deps/fmass.Tpo -c -o fmass.lo fmass.c
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT fdist.lo -MD -MP -MF .deps/fdist.Tpo -c -o fdist.lo fdist.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT fmass.lo -MD -MP -MF .deps/fmass.Tpo -c fmass.c -o fmass.o
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT fdist.lo -MD -MP -MF .deps/fdist.Tpo -c fdist.c -o fdist.o
+mv -f .deps/fmass.Tpo .deps/fmass.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT fbar.lo -MD -MP -MF .deps/fbar.Tpo -c -o fbar.lo fbar.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT fbar.lo -MD -MP -MF .deps/fbar.Tpo -c fbar.c -o fbar.o
+mv -f .deps/fbar.Tpo .deps/fbar.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT finv.lo -MD -MP -MF .deps/finv.Tpo -c -o finv.lo finv.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT finv.lo -MD -MP -MF .deps/finv.Tpo -c finv.c -o finv.o
+mv -f .deps/fdist.Tpo .deps/fdist.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT gofs.lo -MD -MP -MF .deps/gofs.Tpo -c -o gofs.lo gofs.c
+mv -f .deps/finv.Tpo .deps/finv.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT gofw.lo -MD -MP -MF .deps/gofw.Tpo -c -o gofw.lo gofw.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT gofs.lo -MD -MP -MF .deps/gofs.Tpo -c gofs.c -o gofs.o
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT gofw.lo -MD -MP -MF .deps/gofw.Tpo -c gofw.c -o gofw.o
+mv -f .deps/gofs.Tpo .deps/gofs.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT statcoll.lo -MD -MP -MF .deps/statcoll.Tpo -c -o statcoll.lo statcoll.c
+mv -f .deps/gofw.Tpo .deps/gofw.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT wdist.lo -MD -MP -MF .deps/wdist.Tpo -c -o wdist.lo wdist.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT statcoll.lo -MD -MP -MF .deps/statcoll.Tpo -c statcoll.c -o statcoll.o
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT wdist.lo -MD -MP -MF .deps/wdist.Tpo -c wdist.c -o wdist.o
+mv -f .deps/wdist.Tpo .deps/wdist.Plo
+mv -f .deps/statcoll.Tpo .deps/statcoll.Plo
+/bin/sh ../libtool --tag=CC   --mode=link gcc  -g -O2 -no-undefined -version-info 0:1:0  -o libprobdist.la -rpath /home/pascal/prng-recovery/audit-2026-10-21/deps/testu01-install/lib fmass.lo fdist.lo fbar.lo finv.lo gofs.lo gofw.lo statcoll.lo wdist.lo ../mylib/libmylib.la -lm 
+mkdir .libs
+ar cru .libs/libprobdist.a  fmass.o fdist.o fbar.o finv.o gofs.o gofw.o statcoll.o wdist.o
+ar: `u' modifier ignored since `D' is the default (see `U')
+ranlib .libs/libprobdist.a
+creating libprobdist.la
+(cd .libs && rm -f libprobdist.la && ln -s ../libprobdist.la libprobdist.la)
+make[1]: Leaving directory '/home/pascal/prng-recovery/audit-2026-10-21/deps/TestU01-1.2.3/probdist'
+Making all in testu01
+make[1]: Entering directory '/home/pascal/prng-recovery/audit-2026-10-21/deps/TestU01-1.2.3/testu01'
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT unif01.lo -MD -MP -MF .deps/unif01.Tpo -c -o unif01.lo unif01.c
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT ulcg.lo -MD -MP -MF .deps/ulcg.Tpo -c -o ulcg.lo ulcg.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT unif01.lo -MD -MP -MF .deps/unif01.Tpo -c unif01.c -o unif01.o
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT ulcg.lo -MD -MP -MF .deps/ulcg.Tpo -c ulcg.c -o ulcg.o
+unif01.c: In function 'unif01_CreateLacGen':
+unif01.c:382:10: warning: 'strncat' specified bound 2 equals source length [-Wstringop-overflow=]
+  382 |          strncat (name, ", ", 2);
+      |          ^~~~~~~~~~~~~~~~~~~~~~~
+unif01.c:384:10: warning: 'strncat' specified bound 1 equals source length [-Wstringop-overflow=]
+  384 |          strncat (name, ")", 1);
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+unif01.c: In function 'unif01_CreateDoubleGen2':
+unif01.c:224:4: warning: 'strncat' specified bound 34 equals source length [-Wstringop-overflow=]
+  224 |    strncat (name, "\nunif01_CreateDoubleGen2 with h = ", len2);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+unif01.c: In function 'unif01_CreateDoubleGen':
+unif01.c:259:4: warning: 'strncat' specified bound 33 equals source length [-Wstringop-overflow=]
+  259 |    strncat (name, "\nunif01_CreateDoubleGen with s = ", len2);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+unif01.c: In function 'unif01_CreateLacGen':
+unif01.c:373:4: warning: 'strncat' specified bound 30 equals source length [-Wstringop-overflow=]
+  373 |    strncat (name, "\nunif01_CreateLacGen with k = ", len2);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+unif01.c: In function 'unif01_CreateBiasGen':
+unif01.c:479:4: warning: 'strncat' specified bound 32 equals source length [-Wstringop-overflow=]
+  479 |    strncat (name, "\nunif01_CreateBiasGen with  P = ", len);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+unif01.c: In function 'unif01_CreateLuxGen':
+unif01.c:571:4: warning: 'strncat' specified bound 28 equals source length [-Wstringop-overflow=]
+  571 |    strncat (name, "\nunif01_CreateLuxGen:   k = ", len);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+unif01.c: In function 'unif01_CreateTruncGen':
+unif01.c:640:4: warning: 'strncat' specified bound 32 equals source length [-Wstringop-overflow=]
+  640 |    strncat (name, "\nunif01_CreateTruncGen with b = ", len);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+unif01.c: In function 'unif01_CreateBitBlockGen':
+unif01.c:771:4: warning: 'strncat' specified bound 29 equals source length [-Wstringop-overflow=]
+  771 |    strncat (name, "\nunif01_CreateBitBlockGen:   ", len2);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+unif01.c: In function 'unif01_CreateBiasGen':
+unif01.c:482:4: warning: 'strncat' specified bound depends on the length of the source argument [-Wstringop-overflow=]
+  482 |    strncat (name, str, len);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~
+unif01.c:481:10: note: length computed here
+  481 |    len = strlen (str);
+      |          ^~~~~~~~~~~~
+unif01.c:486:4: warning: 'strncat' specified bound depends on the length of the source argument [-Wstringop-overflow=]
+  486 |    strncat (name, str, len);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~
+unif01.c:485:10: note: length computed here
+  485 |    len = strlen (str);
+      |          ^~~~~~~~~~~~
+unif01.c: In function 'unif01_CreateLuxGen':
+unif01.c:574:4: warning: 'strncat' specified bound depends on the length of the source argument [-Wstringop-overflow=]
+  574 |    strncat (name, str, len);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~
+unif01.c:573:10: note: length computed here
+  573 |    len = strlen (str);
+      |          ^~~~~~~~~~~~
+unif01.c: In function 'unif01_CreateTruncGen':
+unif01.c:643:4: warning: 'strncat' specified bound depends on the length of the source argument [-Wstringop-overflow=]
+  643 |    strncat (name, str, len);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~
+unif01.c:642:10: note: length computed here
+  642 |    len = strlen (str);
+      |          ^~~~~~~~~~~~
+mv -f .deps/unif01.Tpo .deps/unif01.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT umrg.lo -MD -MP -MF .deps/umrg.Tpo -c -o umrg.lo umrg.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT umrg.lo -MD -MP -MF .deps/umrg.Tpo -c umrg.c -o umrg.o
+mv -f .deps/ulcg.Tpo .deps/ulcg.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT ucarry.lo -MD -MP -MF .deps/ucarry.Tpo -c -o ucarry.lo ucarry.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT ucarry.lo -MD -MP -MF .deps/ucarry.Tpo -c ucarry.c -o ucarry.o
+mv -f .deps/umrg.Tpo .deps/umrg.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT utaus.lo -MD -MP -MF .deps/utaus.Tpo -c -o utaus.lo utaus.c
+mv -f .deps/ucarry.Tpo .deps/ucarry.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT ugfsr.lo -MD -MP -MF .deps/ugfsr.Tpo -c -o ugfsr.lo ugfsr.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT utaus.lo -MD -MP -MF .deps/utaus.Tpo -c utaus.c -o utaus.o
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT ugfsr.lo -MD -MP -MF .deps/ugfsr.Tpo -c ugfsr.c -o ugfsr.o
+mv -f .deps/utaus.Tpo .deps/utaus.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT uinv.lo -MD -MP -MF .deps/uinv.Tpo -c -o uinv.lo uinv.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT uinv.lo -MD -MP -MF .deps/uinv.Tpo -c uinv.c -o uinv.o
+mv -f .deps/ugfsr.Tpo .deps/ugfsr.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT uquad.lo -MD -MP -MF .deps/uquad.Tpo -c -o uquad.lo uquad.c
+mv -f .deps/uinv.Tpo .deps/uinv.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT ucubic.lo -MD -MP -MF .deps/ucubic.Tpo -c -o ucubic.lo ucubic.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT uquad.lo -MD -MP -MF .deps/uquad.Tpo -c uquad.c -o uquad.o
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT ucubic.lo -MD -MP -MF .deps/ucubic.Tpo -c ucubic.c -o ucubic.o
+mv -f .deps/uquad.Tpo .deps/uquad.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT ulec.lo -MD -MP -MF .deps/ulec.Tpo -c -o ulec.lo ulec.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT ulec.lo -MD -MP -MF .deps/ulec.Tpo -c ulec.c -o ulec.o
+ulec.c: In function 'ulec_CreateMRG31k3p':
+ulec.c:2178:4: warning: 'strncat' specified bound 1 equals source length [-Wstringop-overflow=]
+ 2178 |    strncat (name, ")", (size_t) 1);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mv -f .deps/ucubic.Tpo .deps/ucubic.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT utezuka.lo -MD -MP -MF .deps/utezuka.Tpo -c -o utezuka.lo utezuka.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT utezuka.lo -MD -MP -MF .deps/utezuka.Tpo -c utezuka.c -o utezuka.o
+mv -f .deps/utezuka.Tpo .deps/utezuka.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT umarsa.lo -MD -MP -MF .deps/umarsa.Tpo -c -o umarsa.lo umarsa.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT umarsa.lo -MD -MP -MF .deps/umarsa.Tpo -c umarsa.c -o umarsa.o
+mv -f .deps/ulec.Tpo .deps/ulec.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT uweyl.lo -MD -MP -MF .deps/uweyl.Tpo -c -o uweyl.lo uweyl.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT uweyl.lo -MD -MP -MF .deps/uweyl.Tpo -c uweyl.c -o uweyl.o
+mv -f .deps/uweyl.Tpo .deps/uweyl.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT uknuth.lo -MD -MP -MF .deps/uknuth.Tpo -c -o uknuth.lo uknuth.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT uknuth.lo -MD -MP -MF .deps/uknuth.Tpo -c uknuth.c -o uknuth.o
+mv -f .deps/umarsa.Tpo .deps/umarsa.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT uwu.lo -MD -MP -MF .deps/uwu.Tpo -c -o uwu.lo uwu.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT uwu.lo -MD -MP -MF .deps/uwu.Tpo -c uwu.c -o uwu.o
+mv -f .deps/uwu.Tpo .deps/uwu.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT unumrec.lo -MD -MP -MF .deps/unumrec.Tpo -c -o unumrec.lo unumrec.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT unumrec.lo -MD -MP -MF .deps/unumrec.Tpo -c unumrec.c -o unumrec.o
+mv -f .deps/uknuth.Tpo .deps/uknuth.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT uvaria.lo -MD -MP -MF .deps/uvaria.Tpo -c -o uvaria.lo uvaria.c
+mv -f .deps/unumrec.Tpo .deps/unumrec.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT usoft.lo -MD -MP -MF .deps/usoft.Tpo -c -o usoft.lo usoft.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT uvaria.lo -MD -MP -MF .deps/uvaria.Tpo -c uvaria.c -o uvaria.o
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT usoft.lo -MD -MP -MF .deps/usoft.Tpo -c usoft.c -o usoft.o
+mv -f .deps/usoft.Tpo .deps/usoft.Plo
+mv -f .deps/uvaria.Tpo .deps/uvaria.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT ugranger.lo -MD -MP -MF .deps/ugranger.Tpo -c -o ugranger.lo ugranger.c
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT ucrypto.lo -MD -MP -MF .deps/ucrypto.Tpo -c -o ucrypto.lo ucrypto.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT ugranger.lo -MD -MP -MF .deps/ugranger.Tpo -c ugranger.c -o ugranger.o
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT ucrypto.lo -MD -MP -MF .deps/ucrypto.Tpo -c ucrypto.c -o ucrypto.o
+mv -f .deps/ugranger.Tpo .deps/ugranger.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT ufile.lo -MD -MP -MF .deps/ufile.Tpo -c -o ufile.lo ufile.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT ufile.lo -MD -MP -MF .deps/ufile.Tpo -c ufile.c -o ufile.o
+mv -f .deps/ufile.Tpo .deps/ufile.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT udeng.lo -MD -MP -MF .deps/udeng.Tpo -c -o udeng.lo udeng.c
+mv -f .deps/ucrypto.Tpo .deps/ucrypto.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT utouzin.lo -MD -MP -MF .deps/utouzin.Tpo -c -o utouzin.lo utouzin.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT udeng.lo -MD -MP -MF .deps/udeng.Tpo -c udeng.c -o udeng.o
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT utouzin.lo -MD -MP -MF .deps/utouzin.Tpo -c utouzin.c -o utouzin.o
+mv -f .deps/udeng.Tpo .deps/udeng.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT uautomata.lo -MD -MP -MF .deps/uautomata.Tpo -c -o uautomata.lo uautomata.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT uautomata.lo -MD -MP -MF .deps/uautomata.Tpo -c uautomata.c -o uautomata.o
+mv -f .deps/utouzin.Tpo .deps/utouzin.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT uxorshift.lo -MD -MP -MF .deps/uxorshift.Tpo -c -o uxorshift.lo uxorshift.c
+mv -f .deps/uautomata.Tpo .deps/uautomata.Plo
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT uxorshift.lo -MD -MP -MF .deps/uxorshift.Tpo -c uxorshift.c -o uxorshift.o
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT ubrent.lo -MD -MP -MF .deps/ubrent.Tpo -c -o ubrent.lo ubrent.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT ubrent.lo -MD -MP -MF .deps/ubrent.Tpo -c ubrent.c -o ubrent.o
+ubrent.c: In function 'ubrent_CreateXorgen64':
+ubrent.c:726:7: warning: 'strncat' specified bound 5 equals source length [-Wstringop-overflow=]
+  726 |       strncat (name, "FALSE", 5);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~
+mv -f .deps/uxorshift.Tpo .deps/uxorshift.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT rijndael-alg-fst.lo -MD -MP -MF .deps/rijndael-alg-fst.Tpo -c -o rijndael-alg-fst.lo rijndael-alg-fst.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT rijndael-alg-fst.lo -MD -MP -MF .deps/rijndael-alg-fst.Tpo -c rijndael-alg-fst.c -o rijndael-alg-fst.o
+mv -f .deps/ubrent.Tpo .deps/ubrent.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT tu01_sha1.lo -MD -MP -MF .deps/tu01_sha1.Tpo -c -o tu01_sha1.lo tu01_sha1.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT tu01_sha1.lo -MD -MP -MF .deps/tu01_sha1.Tpo -c tu01_sha1.c -o tu01_sha1.o
+mv -f .deps/rijndael-alg-fst.Tpo .deps/rijndael-alg-fst.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT scatter.lo -MD -MP -MF .deps/scatter.Tpo -c -o scatter.lo scatter.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT scatter.lo -MD -MP -MF .deps/scatter.Tpo -c scatter.c -o scatter.o
+mv -f .deps/tu01_sha1.Tpo .deps/tu01_sha1.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT swrite.lo -MD -MP -MF .deps/swrite.Tpo -c -o swrite.lo swrite.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT swrite.lo -MD -MP -MF .deps/swrite.Tpo -c swrite.c -o swrite.o
+mv -f .deps/swrite.Tpo .deps/swrite.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT sres.lo -MD -MP -MF .deps/sres.Tpo -c -o sres.lo sres.c
+mv -f .deps/scatter.Tpo .deps/scatter.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT smultin.lo -MD -MP -MF .deps/smultin.Tpo -c -o smultin.lo smultin.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT sres.lo -MD -MP -MF .deps/sres.Tpo -c sres.c -o sres.o
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT smultin.lo -MD -MP -MF .deps/smultin.Tpo -c smultin.c -o smultin.o
+mv -f .deps/sres.Tpo .deps/sres.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT sknuth.lo -MD -MP -MF .deps/sknuth.Tpo -c -o sknuth.lo sknuth.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT sknuth.lo -MD -MP -MF .deps/sknuth.Tpo -c sknuth.c -o sknuth.o
+mv -f .deps/sknuth.Tpo .deps/sknuth.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT smarsa.lo -MD -MP -MF .deps/smarsa.Tpo -c -o smarsa.lo smarsa.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT smarsa.lo -MD -MP -MF .deps/smarsa.Tpo -c smarsa.c -o smarsa.o
+mv -f .deps/smarsa.Tpo .deps/smarsa.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT sstring.lo -MD -MP -MF .deps/sstring.Tpo -c -o sstring.lo sstring.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT sstring.lo -MD -MP -MF .deps/sstring.Tpo -c sstring.c -o sstring.o
+mv -f .deps/smultin.Tpo .deps/smultin.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT svaria.lo -MD -MP -MF .deps/svaria.Tpo -c -o svaria.lo svaria.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT svaria.lo -MD -MP -MF .deps/svaria.Tpo -c svaria.c -o svaria.o
+svaria.c: In function 'svaria_CollisionArgMax_00.isra':
+svaria.c:697:4: warning: 'strncat' specified bound 200 exceeds destination size 101 [-Wstringop-overflow=]
+  697 |    strncat (chaine, str, (size_t) LEN2);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+svaria.c:650:9: note: destination object allocated here
+  650 |    char chaine[LEN1 + 1] = "";
+      |         ^~~~~~
+svaria.c: In function 'svaria_SumLogs':
+svaria.c:434:4: warning: 'strncat' specified bound 200 exceeds destination size 101 [-Wstringop-overflow=]
+  434 |    strncat (chaine, str, (size_t) LEN2);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+svaria.c:417:9: note: destination object allocated here
+  417 |    char chaine[LEN1 + 1] = "";
+      |         ^~~~~~
+svaria.c: In function 'svaria_WeightDistrib':
+svaria.c:554:4: warning: 'strncat' specified bound 200 exceeds destination size 101 [-Wstringop-overflow=]
+  554 |    strncat (chaine, str, (size_t) LEN2);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+svaria.c:513:9: note: destination object allocated here
+  513 |    char chaine[LEN1 + 1] = "";
+      |         ^~~~~~
+svaria.c: In function 'svaria_SumCollector':
+svaria.c:905:4: warning: 'strncat' specified bound 200 exceeds destination size 101 [-Wstringop-overflow=]
+  905 |    strncat (chaine, str, (size_t) LEN2);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+svaria.c:871:9: note: destination object allocated here
+  871 |    char chaine[LEN1 + 1] = "";
+      |         ^~~~~~
+mv -f .deps/svaria.Tpo .deps/svaria.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT snpair.lo -MD -MP -MF .deps/snpair.Tpo -c -o snpair.lo snpair.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT snpair.lo -MD -MP -MF .deps/snpair.Tpo -c snpair.c -o snpair.o
+mv -f .deps/sstring.Tpo .deps/sstring.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT swalk.lo -MD -MP -MF .deps/swalk.Tpo -c -o swalk.lo swalk.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT swalk.lo -MD -MP -MF .deps/swalk.Tpo -c swalk.c -o swalk.o
+mv -f .deps/swalk.Tpo .deps/swalk.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT sentrop.lo -MD -MP -MF .deps/sentrop.Tpo -c -o sentrop.lo sentrop.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT sentrop.lo -MD -MP -MF .deps/sentrop.Tpo -c sentrop.c -o sentrop.o
+mv -f .deps/snpair.Tpo .deps/snpair.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT sspectral.lo -MD -MP -MF .deps/sspectral.Tpo -c -o sspectral.lo sspectral.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT sspectral.lo -MD -MP -MF .deps/sspectral.Tpo -c sspectral.c -o sspectral.o
+mv -f .deps/sspectral.Tpo .deps/sspectral.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT scomp.lo -MD -MP -MF .deps/scomp.Tpo -c -o scomp.lo scomp.c
+mv -f .deps/sentrop.Tpo .deps/sentrop.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT sspacings.lo -MD -MP -MF .deps/sspacings.Tpo -c -o sspacings.lo sspacings.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT scomp.lo -MD -MP -MF .deps/scomp.Tpo -c scomp.c -o scomp.o
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT sspacings.lo -MD -MP -MF .deps/sspacings.Tpo -c sspacings.c -o sspacings.o
+mv -f .deps/scomp.Tpo .deps/scomp.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT vectorsF2.lo -MD -MP -MF .deps/vectorsF2.Tpo -c -o vectorsF2.lo vectorsF2.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT vectorsF2.lo -MD -MP -MF .deps/vectorsF2.Tpo -c vectorsF2.c -o vectorsF2.o
+mv -f .deps/sspacings.Tpo .deps/sspacings.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT bbattery.lo -MD -MP -MF .deps/bbattery.Tpo -c -o bbattery.lo bbattery.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT bbattery.lo -MD -MP -MF .deps/bbattery.Tpo -c bbattery.c -o bbattery.o
+mv -f .deps/vectorsF2.Tpo .deps/vectorsF2.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT ffam.lo -MD -MP -MF .deps/ffam.Tpo -c -o ffam.lo ffam.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT ffam.lo -MD -MP -MF .deps/ffam.Tpo -c ffam.c -o ffam.o
+mv -f .deps/ffam.Tpo .deps/ffam.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT fcong.lo -MD -MP -MF .deps/fcong.Tpo -c -o fcong.lo fcong.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT fcong.lo -MD -MP -MF .deps/fcong.Tpo -c fcong.c -o fcong.o
+mv -f .deps/fcong.Tpo .deps/fcong.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT ffsr.lo -MD -MP -MF .deps/ffsr.Tpo -c -o ffsr.lo ffsr.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT ffsr.lo -MD -MP -MF .deps/ffsr.Tpo -c ffsr.c -o ffsr.o
+mv -f .deps/ffsr.Tpo .deps/ffsr.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT ftab.lo -MD -MP -MF .deps/ftab.Tpo -c -o ftab.lo ftab.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT ftab.lo -MD -MP -MF .deps/ftab.Tpo -c ftab.c -o ftab.o
+mv -f .deps/ftab.Tpo .deps/ftab.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT fres.lo -MD -MP -MF .deps/fres.Tpo -c -o fres.lo fres.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT fres.lo -MD -MP -MF .deps/fres.Tpo -c fres.c -o fres.o
+mv -f .deps/fres.Tpo .deps/fres.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT fcho.lo -MD -MP -MF .deps/fcho.Tpo -c -o fcho.lo fcho.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT fcho.lo -MD -MP -MF .deps/fcho.Tpo -c fcho.c -o fcho.o
+mv -f .deps/fcho.Tpo .deps/fcho.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT fmultin.lo -MD -MP -MF .deps/fmultin.Tpo -c -o fmultin.lo fmultin.c
+mv -f .deps/bbattery.Tpo .deps/bbattery.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT fmarsa.lo -MD -MP -MF .deps/fmarsa.Tpo -c -o fmarsa.lo fmarsa.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT fmultin.lo -MD -MP -MF .deps/fmultin.Tpo -c fmultin.c -o fmultin.o
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT fmarsa.lo -MD -MP -MF .deps/fmarsa.Tpo -c fmarsa.c -o fmarsa.o
+mv -f .deps/fmarsa.Tpo .deps/fmarsa.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT fknuth.lo -MD -MP -MF .deps/fknuth.Tpo -c -o fknuth.lo fknuth.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT fknuth.lo -MD -MP -MF .deps/fknuth.Tpo -c fknuth.c -o fknuth.o
+mv -f .deps/fmultin.Tpo .deps/fmultin.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT fwalk.lo -MD -MP -MF .deps/fwalk.Tpo -c -o fwalk.lo fwalk.c
+mv -f .deps/fknuth.Tpo .deps/fknuth.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT fstring.lo -MD -MP -MF .deps/fstring.Tpo -c -o fstring.lo fstring.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT fwalk.lo -MD -MP -MF .deps/fwalk.Tpo -c fwalk.c -o fwalk.o
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT fstring.lo -MD -MP -MF .deps/fstring.Tpo -c fstring.c -o fstring.o
+mv -f .deps/fwalk.Tpo .deps/fwalk.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT fspectral.lo -MD -MP -MF .deps/fspectral.Tpo -c -o fspectral.lo fspectral.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT fspectral.lo -MD -MP -MF .deps/fspectral.Tpo -c fspectral.c -o fspectral.o
+mv -f .deps/fstring.Tpo .deps/fstring.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT fvaria.lo -MD -MP -MF .deps/fvaria.Tpo -c -o fvaria.lo fvaria.c
+mv -f .deps/fspectral.Tpo .deps/fspectral.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT fnpair.lo -MD -MP -MF .deps/fnpair.Tpo -c -o fnpair.lo fnpair.c
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT fvaria.lo -MD -MP -MF .deps/fvaria.Tpo -c fvaria.c -o fvaria.o
+ gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT fnpair.lo -MD -MP -MF .deps/fnpair.Tpo -c fnpair.c -o fnpair.o
+mv -f .deps/fvaria.Tpo .deps/fvaria.Plo
+mv -f .deps/fnpair.Tpo .deps/fnpair.Plo
+/bin/sh ../libtool --tag=CC   --mode=link gcc  -g -O2 -no-undefined -version-info 0:1:0  -o libtestu01.la -rpath /home/pascal/prng-recovery/audit-2026-10-21/deps/testu01-install/lib unif01.lo ulcg.lo umrg.lo ucarry.lo utaus.lo ugfsr.lo uinv.lo uquad.lo ucubic.lo ulec.lo utezuka.lo umarsa.lo uweyl.lo uknuth.lo uwu.lo unumrec.lo uvaria.lo usoft.lo ugranger.lo ucrypto.lo ufile.lo udeng.lo utouzin.lo uautomata.lo uxorshift.lo ubrent.lo rijndael-alg-fst.lo tu01_sha1.lo scatter.lo swrite.lo sres.lo smultin.lo sknuth.lo smarsa.lo sstring.lo svaria.lo snpair.lo swalk.lo sentrop.lo sspectral.lo scomp.lo sspacings.lo vectorsF2.lo bbattery.lo ffam.lo fcong.lo ffsr.lo ftab.lo fres.lo fcho.lo fmultin.lo fmarsa.lo fknuth.lo fwalk.lo fstring.lo fspectral.lo fvaria.lo fnpair.lo ../probdist/libprobdist.la ../mylib/libmylib.la -lm 
+mkdir .libs
+ar cru .libs/libtestu01.a  unif01.o ulcg.o umrg.o ucarry.o utaus.o ugfsr.o uinv.o uquad.o ucubic.o ulec.o utezuka.o umarsa.o uweyl.o uknuth.o uwu.o unumrec.o uvaria.o usoft.o ugranger.o ucrypto.o ufile.o udeng.o utouzin.o uautomata.o uxorshift.o ubrent.o rijndael-alg-fst.o tu01_sha1.o scatter.o swrite.o sres.o smultin.o sknuth.o smarsa.o sstring.o svaria.o snpair.o swalk.o sentrop.o sspectral.o scomp.o sspacings.o vectorsF2.o bbattery.o ffam.o fcong.o ffsr.o ftab.o fres.o fcho.o fmultin.o fmarsa.o fknuth.o fwalk.o fstring.o fspectral.o fvaria.o fnpair.o
+ar: `u' modifier ignored since `D' is the default (see `U')
+ranlib .libs/libtestu01.a
+creating libtestu01.la
+(cd .libs && rm -f libtestu01.la && ln -s ../libtestu01.la libtestu01.la)
+make[1]: Leaving directory '/home/pascal/prng-recovery/audit-2026-10-21/deps/TestU01-1.2.3/testu01'
+Making all in examples
+make[1]: Entering directory '/home/pascal/prng-recovery/audit-2026-10-21/deps/TestU01-1.2.3/examples'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/pascal/prng-recovery/audit-2026-10-21/deps/TestU01-1.2.3/examples'
+Making all in doc
+make[1]: Entering directory '/home/pascal/prng-recovery/audit-2026-10-21/deps/TestU01-1.2.3/doc'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/pascal/prng-recovery/audit-2026-10-21/deps/TestU01-1.2.3/doc'
+Making all in param
+make[1]: Entering directory '/home/pascal/prng-recovery/audit-2026-10-21/deps/TestU01-1.2.3/param'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/pascal/prng-recovery/audit-2026-10-21/deps/TestU01-1.2.3/param'

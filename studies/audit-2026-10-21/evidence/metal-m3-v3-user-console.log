@@ -1,0 +1,82 @@
+Source: terminal output supplied by the user in this conversation.
+Raw result archive not yet received on the VPS when this transcript was recorded.
+
+1/3 Compilation ARM64 et comparaison des 1600 vecteurs Montmory avec le VPS x86.
+Vecteurs ARM64/x86 : PASS.
+2/3 Compilation du programme de test.
+3/3 Verification sur Metal, puis mesures GPU.
+Volume: 4194304 mots de 64 bits; 11 repetitions.
+GPU: Apple M3
+Compilation Metal v3...
+Verification seed 0...
+Verification seed 1...
+Verification seed 42...
+Verification seed 18446744073709551615...
+Conformite PASS: 4835328 mots, 4004592 reductions; 6 vecteurs officiels CPU et GPU.
+Preparation et echauffement seed 1/11...
+Repetition 1/11 terminee.
+Preparation et echauffement seed 2/11...
+Repetition 2/11 terminee.
+Preparation et echauffement seed 3/11...
+Repetition 3/11 terminee.
+Preparation et echauffement seed 4/11...
+Repetition 4/11 terminee.
+Preparation et echauffement seed 5/11...
+Repetition 5/11 terminee.
+Preparation et echauffement seed 6/11...
+Repetition 6/11 terminee.
+Preparation et echauffement seed 7/11...
+Repetition 7/11 terminee.
+Preparation et echauffement seed 8/11...
+Repetition 8/11 terminee.
+Preparation et echauffement seed 9/11...
+Repetition 9/11 terminee.
+Preparation et echauffement seed 10/11...
+Repetition 10/11 terminee.
+Preparation et echauffement seed 11/11...
+Repetition 11/11 terminee.
+
+GPU Metal v3 — meilleur reglage parmi les medianes mesurees; details dans measurements.csv
+moteur                      format       threads groupe   ns/mot       GB/s
+montmory_indexed            raw64          65536    256     0.149     53.698
+montmory_indexed            mantissa53    262144    256     0.148     53.914
+threefry2x32_20             raw64          65536     64     0.090     88.417
+threefry2x32_20             mantissa53    262144    256     0.091     88.359
+philox4x32_10               raw64          65536    128     0.094     84.885
+philox4x32_10               mantissa53     65536    256     0.095     84.653
+montmory_historical         mantissa53      8192    256     0.145     55.234
+montmory_u32_indexed        raw64         262144    256     0.131     61.064
+montmory_u32_indexed        mantissa53    262144    256     0.131     60.976
+montmory_u64_tiled          raw64         262144    256     0.145     55.086
+montmory_u64_tiled          mantissa53     65536    256     0.144     55.450
+montmory_u32_tiled          raw64          65536    256     0.127     62.988
+montmory_u32_tiled          mantissa53    262144    256     0.128     62.456
+write_baseline_NOT_PRNG     raw64         262144    256     0.086     93.034
+write_baseline_NOT_PRNG     mantissa53    262144    256     0.084     95.427
+montmory_pair               raw64          65536    128     0.120     66.814
+montmory_pair               mantissa53     65536     64     0.120     66.417
+montmory_quad               raw64          65536    256     0.120     66.488
+montmory_quad               mantissa53     65536    128     0.121     66.259
+montmory_mulhi_pair         raw64          65536     64     0.111     72.309
+montmory_mulhi_pair         mantissa53     65536    256     0.110     72.786
+montmory_spec_pair          raw64          65536     64     0.112     71.209
+montmory_spec_pair          mantissa53     65536    256     0.111     71.851
+montmory_spec_dual          raw64           8192    256     0.112     71.736
+montmory_spec_dual          mantissa53     65536    128     0.110     72.951
+
+Diagnostic reduction XOR : generation + accumulation, une ecriture par thread.
+Ce mode ne livre pas le flux complet; unite Gmots generes/s, pas GB/s ecrits.
+threefry2x32_20                 13.061 Gmots/s
+philox4x32_10                   11.679 Gmots/s
+montmory_u32_tiled               8.644 Gmots/s
+write_baseline_NOT_PRNG         74.455 Gmots/s
+montmory_pair                    9.263 Gmots/s
+montmory_quad                    9.209 Gmots/s
+montmory_mulhi_pair             10.809 Gmots/s
+montmory_spec_pair              10.636 Gmots/s
+montmory_spec_dual              10.524 Gmots/s
+
+PASS. Resultats: results/20261021T134922Z-9053
+Le tableau final compare les debits sur ton GPU. Aucun resultat n'a ete envoye automatiquement.
+
+Resultats et diagnostics: /Users/enincaconsulting/Downloads/montmory-metal-m3-v3/montmory-metal-v3-results-20261021T134922Z-9053.tar.gz

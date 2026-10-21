@@ -1,0 +1,735 @@
+{
+  "status": "pass",
+  "requested_backend": "cpu",
+  "jax": "0.10.2",
+  "word_comparisons": 1972720,
+  "cases": [
+    {
+      "seed": 0,
+      "base": 0,
+      "engine": "jax_portable",
+      "words": 8193
+    },
+    {
+      "seed": 0,
+      "base": 0,
+      "engine": "jax_mulhi",
+      "words": 8193
+    },
+    {
+      "seed": 0,
+      "base": 0,
+      "engine": "pallas_8",
+      "words": 8193
+    },
+    {
+      "seed": 0,
+      "base": 0,
+      "engine": "pallas_16",
+      "words": 8193
+    },
+    {
+      "seed": 0,
+      "base": 0,
+      "engine": "pallas_32",
+      "words": 8193
+    },
+    {
+      "seed": 0,
+      "base": 4095,
+      "engine": "jax_portable",
+      "words": 8193
+    },
+    {
+      "seed": 0,
+      "base": 4095,
+      "engine": "jax_mulhi",
+      "words": 8193
+    },
+    {
+      "seed": 0,
+      "base": 4095,
+      "engine": "pallas_8",
+      "words": 8193
+    },
+    {
+      "seed": 0,
+      "base": 4095,
+      "engine": "pallas_16",
+      "words": 8193
+    },
+    {
+      "seed": 0,
+      "base": 4095,
+      "engine": "pallas_32",
+      "words": 8193
+    },
+    {
+      "seed": 0,
+      "base": 8388607,
+      "engine": "jax_portable",
+      "words": 8193
+    },
+    {
+      "seed": 0,
+      "base": 8388607,
+      "engine": "jax_mulhi",
+      "words": 8193
+    },
+    {
+      "seed": 0,
+      "base": 8388607,
+      "engine": "pallas_8",
+      "words": 8193
+    },
+    {
+      "seed": 0,
+      "base": 8388607,
+      "engine": "pallas_16",
+      "words": 8193
+    },
+    {
+      "seed": 0,
+      "base": 8388607,
+      "engine": "pallas_32",
+      "words": 8193
+    },
+    {
+      "seed": 0,
+      "base": 4294967289,
+      "engine": "jax_portable",
+      "words": 8193
+    },
+    {
+      "seed": 0,
+      "base": 4294967289,
+      "engine": "jax_mulhi",
+      "words": 8193
+    },
+    {
+      "seed": 0,
+      "base": 4294967289,
+      "engine": "pallas_8",
+      "words": 8193
+    },
+    {
+      "seed": 0,
+      "base": 4294967289,
+      "engine": "pallas_16",
+      "words": 8193
+    },
+    {
+      "seed": 0,
+      "base": 4294967289,
+      "engine": "pallas_32",
+      "words": 8193
+    },
+    {
+      "seed": 0,
+      "base": 9223372036854775801,
+      "engine": "jax_portable",
+      "words": 8193
+    },
+    {
+      "seed": 0,
+      "base": 9223372036854775801,
+      "engine": "jax_mulhi",
+      "words": 8193
+    },
+    {
+      "seed": 0,
+      "base": 9223372036854775801,
+      "engine": "pallas_8",
+      "words": 8193
+    },
+    {
+      "seed": 0,
+      "base": 9223372036854775801,
+      "engine": "pallas_16",
+      "words": 8193
+    },
+    {
+      "seed": 0,
+      "base": 9223372036854775801,
+      "engine": "pallas_32",
+      "words": 8193
+    },
+    {
+      "seed": 0,
+      "base": 18446744073709543423,
+      "engine": "jax_portable",
+      "words": 8193
+    },
+    {
+      "seed": 0,
+      "base": 18446744073709543423,
+      "engine": "jax_mulhi",
+      "words": 8193
+    },
+    {
+      "seed": 0,
+      "base": 18446744073709543423,
+      "engine": "pallas_8",
+      "words": 8193
+    },
+    {
+      "seed": 0,
+      "base": 18446744073709543423,
+      "engine": "pallas_16",
+      "words": 8193
+    },
+    {
+      "seed": 0,
+      "base": 18446744073709543423,
+      "engine": "pallas_32",
+      "words": 8193
+    },
+    {
+      "seed": 42,
+      "base": 0,
+      "engine": "jax_portable",
+      "words": 8193
+    },
+    {
+      "seed": 42,
+      "base": 0,
+      "engine": "jax_mulhi",
+      "words": 8193
+    },
+    {
+      "seed": 42,
+      "base": 0,
+      "engine": "pallas_8",
+      "words": 8193
+    },
+    {
+      "seed": 42,
+      "base": 0,
+      "engine": "pallas_16",
+      "words": 8193
+    },
+    {
+      "seed": 42,
+      "base": 0,
+      "engine": "pallas_32",
+      "words": 8193
+    },
+    {
+      "seed": 42,
+      "base": 4095,
+      "engine": "jax_portable",
+      "words": 8193
+    },
+    {
+      "seed": 42,
+      "base": 4095,
+      "engine": "jax_mulhi",
+      "words": 8193
+    },
+    {
+      "seed": 42,
+      "base": 4095,
+      "engine": "pallas_8",
+      "words": 8193
+    },
+    {
+      "seed": 42,
+      "base": 4095,
+      "engine": "pallas_16",
+      "words": 8193
+    },
+    {
+      "seed": 42,
+      "base": 4095,
+      "engine": "pallas_32",
+      "words": 8193
+    },
+    {
+      "seed": 42,
+      "base": 8388607,
+      "engine": "jax_portable",
+      "words": 8193
+    },
+    {
+      "seed": 42,
+      "base": 8388607,
+      "engine": "jax_mulhi",
+      "words": 8193
+    },
+    {
+      "seed": 42,
+      "base": 8388607,
+      "engine": "pallas_8",
+      "words": 8193
+    },
+    {
+      "seed": 42,
+      "base": 8388607,
+      "engine": "pallas_16",
+      "words": 8193
+    },
+    {
+      "seed": 42,
+      "base": 8388607,
+      "engine": "pallas_32",
+      "words": 8193
+    },
+    {
+      "seed": 42,
+      "base": 4294967289,
+      "engine": "jax_portable",
+      "words": 8193
+    },
+    {
+      "seed": 42,
+      "base": 4294967289,
+      "engine": "jax_mulhi",
+      "words": 8193
+    },
+    {
+      "seed": 42,
+      "base": 4294967289,
+      "engine": "pallas_8",
+      "words": 8193
+    },
+    {
+      "seed": 42,
+      "base": 4294967289,
+      "engine": "pallas_16",
+      "words": 8193
+    },
+    {
+      "seed": 42,
+      "base": 4294967289,
+      "engine": "pallas_32",
+      "words": 8193
+    },
+    {
+      "seed": 42,
+      "base": 9223372036854775801,
+      "engine": "jax_portable",
+      "words": 8193
+    },
+    {
+      "seed": 42,
+      "base": 9223372036854775801,
+      "engine": "jax_mulhi",
+      "words": 8193
+    },
+    {
+      "seed": 42,
+      "base": 9223372036854775801,
+      "engine": "pallas_8",
+      "words": 8193
+    },
+    {
+      "seed": 42,
+      "base": 9223372036854775801,
+      "engine": "pallas_16",
+      "words": 8193
+    },
+    {
+      "seed": 42,
+      "base": 9223372036854775801,
+      "engine": "pallas_32",
+      "words": 8193
+    },
+    {
+      "seed": 42,
+      "base": 18446744073709543423,
+      "engine": "jax_portable",
+      "words": 8193
+    },
+    {
+      "seed": 42,
+      "base": 18446744073709543423,
+      "engine": "jax_mulhi",
+      "words": 8193
+    },
+    {
+      "seed": 42,
+      "base": 18446744073709543423,
+      "engine": "pallas_8",
+      "words": 8193
+    },
+    {
+      "seed": 42,
+      "base": 18446744073709543423,
+      "engine": "pallas_16",
+      "words": 8193
+    },
+    {
+      "seed": 42,
+      "base": 18446744073709543423,
+      "engine": "pallas_32",
+      "words": 8193
+    },
+    {
+      "seed": 18446744073709551615,
+      "base": 0,
+      "engine": "jax_portable",
+      "words": 8193
+    },
+    {
+      "seed": 18446744073709551615,
+      "base": 0,
+      "engine": "jax_mulhi",
+      "words": 8193
+    },
+    {
+      "seed": 18446744073709551615,
+      "base": 0,
+      "engine": "pallas_8",
+      "words": 8193
+    },
+    {
+      "seed": 18446744073709551615,
+      "base": 0,
+      "engine": "pallas_16",
+      "words": 8193
+    },
+    {
+      "seed": 18446744073709551615,
+      "base": 0,
+      "engine": "pallas_32",
+      "words": 8193
+    },
+    {
+      "seed": 18446744073709551615,
+      "base": 4095,
+      "engine": "jax_portable",
+      "words": 8193
+    },
+    {
+      "seed": 18446744073709551615,
+      "base": 4095,
+      "engine": "jax_mulhi",
+      "words": 8193
+    },
+    {
+      "seed": 18446744073709551615,
+      "base": 4095,
+      "engine": "pallas_8",
+      "words": 8193
+    },
+    {
+      "seed": 18446744073709551615,
+      "base": 4095,
+      "engine": "pallas_16",
+      "words": 8193
+    },
+    {
+      "seed": 18446744073709551615,
+      "base": 4095,
+      "engine": "pallas_32",
+      "words": 8193
+    },
+    {
+      "seed": 18446744073709551615,
+      "base": 8388607,
+      "engine": "jax_portable",
+      "words": 8193
+    },
+    {
+      "seed": 18446744073709551615,
+      "base": 8388607,
+      "engine": "jax_mulhi",
+      "words": 8193
+    },
+    {
+      "seed": 18446744073709551615,
+      "base": 8388607,
+      "engine": "pallas_8",
+      "words": 8193
+    },
+    {
+      "seed": 18446744073709551615,
+      "base": 8388607,
+      "engine": "pallas_16",
+      "words": 8193
+    },
+    {
+      "seed": 18446744073709551615,
+      "base": 8388607,
+      "engine": "pallas_32",
+      "words": 8193
+    },
+    {
+      "seed": 18446744073709551615,
+      "base": 4294967289,
+      "engine": "jax_portable",
+      "words": 8193
+    },
+    {
+      "seed": 18446744073709551615,
+      "base": 4294967289,
+      "engine": "jax_mulhi",
+      "words": 8193
+    },
+    {
+      "seed": 18446744073709551615,
+      "base": 4294967289,
+      "engine": "pallas_8",
+      "words": 8193
+    },
+    {
+      "seed": 18446744073709551615,
+      "base": 4294967289,
+      "engine": "pallas_16",
+      "words": 8193
+    },
+    {
+      "seed": 18446744073709551615,
+      "base": 4294967289,
+      "engine": "pallas_32",
+      "words": 8193
+    },
+    {
+      "seed": 18446744073709551615,
+      "base": 9223372036854775801,
+      "engine": "jax_portable",
+      "words": 8193
+    },
+    {
+      "seed": 18446744073709551615,
+      "base": 9223372036854775801,
+      "engine": "jax_mulhi",
+      "words": 8193
+    },
+    {
+      "seed": 18446744073709551615,
+      "base": 9223372036854775801,
+      "engine": "pallas_8",
+      "words": 8193
+    },
+    {
+      "seed": 18446744073709551615,
+      "base": 9223372036854775801,
+      "engine": "pallas_16",
+      "words": 8193
+    },
+    {
+      "seed": 18446744073709551615,
+      "base": 9223372036854775801,
+      "engine": "pallas_32",
+      "words": 8193
+    },
+    {
+      "seed": 18446744073709551615,
+      "base": 18446744073709543423,
+      "engine": "jax_portable",
+      "words": 8193
+    },
+    {
+      "seed": 18446744073709551615,
+      "base": 18446744073709543423,
+      "engine": "jax_mulhi",
+      "words": 8193
+    },
+    {
+      "seed": 18446744073709551615,
+      "base": 18446744073709543423,
+      "engine": "pallas_8",
+      "words": 8193
+    },
+    {
+      "seed": 18446744073709551615,
+      "base": 18446744073709543423,
+      "engine": "pallas_16",
+      "words": 8193
+    },
+    {
+      "seed": 18446744073709551615,
+      "base": 18446744073709543423,
+      "engine": "pallas_32",
+      "words": 8193
+    },
+    {
+      "seed": 9223372036854775809,
+      "base": 0,
+      "engine": "jax_portable",
+      "words": 8193
+    },
+    {
+      "seed": 9223372036854775809,
+      "base": 0,
+      "engine": "jax_mulhi",
+      "words": 8193
+    },
+    {
+      "seed": 9223372036854775809,
+      "base": 0,
+      "engine": "pallas_8",
+      "words": 8193
+    },
+    {
+      "seed": 9223372036854775809,
+      "base": 0,
+      "engine": "pallas_16",
+      "words": 8193
+    },
+    {
+      "seed": 9223372036854775809,
+      "base": 0,
+      "engine": "pallas_32",
+      "words": 8193
+    },
+    {
+      "seed": 9223372036854775809,
+      "base": 4095,
+      "engine": "jax_portable",
+      "words": 8193
+    },
+    {
+      "seed": 9223372036854775809,
+      "base": 4095,
+      "engine": "jax_mulhi",
+      "words": 8193
+    },
+    {
+      "seed": 9223372036854775809,
+      "base": 4095,
+      "engine": "pallas_8",
+      "words": 8193
+    },
+    {
+      "seed": 9223372036854775809,
+      "base": 4095,
+      "engine": "pallas_16",
+      "words": 8193
+    },
+    {
+      "seed": 9223372036854775809,
+      "base": 4095,
+      "engine": "pallas_32",
+      "words": 8193
+    },
+    {
+      "seed": 9223372036854775809,
+      "base": 8388607,
+      "engine": "jax_portable",
+      "words": 8193
+    },
+    {
+      "seed": 9223372036854775809,
+      "base": 8388607,
+      "engine": "jax_mulhi",
+      "words": 8193
+    },
+    {
+      "seed": 9223372036854775809,
+      "base": 8388607,
+      "engine": "pallas_8",
+      "words": 8193
+    },
+    {
+      "seed": 9223372036854775809,
+      "base": 8388607,
+      "engine": "pallas_16",
+      "words": 8193
+    },
+    {
+      "seed": 9223372036854775809,
+      "base": 8388607,
+      "engine": "pallas_32",
+      "words": 8193
+    },
+    {
+      "seed": 9223372036854775809,
+      "base": 4294967289,
+      "engine": "jax_portable",
+      "words": 8193
+    },
+    {
+      "seed": 9223372036854775809,
+      "base": 4294967289,
+      "engine": "jax_mulhi",
+      "words": 8193
+    },
+    {
+      "seed": 9223372036854775809,
+      "base": 4294967289,
+      "engine": "pallas_8",
+      "words": 8193
+    },
+    {
+      "seed": 9223372036854775809,
+      "base": 4294967289,
+      "engine": "pallas_16",
+      "words": 8193
+    },
+    {
+      "seed": 9223372036854775809,
+      "base": 4294967289,
+      "engine": "pallas_32",
+      "words": 8193
+    },
+    {
+      "seed": 9223372036854775809,
+      "base": 9223372036854775801,
+      "engine": "jax_portable",
+      "words": 8193
+    },
+    {
+      "seed": 9223372036854775809,
+      "base": 9223372036854775801,
+      "engine": "jax_mulhi",
+      "words": 8193
+    },
+    {
+      "seed": 9223372036854775809,
+      "base": 9223372036854775801,
+      "engine": "pallas_8",
+      "words": 8193
+    },
+    {
+      "seed": 9223372036854775809,
+      "base": 9223372036854775801,
+      "engine": "pallas_16",
+      "words": 8193
+    },
+    {
+      "seed": 9223372036854775809,
+      "base": 9223372036854775801,
+      "engine": "pallas_32",
+      "words": 8193
+    },
+    {
+      "seed": 9223372036854775809,
+      "base": 18446744073709543423,
+      "engine": "jax_portable",
+      "words": 8193
+    },
+    {
+      "seed": 9223372036854775809,
+      "base": 18446744073709543423,
+      "engine": "jax_mulhi",
+      "words": 8193
+    },
+    {
+      "seed": 9223372036854775809,
+      "base": 18446744073709543423,
+      "engine": "pallas_8",
+      "words": 8193
+    },
+    {
+      "seed": 9223372036854775809,
+      "base": 18446744073709543423,
+      "engine": "pallas_16",
+      "words": 8193
+    },
+    {
+      "seed": 9223372036854775809,
+      "base": 18446744073709543423,
+      "engine": "pallas_32",
+      "words": 8193
+    }
+  ],
+  "statistical_tests_run": false,
+  "backend": "cpu",
+  "devices": [
+    "cpu:0"
+  ],
+  "native_pallas_tpu": false,
+  "interpreted_pallas": true
+}

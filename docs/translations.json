@@ -1,0 +1,214 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-10-21",
+  "scope": "Public FR/EN reader documentation; private legal editions excluded; historical sources and evidence retain their original bytes. Hashes record the reviewed revision, not linguistic certification.",
+  "pairs": [
+    {
+      "fr": "README.fr.md",
+      "en": "README.md",
+      "reference_language": "en",
+      "reference_frozen": false,
+      "kind": "markdown",
+      "fr_sha256": "3e3956f2c69a4ec93690363c9c8e8175760a24ec5bc5c272c9fa215d32f1af87",
+      "en_sha256": "d2ef1702fbf8026e599ccce7e20cee1ea1bbbaedbc1adc2139c5d7dca71aca0f"
+    },
+    {
+      "fr": "docs/contract.md",
+      "en": "docs/en/contract.md",
+      "reference_language": "fr",
+      "reference_frozen": false,
+      "kind": "markdown",
+      "fr_sha256": "aa478f5c0bc6885a05445b867028c4beb6ef448602661a1fb3585c881149e727",
+      "en_sha256": "81ce743d4ed29d1a26e862165fa72ddbd0d2cd29cf6c7bde89cc702a4ccf5ad8"
+    },
+    {
+      "fr": "docs/methodology.md",
+      "en": "docs/en/methodology.md",
+      "reference_language": "fr",
+      "reference_frozen": false,
+      "kind": "markdown",
+      "fr_sha256": "17c05520376febe56ecd10d47190545f37e3ff1e061af2894ab479dc7edb21c2",
+      "en_sha256": "206e25d19be1e6b641c57ccdf29c9beef14bda9d1dd5c5c5fd8d0228fab798fc"
+    },
+    {
+      "fr": "docs/results.md",
+      "en": "docs/en/results.md",
+      "reference_language": "fr",
+      "reference_frozen": false,
+      "kind": "markdown",
+      "fr_sha256": "f3fd56490bfbba699f1666faaac67bff1f4177c88536f68b0a91da4e247ac620",
+      "en_sha256": "dfd4f654ea2e023f922edb0390f13916bc656be817eebf9d999fe60ae7cd004f"
+    },
+    {
+      "fr": "docs/csv-guide.md",
+      "en": "docs/en/csv-guide.md",
+      "reference_language": "fr",
+      "reference_frozen": false,
+      "kind": "markdown",
+      "fr_sha256": "89c8fcedc3a1a5a50aa54715037f89d05f781aaa7109048f28d7e884f7411cad",
+      "en_sha256": "a3a8c05d441ac692fed7cf95ab6a3f6fdc8ac7329a4cf26c9c16c1f9e6e40bf0"
+    },
+    {
+      "fr": "docs/evidence.md",
+      "en": "docs/en/evidence.md",
+      "reference_language": "fr",
+      "reference_frozen": false,
+      "kind": "markdown",
+      "fr_sha256": "16c05ae892becb749e1848cbcb245bbfcec5014edf659fd81a7355d19be8ee13",
+      "en_sha256": "8b4a463a75eb630450aa535db906260091dfeeddc8658a29bc7561f9814502b1"
+    },
+    {
+      "fr": "docs/reproduce.md",
+      "en": "docs/en/reproduce.md",
+      "reference_language": "fr",
+      "reference_frozen": false,
+      "kind": "markdown",
+      "fr_sha256": "4f9ca8f787172aeef0a38df1812d29b09eefeb88112d61ff582645343f612b9d",
+      "en_sha256": "031db2ba79150d5bbe9507499d95c456a0d28ec82e66f98553cefbc5159d7638"
+    },
+    {
+      "fr": "docs/testu01.md",
+      "en": "docs/en/testu01.md",
+      "reference_language": "fr",
+      "reference_frozen": false,
+      "kind": "markdown",
+      "fr_sha256": "eeb6a289f24869417ebbfa8875c73b36eac584583888a443f40e71a90b25114c",
+      "en_sha256": "f98e1c027a83d67e28a999f5ff7215c8d4274d5904a54e60ab7335c32611acd0"
+    },
+    {
+      "fr": "docs/tacm.md",
+      "en": "docs/en/tacm.md",
+      "reference_language": "fr",
+      "reference_frozen": false,
+      "kind": "markdown",
+      "fr_sha256": "d7cc5603582181eaab412576a2af10c409f5886fc32f921d889838b8d6039e54",
+      "en_sha256": "258d54d1f02c1d5891bfd7123f852f68ab72f9c0e437861d54c6910864541115"
+    },
+    {
+      "fr": "docs/limitations.md",
+      "en": "docs/en/limitations.md",
+      "reference_language": "fr",
+      "reference_frozen": false,
+      "kind": "markdown",
+      "fr_sha256": "c1651b99649d525c6fbd625d116de97c4567fdc5bfc2435a69d9df22850a415b",
+      "en_sha256": "905200a5382e39026d1200814fb65bf4cb62bca21a4828e038bbf2e5fbc1ac29"
+    },
+    {
+      "fr": "docs/history.md",
+      "en": "docs/en/history.md",
+      "reference_language": "fr",
+      "reference_frozen": false,
+      "kind": "markdown",
+      "fr_sha256": "6d72c116334e2fcf6c2de4a60604915572476c3dd94f5079347492c53f1c2cbf",
+      "en_sha256": "ed0ca48b41661c791856cc34a0541dd5475f4655c8bde7249197079b92f4c009"
+    },
+    {
+      "fr": "docs/references.md",
+      "en": "docs/en/references.md",
+      "reference_language": "fr",
+      "reference_frozen": false,
+      "kind": "markdown",
+      "fr_sha256": "22a585fa8f84cb4bd6413d99df7bd24e1532388d7e192b6668f36d94ab1abe67",
+      "en_sha256": "e024376be43652d8ce1391093e6f2545996616ab2203a71d037b4e5349d18f37"
+    },
+    {
+      "fr": "docs/glossary.md",
+      "en": "docs/en/glossary.md",
+      "reference_language": "fr",
+      "reference_frozen": false,
+      "kind": "markdown",
+      "fr_sha256": "e699b27debc6dc2d74e2c897a0464aafa82b457cbc0f0d813adae431c9c595ff",
+      "en_sha256": "c05ab1fb873f678c02a35be0c8be5789b4aa8205aecd9072cd9e424eba3158ce"
+    },
+    {
+      "fr": "docs/benchmark-applicatif.md",
+      "en": "docs/en/benchmark-applicatif.md",
+      "reference_language": "fr",
+      "reference_frozen": true,
+      "kind": "markdown",
+      "fr_sha256": "ade90f341569c49ad07313653319d341412c4e429cede697e7c6a016627b04bb",
+      "en_sha256": "a1002fb4b9e14142b2d0b5947b8e5b24d2c54d67d767594cd235506187727bdd"
+    },
+    {
+      "fr": "docs/languages.md",
+      "en": "docs/en/languages.md",
+      "reference_language": "fr",
+      "reference_frozen": false,
+      "kind": "markdown",
+      "fr_sha256": "d955ed06d19f9722bbe41b4acba1e5a37a74f33e0b6fedf2562d426c2eb6ed30",
+      "en_sha256": "61e7bc07ff54bfa5de0c3aca716aa4d04729c892f32e256a0a3bfc77fe18a14d"
+    },
+    {
+      "fr": "docs/start-here.fr.md",
+      "en": "docs/start-here.md",
+      "reference_language": "en",
+      "reference_frozen": false,
+      "kind": "markdown",
+      "fr_sha256": "09a0df38bc5757d4d97f0d0f6b89e04885a59d45066955e6a344b2cc67db3feb",
+      "en_sha256": "404f79bca7c0ee401f375c44391de6d3cdbab4d50a8875f59df8e04c92c1fe33"
+    },
+    {
+      "fr": "LICENSE.fr.md",
+      "en": "LICENSE",
+      "reference_language": "en",
+      "reference_frozen": true,
+      "kind": "rights-notice",
+      "fr_sha256": "8ff7510e5e625429e66c71a69270ae7ae4f44fff7f109b2e737be8d094c42f43",
+      "en_sha256": "711873e5500166460ce7b91044830a050e52bb8561c7a24c1ea4ffc8e82c6431"
+    },
+    {
+      "fr": "THIRD_PARTY_NOTICES.fr.md",
+      "en": "THIRD_PARTY_NOTICES.md",
+      "reference_language": "en",
+      "reference_frozen": false,
+      "kind": "markdown",
+      "fr_sha256": "8c241dee49e7a6dfdabc2e593d0cdca8338e8a4c725806376467279a2d608724",
+      "en_sha256": "eda04a7a4eb8c9c4bde82395a1d35979bd601f6c8c0e431ad5aa56b4e09df529"
+    },
+    {
+      "fr": "notebooks/README.fr.md",
+      "en": "notebooks/README.md",
+      "reference_language": "en",
+      "reference_frozen": false,
+      "kind": "markdown",
+      "fr_sha256": "8178d78e8e4a7771a0eec7e06cf30b22f3dced40d33e82c5180b3098671782c5",
+      "en_sha256": "e359377ca3494181b3e35a1349939b032729bffc2fe19e8078032e9a37b29c04"
+    },
+    {
+      "fr": "notebooks/Montmory_TPU_optimisation.ipynb",
+      "en": "notebooks/Montmory_TPU_optimisation.en.ipynb",
+      "reference_language": "fr",
+      "reference_frozen": true,
+      "kind": "notebook",
+      "fr_sha256": "e13790cd7d622c0d09aa03efd6e28e9bd7f640cf668e285793255858cc10bede",
+      "en_sha256": "a7e838307f0589ddc88cce8b486f449ef3ca75ecd97496da62f8be6f9578d48b"
+    },
+    {
+      "fr": "notebooks/Montmory_TPU_validation.ipynb",
+      "en": "notebooks/Montmory_TPU_validation.en.ipynb",
+      "reference_language": "fr",
+      "reference_frozen": true,
+      "kind": "notebook",
+      "fr_sha256": "0a1daca474fecc0800bca4a92e92d5f5535d542a245075d728332c12f801fad4",
+      "en_sha256": "d7e552a2c56ca12800a0acacaed4aab6a6e670db4fca06b633c123219575772e"
+    },
+    {
+      "fr": "applications/jax_rng/validation/README.md",
+      "en": "applications/jax_rng/validation/README.en.md",
+      "reference_language": "fr",
+      "reference_frozen": false,
+      "kind": "markdown",
+      "fr_sha256": "3b46eb9f4abd78e25e0278094794fa0fa040cf2db326438f580cd8efe331dce9",
+      "en_sha256": "1ac9bd35f62c0d9e0cea88ad4e841c04b81aa09e4d1105697bfbd99196b7ff28"
+    },
+    {
+      "fr": "docs/publication.md",
+      "en": "docs/en/publication.md",
+      "kind": "markdown",
+      "reference_language": "fr",
+      "reference_frozen": false,
+      "fr_sha256": "969bc8c3de61e7d4b5f9088634937634d98d40457671fba539fecb4808ecd445",
+      "en_sha256": "b9c2532e8c1f5c441dedf3da648a274d37e3442267d39126c2f14011d2a241c6"
+    }
+  ]
+}

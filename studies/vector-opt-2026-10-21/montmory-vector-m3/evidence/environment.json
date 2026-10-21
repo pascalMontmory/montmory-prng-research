@@ -1,0 +1,7 @@
+{
+  "system": "Linux-6.1.0-50-cloud-amd64-x86_64-with-glibc2.36",
+  "compiler": "g++ (Debian 12.2.0-14+deb12u1) 12.2.0",
+  "build_flags": "-std=c++17 -O3 -march=native -Wall -Wextra -Werror -pthread",
+  "verification_flags": "-O2 -fsanitize=undefined -fno-sanitize-recover=all",
+  "CPU": "AMD EPYC-Milan virtualized VPS; 16 visible vCPUs; other workloads possible"
+}

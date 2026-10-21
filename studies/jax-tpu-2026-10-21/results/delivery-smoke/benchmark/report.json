@@ -1,0 +1,104 @@
+{
+  "status": "pass",
+  "requested_backend": "cpu",
+  "jax": "0.10.2",
+  "jaxlib": "0.10.2",
+  "platform": "Linux-6.1.0-50-cloud-amd64-x86_64-with-glibc2.36",
+  "scope": "single-device generation of two uint32 arrays, 8 stored bytes per word",
+  "timing": "host wall clock including dispatch, allocation and block_until_ready; excluding setup, compilation, transfers and checking",
+  "seed_setup": "all seed/key derivation is outside timed calls, including Montmory splitmix",
+  "logical_lanes": 2048,
+  "draws_per_lane": 4096,
+  "base": 4294963199,
+  "quick": true,
+  "samples": 72,
+  "checked_timed_words": 4718592,
+  "summary": [
+    {
+      "engine": "montmory_jax_portable",
+      "words": 65536,
+      "median_ns_per_word": 4.6971588134765625,
+      "stored_GB_per_second": 1.7031572313559624,
+      "paired_ratio_vs_montmory_jax_portable": 1.0,
+      "faster_seeds": 0,
+      "seed_count": 3
+    },
+    {
+      "engine": "montmory_jax_mulhi",
+      "words": 65536,
+      "median_ns_per_word": 4.379608154296875,
+      "stored_GB_per_second": 1.8266474346914174,
+      "paired_ratio_vs_montmory_jax_portable": 1.0725066371218932,
+      "faster_seeds": 2,
+      "seed_count": 3
+    },
+    {
+      "engine": "threefry2x32",
+      "words": 65536,
+      "median_ns_per_word": 23.973007202148438,
+      "stored_GB_per_second": 0.3337086554282204,
+      "paired_ratio_vs_montmory_jax_portable": 0.2033052699076163,
+      "faster_seeds": 0,
+      "seed_count": 3
+    },
+    {
+      "engine": "threefry4x32",
+      "words": 65536,
+      "median_ns_per_word": 4.59979248046875,
+      "stored_GB_per_second": 1.739208895611905,
+      "paired_ratio_vs_montmory_jax_portable": 1.1152925064580759,
+      "faster_seeds": 2,
+      "seed_count": 3
+    },
+    {
+      "engine": "philox4x32",
+      "words": 65536,
+      "median_ns_per_word": 3.6911468505859375,
+      "stored_GB_per_second": 2.1673480692674336,
+      "paired_ratio_vs_montmory_jax_portable": 1.3206594146013233,
+      "faster_seeds": 3,
+      "seed_count": 3
+    },
+    {
+      "engine": "philox2x32",
+      "words": 65536,
+      "median_ns_per_word": 3.5747833251953125,
+      "stored_GB_per_second": 2.237897873030643,
+      "paired_ratio_vs_montmory_jax_portable": 1.447014676239536,
+      "faster_seeds": 3,
+      "seed_count": 3
+    },
+    {
+      "engine": "write_baseline_NOT_PRNG",
+      "words": 65536,
+      "median_ns_per_word": 1.4502105712890625,
+      "stored_GB_per_second": 5.516440273145274,
+      "paired_ratio_vs_montmory_jax_portable": 3.6028976967834936,
+      "faster_seeds": 3,
+      "seed_count": 3
+    },
+    {
+      "engine": "rbg_same_device_only",
+      "words": 65536,
+      "median_ns_per_word": 12.662734985351562,
+      "stored_GB_per_second": 0.6317750477487302,
+      "paired_ratio_vs_montmory_jax_portable": 0.35759417564878987,
+      "faster_seeds": 0,
+      "seed_count": 3
+    }
+  ],
+  "backend": "cpu",
+  "devices": [
+    "cpu:0"
+  ],
+  "device_kind": "cpu",
+  "seeds": [
+    0,
+    1,
+    42
+  ],
+  "sizes": [
+    65536
+  ],
+  "repetitions": 3
+}

@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-21",
+  "user_hardware": "Apple Silicon M3 (user statement)",
+  "measured_benchmark_hardware": "AMD EPYC-Milan x86_64 KVM; not Metal or Apple Silicon",
+  "threefry2x32_20": {
+    "status": "Concrete Metal implementation found; no native M3 execution in this audit",
+    "source": "https://github.com/ml-explore/mlx/blob/52a6c234ab35ddf46c8bd1517b849b59b610d078/mlx/backend/metal/kernels/random.metal",
+    "git_blob": "13d7fd931a542b7aa583f076b6fa907162cdd188",
+    "round_count": "5 groups of 4 rounds",
+    "output_bits_per_block": 64
+  },
+  "threefry4x64_20": {
+    "status": "Algorithm exists on CPU, but disabled by default in examined Random123 Metal port and Metal KAT host; not claimed as validated Metal implementation",
+    "feature_header": "https://github.com/DEShawResearch/random123/blob/9545ff6413f258be2f04c1d319d99aaef7521150/include/Random123/features/metalfeatures.h",
+    "feature_git_blob": "bafe51a6840cb3ae5ca7fc1145cf5442db0657e5",
+    "metal_test_host": "https://github.com/DEShawResearch/random123/blob/9545ff6413f258be2f04c1d319d99aaef7521150/tests/kat_metal.m",
+    "macro": "R123_USE_64BIT=0",
+    "caution": "2019 compatibility comment is not proof of a current M3 hardware limitation."
+  }
+}

@@ -1,0 +1,27 @@
+RIGHTS RESERVED — NO GENERAL LICENSE GRANT FOR ORIGINAL CONTRIBUTIONS
+
+This publicly readable research repository does not grant a general license to use,
+modify, redistribute, sublicense or commercially exploit original project
+contributions. Access to the repository is not a commercial license.
+Any such authorization must come from the actual holder of the relevant rights.
+Mandatory legal exceptions and applicable platform permissions remain unaffected.
+
+The holder of the relevant rights may sell and grant commercial licenses.
+A customer holding such a license may use the covered code commercially
+within its agreed scope. The reservation below concerns unlicensed uses.
+
+Project policy: commercial exploitation of original protected contributions,
+including internal business production use and hosted services, is reserved
+for a separate written license. Proposed noncommercial research/evaluation
+terms are drafts only and have not been activated by this file.
+
+These developments were carried out by Pascal Montmory for ENINCA CONSULTING.
+
+Third-party materials retain their own licenses and permissions. This notice
+does not override Random123, TestU01, JAX or any other third-party terms and
+does not claim ownership of their algorithms or implementations. See
+THIRD_PARTY_NOTICES.md and the original component notices.
+
+This repository is not offered under GPL, AGPL, MIT, Apache or another general
+open-source license for its original contributions. Any such licenses found
+inside third-party or historical materials apply according to their own scope.

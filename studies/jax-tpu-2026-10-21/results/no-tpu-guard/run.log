@@ -1,0 +1,39 @@
+Empreintes des 20 fichiers du kit : PASS.
+Traceback (most recent call last):
+  File "/home/pascal/prng-recovery/jax-port-2026-10-21/.venv/lib/python3.11/site-packages/jax/_src/xla_bridge.py", line 839, in backends
+    backend = _init_backend(platform)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pascal/prng-recovery/jax-port-2026-10-21/.venv/lib/python3.11/site-packages/jax/_src/xla_bridge.py", line 923, in _init_backend
+    backend = registration.factory()
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pascal/prng-recovery/jax-port-2026-10-21/.venv/lib/python3.11/site-packages/jax/_src/xla_bridge.py", line 235, in tpu_client_timer_callback
+    client = make_tpu_client(
+             ^^^^^^^^^^^^^^^^
+  File "/home/pascal/prng-recovery/jax-port-2026-10-21/.venv/lib/python3.11/site-packages/jax/_src/xla_bridge.py", line 203, in make_tpu_client
+    c_api = xla_client.load_pjrt_plugin_dynamically(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pascal/prng-recovery/jax-port-2026-10-21/.venv/lib/python3.11/site-packages/jaxlib/xla_client.py", line 115, in load_pjrt_plugin_dynamically
+    return _xla.load_pjrt_plugin(plugin_name, library_path, c_api=None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+jax.errors.JaxRuntimeError: INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/pascal/prng-recovery/jax-tpu-2026-10-21/montmory-jax-tpu/verify_native.py", line 74, in <module>
+    main()
+  File "/home/pascal/prng-recovery/jax-tpu-2026-10-21/montmory-jax-tpu/verify_native.py", line 32, in main
+    report.update(backend=jax.default_backend(), devices=[str(d) for d in jax.devices()],
+                          ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pascal/prng-recovery/jax-port-2026-10-21/.venv/lib/python3.11/site-packages/jax/_src/xla_bridge.py", line 1044, in default_backend
+    return get_backend(None).platform
+           ^^^^^^^^^^^^^^^^^
+  File "/home/pascal/prng-recovery/jax-port-2026-10-21/.venv/lib/python3.11/site-packages/jax/_src/xla_bridge.py", line 973, in get_backend
+    return _get_backend_uncached(platform)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pascal/prng-recovery/jax-port-2026-10-21/.venv/lib/python3.11/site-packages/jax/_src/xla_bridge.py", line 952, in _get_backend_uncached
+    bs = backends()
+         ^^^^^^^^^^
+  File "/home/pascal/prng-recovery/jax-port-2026-10-21/.venv/lib/python3.11/site-packages/jax/_src/xla_bridge.py", line 855, in backends
+    raise RuntimeError(err_msg)
+RuntimeError: Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory (set JAX_PLATFORMS='' to automatically choose an available backend)

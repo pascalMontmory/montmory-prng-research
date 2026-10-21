@@ -1,0 +1,331 @@
+{
+  "provenance": "User-provided terminal output; raw CSV and metadata archive not yet received",
+  "source": "evidence/metal-m3-v3-user-console.log",
+  "source_sha256": "004c3ff6ec975b76f5c63e88127e60168d35f8ceaea0cffd0272ae207c0f3ac5",
+  "run_id": "20261021T134922Z-9053",
+  "device": "Apple M3",
+  "kit_version": 3,
+  "expected_kit_archive_sha256": "316888e5c9f8b5aa98a4b4079d19713588e98b210b2c525cf83fd434c58a48ca",
+  "words_per_run": 4194304,
+  "repetitions": 11,
+  "configured_jobs_per_seed": 114,
+  "reported_conformance": {
+    "status": "PASS",
+    "arm64_x86_golden_vectors": 1600,
+    "bulk_words_all_engines": 4835328,
+    "reduction_words_all_engines": 4004592,
+    "official_CPU_vectors": 6,
+    "official_GPU_vectors": 6
+  },
+  "best_displayed_bulk_rows": [
+    {
+      "engine": "montmory_indexed",
+      "format": "raw64",
+      "physical_threads": 65536,
+      "threadgroup": 256,
+      "printed_median_ns_per_word": 0.149,
+      "printed_median_GB_per_second": 53.698
+    },
+    {
+      "engine": "montmory_indexed",
+      "format": "mantissa53",
+      "physical_threads": 262144,
+      "threadgroup": 256,
+      "printed_median_ns_per_word": 0.148,
+      "printed_median_GB_per_second": 53.914
+    },
+    {
+      "engine": "threefry2x32_20",
+      "format": "raw64",
+      "physical_threads": 65536,
+      "threadgroup": 64,
+      "printed_median_ns_per_word": 0.09,
+      "printed_median_GB_per_second": 88.417
+    },
+    {
+      "engine": "threefry2x32_20",
+      "format": "mantissa53",
+      "physical_threads": 262144,
+      "threadgroup": 256,
+      "printed_median_ns_per_word": 0.091,
+      "printed_median_GB_per_second": 88.359
+    },
+    {
+      "engine": "philox4x32_10",
+      "format": "raw64",
+      "physical_threads": 65536,
+      "threadgroup": 128,
+      "printed_median_ns_per_word": 0.094,
+      "printed_median_GB_per_second": 84.885
+    },
+    {
+      "engine": "philox4x32_10",
+      "format": "mantissa53",
+      "physical_threads": 65536,
+      "threadgroup": 256,
+      "printed_median_ns_per_word": 0.095,
+      "printed_median_GB_per_second": 84.653
+    },
+    {
+      "engine": "montmory_historical",
+      "format": "mantissa53",
+      "physical_threads": 8192,
+      "threadgroup": 256,
+      "printed_median_ns_per_word": 0.145,
+      "printed_median_GB_per_second": 55.234
+    },
+    {
+      "engine": "montmory_u32_indexed",
+      "format": "raw64",
+      "physical_threads": 262144,
+      "threadgroup": 256,
+      "printed_median_ns_per_word": 0.131,
+      "printed_median_GB_per_second": 61.064
+    },
+    {
+      "engine": "montmory_u32_indexed",
+      "format": "mantissa53",
+      "physical_threads": 262144,
+      "threadgroup": 256,
+      "printed_median_ns_per_word": 0.131,
+      "printed_median_GB_per_second": 60.976
+    },
+    {
+      "engine": "montmory_u64_tiled",
+      "format": "raw64",
+      "physical_threads": 262144,
+      "threadgroup": 256,
+      "printed_median_ns_per_word": 0.145,
+      "printed_median_GB_per_second": 55.086
+    },
+    {
+      "engine": "montmory_u64_tiled",
+      "format": "mantissa53",
+      "physical_threads": 65536,
+      "threadgroup": 256,
+      "printed_median_ns_per_word": 0.144,
+      "printed_median_GB_per_second": 55.45
+    },
+    {
+      "engine": "montmory_u32_tiled",
+      "format": "raw64",
+      "physical_threads": 65536,
+      "threadgroup": 256,
+      "printed_median_ns_per_word": 0.127,
+      "printed_median_GB_per_second": 62.988
+    },
+    {
+      "engine": "montmory_u32_tiled",
+      "format": "mantissa53",
+      "physical_threads": 262144,
+      "threadgroup": 256,
+      "printed_median_ns_per_word": 0.128,
+      "printed_median_GB_per_second": 62.456
+    },
+    {
+      "engine": "write_baseline_NOT_PRNG",
+      "format": "raw64",
+      "physical_threads": 262144,
+      "threadgroup": 256,
+      "printed_median_ns_per_word": 0.086,
+      "printed_median_GB_per_second": 93.034
+    },
+    {
+      "engine": "write_baseline_NOT_PRNG",
+      "format": "mantissa53",
+      "physical_threads": 262144,
+      "threadgroup": 256,
+      "printed_median_ns_per_word": 0.084,
+      "printed_median_GB_per_second": 95.427
+    },
+    {
+      "engine": "montmory_pair",
+      "format": "raw64",
+      "physical_threads": 65536,
+      "threadgroup": 128,
+      "printed_median_ns_per_word": 0.12,
+      "printed_median_GB_per_second": 66.814
+    },
+    {
+      "engine": "montmory_pair",
+      "format": "mantissa53",
+      "physical_threads": 65536,
+      "threadgroup": 64,
+      "printed_median_ns_per_word": 0.12,
+      "printed_median_GB_per_second": 66.417
+    },
+    {
+      "engine": "montmory_quad",
+      "format": "raw64",
+      "physical_threads": 65536,
+      "threadgroup": 256,
+      "printed_median_ns_per_word": 0.12,
+      "printed_median_GB_per_second": 66.488
+    },
+    {
+      "engine": "montmory_quad",
+      "format": "mantissa53",
+      "physical_threads": 65536,
+      "threadgroup": 128,
+      "printed_median_ns_per_word": 0.121,
+      "printed_median_GB_per_second": 66.259
+    },
+    {
+      "engine": "montmory_mulhi_pair",
+      "format": "raw64",
+      "physical_threads": 65536,
+      "threadgroup": 64,
+      "printed_median_ns_per_word": 0.111,
+      "printed_median_GB_per_second": 72.309
+    },
+    {
+      "engine": "montmory_mulhi_pair",
+      "format": "mantissa53",
+      "physical_threads": 65536,
+      "threadgroup": 256,
+      "printed_median_ns_per_word": 0.11,
+      "printed_median_GB_per_second": 72.786
+    },
+    {
+      "engine": "montmory_spec_pair",
+      "format": "raw64",
+      "physical_threads": 65536,
+      "threadgroup": 64,
+      "printed_median_ns_per_word": 0.112,
+      "printed_median_GB_per_second": 71.209
+    },
+    {
+      "engine": "montmory_spec_pair",
+      "format": "mantissa53",
+      "physical_threads": 65536,
+      "threadgroup": 256,
+      "printed_median_ns_per_word": 0.111,
+      "printed_median_GB_per_second": 71.851
+    },
+    {
+      "engine": "montmory_spec_dual",
+      "format": "raw64",
+      "physical_threads": 8192,
+      "threadgroup": 256,
+      "printed_median_ns_per_word": 0.112,
+      "printed_median_GB_per_second": 71.736
+    },
+    {
+      "engine": "montmory_spec_dual",
+      "format": "mantissa53",
+      "physical_threads": 65536,
+      "threadgroup": 128,
+      "printed_median_ns_per_word": 0.11,
+      "printed_median_GB_per_second": 72.951
+    }
+  ],
+  "bulk_comparisons": [
+    {
+      "format": "raw64",
+      "mulhi_pair_throughput_gain_over": {
+        "montmory_indexed": 0.34658646504525303,
+        "montmory_u32_tiled": 0.14798056772718615,
+        "montmory_pair": 0.08224324243422054
+      },
+      "competitor_throughput_gain_over_mulhi_pair": {
+        "philox4x32_10": 0.17392025888893503,
+        "threefry2x32_20": 0.22276618401582104
+      },
+      "spec_dual_throughput_gain_over_mulhi_pair": -0.007924324772849767
+    },
+    {
+      "format": "mantissa53",
+      "mulhi_pair_throughput_gain_over": {
+        "montmory_indexed": 0.35003895092183845,
+        "montmory_u32_tiled": 0.16539643909312152,
+        "montmory_pair": 0.09589412349247928,
+        "montmory_historical": 0.31777528333997185
+      },
+      "competitor_throughput_gain_over_mulhi_pair": {
+        "philox4x32_10": 0.1630395955266124,
+        "threefry2x32_20": 0.2139559805457092
+      },
+      "spec_dual_throughput_gain_over_mulhi_pair": 0.0022669194625339895
+    }
+  ],
+  "diagnostic_rows": [
+    {
+      "engine": "threefry2x32_20",
+      "format": "raw64",
+      "physical_threads": 65536,
+      "requested_threadgroup": 256,
+      "printed_median_generated_Gwords_per_second": 13.061
+    },
+    {
+      "engine": "philox4x32_10",
+      "format": "raw64",
+      "physical_threads": 65536,
+      "requested_threadgroup": 256,
+      "printed_median_generated_Gwords_per_second": 11.679
+    },
+    {
+      "engine": "montmory_u32_tiled",
+      "format": "raw64",
+      "physical_threads": 65536,
+      "requested_threadgroup": 256,
+      "printed_median_generated_Gwords_per_second": 8.644
+    },
+    {
+      "engine": "write_baseline_NOT_PRNG",
+      "format": "raw64",
+      "physical_threads": 65536,
+      "requested_threadgroup": 256,
+      "printed_median_generated_Gwords_per_second": 74.455
+    },
+    {
+      "engine": "montmory_pair",
+      "format": "raw64",
+      "physical_threads": 65536,
+      "requested_threadgroup": 256,
+      "printed_median_generated_Gwords_per_second": 9.263
+    },
+    {
+      "engine": "montmory_quad",
+      "format": "raw64",
+      "physical_threads": 65536,
+      "requested_threadgroup": 256,
+      "printed_median_generated_Gwords_per_second": 9.209
+    },
+    {
+      "engine": "montmory_mulhi_pair",
+      "format": "raw64",
+      "physical_threads": 65536,
+      "requested_threadgroup": 256,
+      "printed_median_generated_Gwords_per_second": 10.809
+    },
+    {
+      "engine": "montmory_spec_pair",
+      "format": "raw64",
+      "physical_threads": 65536,
+      "requested_threadgroup": 256,
+      "printed_median_generated_Gwords_per_second": 10.636
+    },
+    {
+      "engine": "montmory_spec_dual",
+      "format": "raw64",
+      "physical_threads": 65536,
+      "requested_threadgroup": 256,
+      "printed_median_generated_Gwords_per_second": 10.524
+    }
+  ],
+  "diagnostic_competitor_throughput_gain_over_mulhi_pair": {
+    "philox4x32_10": 0.080488481820705,
+    "threefry2x32_20": 0.20834489777037657
+  },
+  "provisional_candidate_for_native_batteries": "montmory_mulhi_pair",
+  "candidate_rationale": "Best displayed raw64 Montmory and 0.23% behind the specialized best in mantissa53; no per-rotation pipeline specialization. Tiny mantissa gap is not statistically established.",
+  "limits": [
+    "Displayed bulk rows are winners among multiple configurations, not all 105 bulk configurations",
+    "Nine reduction rows use common requested 65536 threads / group 256; effective groups require CSV verification",
+    "Ratios from rounded medians; no paired timings, dispersion, confidence interval or independent confirmation yet",
+    "Raw metadata, pipeline preparation costs and remote kit manifest have not been inspected",
+    "Diagnostic reduction adds XOR accumulation and changes writes/registers; it is not pure compute and timings cannot be subtracted for an exact memory cost",
+    "No native v3 SmallCrush/Crush/BigCrush results have been received",
+    "One size and one Apple M3; no general superiority or CUDA conclusion"
+  ]
+}

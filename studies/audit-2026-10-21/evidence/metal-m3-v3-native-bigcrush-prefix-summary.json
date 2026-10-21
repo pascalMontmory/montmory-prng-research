@@ -1,0 +1,52 @@
+{
+  "provenance": "Structured extraction from user-pasted native Apple M3 terminal; not a full raw log or a new execution by the auditor",
+  "date_received": "2026-10-21",
+  "run_id": null,
+  "engine": "montmory_mulhi_pair",
+  "backend": "native Metal",
+  "host_reported": "MacBook-Air-de-Eninca.local, Darwin",
+  "testu01_version": "1.2.3",
+  "battery": "BigCrush",
+  "status": "started and producing results in the received excerpt; final result pending",
+  "seed": 42,
+  "logical_lanes": 2048,
+  "draws_per_lane": 4096,
+  "geometry_source": "Native Metal TestU01: montmory_mulhi_pair battery=big seed=42 lanes=2048 draws=4096",
+  "preceding_crush_summary": {
+    "number_of_statistics": 144,
+    "status": "All tests were passed",
+    "cpu_time": "00:15:35.72",
+    "same_summary_already_recorded": true
+  },
+  "pre_battery_conformance": {
+    "status": "PASS",
+    "bulk_words_all_engines": 4835328,
+    "reduction_words_all_engines": 4004592,
+    "official_CPU_vectors": 6,
+    "official_GPU_vectors": 6
+  },
+  "printed_results": [
+    {"test": "smarsa_SerialOver", "N": 1, "n": 1000000000, "r": 0, "d": 256, "t": 3, "p_value_printed": "0.53"},
+    {"test": "smarsa_SerialOver", "N": 1, "n": 1000000000, "r": 22, "d": 256, "t": 3, "p_value_printed": "0.98"},
+    {"test": "smarsa_CollisionOver", "N": 30, "n": 20000000, "r": 0, "d": 2097152, "t": 2, "p_value_printed": "0.06"},
+    {"test": "smarsa_CollisionOver", "N": 30, "n": 20000000, "r": 9, "d": 2097152, "t": 2, "p_value_printed": "0.81"},
+    {"test": "smarsa_CollisionOver", "N": 30, "n": 20000000, "r": 0, "d": 16384, "t": 3, "p_value_printed": "0.19"},
+    {"test": "smarsa_CollisionOver", "N": 30, "n": 20000000, "r": 16, "d": 16384, "t": 3, "p_value_printed": "0.50"},
+    {"test": "smarsa_CollisionOver", "N": 30, "n": 20000000, "r": 0, "d": 64, "t": 7, "p_value_printed": "0.20"},
+    {"test": "smarsa_CollisionOver", "N": 30, "n": 20000000, "r": 24, "d": 64, "t": 7, "p_value_printed": "0.68"},
+    {"test": "smarsa_CollisionOver", "N": 30, "n": 20000000, "r": 0, "d": 8, "t": 14, "p_value_printed": "0.70"},
+    {"test": "smarsa_CollisionOver", "N": 30, "n": 20000000, "r": 27, "d": 8, "t": 14, "p_value_printed": "0.83"},
+    {"test": "smarsa_CollisionOver", "N": 30, "n": 20000000, "r": 0, "d": 4, "t": 21, "p_value_printed": "0.21", "block_truncated_after_p_value": true}
+  ],
+  "visible_p_values_count": 11,
+  "visible_p_values_min": 0.06,
+  "visible_p_values_max": 0.98,
+  "limits": [
+    "No final BigCrush summary received; no overall pass claimed",
+    "The last test block is cut during its occupancy table",
+    "A pasted excerpt does not establish the current live process state",
+    "Raw archive, run identifier and metadata still absent",
+    "Current geometry differs from historical BigCrush 8192 x 16384; historical p-values are not the same-stream reference",
+    "Results concern this seed, logical geometry and 53-bit output adapter"
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "65536": {
+    "primary": "pallas_original_256",
+    "secondary": "pallas_original_8",
+    "threefry": "threefry_pallas_16",
+    "finalists": [
+      "pallas_original_256",
+      "pallas_original_8",
+      "pallas_original_32",
+      "jax_original",
+      "threefry2x32",
+      "threefry4x32",
+      "philox2x32",
+      "philox4x32",
+      "threefry_pallas_16",
+      "write_NOT_PRNG",
+      "rbg_same_backend"
+    ]
+  },
+  "1048576": {
+    "primary": "pallas_carry_128",
+    "secondary": "pallas_carry_64",
+    "threefry": "threefry_pallas_32",
+    "finalists": [
+      "pallas_carry_128",
+      "pallas_carry_64",
+      "pallas_original_32",
+      "jax_original",
+      "threefry2x32",
+      "threefry4x32",
+      "philox2x32",
+      "philox4x32",
+      "threefry_pallas_32",
+      "write_NOT_PRNG",
+      "rbg_same_backend"
+    ]
+  },
+  "8388608": {
+    "primary": "pallas_carry_128",
+    "secondary": "pallas_carry_64",
+    "threefry": "threefry_pallas_128",
+    "finalists": [
+      "pallas_carry_128",
+      "pallas_carry_64",
+      "pallas_original_32",
+      "jax_original",
+      "threefry2x32",
+      "threefry4x32",
+      "philox2x32",
+      "philox4x32",
+      "threefry_pallas_128",
+      "write_NOT_PRNG",
+      "rbg_same_backend"
+    ]
+  },
+  "16777216": {
+    "primary": "pallas_carry_64",
+    "secondary": "pallas_carry_128",
+    "threefry": "threefry_pallas_128",
+    "finalists": [
+      "pallas_carry_64",
+      "pallas_carry_128",
+      "pallas_original_32",
+      "jax_original",
+      "threefry2x32",
+      "threefry4x32",
+      "philox2x32",
+      "philox4x32",
+      "threefry_pallas_128",
+      "write_NOT_PRNG",
+      "rbg_same_backend"
+    ]
+  }
+}

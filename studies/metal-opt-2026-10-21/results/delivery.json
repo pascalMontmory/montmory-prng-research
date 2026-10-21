@@ -1,0 +1,8 @@
+{
+  "archive": "/home/pascal/prng-recovery/mac-montmory-opt-kit.tar.gz",
+  "bytes": 135554,
+  "sha256": "98b5c2bf6b162750871e81abb56aa0105f3565b036c4da69ec760cdf67be030b",
+  "manifest_files": 62,
+  "archive_integrity": "pass",
+  "native_M3_compilation_and_measurements": "pending"
+}

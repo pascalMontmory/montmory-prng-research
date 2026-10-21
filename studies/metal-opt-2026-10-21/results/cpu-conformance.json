@@ -1,0 +1,1 @@
+{"status":"pass","fully_compared_words":3019898880,"reported_hardware_threads":16,"configurations":20,"trials":9,"scope":"Original scalar C oracle; std::thread workers, no affinity; raw64"}

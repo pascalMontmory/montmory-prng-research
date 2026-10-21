@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Cite this repository and the exact commit used; identify the campaign and evidence level supporting each result."
+title: "Montmory PRNG: implementation, methodology and reproducible research record"
+type: software
+authors:
+  - family-names: Montmory
+    given-names: Pascal
+repository-code: "https://github.com/pascalMontmory/montmory-prng-research"
+version: "research-2026-10-21"
+date-released: "2026-10-21"
+abstract: "Research record of a deterministic integer PRNG across CPU, Metal GPU and TPU, including conformance, TestU01 evidence, corrected Monte Carlo diagnostics, benchmark protocols, raw data, limitations and reanalysis scripts."
+keywords:
+  - PRNG
+  - reproducibility
+  - Monte Carlo
+  - TestU01
+  - Metal
+  - TPU
+  - Pallas

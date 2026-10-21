@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "cases": 904,
+  "words_compared": 167444480,
+  "generated_source_sha256": "1ed2856aa953187eadc99e53efd2f1810b6f00a0d14239898718004a0f8da242",
+  "sanitizer": "undefined, abort on first error",
+  "guards": "preserved",
+  "scope": "C++ execution of translated Metal integer bodies, all proposed geometries; efficient CPU oracle checked against original scalar oracle",
+  "native_Mac_status": "not run on VPS; native compilation and all-output checks occur in run.sh"
+}

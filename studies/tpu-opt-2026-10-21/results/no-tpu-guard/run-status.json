@@ -1,0 +1,9 @@
+{
+  "status": "fail",
+  "backend_requested": "tpu",
+  "completed": [
+    "check_manifest.py"
+  ],
+  "cpu_smoke": false,
+  "error": "RuntimeError('verify_native.py failed, exit=1; consulter run.log')"
+}

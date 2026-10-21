@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-21",
+  "reason": "Initial gate failed for two Philox4x64 reference diagnostics: 8/512 and 10/512 rejections, CP95 upper bounds 0.03055 and 0.03562 above 0.03. The functional comparison has not run. No generator ranking or anomaly conclusion follows from this pilot.",
+  "decision": "Preserve the pilot. Perform one independent, fixed-size precision extension with 4096 trials per source and unchanged thresholds. Do not extend again if it fails. Passing this extension authorizes the scoped campaign; both results must be reported.",
+  "trials_per_source": 4096,
+  "namespace_suffix": "-independent-extension",
+  "unchanged": ["sources", "draws", "test_alpha", "false_positive_upper_95_gate", "controls", "power_lower_95_gate"],
+  "limitation": "This amendment is made after seeing pilot calibration results, before any functional comparison. Calibration is empirical and uses PRNG references, not proven IID randomness. Individual CP intervals are not simultaneous guarantees."
+}

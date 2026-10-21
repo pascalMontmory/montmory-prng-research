@@ -1,0 +1,9 @@
+{
+  "status": "pass",
+  "range_words": 7484008,
+  "component_checks": 120000,
+  "historical_words": 50331648,
+  "partitioned_words": 655445,
+  "pooled_words": 1918268,
+  "sanitizers": "AddressSanitizer and UndefinedBehaviorSanitizer; leak detection disabled because LeakSanitizer cannot run under ptrace here"
+}

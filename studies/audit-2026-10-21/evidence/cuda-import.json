@@ -1,0 +1,122 @@
+{
+  "source": "/home/pascal/prng-recovery/mac-import/CUDA-OVH",
+  "files": [
+    {
+      "path": ".DS_Store",
+      "bytes": 6148,
+      "sha256": "0cd1279e81646749326acbf3f05f51bd329dee12813a2196616b8e737c12f5d9"
+    },
+    {
+      "path": "Makefile",
+      "bytes": 2021,
+      "sha256": "9480046e345e77f8e4ad14062bbe3458396a8b6328ca18ddb47b12f6ada3d498"
+    },
+    {
+      "path": "build/bench_prng_cuda",
+      "bytes": 823176,
+      "sha256": "fa6818f7aaac1f84812d7bb4da2bfff3652369edb830230701625e5efa00dfd8"
+    },
+    {
+      "path": "build/bench_prng_double_cuda",
+      "bytes": 827280,
+      "sha256": "d62d664b9a7ca3d20a80a2dd9ca6020f73d6c7fd3913c9206b33018a0f534cdb"
+    },
+    {
+      "path": "build/bench_prng_mant53_cuda",
+      "bytes": 823184,
+      "sha256": "6ab996831617c18472b552bdc9be91d4098e3c1ebf157c16099264b579eaa63e"
+    },
+    {
+      "path": "build/mmc_core.o",
+      "bytes": 2584,
+      "sha256": "6f9987bbbb26a8e5993e1b405b0885d8af8eff1e32c5450da0a71c70911db1d3"
+    },
+    {
+      "path": "build/mmc_gpu_wrap.o",
+      "bytes": 10536,
+      "sha256": "c0300c9a148ea9286915f0c18015e8efab4b153594de0eb38bbe15262b578df7"
+    },
+    {
+      "path": "build/mmc_kernel.o",
+      "bytes": 18600,
+      "sha256": "89d0f4579db8ff9a28290196b8bc4db6607f9c133749b3581693e5453094fe7f"
+    },
+    {
+      "path": "build/mmc_test_gpu",
+      "bytes": 825000,
+      "sha256": "34d3ab54724c24a18b262d4312f279002c6dfde63c8d71a3d5afde12401a1e7d"
+    },
+    {
+      "path": "build/mmc_testu01_gpu.o",
+      "bytes": 3720,
+      "sha256": "f4547b98caaf9b8f5f0c79592591cd457b52eb153f8ba1ce46c3800816725f4e"
+    },
+    {
+      "path": "logs/bigcrush_gpu.log",
+      "bytes": 93802,
+      "sha256": "ce5b40982dbae5cf3f43a31f8ed96219c9ee8b13259d7cac79dd11a7c31f57d2"
+    },
+    {
+      "path": "logs/bigcrush_gpu.log.bak",
+      "bytes": 93802,
+      "sha256": "ce5b40982dbae5cf3f43a31f8ed96219c9ee8b13259d7cac79dd11a7c31f57d2"
+    },
+    {
+      "path": "logs/bigcrush_gpu.log.gz",
+      "bytes": 6657,
+      "sha256": "5aa2948758aee8c9b1958f2295e51d536db3d9bb97f6231d8ed57f5d089035d0"
+    },
+    {
+      "path": "logs/crush_gpu.log",
+      "bytes": 78713,
+      "sha256": "88b3b4f45f810a222709a0c51bf323f439a61f4b041d2c13eac3327df113e3fa"
+    },
+    {
+      "path": "logs/smallcrush_gpu.log",
+      "bytes": 8079,
+      "sha256": "a3a1710026e04804fef60c3834f78acd205365338af45c5302970f2374866f1b"
+    },
+    {
+      "path": "src/bench_montmory_vs_philox_double.cu",
+      "bytes": 11525,
+      "sha256": "e990959e8b6ceda56da7f1fd1835fc739c0fac36fdfc0c9cc1eb2ca5168e244c"
+    },
+    {
+      "path": "src/bench_montmory_vs_philox_mant53.cu",
+      "bytes": 11407,
+      "sha256": "db167da7d0cb49b56a1c6dd101082253fc6b1060783bcc683b05eaff8d66a8d3"
+    },
+    {
+      "path": "src/bench_montmory_vs_philox_raw64.cu",
+      "bytes": 11291,
+      "sha256": "9c4b8acb4b7dfa9206b423fbaf028e96ed0c5fee86c79f2cafa7451be1d11e6d"
+    },
+    {
+      "path": "src/mmc_core.c",
+      "bytes": 1832,
+      "sha256": "5a0c515214226c50dd79b9774b616ca981621493d4f0c6bce7ececfdf5afbc8c"
+    },
+    {
+      "path": "src/mmc_core.h",
+      "bytes": 540,
+      "sha256": "ef342421de1a1662acd0a3e0ab68392e89e5968b8a552566dbf3c34b6bea3a35"
+    },
+    {
+      "path": "src/mmc_gpu_wrap.cu",
+      "bytes": 3562,
+      "sha256": "68f295dcaba288d9ec70b20936dc7302a79fc38f1fae225bcf555ee24ea5c055"
+    },
+    {
+      "path": "src/mmc_kernel.cu",
+      "bytes": 3751,
+      "sha256": "5e3a13e363dccad6597420b58eda4d82f4d7218976f565f8c43b404142cfb888"
+    },
+    {
+      "path": "src/mmc_testu01_gpu.c",
+      "bytes": 1789,
+      "sha256": "bf528851a254d2b40c605963eb3a4fdd521ca593b6adb7489ce77a8ba5840564"
+    }
+  ],
+  "count": 23,
+  "bytes": 3668999
+}

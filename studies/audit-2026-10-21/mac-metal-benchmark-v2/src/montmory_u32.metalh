@@ -1,0 +1,100 @@
+// Exact arithmetic alternative. No round, multiplier or output bit is removed.
+// mmc_f always receives a 32-bit Feistel half; r0/r1/r2 are always odd in 1..63.
+struct MmcPair32 { uint lo, hi; };
+
+inline uint mmc_rot_low32(uint lo,uint hi,uint r) {
+    uint shift=r&31u; // nonzero because every seed-derived rotation is odd
+    uint a=(r&32u)?hi:lo;
+    uint b=(r&32u)?lo:hi;
+    return (a<<shift)|(b>>(32u-shift));
+}
+
+inline uint mmc_f32(uint x,ulong key,uint r0,uint r1) {
+    uint mask=0u-(x&1u);
+    // t = x for even x, 3*x for odd x, exactly as a 64-bit pair.
+    uint tlo=x+((x<<1)&mask);
+    uint thi=((x>>31)+uint(tlo<x))&mask;
+    uint lo=tlo+uint(key);
+    uint hi=thi+uint(key>>32)+uint(lo<tlo);
+    uint rotation=(r0&mask)|(r1&~mask);
+    uint correction=((x>>1)&mask)|((x*5u)&~mask);
+    return mmc_rot_low32(lo,hi,rotation)^correction;
+}
+
+inline MmcPair32 mmc_perm32(ulong x,thread const MmcState& st) {
+    uint left=uint(x>>32),right=uint(x),next;
+    next=left^mmc_f32(right,st.k0,st.r0,st.r1); left=right; right=next;
+    next=left^mmc_f32(right,st.k1,st.r1,st.r2); left=right; right=next;
+    next=left^mmc_f32(right,st.k2,st.r2,st.r0); left=right; right=next;
+    return MmcPair32{right,left};
+}
+
+inline MmcPair32 mmc_xor_right32(MmcPair32 x,uint shift) {
+    return MmcPair32{x.lo^((x.lo>>shift)|(x.hi<<(32u-shift))),x.hi^(x.hi>>shift)};
+}
+
+inline MmcPair32 mmc_mul32(MmcPair32 x,uint clo,uint chi) {
+    // (hi*2^32+lo)*(chi*2^32+clo), reduced modulo 2^64.
+    return MmcPair32{x.lo*clo,metal::mulhi(x.lo,clo)+x.hi*clo+x.lo*chi};
+}
+
+inline ulong mmc_mix32(MmcPair32 x) {
+    uint rotation=x.hi>>27;
+    MmcPair32 w={x.lo^x.hi,x.hi};
+    w=mmc_xor_right32(w,25);
+    w=mmc_mul32(w,0x96EE9B5Fu,0xA24BAED4u);
+    w=mmc_xor_right32(w,28);
+    w=mmc_mul32(w,0x1E98DF25u,0x9FB21C65u);
+    w=mmc_xor_right32(w,27);
+    // Original rotation is in 0..31. Mask the cross terms for rotation zero,
+    // keeping every shift in 0..31 without a per-value branch.
+    uint nonzero=0u-uint(rotation!=0);
+    uint complementary=(32u-rotation)&31u;
+    uint lo=(w.lo>>rotation)|((w.hi<<complementary)&nonzero);
+    uint hi=(w.hi>>rotation)|((w.lo<<complementary)&nonzero);
+    return ulong(lo)|(ulong(hi)<<32);
+}
+
+template<bool Split32>
+inline ulong mmc_variant_word(ulong counter,thread const MmcState& state) {
+    return Split32?mmc_mix32(mmc_perm32(counter,state)):pcg_dxsm(perm3(counter,state));
+}
+
+inline MmcState mmc_prepared_state(constant BenchParams& p) {
+    MmcState state={};
+    state.k0=p.k0; state.k1=p.k1; state.k2=p.k2;
+    state.r0=p.r0; state.r1=p.r1; state.r2=p.r2;
+    return state;
+}
+
+template<bool Split32>
+inline void mmc_indexed_body(device ulong* out,constant BenchParams& p,uint tid) {
+    MmcState state=mmc_prepared_state(p);
+    for(ulong i=tid;i<p.words;i+=p.physical_threads) {
+        ulong lane=(i>>p.draws_shift)&(p.logical_lanes-1);
+        ulong gamma=0x9E3779B97F4A7C15UL+2*lane;
+        ulong counter=p.seed+(p.base+i+1)*gamma;
+        out[i]=mmc_variant_word<Split32>(counter,state)>>p.output_shift;
+    }
+}
+
+template<bool Split32>
+inline void mmc_tiled_body(device ulong* out,constant BenchParams& p,uint tid) {
+    // reserved encodes log2(threads per logical lane), or UINT_MAX for fallback.
+    if(p.reserved==0xFFFFFFFFu) { mmc_indexed_body<Split32>(out,p,tid); return; }
+    uint shift=p.reserved;
+    uint width=1u<<shift;
+    uint lane=tid>>shift;
+    uint first=tid&(width-1u);
+    ulong draws=1UL<<p.draws_shift;
+    if(lane>=p.logical_lanes || first>=draws) return;
+    ulong offset=ulong(lane)<<p.draws_shift;
+    ulong gamma=0x9E3779B97F4A7C15UL+2*ulong(lane);
+    ulong counter=p.seed+(p.base+offset+first+1)*gamma;
+    ulong step=gamma<<shift;
+    MmcState state=mmc_prepared_state(p);
+    for(ulong i=first;i<draws;i+=width) {
+        out[offset+i]=mmc_variant_word<Split32>(counter,state)>>p.output_shift;
+        counter+=step;
+    }
+}

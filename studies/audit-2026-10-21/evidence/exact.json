@@ -1,0 +1,123 @@
+{
+  "scope": "CPU x86 execution; Metal integer kernel emulated in C++; no GPU execution",
+  "cpu_reference_cases": 3072,
+  "metal_emulation_values": 9536,
+  "noninjective_mixer_certificate": [
+    {
+      "mixer_input": "0x189da44d5bb5734c",
+      "counter_state": "0xf92355338610ba8",
+      "draw_index_mod_2_64": 6975732353412585222,
+      "output": 7
+    },
+    {
+      "mixer_input": "0x63408dd79b3fd590",
+      "counter_state": "0xefa8ca05aa81404f",
+      "draw_index_mod_2_64": 3213845625478047697,
+      "output": 7
+    },
+    {
+      "mixer_input": "0x8abd642d2d15ccec",
+      "counter_state": "0x4f006253948e56f8",
+      "draw_index_mod_2_64": 12622089102992029974,
+      "output": 7
+    },
+    {
+      "mixer_input": "0xf3f0c11c862f9315",
+      "counter_state": "0xcd3a9cc699c078c7",
+      "draw_index_mod_2_64": 11600142139614708841,
+      "output": 7
+    }
+  ],
+  "first_mantissa_bin": {
+    "exact_state_count": 2066,
+    "uniform_state_count": 2048,
+    "total_states": 18446744073709551616
+  },
+  "geometry_dependency": {
+    "first_differing_zero_based_index": 2,
+    "threads_2_draws_4": 8314571741591251,
+    "threads_4_draws_2": 4905313308424108
+  },
+  "lane_reindexing": {
+    "lane_0_n": 1,
+    "lane_1_n": 15941120965150899,
+    "same_step_collision_n": 9223372036854775808
+  },
+  "archive_manifest_verified": [
+    {
+      "file": "mmc_core.c",
+      "sha256": "5a0c515214226c50dd79b9774b616ca981621493d4f0c6bce7ececfdf5afbc8c"
+    },
+    {
+      "file": "mmc_gpu_wrap.mm",
+      "sha256": "12ea75abb6680a3fa971c8de69f706d9626b7eb5db7ccf9e51699f29e4e35adf"
+    },
+    {
+      "file": "mmc_kernel.metal",
+      "sha256": "2642445e67a555c5068ad1646ec34cacf50d26bb0559d7bb90b4950e1cc35e46"
+    },
+    {
+      "file": "mmc_test_gpu",
+      "sha256": "81a716125128d8f5d5c2cf30169e3f8f74e51645f69913f4be0ce3b824898d67"
+    }
+  ],
+  "golden_vectors": [
+    {
+      "seed": 42,
+      "lane": 0,
+      "n": 1,
+      "u64": "0xdf2a584382db0894",
+      "mantissa": 7851934798076769
+    },
+    {
+      "seed": 42,
+      "lane": 0,
+      "n": 2,
+      "u64": "0xc5d3386642e0256b",
+      "mantissa": 6960351199910916
+    },
+    {
+      "seed": 42,
+      "lane": 0,
+      "n": 3,
+      "u64": "0xec5078b8efb699cc",
+      "mantissa": 8314571741591251
+    },
+    {
+      "seed": 42,
+      "lane": 0,
+      "n": 17,
+      "u64": "0x46b4c91b3cc51ff6",
+      "mantissa": 2487753026017443
+    },
+    {
+      "seed": 42,
+      "lane": 1,
+      "n": 1,
+      "u64": "0x655a4eb6ecaed106",
+      "mantissa": 3566033346336218
+    },
+    {
+      "seed": 42,
+      "lane": 1,
+      "n": 2,
+      "u64": "0x56d9150efeb25cc6",
+      "mantissa": 3055691558278731
+    },
+    {
+      "seed": 42,
+      "lane": 1,
+      "n": 3,
+      "u64": "0x8b6ada0a15bd65c9",
+      "mantissa": 4905313308424108
+    },
+    {
+      "seed": 42,
+      "lane": 1,
+      "n": 17,
+      "u64": "0xedca2a988d5d1b07",
+      "mantissa": 8366481722157987
+    }
+  ],
+  "status": "pass: exact identities and counterexamples verified"
+}

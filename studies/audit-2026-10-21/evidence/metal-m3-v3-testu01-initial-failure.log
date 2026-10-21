@@ -1,0 +1,25 @@
+Provenance : extraits de terminal fournis par l'utilisateur, Apple M3.
+Tentative : 20261021T140817Z-9132
+Commande : bash run_testu01.sh montmory_mulhi_pair all
+
+Compilation locale de TestU01 1.2.3; aucune installation systeme.
+Archive: /Users/enincaconsulting/Downloads/montmory-metal-m3-v3/montmory-metal-v3-testu01-20261021T140817Z-9132.tar.gz
+
+Extrait fourni de results/testu01-20261021T140817Z-9132/testu01-build.log :
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... ./install-sh -c -d
+checking for gawk... no
+checking for mawk... no
+checking for nawk... no
+checking for awk... awk
+checking whether make sets $(MAKE)... yes
+checking build system type... arm-apple-darwin24.6.0
+checking host system type... arm-apple-darwin24.6.0
+checking for gcc... /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang
+checking for C compiler default output file name...
+configure: error: C compiler cannot create executables
+See `config.log' for more details.
+
+Le config.log et l'archive brute n'ont pas encore été reçus.
+Aucune batterie ni compilation du wrapper Metal lors de cette tentative.

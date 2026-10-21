@@ -1,0 +1,1 @@
+KATs=24 Montmory-equivalence=262336 sizeof-state=56

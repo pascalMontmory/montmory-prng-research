@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-21",
+  "status": "experimental candidate benchmark; adoption depends on native conformance and measured benefit",
+  "preserved": {
+    "logical_lanes": 2048,
+    "draws_per_lane": 4096,
+    "feistel_rounds": 3,
+    "core_source": "unchanged recovered mmc_core.c",
+    "raw64": "unchanged",
+    "mantissa53": "raw64 >> 11 stored in uint64"
+  },
+  "cpu": {
+    "words": [
+      65536,
+      8388608
+    ],
+    "seed_formula": "splitmix64(3000+trial)",
+    "trials": 9,
+    "workers": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "workers_limit": "std::thread::hardware_concurrency",
+    "variants": [
+      "scalar_indexed_range",
+      "scalar_pair",
+      "simd4",
+      "simd8",
+      "pair_reused_workers"
+    ],
+    "timing": "wall-clock, includes dispatch/wake/completion; reusable pool constructed before campaign",
+    "affinity": "none"
+  },
+  "pool_confirmation": {
+    "words": 65536,
+    "workers": 4,
+    "seeds": 7,
+    "seed_formula": "splitmix64(6000+trial)",
+    "base_formula": "trial*8388608+4093",
+    "rounds": 3,
+    "repetitions": 5,
+    "references": [
+      "scalar pair on caller",
+      "scalar pair with four freshly created threads"
+    ],
+    "timing": "wall-clock, full comparison and poisoning outside timing"
+  },
+  "gpu": {
+    "words": 8388608,
+    "base": 0,
+    "engines": [
+      "threefry2x32_20",
+      "philox4x32_10",
+      "write_baseline_NOT_PRNG",
+      "montmory_mulhi_pair",
+      "montmory_split_stripe_pair",
+      "montmory_vector4",
+      "montmory_vector4_striped"
+    ],
+    "formats": [
+      "raw64",
+      "mantissa53"
+    ],
+    "threads": [
+      8192,
+      65536,
+      131072,
+      262144
+    ],
+    "groups": [
+      64,
+      128,
+      256
+    ],
+    "filter": "supported max threads and group multiple of pipeline.threadExecutionWidth",
+    "search": {
+      "seeds": 5,
+      "seed_formula": "splitmix64(4000+trial)",
+      "timings_per_configuration_per_seed": 3
+    },
+    "selection": "lowest median of seed medians per engine and format, frozen before confirmation",
+    "confirmation": {
+      "seeds": 7,
+      "seed_formula": "splitmix64(5000+trial)",
+      "rounds": 3,
+      "timings_per_round": 5
+    },
+    "warmups_per_job": 16,
+    "precompile": "all measured pipelines before campaign",
+    "outlier_filter": "none",
+    "timed_results": "full comparison after each group of timings, five distinct output buffers",
+    "ratios": "median of paired ratios of seed medians vs v3"
+  },
+  "statistical_scope": "No new TestU01 or TACM campaign. Preserving output and adapter preserves the tested data; finite conformance is not a universal compiler proof.",
+  "native_hardware_status_on_vps": {
+    "ARM64": "not available",
+    "Metal": "not available",
+    "CUDA": "not available"
+  }
+}

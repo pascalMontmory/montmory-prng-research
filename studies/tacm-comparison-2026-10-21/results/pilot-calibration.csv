@@ -1,0 +1,15 @@
+source,diagnostic,trials,rejections,rejection_rate,CP95_low,CP95_high,kind,gate_pass
+numpy_PCG64DXSM,marginal_q16,512,2,0.00390625,0.0004734155742531005,0.014038905114244559,reference,True
+numpy_PCG64DXSM,disjoint_pairs_q8,512,6,0.01171875,0.004312383422342904,0.025331281179926293,reference,True
+numpy_PCG64DXSM,raw_low_nibble_q16,512,6,0.01171875,0.004312383422342904,0.025331281179926293,reference,True
+numpy_PCG64DXSM,lane_joint_q8,512,3,0.005859375,0.0012099778257548665,0.01702737511683891,reference,True
+numpy_PCG64DXSM,biased_half_interval,512,512,1.0,0.9928210499737405,1.0,injected_defect,True
+numpy_PCG64DXSM,duplicated_consecutive,512,512,1.0,0.9928210499737405,1.0,injected_defect,True
+numpy_PCG64DXSM,duplicated_lanes,512,512,1.0,0.9928210499737405,1.0,injected_defect,True
+numpy_Philox4x64,marginal_q16,512,6,0.01171875,0.004312383422342904,0.025331281179926293,reference,True
+numpy_Philox4x64,disjoint_pairs_q8,512,8,0.015625,0.006769276942972373,0.030554414950524585,reference,False
+numpy_Philox4x64,raw_low_nibble_q16,512,7,0.013671875,0.00551399998131654,0.027965446339922782,reference,True
+numpy_Philox4x64,lane_joint_q8,512,10,0.01953125,0.009404755122447006,0.035624636181676994,reference,False
+numpy_Philox4x64,biased_half_interval,512,512,1.0,0.9928210499737405,1.0,injected_defect,True
+numpy_Philox4x64,duplicated_consecutive,512,512,1.0,0.9928210499737405,1.0,injected_defect,True
+numpy_Philox4x64,duplicated_lanes,512,512,1.0,0.9928210499737405,1.0,injected_defect,True

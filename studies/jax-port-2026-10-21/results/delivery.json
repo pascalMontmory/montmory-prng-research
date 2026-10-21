@@ -1,0 +1,8 @@
+{
+  "archive": "/home/pascal/prng-recovery/montmory-jax-check-kit.tar.gz",
+  "bytes": 49332,
+  "sha256": "6e38a22493c9923110e98a5ac9e2738c3e55829abe0f5109b9b80da0c9cee739",
+  "files": 12,
+  "native_tpu_tested": false,
+  "native_mac_tested": false
+}

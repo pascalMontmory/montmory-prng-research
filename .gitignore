@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.venv/
+.venv-*/
+/build/
+.DS_Store
+
+# Private legal records must never enter the public research edition.
+/legal/

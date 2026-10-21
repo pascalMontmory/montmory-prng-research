@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-21",
+  "words_per_run": 8388608,
+  "repetitions": 9,
+  "seed_rule": "42 for trial0; splitmix64(trial) thereafter",
+  "fixed_contract": {
+    "logical_lanes": 2048,
+    "draws_per_lane": 4096,
+    "base": 0
+  },
+  "cpu_workers": [
+    1,
+    2,
+    4,
+    8,
+    16
+  ],
+  "cpu_geometry_workers": 4,
+  "metal_threads": [
+    1024,
+    2048,
+    8192,
+    32768,
+    65536,
+    131072,
+    262144
+  ],
+  "metal_groups": [
+    64,
+    128,
+    256,
+    512
+  ],
+  "logical_geometries_lanes": [
+    256,
+    512,
+    1024,
+    2048,
+    4096,
+    8192,
+    16384
+  ],
+  "logical_geometry_rule": "total words fixed, D=8388608/T, so T and D change jointly",
+  "metal_geometry_threads": 65536,
+  "metal_geometry_groups": [
+    64,
+    128,
+    256,
+    512
+  ],
+  "metal_engines": [
+    "montmory_mulhi_pair",
+    "threefry2x32_20",
+    "philox4x32_10"
+  ],
+  "metal_formats": [
+    "raw64",
+    "mantissa53"
+  ],
+  "cpu_format": "raw64",
+  "validation": "full word-by-word equality to original C / Random123 before timing for every geometry and configuration at seed42; full comparison to precomputed reference outside every timed dispatch",
+  "no_quality_claim": "logical geometry changes require their own statistical validation; this is a performance and bit-equivalence study"
+}

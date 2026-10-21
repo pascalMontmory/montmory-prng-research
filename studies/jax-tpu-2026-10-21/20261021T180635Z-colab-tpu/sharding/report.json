@@ -1,0 +1,59 @@
+{
+  "backend": "tpu",
+  "devices": [
+    "TPU_0(process=0,(0,0,0,0))"
+  ],
+  "status": "pass",
+  "cases": [
+    {
+      "devices": 1,
+      "seed": 42,
+      "base": 4093,
+      "words": 32768
+    },
+    {
+      "devices": 1,
+      "seed": 42,
+      "base": 8388607,
+      "words": 32768
+    },
+    {
+      "devices": 1,
+      "seed": 42,
+      "base": 4294967289,
+      "words": 32768
+    },
+    {
+      "devices": 1,
+      "seed": 42,
+      "base": 18446744073709518848,
+      "words": 32768
+    },
+    {
+      "devices": 1,
+      "seed": 18446744073709551615,
+      "base": 4093,
+      "words": 32768
+    },
+    {
+      "devices": 1,
+      "seed": 18446744073709551615,
+      "base": 8388607,
+      "words": 32768
+    },
+    {
+      "devices": 1,
+      "seed": 18446744073709551615,
+      "base": 4294967289,
+      "words": 32768
+    },
+    {
+      "devices": 1,
+      "seed": 18446744073709551615,
+      "base": 18446744073709518848,
+      "words": 32768
+    }
+  ],
+  "split_fold_in_tested": false,
+  "word_comparisons": 262144
+}

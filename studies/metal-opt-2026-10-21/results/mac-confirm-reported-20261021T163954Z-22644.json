@@ -1,0 +1,231 @@
+{
+  "schema_version": 1,
+  "provenance": {
+    "source": "User-pasted native Mac terminal output; rounded summary, raw archive pending",
+    "archive_reported": "/Users/enincaconsulting/Downloads/montmory-metal-confirm-m3/montmory-metal-confirm-results-20261021T163954Z-22644.tar.gz",
+    "archive_received": false,
+    "archive_sha256": null,
+    "kit_sha256": "0f8ee315a4072636f3cc807370196f5c224c10814659532e834ba5a0a7182506"
+  },
+  "device_reported": "Apple M3",
+  "protocol": {
+    "logical_lanes": 2048,
+    "draws_per_lane": 4096,
+    "words_per_buffer": 8388608,
+    "seeds": 7,
+    "rounds_per_seed": 3,
+    "timed_repeats_per_round": 5,
+    "warmup_dispatches_per_job": 16,
+    "all_pipelines_precompiled": true,
+    "kernels_unchanged": true,
+    "seed_rule": "splitmix64(2000+trial)",
+    "aggregation": "Median of 15 observations within each seed then median of 7 seed medians"
+  },
+  "validation_reported": {
+    "arm64_x86_vectors": 1600,
+    "metal_conformance_words": 7716864,
+    "reduction_checks": 4004592,
+    "official_cpu_gpu_vectors": 6,
+    "all_21_rounds_pass": true,
+    "all_timed_outputs_compared": true
+  },
+  "expected_counts_from_completed_protocol": {
+    "timed_dispatches": 2310,
+    "compared_timed_words": 19377684480,
+    "warmup_dispatches": 7392
+  },
+  "results": [
+    {
+      "engine": "threefry2x32_20",
+      "format": "raw64",
+      "stored_GB_per_second_displayed": 92.082,
+      "median_paired_speedup_vs_v3_displayed": 1.086,
+      "seeds_faster_than_v3": 7,
+      "seeds": 7
+    },
+    {
+      "engine": "threefry2x32_20",
+      "format": "mantissa53",
+      "stored_GB_per_second_displayed": 92.932,
+      "median_paired_speedup_vs_v3_displayed": 1.095,
+      "seeds_faster_than_v3": 7,
+      "seeds": 7
+    },
+    {
+      "engine": "philox4x32_10",
+      "format": "raw64",
+      "stored_GB_per_second_displayed": 88.979,
+      "median_paired_speedup_vs_v3_displayed": 1.049,
+      "seeds_faster_than_v3": 7,
+      "seeds": 7
+    },
+    {
+      "engine": "philox4x32_10",
+      "format": "mantissa53",
+      "stored_GB_per_second_displayed": 89.014,
+      "median_paired_speedup_vs_v3_displayed": 1.05,
+      "seeds_faster_than_v3": 7,
+      "seeds": 7
+    },
+    {
+      "engine": "write_baseline_NOT_PRNG",
+      "format": "raw64",
+      "stored_GB_per_second_displayed": 96.018,
+      "median_paired_speedup_vs_v3_displayed": 1.133,
+      "seeds_faster_than_v3": 7,
+      "seeds": 7
+    },
+    {
+      "engine": "write_baseline_NOT_PRNG",
+      "format": "mantissa53",
+      "stored_GB_per_second_displayed": 96.675,
+      "median_paired_speedup_vs_v3_displayed": 1.14,
+      "seeds_faster_than_v3": 7,
+      "seeds": 7
+    },
+    {
+      "engine": "montmory_mulhi_pair",
+      "format": "raw64",
+      "stored_GB_per_second_displayed": 84.787,
+      "median_paired_speedup_vs_v3_displayed": 1,
+      "seeds_faster_than_v3": 0,
+      "seeds": 7
+    },
+    {
+      "engine": "montmory_mulhi_pair",
+      "format": "mantissa53",
+      "stored_GB_per_second_displayed": 84.827,
+      "median_paired_speedup_vs_v3_displayed": 1,
+      "seeds_faster_than_v3": 0,
+      "seeds": 7
+    },
+    {
+      "engine": "montmory_mulhi_quad",
+      "format": "raw64",
+      "stored_GB_per_second_displayed": 83.133,
+      "median_paired_speedup_vs_v3_displayed": 0.98,
+      "seeds_faster_than_v3": 0,
+      "seeds": 7
+    },
+    {
+      "engine": "montmory_mulhi_quad",
+      "format": "mantissa53",
+      "stored_GB_per_second_displayed": 83.167,
+      "median_paired_speedup_vs_v3_displayed": 0.981,
+      "seeds_faster_than_v3": 0,
+      "seeds": 7
+    },
+    {
+      "engine": "montmory_stripe_pair",
+      "format": "raw64",
+      "stored_GB_per_second_displayed": 84.881,
+      "median_paired_speedup_vs_v3_displayed": 1.001,
+      "seeds_faster_than_v3": 6,
+      "seeds": 7
+    },
+    {
+      "engine": "montmory_stripe_pair",
+      "format": "mantissa53",
+      "stored_GB_per_second_displayed": 84.863,
+      "median_paired_speedup_vs_v3_displayed": 1.001,
+      "seeds_faster_than_v3": 5,
+      "seeds": 7
+    },
+    {
+      "engine": "montmory_stripe_quad",
+      "format": "raw64",
+      "stored_GB_per_second_displayed": 83.361,
+      "median_paired_speedup_vs_v3_displayed": 0.983,
+      "seeds_faster_than_v3": 0,
+      "seeds": 7
+    },
+    {
+      "engine": "montmory_stripe_quad",
+      "format": "mantissa53",
+      "stored_GB_per_second_displayed": 83.339,
+      "median_paired_speedup_vs_v3_displayed": 0.983,
+      "seeds_faster_than_v3": 0,
+      "seeds": 7
+    },
+    {
+      "engine": "montmory_const_pair",
+      "format": "raw64",
+      "stored_GB_per_second_displayed": 86.3,
+      "median_paired_speedup_vs_v3_displayed": 1.018,
+      "seeds_faster_than_v3": 4,
+      "seeds": 7
+    },
+    {
+      "engine": "montmory_const_pair",
+      "format": "mantissa53",
+      "stored_GB_per_second_displayed": 84.136,
+      "median_paired_speedup_vs_v3_displayed": 0.991,
+      "seeds_faster_than_v3": 3,
+      "seeds": 7
+    },
+    {
+      "engine": "montmory_const_stripe_pair",
+      "format": "raw64",
+      "stored_GB_per_second_displayed": 86.203,
+      "median_paired_speedup_vs_v3_displayed": 1.017,
+      "seeds_faster_than_v3": 4,
+      "seeds": 7
+    },
+    {
+      "engine": "montmory_const_stripe_pair",
+      "format": "mantissa53",
+      "stored_GB_per_second_displayed": 86.134,
+      "median_paired_speedup_vs_v3_displayed": 1.015,
+      "seeds_faster_than_v3": 4,
+      "seeds": 7
+    },
+    {
+      "engine": "montmory_split_stripe_pair",
+      "format": "raw64",
+      "stored_GB_per_second_displayed": 85.218,
+      "median_paired_speedup_vs_v3_displayed": 1.005,
+      "seeds_faster_than_v3": 7,
+      "seeds": 7
+    },
+    {
+      "engine": "montmory_split_stripe_pair",
+      "format": "mantissa53",
+      "stored_GB_per_second_displayed": 85.218,
+      "median_paired_speedup_vs_v3_displayed": 1.005,
+      "seeds_faster_than_v3": 7,
+      "seeds": 7
+    },
+    {
+      "engine": "montmory_const_stripe_quad",
+      "format": "raw64",
+      "stored_GB_per_second_displayed": 84.511,
+      "median_paired_speedup_vs_v3_displayed": 0.997,
+      "seeds_faster_than_v3": 3,
+      "seeds": 7
+    },
+    {
+      "engine": "montmory_const_stripe_quad",
+      "format": "mantissa53",
+      "stored_GB_per_second_displayed": 84.604,
+      "median_paired_speedup_vs_v3_displayed": 0.997,
+      "seeds_faster_than_v3": 3,
+      "seeds": 7
+    }
+  ],
+  "derived_from_rounded_throughput": {
+    "raw64_philox_throughput_above_const_pair_pct": 3.10428736964079,
+    "raw64_threefry_throughput_above_const_pair_pct": 6.699884125144839,
+    "raw64_philox_throughput_above_split_pct": 4.413386843155198,
+    "raw64_threefry_throughput_above_split_pct": 8.054636344434263,
+    "mantissa53_philox_throughput_above_const_stripe_pair_pct": 3.34362737130518,
+    "mantissa53_threefry_throughput_above_const_stripe_pair_pct": 7.8923537743516015
+  },
+  "interpretation": {
+    "split_counter": "Approximately +0.5% paired median vs v3, faster on all 7 seeds in both formats; small descriptive gain, not a proof for every seed or device.",
+    "specialized": "Best raw64 displayed Montmory median is const_pair 86.300 GB/s, but only 4/7 seed comparisons beat v3. Best mantissa53 Montmory median is const_stripe_pair 86.134 GB/s, also 4/7 wins. Seed dependence/variation still requires raw data.",
+    "competitors": "Philox and Threefry outperform v3 on 7/7 seeds in both formats. Cannot infer per-seed wins vs each optimized candidate from this summary.",
+    "timing": "Previous ~21 GB/s specialized medians absent from new summary. Consistent with previous first-use diagnosis; this campaign changes precompilation, warm-up, repeats and buffer protocol together, so no single hardware cause is proven.",
+    "statistics": "This benchmark tests output conformance, not new TestU01 batteries or a new PRNG quality advantage.",
+    "pending": "Receive raw archive, recalculate grouped medians and paired results, inspect warm-up curves and timing dispersion; no additional kernel or hardware-optimality claim."
+  }
+}

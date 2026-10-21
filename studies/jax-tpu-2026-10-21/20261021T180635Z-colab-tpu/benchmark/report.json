@@ -1,0 +1,233 @@
+{
+  "status": "pass",
+  "requested_backend": "tpu",
+  "jax": "0.10.2",
+  "jaxlib": "0.10.2",
+  "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+  "scope": "single-device generation of two uint32 arrays, 8 stored bytes per word",
+  "timing": "host wall clock including dispatch, allocation and block_until_ready; excluding setup, compilation, transfers and checking",
+  "seed_setup": "all seed/key derivation is outside timed calls, including Montmory splitmix",
+  "logical_lanes": 2048,
+  "draws_per_lane": 4096,
+  "base": 4294963199,
+  "quick": false,
+  "samples": 770,
+  "checked_timed_words": 428933120,
+  "summary": [
+    {
+      "engine": "montmory_jax_portable",
+      "words": 65536,
+      "median_ns_per_word": 4.42535400390625,
+      "stored_GB_per_second": 1.8077649817253982,
+      "paired_ratio_vs_montmory_jax_portable": 1.0,
+      "faster_seeds": 0,
+      "seed_count": 5
+    },
+    {
+      "engine": "montmory_jax_mulhi",
+      "words": 65536,
+      "median_ns_per_word": 4.388275146484375,
+      "stored_GB_per_second": 1.823039744080114,
+      "paired_ratio_vs_montmory_jax_portable": 1.0183179246584795,
+      "faster_seeds": 4,
+      "seed_count": 5
+    },
+    {
+      "engine": "threefry2x32",
+      "words": 65536,
+      "median_ns_per_word": 4.324951171875,
+      "stored_GB_per_second": 1.8497318656505786,
+      "paired_ratio_vs_montmory_jax_portable": 1.0270692717584369,
+      "faster_seeds": 4,
+      "seed_count": 5
+    },
+    {
+      "engine": "threefry4x32",
+      "words": 65536,
+      "median_ns_per_word": 4.853515625,
+      "stored_GB_per_second": 1.6482897384305835,
+      "paired_ratio_vs_montmory_jax_portable": 0.9280369718309859,
+      "faster_seeds": 0,
+      "seed_count": 5
+    },
+    {
+      "engine": "philox4x32",
+      "words": 65536,
+      "median_ns_per_word": 5.2130126953125,
+      "stored_GB_per_second": 1.5346212387308278,
+      "paired_ratio_vs_montmory_jax_portable": 0.8640381688326894,
+      "faster_seeds": 0,
+      "seed_count": 5
+    },
+    {
+      "engine": "philox2x32",
+      "words": 65536,
+      "median_ns_per_word": 4.5670928955078125,
+      "stored_GB_per_second": 1.7516613265889098,
+      "paired_ratio_vs_montmory_jax_portable": 0.9761039310716209,
+      "faster_seeds": 0,
+      "seed_count": 5
+    },
+    {
+      "engine": "write_baseline_NOT_PRNG",
+      "words": 65536,
+      "median_ns_per_word": 4.139556884765625,
+      "stored_GB_per_second": 1.9325739983043975,
+      "paired_ratio_vs_montmory_jax_portable": 1.0657230270190572,
+      "faster_seeds": 5,
+      "seed_count": 5
+    },
+    {
+      "engine": "montmory_pallas_8x128",
+      "words": 65536,
+      "median_ns_per_word": 4.2205810546875,
+      "stored_GB_per_second": 1.895473608098337,
+      "paired_ratio_vs_montmory_jax_portable": 1.0532604735883424,
+      "faster_seeds": 5,
+      "seed_count": 5
+    },
+    {
+      "engine": "montmory_pallas_16x128",
+      "words": 65536,
+      "median_ns_per_word": 4.2413330078125,
+      "stored_GB_per_second": 1.8861994531587278,
+      "paired_ratio_vs_montmory_jax_portable": 1.0432436321772918,
+      "faster_seeds": 5,
+      "seed_count": 5
+    },
+    {
+      "engine": "montmory_pallas_32x128",
+      "words": 65536,
+      "median_ns_per_word": 4.166412353515625,
+      "stored_GB_per_second": 1.920117194652994,
+      "paired_ratio_vs_montmory_jax_portable": 1.0621497894158578,
+      "faster_seeds": 5,
+      "seed_count": 5
+    },
+    {
+      "engine": "rbg_same_device_only",
+      "words": 65536,
+      "median_ns_per_word": 4.31365966796875,
+      "stored_GB_per_second": 1.8545737530951538,
+      "paired_ratio_vs_montmory_jax_portable": 1.0300672090555358,
+      "faster_seeds": 5,
+      "seed_count": 5
+    },
+    {
+      "engine": "montmory_jax_portable",
+      "words": 1048576,
+      "median_ns_per_word": 0.5536365509033203,
+      "stored_GB_per_second": 14.449913010524865,
+      "paired_ratio_vs_montmory_jax_portable": 1.0,
+      "faster_seeds": 0,
+      "seed_count": 5
+    },
+    {
+      "engine": "montmory_jax_mulhi",
+      "words": 1048576,
+      "median_ns_per_word": 0.5634307861328125,
+      "stored_GB_per_second": 14.198727149627624,
+      "paired_ratio_vs_montmory_jax_portable": 0.9651692491853429,
+      "faster_seeds": 2,
+      "seed_count": 5
+    },
+    {
+      "engine": "threefry2x32",
+      "words": 1048576,
+      "median_ns_per_word": 0.6080532073974609,
+      "stored_GB_per_second": 13.156743361721482,
+      "paired_ratio_vs_montmory_jax_portable": 0.8850217242167848,
+      "faster_seeds": 0,
+      "seed_count": 5
+    },
+    {
+      "engine": "threefry4x32",
+      "words": 1048576,
+      "median_ns_per_word": 0.7575607299804688,
+      "stored_GB_per_second": 10.56020947681152,
+      "paired_ratio_vs_montmory_jax_portable": 0.7344018824005667,
+      "faster_seeds": 0,
+      "seed_count": 5
+    },
+    {
+      "engine": "philox4x32",
+      "words": 1048576,
+      "median_ns_per_word": 1.0336017608642578,
+      "stored_GB_per_second": 7.739924894584844,
+      "paired_ratio_vs_montmory_jax_portable": 0.5202954013820053,
+      "faster_seeds": 0,
+      "seed_count": 5
+    },
+    {
+      "engine": "philox2x32",
+      "words": 1048576,
+      "median_ns_per_word": 0.7591438293457031,
+      "stored_GB_per_second": 10.538187482726565,
+      "paired_ratio_vs_montmory_jax_portable": 0.7156170259975593,
+      "faster_seeds": 0,
+      "seed_count": 5
+    },
+    {
+      "engine": "write_baseline_NOT_PRNG",
+      "words": 1048576,
+      "median_ns_per_word": 0.47165870666503906,
+      "stored_GB_per_second": 16.961416988495056,
+      "paired_ratio_vs_montmory_jax_portable": 1.1738075499929232,
+      "faster_seeds": 5,
+      "seed_count": 5
+    },
+    {
+      "engine": "montmory_pallas_8x128",
+      "words": 1048576,
+      "median_ns_per_word": 0.641937255859375,
+      "stored_GB_per_second": 12.462277157119088,
+      "paired_ratio_vs_montmory_jax_portable": 0.8148018189984281,
+      "faster_seeds": 0,
+      "seed_count": 5
+    },
+    {
+      "engine": "montmory_pallas_16x128",
+      "words": 1048576,
+      "median_ns_per_word": 0.5602836608886719,
+      "stored_GB_per_second": 14.27848170212766,
+      "paired_ratio_vs_montmory_jax_portable": 0.988136170212766,
+      "faster_seeds": 2,
+      "seed_count": 5
+    },
+    {
+      "engine": "montmory_pallas_32x128",
+      "words": 1048576,
+      "median_ns_per_word": 0.524444580078125,
+      "stored_GB_per_second": 15.254233343031714,
+      "paired_ratio_vs_montmory_jax_portable": 1.0699919267085543,
+      "faster_seeds": 5,
+      "seed_count": 5
+    },
+    {
+      "engine": "rbg_same_device_only",
+      "words": 1048576,
+      "median_ns_per_word": 0.4543304443359375,
+      "stored_GB_per_second": 17.608329135180522,
+      "paired_ratio_vs_montmory_jax_portable": 1.2050889203498634,
+      "faster_seeds": 5,
+      "seed_count": 5
+    }
+  ],
+  "backend": "tpu",
+  "devices": [
+    "TPU_0(process=0,(0,0,0,0))"
+  ],
+  "device_kind": "TPU v5 lite",
+  "seeds": [
+    0,
+    1,
+    42,
+    18446744073709551615,
+    9223372036854775809
+  ],
+  "sizes": [
+    65536,
+    1048576
+  ],
+  "repetitions": 7
+}

@@ -1,0 +1,89 @@
+{
+  "status": "pass",
+  "verified_at_utc": "2026-10-21T19:37:59.549929+00:00",
+  "platform": "Linux-6.1.0-50-cloud-amd64-x86_64-with-glibc2.36",
+  "python": "3.11.2",
+  "scope": "Repository assembly and CPU reanalysis only. No new native ARM, GPU, TPU or statistical-battery campaign.",
+  "checks": {
+    "integrity": {
+      "status": "pass",
+      "imported_files": 884,
+      "curated_local_links": 137,
+      "evidence_records": 14,
+      "intact_json_kit_manifests": 3,
+      "intact_text_kit_manifests": 9,
+      "tpu_raw_rows": 3708,
+      "tpu_summary_rows": 44,
+      "scope": "integrity and documented data consistency; no new native execution"
+    },
+    "reference": {
+      "status": "pass",
+      "scope": "CPU reference and exact integer certificates; no GPU/TPU or statistical battery",
+      "c_and_python_golden_vectors": 1600,
+      "ubsan": true,
+      "golden_sha256": "ca5b2731b89fea75c78585350c3263f11fc2695a6126251288b287ac94acdecf",
+      "noninjective_preimages_of_7": 4,
+      "mantissa_zero_exact_preimage_count": 2066,
+      "lane_same_state_at_2_to_63": true,
+      "logical_geometry_changes_stream": true,
+      "compiler": "cc (Debian 12.2.0-14+deb12u1) 12.2.0"
+    },
+    "tpu_reanalysis": {
+      "status": "pass",
+      "audit": "tpu",
+      "hardware_rebenchmarked": false,
+      "frozen_imports_unchanged": true,
+      "python": "3.11.2"
+    },
+    "tpu_initial_reanalysis": {
+      "status": "pass",
+      "audit": "tpu-initial",
+      "hardware_rebenchmarked": false,
+      "frozen_imports_unchanged": true,
+      "python": "3.11.2"
+    },
+    "metal_reanalysis": {
+      "status": "pass",
+      "audit": "metal",
+      "hardware_rebenchmarked": false,
+      "frozen_imports_unchanged": true,
+      "python": "3.11.2"
+    },
+    "tacm_reanalysis": {
+      "status": "pass",
+      "audit": "tacm",
+      "hardware_rebenchmarked": false,
+      "frozen_imports_unchanged": true,
+      "python": "3.11.2"
+    }
+  },
+  "script_sha256": {
+    "scripts/check_reference.py": "a973e02feaf388183bde6f6ae8d5fe33e1c62cdd3928522feb281b64239dcdfe",
+    "scripts/check_repository.py": "e9b82194220c7761b83b85dcafc78b5f7ac0ca4389ce00dafe44f3bda4332121",
+    "scripts/replay_audit.py": "04b0488bca0e97d0d874de1600350c50282d7bb01dd0f702e3228a735ca273b9"
+  },
+  "import_manifest_sha256": "9ca4edbbf038457cf5c21113badb003b5d483f75212c74b8528aa0335a8009d3",
+  "reanalysis_conclusions": {
+    "tpu_samples": 3708,
+    "tpu_summary_rows": 44,
+    "tpu_montmory_hashes_regenerated": 40,
+    "initial_tpu_samples": 770,
+    "metal_cpu_samples": 144,
+    "metal_gpu_samples": 2574,
+    "tacm_primary_comparisons": 54,
+    "tacm_advantages": 0,
+    "tacm_estimates_independently_recomputed": 180
+  },
+  "notes": [
+    "The first Metal replay exposed a packaging dependency on the original result archive. The archive was added unchanged and the replay then passed. No frozen source or result was edited.",
+    "GitHub Actions status is not implied by this local report."
+  ],
+  "github_actions": {
+    "status": "not_started",
+    "reason": "account_billing_or_spending_limit",
+    "run_url": "https://github.com/pascalMontmory/montmory-prng/actions/runs/39663514489",
+    "commit": "d898d68019be36aa35b7f70809a422d8060d0adc",
+    "annotation": "The job was not started because recent account payments have failed or your spending limit needs to be increased. Please check the Billing & plans section in your settings",
+    "native_or_cpu_tests_executed_by_that_job": false
+  }
+}

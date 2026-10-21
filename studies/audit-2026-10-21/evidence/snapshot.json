@@ -1,0 +1,197 @@
+{
+  "captured_utc": "2026-10-21T11:41:05.745205+00:00",
+  "source": "/home/pascal/prng-recovery/mac-import/CUDA-PRNG/TestU01-1.2.3",
+  "scope": "Fichiers sources et journaux re\u00e7us \u00e0 cet instant, transfert possiblement incomplet",
+  "files": [
+    {
+      "path": "mmc_core.c",
+      "bytes": 1977,
+      "sha256": "c0fda7b382b52812805d82f96ae72cf9ee7c88949f00e367452306b811512455"
+    },
+    {
+      "path": "mmc_core.h",
+      "bytes": 492,
+      "sha256": "3ab32eade046676ea23040c52dfbad85f139c67e0c752da40911d6eef335551a"
+    },
+    {
+      "path": "montmory_prng.c",
+      "bytes": 5026,
+      "sha256": "0f50d91a7f7c37b66602f66d1bb01b51ed546a71d01ea93e4ec05194bfa104e8"
+    },
+    {
+      "path": "montmory_prng3.c",
+      "bytes": 5026,
+      "sha256": "0f50d91a7f7c37b66602f66d1bb01b51ed546a71d01ea93e4ec05194bfa104e8"
+    },
+    {
+      "path": "mmc_kernel.metal",
+      "bytes": 2138,
+      "sha256": "c34e5572d601cedcddac245e2e726db44243210deb92d01681cbb51a3a6c7ad6"
+    },
+    {
+      "path": "mmc_gpu_wrap.mm",
+      "bytes": 2862,
+      "sha256": "a10e4d6593ca05efc8a7bd2156fb3d1bf4cc5cc4ff50cfcfc69e64744867999b"
+    },
+    {
+      "path": "mmc_omp_example.c",
+      "bytes": 764,
+      "sha256": "48c17f39e6bc62352df34d0b2a35daed1a52635d56c004273541a3bce52ada8c"
+    },
+    {
+      "path": "mmc_numba.py",
+      "bytes": 2430,
+      "sha256": "3fa59169f8d39f59e2b155b909aee82046f0c819b9768ac9e60730d01dd5b937"
+    },
+    {
+      "path": "smallcrush.log",
+      "bytes": 8307,
+      "sha256": "296ea7207bad1ba496adb1cea69a2901f624f2b603cb04013d17a01b8f20c4e8"
+    },
+    {
+      "path": "smallcrush_3r.log",
+      "bytes": 8340,
+      "sha256": "bfeab59f54cd882debe150507abb9d7abb9b2c93654783f685ad4bfb3f5c8308"
+    },
+    {
+      "path": "crush.log",
+      "bytes": 81261,
+      "sha256": "86aeb64bb386945338f498d115582bf53fed867199cbf1b288f506154fab4a69"
+    },
+    {
+      "path": "crush_3r.log",
+      "bytes": 81560,
+      "sha256": "a86d58b0f2d0ea87cd246b893516b6d175100ab50adc9746de2aac8a2a13916d"
+    },
+    {
+      "path": "montmory_gpu_test/montmory_gpu_test/Makefile",
+      "bytes": 1473,
+      "sha256": "fc0e9816a16b41eb4dbddd5385ec8800bba616ffb9419cb30d3a346460780759"
+    },
+    {
+      "path": "montmory_gpu_test/montmory_gpu_test/src/mmc_core.h",
+      "bytes": 250,
+      "sha256": "f3ca894f4242340aca0903bcb7e482746aee9b4d3fc1243269b4a557b52334bb"
+    },
+    {
+      "path": "montmory_gpu_test/montmory_gpu_test/src/mmc_gpu_wrap.mm",
+      "bytes": 2670,
+      "sha256": "12ea75abb6680a3fa971c8de69f706d9626b7eb5db7ccf9e51699f29e4e35adf"
+    },
+    {
+      "path": "montmory_gpu_test/montmory_gpu_test/src/mmc_testu01_gpu.c",
+      "bytes": 912,
+      "sha256": "c3e0371e4d4ce7623dfdb1f456dbec36dff1ece50c4d3033c1b5a4c38ca8d7f3"
+    },
+    {
+      "path": "montmory_gpu_test/montmory_gpu_test/src/mmc_gpu_wrap.mm.bak",
+      "bytes": 2508,
+      "sha256": "e956b09a539bd8c261585926787405c11269f3b384d503bf55d90cbc35c16182"
+    },
+    {
+      "path": "montmory_gpu_test/montmory_gpu_test/src/mmc_core.c",
+      "bytes": 1832,
+      "sha256": "5a0c515214226c50dd79b9774b616ca981621493d4f0c6bce7ececfdf5afbc8c"
+    },
+    {
+      "path": "montmory_gpu_test/montmory_gpu_test/logs/crush_gpu.log",
+      "bytes": 81069,
+      "sha256": "a71e1080b158459cead91db61087722c06cef73c0fba59dfda7f6423b928d874"
+    },
+    {
+      "path": "montmory_gpu_test/montmory_gpu_test/logs/bigcrush_gpu.log",
+      "bytes": 96409,
+      "sha256": "250ef4c07f65d2bc56b406ff65a7362ce0614102320e0a18b655691b8872fefb"
+    },
+    {
+      "path": "montmory_gpu_test/montmory_gpu_test/logs/README_CERTIFICATION.tex",
+      "bytes": 4237,
+      "sha256": "333af2f7e627d78938aaaa47c91b411878cb83fefc8ccc3d8a14f8a13ac8c3a2"
+    },
+    {
+      "path": "montmory_gpu_test/montmory_gpu_test/logs/smallcrush_gpu.log",
+      "bytes": 8285,
+      "sha256": "ce22d09e38bd56dda00680568602d786cdec6ec85a8a2b5ca22d56e755726196"
+    },
+    {
+      "path": "montmory_gpu_test/montmory_gpu_test/Montmory_GPU3R_Certified/crush_gpu.log",
+      "bytes": 81069,
+      "sha256": "a71e1080b158459cead91db61087722c06cef73c0fba59dfda7f6423b928d874"
+    },
+    {
+      "path": "montmory_gpu_test/montmory_gpu_test/Montmory_GPU3R_Certified/mmc_test_gpu",
+      "bytes": 52736,
+      "sha256": "81a716125128d8f5d5c2cf30169e3f8f74e51645f69913f4be0ce3b824898d67"
+    },
+    {
+      "path": "montmory_gpu_test/montmory_gpu_test/Montmory_GPU3R_Certified/mmc_kernel.metal",
+      "bytes": 1976,
+      "sha256": "2642445e67a555c5068ad1646ec34cacf50d26bb0559d7bb90b4950e1cc35e46"
+    },
+    {
+      "path": "montmory_gpu_test/montmory_gpu_test/Montmory_GPU3R_Certified/bigcrush_gpu.log",
+      "bytes": 96409,
+      "sha256": "250ef4c07f65d2bc56b406ff65a7362ce0614102320e0a18b655691b8872fefb"
+    },
+    {
+      "path": "montmory_gpu_test/montmory_gpu_test/Montmory_GPU3R_Certified/Makefile",
+      "bytes": 1473,
+      "sha256": "fc0e9816a16b41eb4dbddd5385ec8800bba616ffb9419cb30d3a346460780759"
+    },
+    {
+      "path": "montmory_gpu_test/montmory_gpu_test/Montmory_GPU3R_Certified/mmc_gpu_wrap.mm",
+      "bytes": 2670,
+      "sha256": "12ea75abb6680a3fa971c8de69f706d9626b7eb5db7ccf9e51699f29e4e35adf"
+    },
+    {
+      "path": "montmory_gpu_test/montmory_gpu_test/Montmory_GPU3R_Certified/smallcrush_gpu.log",
+      "bytes": 8285,
+      "sha256": "ce22d09e38bd56dda00680568602d786cdec6ec85a8a2b5ca22d56e755726196"
+    },
+    {
+      "path": "montmory_gpu_test/montmory_gpu_test/Montmory_GPU3R_Certified/SHA256SUMS.txt",
+      "bytes": 321,
+      "sha256": "3710f091f102652f926209e34e71c4ac03899be68c622376f3f9ab3cd52c8bea"
+    },
+    {
+      "path": "montmory_gpu_test/montmory_gpu_test/Montmory_GPU3R_Certified/mmc_core.c",
+      "bytes": 1832,
+      "sha256": "5a0c515214226c50dd79b9774b616ca981621493d4f0c6bce7ececfdf5afbc8c"
+    },
+    {
+      "path": "montmory_gpu_test/montmory_gpu_test/metal/mmc_kernel.metal",
+      "bytes": 1976,
+      "sha256": "2642445e67a555c5068ad1646ec34cacf50d26bb0559d7bb90b4950e1cc35e46"
+    },
+    {
+      "path": "montmory_gpu_test/montmory_gpu_test/build/mmc_test_gpu",
+      "bytes": 52736,
+      "sha256": "81a716125128d8f5d5c2cf30169e3f8f74e51645f69913f4be0ce3b824898d67"
+    },
+    {
+      "path": "montmory_gpu_test/montmory_gpu_test/build/mmc_kernel.air",
+      "bytes": 4432,
+      "sha256": "6f7630912b08f9fac40525efe517c0ac10e038acf84a702c163d8fc7decb2738"
+    },
+    {
+      "path": "montmory_gpu_test/montmory_gpu_test/build/mmc_gpu_wrap.o",
+      "bytes": 10136,
+      "sha256": "3b6d4a0e72cd7ec69d3af9b7a46e296ea13644d5c5925010219581a0de090f31"
+    },
+    {
+      "path": "montmory_gpu_test/montmory_gpu_test/build/mmc_kernel.metallib",
+      "bytes": 4558,
+      "sha256": "0c5e23768f8f955e8152d3b71f7563eb4227003cad0c72ccb218bc7731d67938"
+    },
+    {
+      "path": "montmory_gpu_test/montmory_gpu_test/build/mmc_core.o",
+      "bytes": 1352,
+      "sha256": "a3c520ad553281de2a4d2801241c1bfd58354ad696a4cd7f371e7dc6a1099840"
+    },
+    {
+      "path": "montmory_gpu_test/montmory_gpu_test/build/mmc_testu01_gpu.o",
+      "bytes": 1440,
+      "sha256": "89a2ec092f5af9ac2e26cc8bd6542488a030dfa19d83adc5e33a112b1af9bdc1"
+    }
+  ]
+}

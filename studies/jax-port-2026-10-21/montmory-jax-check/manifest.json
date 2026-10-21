@@ -1,0 +1,16 @@
+{
+  "protocol": "montmory-jax-cpu-pallas-interpret-v1",
+  "sha256": {
+    "montmory_jax.py": "afbd512458eb30fe479584344c2c52b6291e94b23fe7ed34905050233fc20ba7",
+    "verify.py": "6621e16c9a249cc6c304ae85add424f58ca09b00f56e94986d8ac98aadb0b91a",
+    "check_manifest.py": "6dc276f0f0cfe5343fcb956fd003c61cda8b2339ad89aa4552169960bcf3e943",
+    "run.sh": "19a77d1a66708439dd639c44151483b452fd30b04de0622919c86f38fcf4bb8c",
+    "requirements.txt": "b15c70468633e1b9c14348b2f769ce476dbf8bfb0841265874709f790c7311da",
+    "README.md": "888b0304a224d68d256ca2cb97a299c22b06440267e610733f1a5cd878c4ddd7",
+    "reference/mmc_core.c": "5a0c515214226c50dd79b9774b616ca981621493d4f0c6bce7ececfdf5afbc8c",
+    "reference/mmc_core.h": "f3ca894f4242340aca0903bcb7e482746aee9b4d3fc1243269b4a557b52334bb",
+    "reference/oracle.c": "48c9670947bef455f86e2a547e878dcbe4722b4fd5cae24be9f529cada054849",
+    "reference/golden-vectors.txt": "ca5b2731b89fea75c78585350c3263f11fc2695a6126251288b287ac94acdecf",
+    "reference/vps-report.json": "c3a77aed1f3aed951083e1925de8c7e13c5aac280239936ed11de6f40f852a37"
+  }
+}

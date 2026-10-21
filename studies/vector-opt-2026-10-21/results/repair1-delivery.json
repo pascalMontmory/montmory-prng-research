@@ -1,0 +1,11 @@
+{
+  "status": "pass",
+  "archive": "/home/pascal/prng-recovery/mac-montmory-vector-repair1.tar.gz",
+  "bytes": 8588,
+  "sha256": "a2f86fd0121cbc0196e1ec9a866d8525d91006c10fbefc50a906e0f8066f830c",
+  "manifest_files": 6,
+  "portable_verifier": "pass with UBSan",
+  "shell_syntax": "pass",
+  "original_kit_integrity": "pass, unchanged",
+  "native_metal": "pending"
+}

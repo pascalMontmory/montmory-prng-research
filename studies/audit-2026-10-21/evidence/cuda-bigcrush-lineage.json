@@ -1,0 +1,6 @@
+{
+  "old_repo_file": "/home/pascal/FondamentalWork-maths-audit-20261019/Math/PRNG/tests/testu01/raw/montmory_ctacm_cuda_bigcrush_seed42.log",
+  "old_sha256": "f88b13037aee7c97bd38bc55d1b650524d7afdbe7585ab96de7da5452aecf312",
+  "cuda_raw_sha256": "ce5b40982dbae5cf3f43a31f8ed96219c9ee8b13259d7cac79dd11a7c31f57d2",
+  "identical_after_mmc_gpu_rename": true
+}

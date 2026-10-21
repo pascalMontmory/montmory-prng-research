@@ -1,0 +1,33 @@
+{
+  "status": "pass",
+  "scope": "JAX CPU and Pallas CPU interpretation only",
+  "native_tpu_tested": false,
+  "statistical_batteries_run": false,
+  "logical_lanes": 2048,
+  "draws_per_lane": 4096,
+  "jax": "0.10.2",
+  "jaxlib": "0.10.2",
+  "numpy": "2.4.6",
+  "machine": "x86_64",
+  "jax_enable_x64": false,
+  "counts": {
+    "golden_native": 1600,
+    "golden_jax": 6400,
+    "golden_mantissa": 6400,
+    "mulhi_components": 200098,
+    "random_lane_words": 65536,
+    "indexed_words": 393216,
+    "range_words": 2359296,
+    "range_mantissa": 2359296,
+    "partition_words": 32770,
+    "pallas_interpreted_words": 147474
+  },
+  "checks": 129,
+  "reference_sha256": {
+    "mmc_core.c": "5a0c515214226c50dd79b9774b616ca981621493d4f0c6bce7ececfdf5afbc8c",
+    "mmc_core.h": "f3ca894f4242340aca0903bcb7e482746aee9b4d3fc1243269b4a557b52334bb",
+    "golden-vectors.txt": "ca5b2731b89fea75c78585350c3263f11fc2695a6126251288b287ac94acdecf"
+  },
+  "output_fingerprint_sha256": "83b3c1647b315e3e28fdcec6ef494398d41cdaef0a9ceb764f1fdcd62c626033",
+  "invalid_ranges_rejected": 12
+}

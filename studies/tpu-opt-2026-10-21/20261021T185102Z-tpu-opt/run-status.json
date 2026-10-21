@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "backend_requested": "tpu",
+  "completed": [
+    "check_manifest.py",
+    "verify_native.py",
+    "campaign.py"
+  ],
+  "cpu_smoke": false
+}

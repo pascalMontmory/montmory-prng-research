@@ -1,0 +1,6 @@
+{
+  "status": "pass",
+  "boundary_words": 66016,
+  "guards": "pass",
+  "sanitizer": "UBSan abort on first error"
+}

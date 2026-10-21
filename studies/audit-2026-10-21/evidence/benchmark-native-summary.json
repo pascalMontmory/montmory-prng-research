@@ -1,0 +1,402 @@
+[
+  {
+    "engine": "threefry2x64_20",
+    "workers": 1,
+    "mode": "compute",
+    "trials": 11,
+    "ns_per_word_median": 2.098646522,
+    "million_u64_per_second": 476.49758523746283,
+    "min": 2.028236985,
+    "max": 2.313024282
+  },
+  {
+    "engine": "philox4x32_10",
+    "workers": 1,
+    "mode": "compute",
+    "trials": 11,
+    "ns_per_word_median": 4.211667538,
+    "million_u64_per_second": 237.4356453773821,
+    "min": 4.073521614,
+    "max": 4.408076525
+  },
+  {
+    "engine": "philox2x64_10",
+    "workers": 1,
+    "mode": "compute",
+    "trials": 11,
+    "ns_per_word_median": 2.8028754,
+    "million_u64_per_second": 356.77647318892593,
+    "min": 2.662158847,
+    "max": 3.510784507
+  },
+  {
+    "engine": "montmory_original",
+    "workers": 1,
+    "mode": "compute",
+    "trials": 11,
+    "ns_per_word_median": 3.726763606,
+    "million_u64_per_second": 268.32933497311825,
+    "min": 3.576834202,
+    "max": 4.002377272
+  },
+  {
+    "engine": "philox2x32_10",
+    "workers": 1,
+    "mode": "compute",
+    "trials": 11,
+    "ns_per_word_median": 6.741937041,
+    "million_u64_per_second": 148.3253245942022,
+    "min": 6.569110513,
+    "max": 7.230721831
+  },
+  {
+    "engine": "philox4x64_10",
+    "workers": 1,
+    "mode": "compute",
+    "trials": 11,
+    "ns_per_word_median": 2.503644586,
+    "million_u64_per_second": 399.417715114936,
+    "min": 2.334810138,
+    "max": 2.765974402
+  },
+  {
+    "engine": "threefry4x64_20",
+    "workers": 1,
+    "mode": "compute",
+    "trials": 11,
+    "ns_per_word_median": 1.451541185,
+    "million_u64_per_second": 688.922925738411,
+    "min": 1.425376177,
+    "max": 1.632821083
+  },
+  {
+    "engine": "threefry4x32_20",
+    "workers": 1,
+    "mode": "compute",
+    "trials": 11,
+    "ns_per_word_median": 2.216828108,
+    "million_u64_per_second": 451.09496599724633,
+    "min": 2.165917277,
+    "max": 2.334566474
+  },
+  {
+    "engine": "montmory_branchless",
+    "workers": 1,
+    "mode": "compute",
+    "trials": 11,
+    "ns_per_word_median": 4.759922862,
+    "million_u64_per_second": 210.0874381774803,
+    "min": 4.54348731,
+    "max": 5.119719505
+  },
+  {
+    "engine": "threefry2x32_20",
+    "workers": 1,
+    "mode": "compute",
+    "trials": 11,
+    "ns_per_word_median": 3.165268898,
+    "million_u64_per_second": 315.9289249112004,
+    "min": 2.975158453,
+    "max": 3.447079539
+  },
+  {
+    "engine": "threefry2x64_20",
+    "workers": 1,
+    "mode": "store64",
+    "trials": 11,
+    "ns_per_word_median": 2.294730663,
+    "million_u64_per_second": 435.78098995402667,
+    "min": 2.197039366,
+    "max": 2.436449409
+  },
+  {
+    "engine": "philox4x32_10",
+    "workers": 1,
+    "mode": "store64",
+    "trials": 11,
+    "ns_per_word_median": 4.374315739,
+    "million_u64_per_second": 228.60718330968197,
+    "min": 4.227770209,
+    "max": 5.272028327
+  },
+  {
+    "engine": "philox2x64_10",
+    "workers": 1,
+    "mode": "store64",
+    "trials": 11,
+    "ns_per_word_median": 3.229366899,
+    "million_u64_per_second": 309.6582182438478,
+    "min": 3.071532369,
+    "max": 3.600716591
+  },
+  {
+    "engine": "montmory_original",
+    "workers": 1,
+    "mode": "store64",
+    "trials": 11,
+    "ns_per_word_median": 3.757629156,
+    "million_u64_per_second": 266.12525038647,
+    "min": 3.614070773,
+    "max": 3.902344704
+  },
+  {
+    "engine": "philox2x32_10",
+    "workers": 1,
+    "mode": "store64",
+    "trials": 11,
+    "ns_per_word_median": 6.851352215,
+    "million_u64_per_second": 145.95658909647807,
+    "min": 6.58545351,
+    "max": 7.285279512
+  },
+  {
+    "engine": "philox4x64_10",
+    "workers": 1,
+    "mode": "store64",
+    "trials": 11,
+    "ns_per_word_median": 3.012765288,
+    "million_u64_per_second": 331.92097770876865,
+    "min": 2.828031182,
+    "max": 3.575570464
+  },
+  {
+    "engine": "threefry4x64_20",
+    "workers": 1,
+    "mode": "store64",
+    "trials": 11,
+    "ns_per_word_median": 1.632545233,
+    "million_u64_per_second": 612.5404551041925,
+    "min": 1.597899199,
+    "max": 1.764343619
+  },
+  {
+    "engine": "threefry4x32_20",
+    "workers": 1,
+    "mode": "store64",
+    "trials": 11,
+    "ns_per_word_median": 2.384120464,
+    "million_u64_per_second": 419.44189276502937,
+    "min": 2.275654793,
+    "max": 2.492091656
+  },
+  {
+    "engine": "montmory_branchless",
+    "workers": 1,
+    "mode": "store64",
+    "trials": 11,
+    "ns_per_word_median": 4.868697882,
+    "million_u64_per_second": 205.39372625627215,
+    "min": 4.681905508,
+    "max": 5.098959327
+  },
+  {
+    "engine": "threefry2x32_20",
+    "workers": 1,
+    "mode": "store64",
+    "trials": 11,
+    "ns_per_word_median": 3.102784634,
+    "million_u64_per_second": 322.29114100994997,
+    "min": 3.042794347,
+    "max": 3.180250049
+  },
+  {
+    "engine": "threefry2x64_20",
+    "workers": 4,
+    "mode": "compute",
+    "trials": 11,
+    "ns_per_word_median": 0.5756636858,
+    "million_u64_per_second": 1737.1253818282798,
+    "min": 0.5310368538,
+    "max": 2.601577401
+  },
+  {
+    "engine": "philox4x32_10",
+    "workers": 4,
+    "mode": "compute",
+    "trials": 11,
+    "ns_per_word_median": 1.180535913,
+    "million_u64_per_second": 847.0729174674418,
+    "min": 1.056776166,
+    "max": 2.002134085
+  },
+  {
+    "engine": "philox2x64_10",
+    "workers": 4,
+    "mode": "compute",
+    "trials": 11,
+    "ns_per_word_median": 0.9167262316,
+    "million_u64_per_second": 1090.838208321648,
+    "min": 0.7764623165,
+    "max": 1.009099841
+  },
+  {
+    "engine": "montmory_original",
+    "workers": 4,
+    "mode": "compute",
+    "trials": 11,
+    "ns_per_word_median": 1.113265395,
+    "million_u64_per_second": 898.2584067476561,
+    "min": 0.9328027964,
+    "max": 1.979290843
+  },
+  {
+    "engine": "philox2x32_10",
+    "workers": 4,
+    "mode": "compute",
+    "trials": 11,
+    "ns_per_word_median": 1.771880746,
+    "million_u64_per_second": 564.3720675093334,
+    "min": 1.684054494,
+    "max": 1.980590463
+  },
+  {
+    "engine": "philox4x64_10",
+    "workers": 4,
+    "mode": "compute",
+    "trials": 11,
+    "ns_per_word_median": 0.7529646158,
+    "million_u64_per_second": 1328.0836562785,
+    "min": 0.6233090162,
+    "max": 0.8884016275
+  },
+  {
+    "engine": "threefry4x64_20",
+    "workers": 4,
+    "mode": "compute",
+    "trials": 11,
+    "ns_per_word_median": 0.3989217281,
+    "million_u64_per_second": 2506.7574152023235,
+    "min": 0.3674114943,
+    "max": 0.5971678495
+  },
+  {
+    "engine": "threefry4x32_20",
+    "workers": 4,
+    "mode": "compute",
+    "trials": 11,
+    "ns_per_word_median": 0.6101207733,
+    "million_u64_per_second": 1639.0197543860615,
+    "min": 0.54690063,
+    "max": 0.7373659611
+  },
+  {
+    "engine": "montmory_branchless",
+    "workers": 4,
+    "mode": "compute",
+    "trials": 11,
+    "ns_per_word_median": 1.247234344,
+    "million_u64_per_second": 801.7739447367238,
+    "min": 1.123755217,
+    "max": 1.873664379
+  },
+  {
+    "engine": "threefry2x32_20",
+    "workers": 4,
+    "mode": "compute",
+    "trials": 11,
+    "ns_per_word_median": 0.7991741896,
+    "million_u64_per_second": 1251.291662084979,
+    "min": 0.7644889355,
+    "max": 0.9559648037
+  },
+  {
+    "engine": "threefry2x64_20",
+    "workers": 4,
+    "mode": "store64",
+    "trials": 11,
+    "ns_per_word_median": 0.5907919407,
+    "million_u64_per_second": 1692.6432659442676,
+    "min": 0.5544497967,
+    "max": 0.9395827055
+  },
+  {
+    "engine": "philox4x32_10",
+    "workers": 4,
+    "mode": "store64",
+    "trials": 11,
+    "ns_per_word_median": 1.130960345,
+    "million_u64_per_second": 884.204299842184,
+    "min": 1.059904575,
+    "max": 1.189074159
+  },
+  {
+    "engine": "philox2x64_10",
+    "workers": 4,
+    "mode": "store64",
+    "trials": 11,
+    "ns_per_word_median": 1.011702776,
+    "million_u64_per_second": 988.4325947525126,
+    "min": 0.8001668453,
+    "max": 2.22524929
+  },
+  {
+    "engine": "montmory_original",
+    "workers": 4,
+    "mode": "store64",
+    "trials": 11,
+    "ns_per_word_median": 0.9451835155,
+    "million_u64_per_second": 1057.9955993741619,
+    "min": 0.8989356756,
+    "max": 1.117357612
+  },
+  {
+    "engine": "philox2x32_10",
+    "workers": 4,
+    "mode": "store64",
+    "trials": 11,
+    "ns_per_word_median": 1.796262383,
+    "million_u64_per_second": 556.7115414006863,
+    "min": 1.696750402,
+    "max": 3.091146946
+  },
+  {
+    "engine": "philox4x64_10",
+    "workers": 4,
+    "mode": "store64",
+    "trials": 11,
+    "ns_per_word_median": 0.9805458784,
+    "million_u64_per_second": 1019.8400931853838,
+    "min": 0.7596262693,
+    "max": 1.473885179
+  },
+  {
+    "engine": "threefry4x64_20",
+    "workers": 4,
+    "mode": "store64",
+    "trials": 11,
+    "ns_per_word_median": 0.4343104362,
+    "million_u64_per_second": 2302.500508045586,
+    "min": 0.4003084898,
+    "max": 0.8360741138
+  },
+  {
+    "engine": "threefry4x32_20",
+    "workers": 4,
+    "mode": "store64",
+    "trials": 11,
+    "ns_per_word_median": 0.6750024557,
+    "million_u64_per_second": 1481.476091761721,
+    "min": 0.5838578939,
+    "max": 0.7320327759
+  },
+  {
+    "engine": "montmory_branchless",
+    "workers": 4,
+    "mode": "store64",
+    "trials": 11,
+    "ns_per_word_median": 1.306717992,
+    "million_u64_per_second": 765.2760627175936,
+    "min": 1.196433187,
+    "max": 1.351052165
+  },
+  {
+    "engine": "threefry2x32_20",
+    "workers": 4,
+    "mode": "store64",
+    "trials": 11,
+    "ns_per_word_median": 0.8286539316,
+    "million_u64_per_second": 1206.7763898364155,
+    "min": 0.7597409487,
+    "max": 1.258468509
+  }
+]

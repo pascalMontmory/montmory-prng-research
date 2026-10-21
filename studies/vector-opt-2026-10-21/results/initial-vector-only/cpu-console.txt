@@ -1,0 +1,28 @@
+CPU 1/9 : toutes les sorties identiques.
+CPU 2/9 : toutes les sorties identiques.
+CPU 3/9 : toutes les sorties identiques.
+CPU 4/9 : toutes les sorties identiques.
+CPU 5/9 : toutes les sorties identiques.
+CPU 6/9 : toutes les sorties identiques.
+CPU 7/9 : toutes les sorties identiques.
+CPU 8/9 : toutes les sorties identiques.
+CPU 9/9 : toutes les sorties identiques.
+
+CPU raw64 — lancement et jonction des workers inclus
+moteur                    workers     GB/s   ratio/pair   seeds
+scalar_indexed_range           1     2.176        0.702   0/9
+scalar_indexed_range           2     4.013        0.702   0/9
+scalar_indexed_range           4     6.937        0.715   1/9
+scalar_indexed_range           8    12.595        0.915   2/9
+scalar_pair                    1     3.062        1.000   0/9
+scalar_pair                    2     5.556        1.000   0/9
+scalar_pair                    4    10.610        1.000   0/9
+scalar_pair                    8    13.442        1.000   0/9
+simd4                          1     1.275        0.414   0/9
+simd4                          2     2.442        0.427   0/9
+simd4                          4     4.749        0.455   0/9
+simd4                          8     6.877        0.532   1/9
+simd8                          1     1.667        0.537   0/9
+simd8                          2     3.067        0.562   0/9
+simd8                          4     5.590        0.563   0/9
+simd8                          8     7.600        0.548   1/9

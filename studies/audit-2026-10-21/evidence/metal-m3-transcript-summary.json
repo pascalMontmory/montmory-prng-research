@@ -1,0 +1,173 @@
+{
+  "provenance": "User-provided terminal output; raw CSV and metadata archive not yet received",
+  "source": "evidence/metal-m3-user-console.log",
+  "source_sha256": "96c81722c9a70ba34214d709dcec35a15489017095fccaf3d65dc0edaa812ed2",
+  "run_id": "20261021T124458Z-8820",
+  "device": "Apple M3",
+  "words_per_run": 4194304,
+  "repetitions": 11,
+  "reported_conformance": {
+    "arm64_x86_golden_vectors": 1600,
+    "metal_reference_words": 909312,
+    "official_CPU_vectors": 6,
+    "official_GPU_vectors": 6,
+    "status": "PASS"
+  },
+  "rows": [
+    {
+      "engine": "montmory_indexed",
+      "format": "raw64",
+      "physical_threads": 8192,
+      "printed_median_ns_per_word": 0.159,
+      "printed_median_GB_per_second": 50.423
+    },
+    {
+      "engine": "montmory_indexed",
+      "format": "raw64",
+      "physical_threads": 65536,
+      "printed_median_ns_per_word": 0.149,
+      "printed_median_GB_per_second": 53.709
+    },
+    {
+      "engine": "montmory_indexed",
+      "format": "mantissa53",
+      "physical_threads": 8192,
+      "printed_median_ns_per_word": 0.158,
+      "printed_median_GB_per_second": 50.702
+    },
+    {
+      "engine": "montmory_indexed",
+      "format": "mantissa53",
+      "physical_threads": 65536,
+      "printed_median_ns_per_word": 0.149,
+      "printed_median_GB_per_second": 53.544
+    },
+    {
+      "engine": "threefry2x32_20",
+      "format": "raw64",
+      "physical_threads": 8192,
+      "printed_median_ns_per_word": 0.102,
+      "printed_median_GB_per_second": 78.238
+    },
+    {
+      "engine": "threefry2x32_20",
+      "format": "raw64",
+      "physical_threads": 65536,
+      "printed_median_ns_per_word": 0.098,
+      "printed_median_GB_per_second": 81.567
+    },
+    {
+      "engine": "threefry2x32_20",
+      "format": "mantissa53",
+      "physical_threads": 8192,
+      "printed_median_ns_per_word": 0.104,
+      "printed_median_GB_per_second": 76.784
+    },
+    {
+      "engine": "threefry2x32_20",
+      "format": "mantissa53",
+      "physical_threads": 65536,
+      "printed_median_ns_per_word": 0.095,
+      "printed_median_GB_per_second": 84.272
+    },
+    {
+      "engine": "philox4x32_10",
+      "format": "raw64",
+      "physical_threads": 8192,
+      "printed_median_ns_per_word": 0.1,
+      "printed_median_GB_per_second": 79.733
+    },
+    {
+      "engine": "philox4x32_10",
+      "format": "raw64",
+      "physical_threads": 65536,
+      "printed_median_ns_per_word": 0.094,
+      "printed_median_GB_per_second": 85.155
+    },
+    {
+      "engine": "philox4x32_10",
+      "format": "mantissa53",
+      "physical_threads": 8192,
+      "printed_median_ns_per_word": 0.103,
+      "printed_median_GB_per_second": 77.404
+    },
+    {
+      "engine": "philox4x32_10",
+      "format": "mantissa53",
+      "physical_threads": 65536,
+      "printed_median_ns_per_word": 0.096,
+      "printed_median_GB_per_second": 82.944
+    },
+    {
+      "engine": "montmory_historical",
+      "format": "mantissa53",
+      "physical_threads": 8192,
+      "printed_median_ns_per_word": 0.145,
+      "printed_median_GB_per_second": 54.996
+    }
+  ],
+  "comparisons": [
+    {
+      "format": "raw64",
+      "best_displayed_rows": {
+        "Montmory": {
+          "engine": "montmory_indexed",
+          "format": "raw64",
+          "physical_threads": 65536,
+          "printed_median_ns_per_word": 0.149,
+          "printed_median_GB_per_second": 53.709
+        },
+        "Threefry": {
+          "engine": "threefry2x32_20",
+          "format": "raw64",
+          "physical_threads": 65536,
+          "printed_median_ns_per_word": 0.098,
+          "printed_median_GB_per_second": 81.567
+        },
+        "Philox": {
+          "engine": "philox4x32_10",
+          "format": "raw64",
+          "physical_threads": 65536,
+          "printed_median_ns_per_word": 0.094,
+          "printed_median_GB_per_second": 85.155
+        }
+      },
+      "Threefry_throughput_ratio_to_Montmory": 1.5186840194380828,
+      "Philox_throughput_ratio_to_Montmory": 1.585488465620287
+    },
+    {
+      "format": "mantissa53",
+      "best_displayed_rows": {
+        "Montmory": {
+          "engine": "montmory_historical",
+          "format": "mantissa53",
+          "physical_threads": 8192,
+          "printed_median_ns_per_word": 0.145,
+          "printed_median_GB_per_second": 54.996
+        },
+        "Threefry": {
+          "engine": "threefry2x32_20",
+          "format": "mantissa53",
+          "physical_threads": 65536,
+          "printed_median_ns_per_word": 0.095,
+          "printed_median_GB_per_second": 84.272
+        },
+        "Philox": {
+          "engine": "philox4x32_10",
+          "format": "mantissa53",
+          "physical_threads": 65536,
+          "printed_median_ns_per_word": 0.096,
+          "printed_median_GB_per_second": 82.944
+        }
+      },
+      "Threefry_throughput_ratio_to_Montmory": 1.5323296239726525,
+      "Philox_throughput_ratio_to_Montmory": 1.5081824132664194
+    }
+  ],
+  "limits": [
+    "Ratios computed from rounded displayed medians, not per-trial paired timings",
+    "No raw timing distribution or thermal-state metadata inspected yet",
+    "One volume, two physical thread counts; no general claim for all workloads",
+    "Native CUDA correction still untested"
+  ]
+}

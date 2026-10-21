@@ -1,0 +1,9 @@
+{
+  "base_v3_sha256": "1ed2856aa953187eadc99e53efd2f1810b6f00a0d14239898718004a0f8da242",
+  "new_kernels_sha256": "7ba9b3c894bdfb7d60d0a0fc5f50b8d55100e48ae2cbe64539efbb68c0e1c679",
+  "assembled_source_sha256": "0e827a1a4da76281cb8de714833c5007315cec35be9a7bd6ccded2a2cbdcacde",
+  "base_origin": "audit-2026-10-21/mac-metal-benchmark-v3/generated/all.metal",
+  "original_C_core": "unchanged",
+  "reference_header_changes": "engine catalog and specialization/reduction flags only",
+  "native_M3_status": "pending compilation and measurements"
+}

@@ -1,0 +1,29 @@
+{
+  "status": "Provisional benchmark settings from user transcript, not a deployed runtime policy; raw CSV review pending",
+  "scope": {
+    "logical_lanes": 2048,
+    "draws_per_lane": 4096,
+    "words": 8388608,
+    "base": 0
+  },
+  "device": "Apple M3",
+  "kernels_sha256": "de85db0b0496e491506d37df3f382ca5c501d35cf6bc8854e9cc2b7cf8e77238",
+  "settings": [
+    {
+      "engine": "montmory_split_stripe_pair",
+      "format": "raw64",
+      "physical_threads": 262144,
+      "threadgroup": 64
+    },
+    {
+      "engine": "montmory_split_stripe_pair",
+      "format": "mantissa53",
+      "physical_threads": 131072,
+      "threadgroup": 128
+    }
+  ],
+  "logical_geometry_must_remain_fixed": true,
+  "native_conformance": "reported pass",
+  "raw_measurements_reviewed": false,
+  "statistical_batteries_rerun": false
+}

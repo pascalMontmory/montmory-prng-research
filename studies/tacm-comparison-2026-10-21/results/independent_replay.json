@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "independently_recomputed_estimates": 180,
+  "absolute_tolerance": 2e-15,
+  "exact_rational_variances": {
+    "identity_variance": "1/12",
+    "quadratic_variance": "4/45",
+    "pair_product_variance": "7/144"
+  }
+}

@@ -1,0 +1,28 @@
+CPU repetition 1/9 terminee, flux identique.
+CPU repetition 2/9 terminee, flux identique.
+CPU repetition 3/9 terminee, flux identique.
+CPU repetition 4/9 terminee, flux identique.
+CPU repetition 5/9 terminee, flux identique.
+CPU repetition 6/9 terminee, flux identique.
+CPU repetition 7/9 terminee, flux identique.
+CPU repetition 8/9 terminee, flux identique.
+CPU repetition 9/9 terminee, flux identique.
+
+CPU raw64 — T=2048,D=4096 ; creation/jonction des workers incluse
+moteur                workers    ns/mot       GB/s   ratio/indexe
+indexed                     1      3.788      2.112        1.000
+indexed                     2      1.928      4.149        1.000
+indexed                     4      0.991      8.074        1.000
+indexed                     8      0.821      9.746        1.000
+incremental                 1      3.427      2.334        1.105
+incremental                 2      1.741      4.596        1.108
+incremental                 4      0.896      8.924        1.105
+incremental                 8      0.741     10.794        1.108
+incremental_pair            1      2.975      2.689        1.273
+incremental_pair            2      1.517      5.273        1.271
+incremental_pair            4      0.779     10.265        1.271
+incremental_pair            8      0.641     12.487        1.281
+incremental_quad            1      3.460      2.312        1.095
+incremental_quad            2      1.765      4.532        1.092
+incremental_quad            4      0.906      8.834        1.094
+incremental_quad            8      0.744     10.751        1.103

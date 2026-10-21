@@ -1,0 +1,22 @@
+[
+  {
+    "path": "/sys/fs/cgroup/user.slice/user-1003.slice/session-12298.scope",
+    "cpu.max": "max 100000",
+    "cpu.stat": "usage_usec 939951170\nuser_usec 734345754\nsystem_usec 205605415\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0"
+  },
+  {
+    "path": "/sys/fs/cgroup/user.slice/user-1003.slice",
+    "cpu.max": "max 100000",
+    "cpu.stat": "usage_usec 1639224721307\nuser_usec 1423823332563\nsystem_usec 215401388744\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0"
+  },
+  {
+    "path": "/sys/fs/cgroup/user.slice",
+    "cpu.max": "max 100000",
+    "cpu.stat": "usage_usec 1639224721307\nuser_usec 1423823332563\nsystem_usec 215401388744\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0"
+  },
+  {
+    "path": "/sys/fs/cgroup",
+    "cpu.stat": "usage_usec 93894798825511\nuser_usec 82284818674984\nsystem_usec 11609980150526\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0",
+    "cpuset.cpus.effective": "0-15"
+  }
+]

@@ -1,0 +1,125 @@
+#import <Foundation/Foundation.h>
+#import <Metal/Metal.h>
+#include <algorithm>
+#include <chrono>
+#include <cstdlib>
+#include <cstring>
+#include <iomanip>
+#include <iostream>
+#include <map>
+#include <random>
+#include <tuple>
+#include "reference.hpp"
+
+static void require(bool ok,const std::string& message) {if(!ok) throw std::runtime_error(message);}
+static std::string errorText(NSError* e) {return e?std::string(e.localizedDescription.UTF8String):"unknown Metal error";}
+static void writeJSON(NSString* folder,NSString* name,id object) {
+    NSError* error=nil;
+    NSData* data=[NSJSONSerialization dataWithJSONObject:object options:NSJSONWritingPrettyPrinted error:&error];
+    require(data!=nil,"JSON: "+errorText(error));
+    require([data writeToFile:[folder stringByAppendingPathComponent:name] options:NSDataWritingAtomic error:&error],"Write JSON: "+errorText(error));
+}
+struct Pipelines {
+    id<MTLDevice> device; id<MTLLibrary> library;
+    NSMutableDictionary* cache; NSMutableArray* preparation;
+    Pipelines(id<MTLDevice> d,id<MTLLibrary> l):device(d),library(l),cache([NSMutableDictionary dictionary]),preparation([NSMutableArray array]) {}
+    id<MTLComputePipelineState> get(unsigned engine,const BenchParams& p,bool reduce=false) {
+        bool specialized=isSpecialized(engine);
+        NSString* key=[NSString stringWithFormat:@"%u-%u-%u-%u-%u",engine,unsigned(reduce),specialized?p.r0:0,specialized?p.r1:0,specialized?p.r2:0];
+        id<MTLComputePipelineState> previous=cache[key];if(previous) return previous;
+        NSString* name=[NSString stringWithUTF8String:kernelNames[engine]];
+        if(reduce) name=[name stringByAppendingString:@"_reduce"];
+        NSError* error=nil;auto start=std::chrono::steady_clock::now();
+        id<MTLFunction> function;
+        if(specialized) {
+            MTLFunctionConstantValues* values=[[MTLFunctionConstantValues alloc] init];
+            [values setConstantValue:&p.r0 type:MTLDataTypeUInt atIndex:0];
+            [values setConstantValue:&p.r1 type:MTLDataTypeUInt atIndex:1];
+            [values setConstantValue:&p.r2 type:MTLDataTypeUInt atIndex:2];
+            function=[library newFunctionWithName:name constantValues:values error:&error];
+        } else function=[library newFunctionWithName:name];
+        require(function!=nil,"Create kernel "+std::string(name.UTF8String)+": "+errorText(error));
+        id<MTLComputePipelineState> pipeline=[device newComputePipelineStateWithFunction:function error:&error];
+        require(pipeline!=nil,"Compile pipeline: "+errorText(error));
+        double seconds=std::chrono::duration<double>(std::chrono::steady_clock::now()-start).count();cache[key]=pipeline;
+        [preparation addObject:@{@"engine":[NSString stringWithUTF8String:engineNames[engine]],@"reduction":@(reduce),
+            @"specialized_rotations":@(specialized),@"seed_first_use":@(p.seed),@"r0":@(p.r0),@"r1":@(p.r1),@"r2":@(p.r2),
+            @"preparation_seconds":@(seconds),@"thread_execution_width":@(pipeline.threadExecutionWidth),
+            @"max_threads_per_threadgroup":@(pipeline.maxTotalThreadsPerThreadgroup)}];return pipeline;
+    }
+};
+struct Times {double gpu,wall;NSUInteger group;};
+static Times dispatch(id<MTLCommandQueue> queue,id<MTLComputePipelineState> pipeline,id<MTLBuffer> output,
+                      const BenchParams& p,unsigned engine,NSUInteger group=256) {
+    auto start=std::chrono::steady_clock::now();
+    id<MTLCommandBuffer> command=[queue commandBuffer];require(command!=nil,"Cannot create command buffer");
+    id<MTLComputeCommandEncoder> encoder=[command computeCommandEncoder];require(encoder!=nil,"Cannot create encoder");
+    [encoder setComputePipelineState:pipeline];[encoder setBuffer:output offset:0 atIndex:0];
+    uint64_t legacy[]={p.seed,p.base,uint64_t(1)<<p.draws_shift};
+    if(engine==3) [encoder setBytes:legacy length:sizeof(legacy) atIndex:1];else [encoder setBytes:&p length:sizeof(p) atIndex:1];
+    NSUInteger workers=engine==3?p.logical_lanes:p.physical_threads;
+    group=std::min({group,pipeline.maxTotalThreadsPerThreadgroup,workers});require(group>0,"Invalid group size");
+    [encoder dispatchThreads:MTLSizeMake(workers,1,1) threadsPerThreadgroup:MTLSizeMake(group,1,1)];
+    [encoder endEncoding];[command commit];[command waitUntilCompleted];
+    require(command.status==MTLCommandBufferStatusCompleted,"Metal command: "+errorText(command.error));
+    double elapsed=std::chrono::duration<double>(std::chrono::steady_clock::now()-start).count();
+    double gpu=command.GPUEndTime-command.GPUStartTime;require(gpu>0,"GPU timestamps unavailable");return {gpu,elapsed,group};
+}
+static uint64_t verifyOutput(id<MTLBuffer> output,const BenchParams& p,unsigned engine,bool full,bool reduce=false) {
+    const uint64_t* words=static_cast<const uint64_t*>(output.contents);
+    uint64_t count=reduce?p.physical_threads:p.words,checked=0;
+    std::vector<uint64_t> reduced;if(reduce && full) reduced=referenceReduction(engine,p);
+    auto one=[&](uint64_t i) {
+        uint64_t expected=reduce?reduced[i]:referenceWord(engine,p,i);
+        if(words[i]!=expected) {
+            std::ostringstream msg;msg<<"Mismatch "<<engineNames[engine]<<" reduction="<<reduce<<" seed="<<p.seed<<" base="<<p.base<<" position="<<i;
+            throw std::runtime_error(msg.str());
+        }++checked;
+    };
+    if(full) for(uint64_t i=0;i<count;++i) one(i);
+    else if(!reduce) {
+        for(uint64_t i=0;i<16;++i) {one(i);one(count-1-i);}uint64_t index=42;
+        for(unsigned j=0;j<128;++j) {index=splitmix64(index);one(index%count);}
+    }
+    for(uint64_t i=count;i<count+16;++i) require(words[i]==UINT64_MAX,"Output guard overwritten");
+    return checked;
+}
+static void conformance(id<MTLDevice> device,id<MTLCommandQueue> queue,Pipelines& pipelines,NSString* folder) {
+    auto kats=knownAnswers("reference/kat_vectors");std::array<uint32_t,36> inputs{};
+    for(unsigned i=0;i<6;++i) std::copy(kats[i].input.begin(),kats[i].input.end(),inputs.begin()+6*i);
+    id<MTLBuffer> in=[device newBufferWithBytes:inputs.data() length:sizeof(inputs) options:MTLResourceStorageModeShared];
+    id<MTLBuffer> out=[device newBufferWithLength:24*sizeof(uint32_t) options:MTLResourceStorageModeShared];require(in && out,"Cannot allocate KAT buffers");
+    NSError* error=nil;id<MTLFunction> f=[pipelines.library newFunctionWithName:@"reference_kat"];require(f!=nil,"Missing KAT kernel");
+    id<MTLComputePipelineState> kat=[device newComputePipelineStateWithFunction:f error:&error];require(kat!=nil,"KAT pipeline: "+errorText(error));
+    id<MTLCommandBuffer> command=[queue commandBuffer];id<MTLComputeCommandEncoder> encoder=[command computeCommandEncoder];require(command && encoder,"Cannot create KAT command");
+    [encoder setComputePipelineState:kat];[encoder setBuffer:out offset:0 atIndex:0];[encoder setBuffer:in offset:0 atIndex:1];
+    [encoder dispatchThreads:MTLSizeMake(6,1,1) threadsPerThreadgroup:MTLSizeMake(6,1,1)];[encoder endEncoding];[command commit];[command waitUntilCompleted];
+    require(command.status==MTLCommandBufferStatusCompleted,"KAT command: "+errorText(command.error));
+    const uint32_t* actual=static_cast<const uint32_t*>(out.contents);
+    for(unsigned i=0;i<6;++i) for(unsigned j=0;j<4;++j) require(actual[4*i+j]==kats[i].expected[j],"Official GPU KAT mismatch");
+    id<MTLBuffer> buffer=[device newBufferWithLength:(4096+16)*sizeof(uint64_t) options:MTLResourceStorageModeShared];require(buffer!=nil,"Cannot allocate conformance buffer");
+    uint64_t checks=0,reductions=0;
+    for(uint64_t seed:{UINT64_C(0),UINT64_C(1),UINT64_C(42),UINT64_MAX}) {
+        std::cout<<"Verification seed "<<seed<<"..."<<std::endl;
+        for(uint64_t n:{UINT64_C(32),UINT64_C(64),UINT64_C(2048)}) for(uint64_t base:{UINT64_C(0),n,UINT64_MAX-3}) {
+            for(uint32_t workers:{7u,32u,256u,4096u}) for(NSUInteger group:{64ul,256ul})
+            for(unsigned shift:{0u,11u}) for(unsigned engine=0;engine<engineCount;++engine) {
+                if(engine==3 || (n<2048 && engine<8)) continue;
+                BenchParams p=parameters(seed,base,n,32,workers,shift);
+                for(bool reduce:{false,true}) {
+                    if(reduce && !hasReduction(engine)) continue;
+                    std::memset(buffer.contents,0xff,(4096+16)*sizeof(uint64_t));
+                    dispatch(queue,pipelines.get(engine,p,reduce),buffer,p,engine,group);
+                    uint64_t count=verifyOutput(buffer,p,engine,true,reduce);if(reduce) reductions+=count;else checks+=count;
+                }
+            }
+            if(n==2048) {
+                BenchParams p=parameters(seed,base,n,32,32,11);std::memset(buffer.contents,0xff,(4096+16)*sizeof(uint64_t));
+                dispatch(queue,pipelines.get(3,p),buffer,p,3);checks+=verifyOutput(buffer,p,3,true);
+            }
+        }
+    }
+    writeJSON(folder,@"conformance.json",@{@"status":@"pass",@"bulk_words":@(checks),@"reduction_words":@(reductions),
+        @"official_CPU_KATs":@6,@"official_GPU_KATs":@6,@"scope":@"Native Metal versus original C / official Random123; reductions checked per thread, including idle threads and guards."});
+    std::cout<<"Conformite PASS: "<<checks<<" mots, "<<reductions<<" reductions; 6 vecteurs officiels CPU et GPU."<<std::endl;
+}

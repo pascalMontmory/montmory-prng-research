@@ -1,0 +1,143 @@
+{
+  "status": "pass",
+  "measurements": 99,
+  "configurations": 11,
+  "fully_compared_words": 830472192,
+  "fixed_stream_best_measured_workers": 4,
+  "scope": "Descriptive results on this shared x86 VPS; no M3 measurement or statistical quality claim.",
+  "quantiles": "Linear empirical interpolation, not confidence intervals.",
+  "results": [
+    {
+      "phase": "logical_geometry_changes_stream",
+      "logical_lanes": 256,
+      "draws_per_lane": 32768,
+      "workers": 4,
+      "repetitions": 9,
+      "median_ns_per_word": 1.12517297268,
+      "q10_ns_per_word": 1.0800991773600002,
+      "q90_ns_per_word": 1.456141233448,
+      "stored_GB_per_second": 7.110017921018092,
+      "speedup_vs_one_worker_same_stream": ""
+    },
+    {
+      "phase": "logical_geometry_changes_stream",
+      "logical_lanes": 512,
+      "draws_per_lane": 16384,
+      "workers": 4,
+      "repetitions": 9,
+      "median_ns_per_word": 1.06553888321,
+      "q10_ns_per_word": 1.0368547678014,
+      "q90_ns_per_word": 2.252969241144,
+      "stored_GB_per_second": 7.507938120380477,
+      "speedup_vs_one_worker_same_stream": ""
+    },
+    {
+      "phase": "logical_geometry_changes_stream",
+      "logical_lanes": 1024,
+      "draws_per_lane": 8192,
+      "workers": 4,
+      "repetitions": 9,
+      "median_ns_per_word": 1.06255733967,
+      "q10_ns_per_word": 1.024437499046,
+      "q90_ns_per_word": 1.58696761131,
+      "stored_GB_per_second": 7.529005448764366,
+      "speedup_vs_one_worker_same_stream": ""
+    },
+    {
+      "phase": "logical_geometry_changes_stream",
+      "logical_lanes": 4096,
+      "draws_per_lane": 2048,
+      "workers": 4,
+      "repetitions": 9,
+      "median_ns_per_word": 1.04971551895,
+      "q10_ns_per_word": 0.992214918137,
+      "q90_ns_per_word": 1.2360375642780002,
+      "stored_GB_per_second": 7.6211124400658266,
+      "speedup_vs_one_worker_same_stream": ""
+    },
+    {
+      "phase": "logical_geometry_changes_stream",
+      "logical_lanes": 8192,
+      "draws_per_lane": 1024,
+      "workers": 4,
+      "repetitions": 9,
+      "median_ns_per_word": 1.06547427177,
+      "q10_ns_per_word": 1.0103369712852,
+      "q90_ns_per_word": 1.7063763141640003,
+      "stored_GB_per_second": 7.508393409359518,
+      "speedup_vs_one_worker_same_stream": ""
+    },
+    {
+      "phase": "logical_geometry_changes_stream",
+      "logical_lanes": 16384,
+      "draws_per_lane": 512,
+      "workers": 4,
+      "repetitions": 9,
+      "median_ns_per_word": 1.11553692818,
+      "q10_ns_per_word": 1.020197486874,
+      "q90_ns_per_word": 1.48163087368,
+      "stored_GB_per_second": 7.171434488548945,
+      "speedup_vs_one_worker_same_stream": ""
+    },
+    {
+      "phase": "physical_workers_same_stream",
+      "logical_lanes": 2048,
+      "draws_per_lane": 4096,
+      "workers": 1,
+      "repetitions": 9,
+      "median_ns_per_word": 3.95617079735,
+      "q10_ns_per_word": 3.849320507048,
+      "q90_ns_per_word": 4.379825258258,
+      "stored_GB_per_second": 2.022157386470452,
+      "speedup_vs_one_worker_same_stream": 1.0
+    },
+    {
+      "phase": "physical_workers_same_stream",
+      "logical_lanes": 2048,
+      "draws_per_lane": 4096,
+      "workers": 2,
+      "repetitions": 9,
+      "median_ns_per_word": 2.06486523151,
+      "q10_ns_per_word": 2.02113618851,
+      "q90_ns_per_word": 2.2571728467920003,
+      "stored_GB_per_second": 3.874344861795043,
+      "speedup_vs_one_worker_same_stream": 1.9159462501370714
+    },
+    {
+      "phase": "physical_workers_same_stream",
+      "logical_lanes": 2048,
+      "draws_per_lane": 4096,
+      "workers": 4,
+      "repetitions": 9,
+      "median_ns_per_word": 1.0844233036,
+      "q10_ns_per_word": 1.037454938886,
+      "q90_ns_per_word": 1.4981708526620001,
+      "stored_GB_per_second": 7.37719299598423,
+      "speedup_vs_one_worker_same_stream": 3.648179437140971
+    },
+    {
+      "phase": "physical_workers_same_stream",
+      "logical_lanes": 2048,
+      "draws_per_lane": 4096,
+      "workers": 8,
+      "repetitions": 9,
+      "median_ns_per_word": 2.38751208782,
+      "q10_ns_per_word": 1.782541441916,
+      "q90_ns_per_word": 2.98449203968,
+      "stored_GB_per_second": 3.3507683755036717,
+      "speedup_vs_one_worker_same_stream": 1.6570264994814405
+    },
+    {
+      "phase": "physical_workers_same_stream",
+      "logical_lanes": 2048,
+      "draws_per_lane": 4096,
+      "workers": 16,
+      "repetitions": 9,
+      "median_ns_per_word": 2.58778727055,
+      "q10_ns_per_word": 2.3420320987700003,
+      "q90_ns_per_word": 3.539930295944,
+      "stored_GB_per_second": 3.0914442199492336,
+      "speedup_vs_one_worker_same_stream": 1.528785168074951
+    }
+  ]
+}

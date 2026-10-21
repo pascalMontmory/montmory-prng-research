@@ -1,0 +1,152 @@
+// Seed-derived rotations only: keys and seed remain runtime parameters.
+constant uint mmc_rot0 [[function_constant(0)]];
+constant uint mmc_rot1 [[function_constant(1)]];
+constant uint mmc_rot2 [[function_constant(2)]];
+
+inline uint mmc_f_mulhi(uint x,ulong key,uint ro,uint re) {
+    uint factor=1u+((x&1u)<<1);
+    uint low=x*factor;
+    uint high=metal::mulhi(x,factor);
+    uint sum=low+uint(key);
+    high+=uint(key>>32)+uint(sum<low);
+    return mmc_rot_low32(sum,high,(x&1u)?ro:re)^((x&1u)?(x>>1):(x*5u));
+}
+
+inline uint mmc_f_dual(uint x,ulong key,uint ro,uint re) {
+    uint lo3=x*3u, hi3=metal::mulhi(x,3u);
+    uint oddlo=lo3+uint(key), evenlo=x+uint(key);
+    uint oddhi=hi3+uint(key>>32)+uint(oddlo<lo3);
+    uint evenhi=uint(key>>32)+uint(evenlo<x);
+    uint odd=mmc_rot_low32(oddlo,oddhi,ro)^(x>>1);
+    uint even=mmc_rot_low32(evenlo,evenhi,re)^(x*5u);
+    return (x&1u)?odd:even;
+}
+
+template<uint Core>
+inline uint mmc_round_variant(uint x,ulong key,uint ro,uint re) {
+    if(Core==0) return mmc_f32(x,key,ro,re);
+    if(Core==1) return mmc_f_mulhi(x,key,ro,re);
+    if(Core==2) return mmc_f(ulong(x),key,ro,re);
+    return mmc_f_dual(x,key,ro,re);
+}
+
+template<uint Core>
+inline void mmc_batch_round(thread MmcPair32& x,ulong key,uint ro,uint re) {
+    uint next=x.hi^mmc_round_variant<Core>(x.lo,key,ro,re);
+    x.hi=x.lo; x.lo=next;
+}
+
+template<uint Core>
+inline MmcState mmc_batch_state(constant BenchParams& p) { return mmc_prepared_state(p); }
+template<>
+inline MmcState mmc_batch_state<2>(constant BenchParams& p) {
+    MmcState s=mmc_prepared_state(p);
+    s.r0=mmc_rot0; s.r1=mmc_rot1; s.r2=mmc_rot2;
+    return s;
+}
+template<>
+inline MmcState mmc_batch_state<3>(constant BenchParams& p) { return mmc_batch_state<2>(p); }
+
+template<uint Batch,uint Core,bool Reduce>
+inline void mmc_batch_body(device ulong* out,constant BenchParams& p,uint tid) {
+    MmcState state=mmc_batch_state<Core>(p);
+    ulong checksum=0;
+    if(p.reserved==0xFFFFFFFFu) {
+        for(uint i=tid;i<uint(p.words);i+=p.physical_threads) {
+            uint lane=(i>>p.draws_shift)&(p.logical_lanes-1);
+            ulong counter=p.seed+(p.base+ulong(i)+1)*(0x9E3779B97F4A7C15UL+2*ulong(lane));
+            MmcPair32 x={uint(counter),uint(counter>>32)};
+            mmc_batch_round<Core>(x,state.k0,state.r0,state.r1);
+            mmc_batch_round<Core>(x,state.k1,state.r1,state.r2);
+            mmc_batch_round<Core>(x,state.k2,state.r2,state.r0);
+            ulong value=mmc_mix32(x)>>p.output_shift;
+            if(Reduce) checksum^=value; else out[i]=value;
+        }
+        if(Reduce) out[tid]=checksum;
+        return;
+    }
+    uint width=1u<<p.reserved;
+    uint lane=tid>>p.reserved;
+    uint first=(tid&(width-1u))*Batch;
+    uint draws=1u<<p.draws_shift;
+    if(lane>=p.logical_lanes || first>=draws) {
+        if(Reduce) out[tid]=0;
+        return;
+    }
+    uint offset=lane<<p.draws_shift;
+    ulong gamma=0x9E3779B97F4A7C15UL+2*ulong(lane);
+    ulong counter=p.seed+(p.base+ulong(offset)+first+1)*gamma;
+    uint stride=width*Batch;
+    ulong step=gamma*ulong(stride);
+    for(uint j=first;j<draws;j+=stride) {
+        MmcPair32 x[Batch];
+        #pragma unroll
+        for(uint b=0;b<Batch;++b) {
+            ulong c=counter+ulong(b)*gamma;
+            x[b]=MmcPair32{uint(c),uint(c>>32)};
+        }
+        // Independent states advance together to expose instruction parallelism.
+        #pragma unroll
+        for(uint b=0;b<Batch;++b) mmc_batch_round<Core>(x[b],state.k0,state.r0,state.r1);
+        #pragma unroll
+        for(uint b=0;b<Batch;++b) mmc_batch_round<Core>(x[b],state.k1,state.r1,state.r2);
+        #pragma unroll
+        for(uint b=0;b<Batch;++b) mmc_batch_round<Core>(x[b],state.k2,state.r2,state.r0);
+        #pragma unroll
+        for(uint b=0;b<Batch;++b) if(j+b<draws) {
+            ulong value=mmc_mix32(x[b])>>p.output_shift;
+            if(Reduce) checksum^=value; else out[offset+j+b]=value;
+        }
+        counter+=step;
+    }
+    if(Reduce) out[tid]=checksum;
+}
+
+// Diagnostic counterparts of the v2 reference kernels. Every generated bit
+// feeds an XOR, with one write per thread; this is not a pure arithmetic timing.
+template<uint Engine,bool Reduce>
+inline void reference_diagnostic_body(device ulong* out,constant BenchParams& p,uint tid) {
+    ulong checksum=0;
+    if(Engine==6 && p.reserved!=0xFFFFFFFFu) {
+        uint width=1u<<p.reserved, lane=tid>>p.reserved, first=tid&(width-1u);
+        ulong draws=1UL<<p.draws_shift, offset=ulong(lane)<<p.draws_shift;
+        if(lane<p.logical_lanes && first<draws) {
+            MmcState st=mmc_prepared_state(p);
+            ulong gamma=0x9E3779B97F4A7C15UL+2*ulong(lane);
+            ulong counter=p.seed+(p.base+offset+first+1)*gamma;
+            for(ulong j=first;j<draws;j+=width) {
+                ulong value=mmc_variant_word<true>(counter,st)>>p.output_shift;
+                if(Reduce) checksum^=value; else out[offset+j]=value;
+                counter+=gamma<<p.reserved;
+            }
+        }
+    } else if(Engine==2) {
+        philox4x32_key_t key={{p.key0,p.key1}};
+        for(ulong i=tid;i<p.words/2;i+=p.physical_threads) {
+            ulong index=p.base+i;
+            philox4x32_ctr_t c={{uint(index),uint(index>>32),0,0}};
+            auto v=philox4x32_R(10,c,key);
+            ulong a=(ulong(v.v[0])|(ulong(v.v[1])<<32))>>p.output_shift;
+            ulong b=(ulong(v.v[2])|(ulong(v.v[3])<<32))>>p.output_shift;
+            if(Reduce) checksum^=a^b; else { out[2*i]=a; out[2*i+1]=b; }
+        }
+    } else {
+        MmcState st=mmc_prepared_state(p);
+        threefry2x32_key_t key={{p.key0,p.key1}};
+        for(ulong i=tid;i<p.words;i+=p.physical_threads) {
+            ulong value;
+            if(Engine==1) {
+                ulong index=p.base+i;
+                threefry2x32_ctr_t c={{uint(index),uint(index>>32)}};
+                auto v=threefry2x32_R(20,c,key);
+                value=ulong(v.v[0])|(ulong(v.v[1])<<32);
+            } else if(Engine==6) {
+                ulong lane=(i>>p.draws_shift)&(p.logical_lanes-1);
+                value=mmc_variant_word<true>(p.seed+(p.base+i+1)*(0x9E3779B97F4A7C15UL+2*lane),st);
+            } else value=(p.base+i)^p.seed;
+            value>>=p.output_shift;
+            if(Reduce) checksum^=value; else out[i]=value;
+        }
+    }
+    if(Reduce) out[tid]=checksum;
+}

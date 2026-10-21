@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "backend_requested": "tpu",
+  "completed": [
+    "check_manifest.py",
+    "verify_native.py",
+    "verify_sharding.py",
+    "benchmark.py"
+  ]
+}

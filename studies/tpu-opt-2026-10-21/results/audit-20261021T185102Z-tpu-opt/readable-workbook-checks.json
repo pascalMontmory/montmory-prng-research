@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "workbook": "/home/pascal/prng-recovery/Montmory_TPU_resultats_lisibles.xlsx",
+  "sheets": 5,
+  "raw_rows_checked": 3708,
+  "summary_rows_checked": 44,
+  "seed_rows": 308,
+  "seeds_preserved_as_text": true,
+  "source_csv_unchanged": true
+}

@@ -1,0 +1,73 @@
+Source: terminal output supplied by the user in this conversation.
+Raw result archive not yet received on the VPS when this transcript was recorded.
+
+1/3 Compilation ARM64 et comparaison des 1600 vecteurs Montmory avec le VPS x86.
+Vecteurs ARM64/x86 : PASS.
+2/3 Compilation du programme de test.
+3/3 Verification sur Metal, puis mesures GPU.
+Volume: 4194304 mots de 64 bits; 11 repetitions.
+GPU: Apple M3
+Compilation Metal...
+Conformite PASS: 4153344 mots; 6 vecteurs officiels CPU et GPU.
+Repetition 1/11 terminee.
+Repetition 2/11 terminee.
+Repetition 3/11 terminee.
+Repetition 4/11 terminee.
+Repetition 5/11 terminee.
+Repetition 6/11 terminee.
+Repetition 7/11 terminee.
+Repetition 8/11 terminee.
+Repetition 9/11 terminee.
+Repetition 10/11 terminee.
+Repetition 11/11 terminee.
+
+GPU Metal — medianes; un mot = 64 bits stockes; plus petit = plus rapide
+moteur                 format       threads    ns/mot       GB/s
+montmory_indexed       raw64           8192      0.158     50.731
+montmory_indexed       raw64          65536      0.149     53.841
+montmory_indexed       raw64         262144      0.149     53.719
+montmory_indexed       mantissa53      8192      0.157     50.908
+montmory_indexed       mantissa53     65536      0.149     53.859
+montmory_indexed       mantissa53    262144      0.150     53.353
+threefry2x32_20        raw64           8192      0.097     82.825
+threefry2x32_20        raw64          65536      0.102     78.269
+threefry2x32_20        raw64         262144      0.093     85.680
+threefry2x32_20        mantissa53      8192      0.104     77.225
+threefry2x32_20        mantissa53     65536      0.096     83.219
+threefry2x32_20        mantissa53    262144      0.098     81.221
+philox4x32_10          raw64           8192      0.100     80.178
+philox4x32_10          raw64          65536      0.098     81.940
+philox4x32_10          raw64         262144      0.096     83.599
+philox4x32_10          mantissa53      8192      0.099     81.123
+philox4x32_10          mantissa53     65536      0.103     77.966
+philox4x32_10          mantissa53    262144      0.104     76.960
+montmory_historical    mantissa53      8192      0.145     55.332
+montmory_u32_indexed   raw64           8192      0.140     56.956
+montmory_u32_indexed   raw64          65536      0.131     60.943
+montmory_u32_indexed   raw64         262144      0.131     61.161
+montmory_u32_indexed   mantissa53      8192      0.139     57.542
+montmory_u32_indexed   mantissa53     65536      0.132     60.486
+montmory_u32_indexed   mantissa53    262144      0.130     61.413
+montmory_u64_tiled     raw64           8192      0.149     53.816
+montmory_u64_tiled     raw64          65536      0.144     55.378
+montmory_u64_tiled     raw64         262144      0.145     55.234
+montmory_u64_tiled     mantissa53      8192      0.148     53.935
+montmory_u64_tiled     mantissa53     65536      0.144     55.665
+montmory_u64_tiled     mantissa53    262144      0.144     55.504
+montmory_u32_tiled     raw64           8192      0.131     61.217
+montmory_u32_tiled     raw64          65536      0.127     62.969
+montmory_u32_tiled     raw64         262144      0.128     62.292
+montmory_u32_tiled     mantissa53      8192      0.132     60.458
+montmory_u32_tiled     mantissa53     65536      0.129     62.033
+montmory_u32_tiled     mantissa53    262144      0.127     62.983
+write_baseline_NOT_PRNGraw64           8192      0.094     85.029
+write_baseline_NOT_PRNGraw64          65536      0.090     89.330
+write_baseline_NOT_PRNGraw64         262144      0.092     87.051
+write_baseline_NOT_PRNGmantissa53      8192      0.092     86.685
+write_baseline_NOT_PRNGmantissa53     65536      0.088     90.535
+write_baseline_NOT_PRNGmantissa53    262144      0.085     93.859
+
+PASS. Resultats: results/20261021T131521Z-8925
+Le tableau final compare les debits sur ton GPU. Aucun resultat n'a ete envoye automatiquement.
+
+Resultats et diagnostics: /Users/enincaconsulting/Downloads/montmory-metal-m3-v2/montmory-metal-v2-results-20261021T131521Z-8925.tar.gz

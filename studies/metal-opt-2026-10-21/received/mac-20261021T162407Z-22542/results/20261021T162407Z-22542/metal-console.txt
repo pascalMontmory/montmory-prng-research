@@ -1,0 +1,57 @@
+GPU: Apple M3. Compilation des variantes equivalentes...
+Verification seed 0...
+Verification seed 1...
+Verification seed 42...
+Verification seed 18446744073709551615...
+Conformite PASS: 7716864 mots, 4004592 reductions; 6 vecteurs officiels CPU et GPU.
+Recherche seed 1/7: references CPU...
+Recherche 1/7 terminee, sorties identiques a la reference.
+Recherche seed 2/7: references CPU...
+Recherche 2/7 terminee, sorties identiques a la reference.
+Recherche seed 3/7: references CPU...
+Recherche 3/7 terminee, sorties identiques a la reference.
+Recherche seed 4/7: references CPU...
+Recherche 4/7 terminee, sorties identiques a la reference.
+Recherche seed 5/7: references CPU...
+Recherche 5/7 terminee, sorties identiques a la reference.
+Recherche seed 6/7: references CPU...
+Recherche 6/7 terminee, sorties identiques a la reference.
+Recherche seed 7/7: references CPU...
+Recherche 7/7 terminee, sorties identiques a la reference.
+Confirmation seed 1/5: references CPU...
+Confirmation 1/5 terminee, sorties identiques a la reference.
+Confirmation seed 2/5: references CPU...
+Confirmation 2/5 terminee, sorties identiques a la reference.
+Confirmation seed 3/5: references CPU...
+Confirmation 3/5 terminee, sorties identiques a la reference.
+Confirmation seed 4/5: references CPU...
+Confirmation 4/5 terminee, sorties identiques a la reference.
+Confirmation seed 5/5: references CPU...
+Confirmation 5/5 terminee, sorties identiques a la reference.
+
+Confirmation sur cinq nouvelles seeds — geometrie T=2048,D=4096 inchangee
+moteur                         format     threads groupe   ns/mot     GB/s   ratio/v3
+threefry2x32_20                raw64        131072    128    0.087   92.474      1.086
+threefry2x32_20                mantissa53    65536     64    0.087   92.325      1.087
+philox4x32_10                  raw64        131072     64    0.090   89.330      1.048
+philox4x32_10                  mantissa53   131072    128    0.090   89.300      1.048
+write_baseline_NOT_PRNG        raw64          8192    256    0.081   99.200      1.165
+write_baseline_NOT_PRNG        mantissa53     8192    128    0.080   99.494      1.170
+montmory_mulhi_pair            raw64        131072     64    0.094   85.123      1.000
+montmory_mulhi_pair            mantissa53   131072     64    0.094   85.042      1.000
+montmory_mulhi_quad            raw64        131072    512    0.096   83.551      0.982
+montmory_mulhi_quad            mantissa53   131072    512    0.096   83.560      0.982
+montmory_stripe_pair           raw64        131072     64    0.094   85.101      0.999
+montmory_stripe_pair           mantissa53   131072    256    0.094   85.204      1.002
+montmory_stripe_quad           raw64        131072    256    0.096   83.703      0.982
+montmory_stripe_quad           mantissa53   131072    256    0.096   83.616      0.983
+montmory_const_pair            raw64        131072     64    0.098   81.529      0.958
+montmory_const_pair            mantissa53   131072    128    0.371   21.579      0.254
+montmory_const_stripe_pair     raw64        131072    128    0.098   81.480      0.957
+montmory_const_stripe_pair     mantissa53   131072    128    0.371   21.566      0.254
+montmory_split_stripe_pair     raw64        131072    256    0.093   85.580      1.005
+montmory_split_stripe_pair     mantissa53   131072    512    0.094   85.530      1.006
+montmory_const_stripe_quad     raw64        131072    256    0.157   51.054      0.858
+montmory_const_stripe_quad     mantissa53   131072     64    0.097   82.372      0.966
+
+PASS. Aucun changement du flux Montmory; toutes les sorties verifiees.

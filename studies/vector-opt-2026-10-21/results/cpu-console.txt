@@ -1,0 +1,64 @@
+CPU 65536 mots, 1/9 : toutes les sorties identiques.
+CPU 65536 mots, 2/9 : toutes les sorties identiques.
+CPU 65536 mots, 3/9 : toutes les sorties identiques.
+CPU 65536 mots, 4/9 : toutes les sorties identiques.
+CPU 65536 mots, 5/9 : toutes les sorties identiques.
+CPU 65536 mots, 6/9 : toutes les sorties identiques.
+CPU 65536 mots, 7/9 : toutes les sorties identiques.
+CPU 65536 mots, 8/9 : toutes les sorties identiques.
+CPU 65536 mots, 9/9 : toutes les sorties identiques.
+
+CPU raw64 — temps appelant ; pair_reused_workers exclut seulement la construction initiale du pool
+moteur                    workers     GB/s   ratio/pair   seeds
+scalar_indexed_range           1     2.220        0.700   0/9
+scalar_indexed_range           2     2.684        0.806   0/9
+scalar_indexed_range           4     3.419        1.091   6/9
+scalar_indexed_range           8     1.697        1.040   5/9
+scalar_pair                    1     3.187        1.000   0/9
+scalar_pair                    2     3.246        1.000   0/9
+scalar_pair                    4     3.306        1.000   0/9
+scalar_pair                    8     1.915        1.000   0/9
+simd4                          1     1.297        0.407   0/9
+simd4                          2     1.825        0.568   0/9
+simd4                          4     2.547        0.710   0/9
+simd4                          8     1.648        0.857   2/9
+simd8                          1     1.648        0.535   0/9
+simd8                          2     2.124        0.654   0/9
+simd8                          4     2.661        0.787   1/9
+simd8                          8     1.867        0.970   4/9
+pair_reused_workers            1     2.526        0.848   0/9
+pair_reused_workers            2     4.158        1.221   9/9
+pair_reused_workers            4     5.290        1.600   9/9
+pair_reused_workers            8     5.234        2.506   9/9
+CPU 8388608 mots, 1/9 : toutes les sorties identiques.
+CPU 8388608 mots, 2/9 : toutes les sorties identiques.
+CPU 8388608 mots, 3/9 : toutes les sorties identiques.
+CPU 8388608 mots, 4/9 : toutes les sorties identiques.
+CPU 8388608 mots, 5/9 : toutes les sorties identiques.
+CPU 8388608 mots, 6/9 : toutes les sorties identiques.
+CPU 8388608 mots, 7/9 : toutes les sorties identiques.
+CPU 8388608 mots, 8/9 : toutes les sorties identiques.
+CPU 8388608 mots, 9/9 : toutes les sorties identiques.
+
+CPU raw64 — temps appelant ; pair_reused_workers exclut seulement la construction initiale du pool
+moteur                    workers     GB/s   ratio/pair   seeds
+scalar_indexed_range           1     2.126        0.709   0/9
+scalar_indexed_range           2     4.162        0.769   2/9
+scalar_indexed_range           4     7.493        0.756   1/9
+scalar_indexed_range           8     8.247        0.743   1/9
+scalar_pair                    1     3.033        1.000   0/9
+scalar_pair                    2     5.214        1.000   0/9
+scalar_pair                    4     9.861        1.000   0/9
+scalar_pair                    8    13.213        1.000   0/9
+simd4                          1     1.249        0.408   0/9
+simd4                          2     2.462        0.460   0/9
+simd4                          4     4.674        0.473   0/9
+simd4                          8     6.690        0.413   0/9
+simd8                          1     1.609        0.545   0/9
+simd8                          2     3.068        0.540   0/9
+simd8                          4     5.184        0.540   0/9
+simd8                          8     7.549        0.558   0/9
+pair_reused_workers            1     2.935        0.974   2/9
+pair_reused_workers            2     5.463        1.029   5/9
+pair_reused_workers            4    10.321        1.049   8/9
+pair_reused_workers            8    10.895        0.829   3/9

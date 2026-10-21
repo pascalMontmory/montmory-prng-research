@@ -1,0 +1,36 @@
+{
+  "provenance": "Final Crush summary excerpt from user-pasted native Apple M3 terminal; raw archive not yet received",
+  "source": "evidence/metal-m3-v3-native-crush-user-summary.log",
+  "source_sha256": "3b6afac8bb68f70b2e7fd20d548d59d63acdcb795fc14fa32a630267c991fa03",
+  "run_id": null,
+  "date_received": "2026-10-21",
+  "engine": "montmory_mulhi_pair",
+  "backend": "native Metal",
+  "testu01_version": "1.2.3",
+  "battery": "Crush",
+  "status": "pass as reported by terminal summary",
+  "number_of_statistics": 144,
+  "reported_cpu_time_seconds": 935.72,
+  "cpu_time_scope": "TestU01 CPU time, not isolated GPU time or end-to-end wall time",
+  "seed": 42,
+  "logical_lanes": 2048,
+  "draws_per_lane": 4096,
+  "output_contract": "53-bit uniforms; fixed geometry shared with current SmallCrush",
+  "geometry_source": "mac-metal-benchmark-v3/src/testu01_metal.mm:44",
+  "runner": "testu01-repair-v1/run.sh",
+  "next_process_conformance": {
+    "status": "PASS",
+    "bulk_words_all_engines": 4835328,
+    "reduction_words_all_engines": 4004592,
+    "official_CPU_vectors": 6,
+    "official_GPU_vectors": 6
+  },
+  "SmallCrush": "pass reported earlier, 15 summary statistics",
+  "BigCrush": "final result pending",
+  "limits": [
+    "Raw metadata and run identifier not yet inspected",
+    "Current Crush geometry differs from historical Crush 4096 x 8192; no historical p-value equality asserted",
+    "Result concerns this seed and 53-bit stream, not every configuration or raw64 output",
+    "Native CUDA optimization validation is separate"
+  ]
+}

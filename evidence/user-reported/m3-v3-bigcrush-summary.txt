@@ -1,0 +1,11 @@
+========= Summary results of BigCrush =========
+
+ Version:          TestU01 1.2.3
+ Generator:        Montmory v3 native Metal montmory_mulhi_pair
+ Number of statistics:  160
+ Total CPU time:   01:44:36.42
+
+ All tests were passed
+
+PASS : toutes les batteries demandees annoncent leur succes.
+Archive: /Users/enincaconsulting/Downloads/montmory-metal-m3-v3/montmory-metal-v3-testu01-repair1-20261021T141838Z-9612.tar.gz

@@ -1,0 +1,37 @@
+[
+  {
+    "file": "generated/all.metal",
+    "sha256": "1ed2856aa953187eadc99e53efd2f1810b6f00a0d14239898718004a0f8da242",
+    "identical_to_v3": true
+  },
+  {
+    "file": "src/mmc_core.c",
+    "sha256": "5a0c515214226c50dd79b9774b616ca981621493d4f0c6bce7ececfdf5afbc8c",
+    "identical_to_v3": true
+  },
+  {
+    "file": "src/mmc_core.h",
+    "sha256": "f3ca894f4242340aca0903bcb7e482746aee9b4d3fc1243269b4a557b52334bb",
+    "identical_to_v3": true
+  },
+  {
+    "file": "src/reference.hpp",
+    "sha256": "a0d8e9648f21c2eae5cfe05ee0e148730a981680e6608b713bb773ff208f1dc4",
+    "identical_to_v3": true
+  },
+  {
+    "file": "src/bench_params.h",
+    "sha256": "19aec6abf97ed5b863528103d7bea851c68d2a6f367b7ec7875882e04f21be2f",
+    "identical_to_v3": true
+  },
+  {
+    "file": "reference/golden-vectors.txt",
+    "sha256": "ca5b2731b89fea75c78585350c3263f11fc2695a6126251288b287ac94acdecf",
+    "identical_to_v3": true
+  },
+  {
+    "file": "reference/kat_vectors",
+    "sha256": "aab5ebabf40003f63d6d87b24cbd2c8a02652e00cf8bad64226fd50586929183",
+    "identical_to_v3": true
+  }
+]

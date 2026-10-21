@@ -1,0 +1,22 @@
+{
+  "root": "/home/pascal/prng-recovery/mac-import/CUDA-PRNG/TestU01-1.2.3",
+  "regular_files_following_symlinks": 729,
+  "symlinks": 9,
+  "cuda_extensions": [],
+  "cuda_content_matches": [
+    {
+      "path": "CUDA-PRNG/TestU01-1.2.3/montmory_gpu_test/montmory_gpu_test/logs/README_CERTIFICATION.tex",
+      "occurrences": [
+        {
+          "line": 78,
+          "text": "  \\item A CUDA/OpenCL implementation is being prepared for cross-platform HPC deployments."
+        }
+      ]
+    }
+  ],
+  "archives_detected_by_magic": [],
+  "cpu_source": "CUDA-PRNG/TestU01-1.2.3/montmory_gpu_test/montmory_gpu_test/src/mmc_core.c",
+  "metal_kernel": "CUDA-PRNG/TestU01-1.2.3/montmory_gpu_test/montmory_gpu_test/metal/mmc_kernel.metal",
+  "note": "CPU C source is portable to x86 and ARM; absence of CUDA source in this transferred tree does not refute existence elsewhere.",
+  "scope": "Initial CUDA-PRNG Mac import only, before CUDA-OVH backup arrived; see cuda-import.json for the later CUDA copy."
+}

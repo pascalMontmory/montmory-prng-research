@@ -1,0 +1,18 @@
+{
+  "65536": {
+    "primary": "jax_carry_mulhi",
+    "secondary": "jax_mulhi",
+    "threefry": "threefry2x32",
+    "finalists": [
+      "jax_carry_mulhi",
+      "jax_mulhi",
+      "jax_original",
+      "threefry2x32",
+      "threefry4x32",
+      "philox2x32",
+      "philox4x32",
+      "write_NOT_PRNG",
+      "rbg_same_backend"
+    ]
+  }
+}

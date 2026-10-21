@@ -1,0 +1,1546 @@
+{
+  "status": "pass",
+  "backend_requested": "tpu",
+  "cpu_smoke": false,
+  "jax": "0.10.2",
+  "jaxlib": "0.10.2",
+  "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+  "logical_lanes": 2048,
+  "draws_per_lane": 4096,
+  "base": 4294963199,
+  "timing": "host wall time: dispatch/allocation/wait included; keys/compilation/transfers/checks excluded",
+  "comparisons": "same eight output bytes; Montmory and Threefry Pallas preserve their respective reference streams",
+  "compilation": [
+    {
+      "words": 65536,
+      "engine": "jax_original",
+      "status": "pass",
+      "seconds": 0.6654313399994862
+    },
+    {
+      "words": 65536,
+      "engine": "jax_mulhi",
+      "status": "pass",
+      "seconds": 0.462153684000441
+    },
+    {
+      "words": 65536,
+      "engine": "jax_carry",
+      "status": "pass",
+      "seconds": 0.42460911400030454
+    },
+    {
+      "words": 65536,
+      "engine": "jax_carry_mulhi",
+      "status": "pass",
+      "seconds": 0.4199249940002119
+    },
+    {
+      "words": 65536,
+      "engine": "pallas_original_8",
+      "status": "pass",
+      "seconds": 0.10341127900028368
+    },
+    {
+      "words": 65536,
+      "engine": "pallas_carry_8",
+      "status": "pass",
+      "seconds": 0.08518543799982581
+    },
+    {
+      "words": 65536,
+      "engine": "pallas_original_16",
+      "status": "pass",
+      "seconds": 0.10420329899989156
+    },
+    {
+      "words": 65536,
+      "engine": "pallas_carry_16",
+      "status": "pass",
+      "seconds": 0.09559557899956417
+    },
+    {
+      "words": 65536,
+      "engine": "pallas_original_32",
+      "status": "pass",
+      "seconds": 0.11757592799949634
+    },
+    {
+      "words": 65536,
+      "engine": "pallas_carry_32",
+      "status": "pass",
+      "seconds": 0.10273068799961038
+    },
+    {
+      "words": 65536,
+      "engine": "pallas_original_64",
+      "status": "pass",
+      "seconds": 0.1453394380005193
+    },
+    {
+      "words": 65536,
+      "engine": "pallas_carry_64",
+      "status": "pass",
+      "seconds": 0.12627175799934776
+    },
+    {
+      "words": 65536,
+      "engine": "pallas_original_128",
+      "status": "pass",
+      "seconds": 0.22397766599988245
+    },
+    {
+      "words": 65536,
+      "engine": "pallas_carry_128",
+      "status": "pass",
+      "seconds": 0.19337008699949365
+    },
+    {
+      "words": 65536,
+      "engine": "pallas_original_256",
+      "status": "pass",
+      "seconds": 0.4247952340001575
+    },
+    {
+      "words": 65536,
+      "engine": "pallas_carry_256",
+      "status": "pass",
+      "seconds": 0.363657355000214
+    },
+    {
+      "words": 65536,
+      "engine": "threefry_pallas_16",
+      "status": "pass",
+      "seconds": 0.19047919700005878
+    },
+    {
+      "words": 65536,
+      "engine": "threefry_pallas_32",
+      "status": "pass",
+      "seconds": 0.09812674899967533
+    },
+    {
+      "words": 65536,
+      "engine": "threefry_pallas_64",
+      "status": "pass",
+      "seconds": 0.11494611800026178
+    },
+    {
+      "words": 65536,
+      "engine": "threefry_pallas_128",
+      "status": "pass",
+      "seconds": 0.17288352800005669
+    },
+    {
+      "words": 65536,
+      "engine": "threefry2x32",
+      "status": "pass",
+      "seconds": 0.24606153700005962
+    },
+    {
+      "words": 65536,
+      "engine": "threefry4x32",
+      "status": "pass",
+      "seconds": 0.5915514319995054
+    },
+    {
+      "words": 65536,
+      "engine": "philox2x32",
+      "status": "pass",
+      "seconds": 2.4476114460003373
+    },
+    {
+      "words": 65536,
+      "engine": "philox4x32",
+      "status": "pass",
+      "seconds": 1.153568634000294
+    },
+    {
+      "words": 65536,
+      "engine": "write_NOT_PRNG",
+      "status": "pass",
+      "seconds": 0.056620758999997634
+    },
+    {
+      "words": 65536,
+      "engine": "rbg_same_backend",
+      "status": "pass",
+      "seconds": 0.25105609700040077
+    },
+    {
+      "words": 1048576,
+      "engine": "jax_original",
+      "status": "pass",
+      "seconds": 0.40251709400035907
+    },
+    {
+      "words": 1048576,
+      "engine": "jax_mulhi",
+      "status": "pass",
+      "seconds": 0.5630201819994909
+    },
+    {
+      "words": 1048576,
+      "engine": "jax_carry",
+      "status": "pass",
+      "seconds": 0.4427236339997762
+    },
+    {
+      "words": 1048576,
+      "engine": "jax_carry_mulhi",
+      "status": "pass",
+      "seconds": 0.4266527640002096
+    },
+    {
+      "words": 1048576,
+      "engine": "pallas_original_8",
+      "status": "pass",
+      "seconds": 0.09179034900080296
+    },
+    {
+      "words": 1048576,
+      "engine": "pallas_carry_8",
+      "status": "pass",
+      "seconds": 0.08433464900008403
+    },
+    {
+      "words": 1048576,
+      "engine": "pallas_original_16",
+      "status": "pass",
+      "seconds": 0.09704713900009665
+    },
+    {
+      "words": 1048576,
+      "engine": "pallas_carry_16",
+      "status": "pass",
+      "seconds": 0.09171770900047704
+    },
+    {
+      "words": 1048576,
+      "engine": "pallas_original_32",
+      "status": "pass",
+      "seconds": 0.10637823799970647
+    },
+    {
+      "words": 1048576,
+      "engine": "pallas_carry_32",
+      "status": "pass",
+      "seconds": 0.09956247899935988
+    },
+    {
+      "words": 1048576,
+      "engine": "pallas_original_64",
+      "status": "pass",
+      "seconds": 0.1358535679992201
+    },
+    {
+      "words": 1048576,
+      "engine": "pallas_carry_64",
+      "status": "pass",
+      "seconds": 0.12430802800008678
+    },
+    {
+      "words": 1048576,
+      "engine": "pallas_original_128",
+      "status": "pass",
+      "seconds": 0.2188028070004293
+    },
+    {
+      "words": 1048576,
+      "engine": "pallas_carry_128",
+      "status": "pass",
+      "seconds": 0.19525521699961246
+    },
+    {
+      "words": 1048576,
+      "engine": "pallas_original_256",
+      "status": "pass",
+      "seconds": 0.41748123399975157
+    },
+    {
+      "words": 1048576,
+      "engine": "pallas_carry_256",
+      "status": "pass",
+      "seconds": 0.3623961439998311
+    },
+    {
+      "words": 1048576,
+      "engine": "threefry_pallas_16",
+      "status": "pass",
+      "seconds": 0.08576755900048738
+    },
+    {
+      "words": 1048576,
+      "engine": "threefry_pallas_32",
+      "status": "pass",
+      "seconds": 0.09793740900022385
+    },
+    {
+      "words": 1048576,
+      "engine": "threefry_pallas_64",
+      "status": "pass",
+      "seconds": 0.11552496799959044
+    },
+    {
+      "words": 1048576,
+      "engine": "threefry_pallas_128",
+      "status": "pass",
+      "seconds": 0.1689156879992879
+    },
+    {
+      "words": 1048576,
+      "engine": "threefry2x32",
+      "status": "pass",
+      "seconds": 0.5812494620004145
+    },
+    {
+      "words": 1048576,
+      "engine": "threefry4x32",
+      "status": "pass",
+      "seconds": 1.1572050040003887
+    },
+    {
+      "words": 1048576,
+      "engine": "philox2x32",
+      "status": "pass",
+      "seconds": 0.5346651130003011
+    },
+    {
+      "words": 1048576,
+      "engine": "philox4x32",
+      "status": "pass",
+      "seconds": 1.0414855250000983
+    },
+    {
+      "words": 1048576,
+      "engine": "write_NOT_PRNG",
+      "status": "pass",
+      "seconds": 0.10327717900054267
+    },
+    {
+      "words": 1048576,
+      "engine": "rbg_same_backend",
+      "status": "pass",
+      "seconds": 0.15677503799997794
+    },
+    {
+      "words": 8388608,
+      "engine": "jax_original",
+      "status": "pass",
+      "seconds": 0.8867106070001682
+    },
+    {
+      "words": 8388608,
+      "engine": "jax_mulhi",
+      "status": "pass",
+      "seconds": 0.8609233379993384
+    },
+    {
+      "words": 8388608,
+      "engine": "jax_carry",
+      "status": "pass",
+      "seconds": 0.7486286200000905
+    },
+    {
+      "words": 8388608,
+      "engine": "jax_carry_mulhi",
+      "status": "pass",
+      "seconds": 0.7434273790004227
+    },
+    {
+      "words": 8388608,
+      "engine": "pallas_original_8",
+      "status": "pass",
+      "seconds": 0.0946440090001488
+    },
+    {
+      "words": 8388608,
+      "engine": "pallas_carry_8",
+      "status": "pass",
+      "seconds": 0.0854812289999245
+    },
+    {
+      "words": 8388608,
+      "engine": "pallas_original_16",
+      "status": "pass",
+      "seconds": 0.09757043799982057
+    },
+    {
+      "words": 8388608,
+      "engine": "pallas_carry_16",
+      "status": "pass",
+      "seconds": 0.0933767890001036
+    },
+    {
+      "words": 8388608,
+      "engine": "pallas_original_32",
+      "status": "pass",
+      "seconds": 0.10903768800017133
+    },
+    {
+      "words": 8388608,
+      "engine": "pallas_carry_32",
+      "status": "pass",
+      "seconds": 0.10186905799946544
+    },
+    {
+      "words": 8388608,
+      "engine": "pallas_original_64",
+      "status": "pass",
+      "seconds": 0.13570292799977324
+    },
+    {
+      "words": 8388608,
+      "engine": "pallas_carry_64",
+      "status": "pass",
+      "seconds": 0.1236557879992688
+    },
+    {
+      "words": 8388608,
+      "engine": "pallas_original_128",
+      "status": "pass",
+      "seconds": 0.2155863269999827
+    },
+    {
+      "words": 8388608,
+      "engine": "pallas_carry_128",
+      "status": "pass",
+      "seconds": 0.19556506800017814
+    },
+    {
+      "words": 8388608,
+      "engine": "pallas_original_256",
+      "status": "pass",
+      "seconds": 0.4181583639992823
+    },
+    {
+      "words": 8388608,
+      "engine": "pallas_carry_256",
+      "status": "pass",
+      "seconds": 0.36336295399996743
+    },
+    {
+      "words": 8388608,
+      "engine": "threefry_pallas_16",
+      "status": "pass",
+      "seconds": 0.08664675900035945
+    },
+    {
+      "words": 8388608,
+      "engine": "threefry_pallas_32",
+      "status": "pass",
+      "seconds": 0.09898623900062375
+    },
+    {
+      "words": 8388608,
+      "engine": "threefry_pallas_64",
+      "status": "pass",
+      "seconds": 0.11625443799948698
+    },
+    {
+      "words": 8388608,
+      "engine": "threefry_pallas_128",
+      "status": "pass",
+      "seconds": 0.1714316779998626
+    },
+    {
+      "words": 8388608,
+      "engine": "threefry2x32",
+      "status": "pass",
+      "seconds": 1.5903717169994707
+    },
+    {
+      "words": 8388608,
+      "engine": "threefry4x32",
+      "status": "pass",
+      "seconds": 3.7659755469994707
+    },
+    {
+      "words": 8388608,
+      "engine": "philox2x32",
+      "status": "pass",
+      "seconds": 0.560070872000324
+    },
+    {
+      "words": 8388608,
+      "engine": "philox4x32",
+      "status": "pass",
+      "seconds": 1.0010044459995697
+    },
+    {
+      "words": 8388608,
+      "engine": "write_NOT_PRNG",
+      "status": "pass",
+      "seconds": 0.11958493800011638
+    },
+    {
+      "words": 8388608,
+      "engine": "rbg_same_backend",
+      "status": "pass",
+      "seconds": 0.16047798700037674
+    },
+    {
+      "words": 16777216,
+      "engine": "jax_original",
+      "status": "pass",
+      "seconds": 0.8427335679998578
+    },
+    {
+      "words": 16777216,
+      "engine": "jax_mulhi",
+      "status": "pass",
+      "seconds": 0.8306988679996721
+    },
+    {
+      "words": 16777216,
+      "engine": "jax_carry",
+      "status": "pass",
+      "seconds": 0.7323997190005684
+    },
+    {
+      "words": 16777216,
+      "engine": "jax_carry_mulhi",
+      "status": "pass",
+      "seconds": 0.7282543100000112
+    },
+    {
+      "words": 16777216,
+      "engine": "pallas_original_8",
+      "status": "pass",
+      "seconds": 0.09316488900003606
+    },
+    {
+      "words": 16777216,
+      "engine": "pallas_carry_8",
+      "status": "pass",
+      "seconds": 0.08326792899970314
+    },
+    {
+      "words": 16777216,
+      "engine": "pallas_original_16",
+      "status": "pass",
+      "seconds": 0.09735052799987898
+    },
+    {
+      "words": 16777216,
+      "engine": "pallas_carry_16",
+      "status": "pass",
+      "seconds": 0.091151579000325
+    },
+    {
+      "words": 16777216,
+      "engine": "pallas_original_32",
+      "status": "pass",
+      "seconds": 0.10891020800045226
+    },
+    {
+      "words": 16777216,
+      "engine": "pallas_carry_32",
+      "status": "pass",
+      "seconds": 0.10086877899993851
+    },
+    {
+      "words": 16777216,
+      "engine": "pallas_original_64",
+      "status": "pass",
+      "seconds": 0.13856914799998776
+    },
+    {
+      "words": 16777216,
+      "engine": "pallas_carry_64",
+      "status": "pass",
+      "seconds": 0.12314028800028609
+    },
+    {
+      "words": 16777216,
+      "engine": "pallas_original_128",
+      "status": "pass",
+      "seconds": 0.2143140170001061
+    },
+    {
+      "words": 16777216,
+      "engine": "pallas_carry_128",
+      "status": "pass",
+      "seconds": 0.19436720800058538
+    },
+    {
+      "words": 16777216,
+      "engine": "pallas_original_256",
+      "status": "pass",
+      "seconds": 0.41323093400023936
+    },
+    {
+      "words": 16777216,
+      "engine": "pallas_carry_256",
+      "status": "pass",
+      "seconds": 0.36146326400012185
+    },
+    {
+      "words": 16777216,
+      "engine": "threefry_pallas_16",
+      "status": "pass",
+      "seconds": 0.08462851900003443
+    },
+    {
+      "words": 16777216,
+      "engine": "threefry_pallas_32",
+      "status": "pass",
+      "seconds": 0.09415808900030243
+    },
+    {
+      "words": 16777216,
+      "engine": "threefry_pallas_64",
+      "status": "pass",
+      "seconds": 0.11482338800033176
+    },
+    {
+      "words": 16777216,
+      "engine": "threefry_pallas_128",
+      "status": "pass",
+      "seconds": 0.16872873800002708
+    },
+    {
+      "words": 16777216,
+      "engine": "threefry2x32",
+      "status": "pass",
+      "seconds": 2.5093510050000987
+    },
+    {
+      "words": 16777216,
+      "engine": "threefry4x32",
+      "status": "pass",
+      "seconds": 8.79704782600038
+    },
+    {
+      "words": 16777216,
+      "engine": "philox2x32",
+      "status": "pass",
+      "seconds": 0.5896436920002088
+    },
+    {
+      "words": 16777216,
+      "engine": "philox4x32",
+      "status": "pass",
+      "seconds": 1.0767831140001363
+    },
+    {
+      "words": 16777216,
+      "engine": "write_NOT_PRNG",
+      "status": "pass",
+      "seconds": 0.11558735900052852
+    },
+    {
+      "words": 16777216,
+      "engine": "rbg_same_backend",
+      "status": "pass",
+      "seconds": 0.17417507699974522
+    }
+  ],
+  "selection": {
+    "65536": {
+      "primary": "pallas_original_256",
+      "secondary": "pallas_original_8",
+      "threefry": "threefry_pallas_16",
+      "finalists": [
+        "pallas_original_256",
+        "pallas_original_8",
+        "pallas_original_32",
+        "jax_original",
+        "threefry2x32",
+        "threefry4x32",
+        "philox2x32",
+        "philox4x32",
+        "threefry_pallas_16",
+        "write_NOT_PRNG",
+        "rbg_same_backend"
+      ],
+      "recommended_after_confirmation": "pallas_original_32",
+      "rule": "Use search primary only if >=3% median gain and faster on every held-out seed; otherwise retain baseline"
+    },
+    "1048576": {
+      "primary": "pallas_carry_128",
+      "secondary": "pallas_carry_64",
+      "threefry": "threefry_pallas_32",
+      "finalists": [
+        "pallas_carry_128",
+        "pallas_carry_64",
+        "pallas_original_32",
+        "jax_original",
+        "threefry2x32",
+        "threefry4x32",
+        "philox2x32",
+        "philox4x32",
+        "threefry_pallas_32",
+        "write_NOT_PRNG",
+        "rbg_same_backend"
+      ],
+      "recommended_after_confirmation": "pallas_original_32",
+      "rule": "Use search primary only if >=3% median gain and faster on every held-out seed; otherwise retain baseline"
+    },
+    "8388608": {
+      "primary": "pallas_carry_128",
+      "secondary": "pallas_carry_64",
+      "threefry": "threefry_pallas_128",
+      "finalists": [
+        "pallas_carry_128",
+        "pallas_carry_64",
+        "pallas_original_32",
+        "jax_original",
+        "threefry2x32",
+        "threefry4x32",
+        "philox2x32",
+        "philox4x32",
+        "threefry_pallas_128",
+        "write_NOT_PRNG",
+        "rbg_same_backend"
+      ],
+      "recommended_after_confirmation": "pallas_carry_128",
+      "rule": "Use search primary only if >=3% median gain and faster on every held-out seed; otherwise retain baseline"
+    },
+    "16777216": {
+      "primary": "pallas_carry_64",
+      "secondary": "pallas_carry_128",
+      "threefry": "threefry_pallas_128",
+      "finalists": [
+        "pallas_carry_64",
+        "pallas_carry_128",
+        "pallas_original_32",
+        "jax_original",
+        "threefry2x32",
+        "threefry4x32",
+        "philox2x32",
+        "philox4x32",
+        "threefry_pallas_128",
+        "write_NOT_PRNG",
+        "rbg_same_backend"
+      ],
+      "recommended_after_confirmation": "pallas_carry_64",
+      "rule": "Use search primary only if >=3% median gain and faster on every held-out seed; otherwise retain baseline"
+    }
+  },
+  "summary": [
+    {
+      "words": 65536,
+      "engine": "pallas_original_256",
+      "GB_per_second": 2.064369807457574,
+      "primary": "pallas_original_256",
+      "primary_speedup_vs_engine": 1.0,
+      "primary_faster_seeds": 0,
+      "seed_count": 7,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "words": 65536,
+      "engine": "pallas_original_8",
+      "GB_per_second": 2.0194438024805486,
+      "primary": "pallas_original_256",
+      "primary_speedup_vs_engine": 1.0248513430387534,
+      "primary_faster_seeds": 6,
+      "seed_count": 7,
+      "ratios": [
+        1.051895893215734,
+        0.9794564878353088,
+        1.065826497047517,
+        1.0167221460740161,
+        1.0253577441077442,
+        1.0248513430387534,
+        1.0002045910225459
+      ]
+    },
+    {
+      "words": 65536,
+      "engine": "pallas_original_32",
+      "GB_per_second": 2.1203057386662354,
+      "primary": "pallas_original_256",
+      "primary_speedup_vs_engine": 0.9936576783010761,
+      "primary_faster_seeds": 2,
+      "seed_count": 7,
+      "ratios": [
+        1.0020474859235342,
+        0.9640907673112913,
+        0.9498672373479174,
+        0.991266888584296,
+        0.998526936026936,
+        1.0061513225343448,
+        0.9936576783010761
+      ]
+    },
+    {
+      "words": 65536,
+      "engine": "jax_original",
+      "GB_per_second": 2.0262259856000555,
+      "primary": "pallas_original_256",
+      "primary_speedup_vs_engine": 1.0488740943802624,
+      "primary_faster_seeds": 7,
+      "seed_count": 7,
+      "ratios": [
+        1.0780800881993937,
+        1.0050686213349969,
+        1.0254468354932034,
+        1.0488740943802624,
+        1.0580808080808082,
+        1.0590526963297109,
+        1.0186177830516796
+      ]
+    },
+    {
+      "words": 65536,
+      "engine": "threefry2x32",
+      "GB_per_second": 1.978968029290756,
+      "primary": "pallas_original_256",
+      "primary_speedup_vs_engine": 1.0575804798031576,
+      "primary_faster_seeds": 6,
+      "seed_count": 7,
+      "ratios": [
+        1.0431547033114148,
+        0.994658452900811,
+        1.087425197162446,
+        1.0909379283336598,
+        1.0637976992143658,
+        1.0575804798031576,
+        1.0101477147182782
+      ]
+    },
+    {
+      "words": 65536,
+      "engine": "threefry4x32",
+      "GB_per_second": 1.9207502930832356,
+      "primary": "pallas_original_256",
+      "primary_speedup_vs_engine": 1.102563051055977,
+      "primary_faster_seeds": 7,
+      "seed_count": 7,
+      "ratios": [
+        1.1250541402527858,
+        1.0586400499064255,
+        1.081758015297428,
+        1.1403955355394557,
+        1.1160213243546577,
+        1.102563051055977,
+        1.0887515855804248
+      ]
+    },
+    {
+      "words": 65536,
+      "engine": "philox2x32",
+      "GB_per_second": 1.884843255680184,
+      "primary": "pallas_original_256",
+      "primary_speedup_vs_engine": 1.0952474701736425,
+      "primary_faster_seeds": 7,
+      "seed_count": 7,
+      "ratios": [
+        1.0952474701736425,
+        1.0927947598253276,
+        1.047992707961796,
+        1.1019385157626786,
+        1.1266133557800224,
+        1.0955505433668238,
+        1.078890298293711
+      ]
+    },
+    {
+      "words": 65536,
+      "engine": "philox4x32",
+      "GB_per_second": 1.664353512586902,
+      "primary": "pallas_original_256",
+      "primary_speedup_vs_engine": 1.2300421457506445,
+      "primary_faster_seeds": 7,
+      "seed_count": 7,
+      "ratios": [
+        1.240343347639485,
+        1.1726450405489708,
+        1.2739270003566758,
+        1.2431564519287253,
+        1.1696478675645343,
+        1.2175517736313308,
+        1.2300421457506445
+      ]
+    },
+    {
+      "words": 65536,
+      "engine": "threefry_pallas_16",
+      "GB_per_second": 2.0126218809980805,
+      "primary": "pallas_original_256",
+      "primary_speedup_vs_engine": 0.9982776296903835,
+      "primary_faster_seeds": 3,
+      "seed_count": 7,
+      "ratios": [
+        1.0257116982320746,
+        0.9837414223331253,
+        1.0617841715214205,
+        1.0289798316036811,
+        0.9814464085297419,
+        0.9982776296903835,
+        0.9720119481157167
+      ]
+    },
+    {
+      "words": 65536,
+      "engine": "write_NOT_PRNG",
+      "GB_per_second": 2.1308189392399917,
+      "primary": "pallas_original_256",
+      "primary_speedup_vs_engine": 0.9797487417271034,
+      "primary_faster_seeds": 1,
+      "seed_count": 7,
+      "ratios": [
+        0.9974800173248809,
+        0.9567997504678727,
+        0.9797487417271034,
+        0.9635794008224007,
+        1.0049102132435466,
+        0.9913471396350215,
+        0.9607594418756905
+      ]
+    },
+    {
+      "words": 65536,
+      "engine": "rbg_same_backend",
+      "GB_per_second": 2.096313474610156,
+      "primary": "pallas_original_256",
+      "primary_speedup_vs_engine": 1.0006693703980785,
+      "primary_faster_seeds": 4,
+      "seed_count": 7,
+      "ratios": [
+        1.0006693703980785,
+        0.9671319401122894,
+        0.9836325446835493,
+        1.0147992950851772,
+        1.0199214365881033,
+        1.0256305105597703,
+        0.9769630508613282
+      ]
+    },
+    {
+      "words": 1048576,
+      "engine": "pallas_carry_128",
+      "GB_per_second": 16.294254302474652,
+      "primary": "pallas_carry_128",
+      "primary_speedup_vs_engine": 1.0,
+      "primary_faster_seeds": 0,
+      "seed_count": 7,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "words": 1048576,
+      "engine": "pallas_carry_64",
+      "GB_per_second": 16.727368442042714,
+      "primary": "pallas_carry_128",
+      "primary_speedup_vs_engine": 0.9771065314941001,
+      "primary_faster_seeds": 2,
+      "seed_count": 7,
+      "ratios": [
+        1.0387624245191012,
+        0.8999864558945881,
+        1.0263587273221708,
+        0.9793961409264901,
+        0.9671179883945842,
+        0.9623722426295654,
+        0.9771065314941001
+      ]
+    },
+    {
+      "words": 1048576,
+      "engine": "pallas_original_32",
+      "GB_per_second": 15.859280825802548,
+      "primary": "pallas_carry_128",
+      "primary_speedup_vs_engine": 1.016444300641404,
+      "primary_faster_seeds": 6,
+      "seed_count": 7,
+      "ratios": [
+        1.0291319956008382,
+        1.0045082522299402,
+        1.0274270618857075,
+        1.0003515350363252,
+        0.9988321594102405,
+        1.016444300641404,
+        1.1645130463686222
+      ]
+    },
+    {
+      "words": 1048576,
+      "engine": "jax_original",
+      "GB_per_second": 15.138066192658895,
+      "primary": "pallas_carry_128",
+      "primary_speedup_vs_engine": 1.0633670646053828,
+      "primary_faster_seeds": 7,
+      "seed_count": 7,
+      "ratios": [
+        1.1385320910543462,
+        1.0633670646053828,
+        1.0377801950196186,
+        1.1003222404499649,
+        1.0201817451917814,
+        1.0546811061837422,
+        1.2348969586172511
+      ]
+    },
+    {
+      "words": 1048576,
+      "engine": "threefry2x32",
+      "GB_per_second": 12.98164316996549,
+      "primary": "pallas_carry_128",
+      "primary_speedup_vs_engine": 1.278466260052057,
+      "primary_faster_seeds": 7,
+      "seed_count": 7,
+      "ratios": [
+        1.291817974310556,
+        1.2222394210862373,
+        1.278466260052057,
+        1.3035114444184048,
+        1.2283858253348419,
+        1.2298776193829581,
+        1.2984045205251786
+      ]
+    },
+    {
+      "words": 1048576,
+      "engine": "threefry4x32",
+      "GB_per_second": 10.690632610693172,
+      "primary": "pallas_carry_128",
+      "primary_speedup_vs_engine": 1.5277131460860893,
+      "primary_faster_seeds": 7,
+      "seed_count": 7,
+      "ratios": [
+        1.7079330165383577,
+        1.565176170113964,
+        1.5241618429742434,
+        1.5188657136161237,
+        1.5668406262545163,
+        1.4931386916883957,
+        1.5277131460860893
+      ]
+    },
+    {
+      "words": 1048576,
+      "engine": "philox2x32",
+      "GB_per_second": 10.650442466640428,
+      "primary": "pallas_carry_128",
+      "primary_speedup_vs_engine": 1.538219670338255,
+      "primary_faster_seeds": 7,
+      "seed_count": 7,
+      "ratios": [
+        1.5888651407939243,
+        1.505117736973473,
+        1.6375626432539527,
+        1.538219670338255,
+        1.4181964161891902,
+        1.5156163757827221,
+        1.6470832640850923
+      ]
+    },
+    {
+      "words": 1048576,
+      "engine": "philox4x32",
+      "GB_per_second": 7.86650787250204,
+      "primary": "pallas_carry_128",
+      "primary_speedup_vs_engine": 2.0964533792543003,
+      "primary_faster_seeds": 7,
+      "seed_count": 7,
+      "ratios": [
+        2.1786848166670123,
+        2.0964533792543003,
+        2.108309700477837,
+        2.0312299820326536,
+        2.0192693697310315,
+        2.018785329552159,
+        2.2153274056838956
+      ]
+    },
+    {
+      "words": 1048576,
+      "engine": "threefry_pallas_32",
+      "GB_per_second": 15.917058176160298,
+      "primary": "pallas_carry_128",
+      "primary_speedup_vs_engine": 1.0054033992501095,
+      "primary_faster_seeds": 4,
+      "seed_count": 7,
+      "ratios": [
+        0.9831918823016745,
+        1.0077007913627305,
+        1.0666038615438405,
+        0.9924810561674869,
+        0.9746907047188059,
+        1.0054033992501095,
+        1.0948562406514875
+      ]
+    },
+    {
+      "words": 1048576,
+      "engine": "write_NOT_PRNG",
+      "GB_per_second": 17.789812105017603,
+      "primary": "pallas_carry_128",
+      "primary_speedup_vs_engine": 0.912369637985411,
+      "primary_faster_seeds": 1,
+      "seed_count": 7,
+      "ratios": [
+        0.8819074100973211,
+        0.912369637985411,
+        0.942871294821491,
+        0.9058862588860245,
+        0.858180358381081,
+        0.9347937800955445,
+        1.0242645836795745
+      ]
+    },
+    {
+      "words": 1048576,
+      "engine": "rbg_same_backend",
+      "GB_per_second": 18.46450221214589,
+      "primary": "pallas_carry_128",
+      "primary_speedup_vs_engine": 0.8829388329036794,
+      "primary_faster_seeds": 0,
+      "seed_count": 7,
+      "ratios": [
+        0.8987985308460086,
+        0.8163612793374998,
+        0.9612874402703858,
+        0.8829388329036794,
+        0.8708988723039305,
+        0.8673778572924002,
+        0.9438050523516702
+      ]
+    },
+    {
+      "words": 8388608,
+      "engine": "pallas_carry_128",
+      "GB_per_second": 62.457643303209956,
+      "primary": "pallas_carry_128",
+      "primary_speedup_vs_engine": 1.0,
+      "primary_faster_seeds": 0,
+      "seed_count": 7,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "words": 8388608,
+      "engine": "pallas_carry_64",
+      "GB_per_second": 63.98999179968343,
+      "primary": "pallas_carry_128",
+      "primary_speedup_vs_engine": 0.9631629701060752,
+      "primary_faster_seeds": 2,
+      "seed_count": 7,
+      "ratios": [
+        0.9631629701060752,
+        0.9391074843360329,
+        1.011024064845159,
+        0.9547791759375021,
+        1.003824871699419,
+        0.9522834513760272,
+        0.9825968109339408
+      ]
+    },
+    {
+      "words": 8388608,
+      "engine": "pallas_original_32",
+      "GB_per_second": 54.20004038217692,
+      "primary": "pallas_carry_128",
+      "primary_speedup_vs_engine": 1.1541991632205457,
+      "primary_faster_seeds": 7,
+      "seed_count": 7,
+      "ratios": [
+        1.1706295633007302,
+        1.0960723318381698,
+        1.192218193100506,
+        1.1541991632205457,
+        1.142041613178788,
+        1.1903822349623536,
+        1.1281731207289294
+      ]
+    },
+    {
+      "words": 8388608,
+      "engine": "jax_original",
+      "GB_per_second": 51.07487683904254,
+      "primary": "pallas_carry_128",
+      "primary_speedup_vs_engine": 1.2268137302044517,
+      "primary_faster_seeds": 7,
+      "seed_count": 7,
+      "ratios": [
+        1.193534462965514,
+        1.113362179119998,
+        1.2598363357831255,
+        1.2268137302044517,
+        1.2681901764842125,
+        1.2803894012862156,
+        1.2163097949886106
+      ]
+    },
+    {
+      "words": 8388608,
+      "engine": "threefry2x32",
+      "GB_per_second": 31.953863002218856,
+      "primary": "pallas_carry_128",
+      "primary_speedup_vs_engine": 1.9261682503932172,
+      "primary_faster_seeds": 7,
+      "seed_count": 7,
+      "ratios": [
+        1.9549708407953346,
+        1.8354732677106373,
+        2.096735441835211,
+        1.9228093829101662,
+        1.995384648564712,
+        1.9261682503932172,
+        1.913603644646925
+      ]
+    },
+    {
+      "words": 8388608,
+      "engine": "threefry4x32",
+      "GB_per_second": 20.396219143775873,
+      "primary": "pallas_carry_128",
+      "primary_speedup_vs_engine": 3.0236767894869097,
+      "primary_faster_seeds": 7,
+      "seed_count": 7,
+      "ratios": [
+        3.080442668870827,
+        2.8994950518607294,
+        3.2466889022474743,
+        3.0172986085110236,
+        3.052629259377687,
+        3.0236767894869097,
+        3.0065330296127564
+      ]
+    },
+    {
+      "words": 8388608,
+      "engine": "philox2x32",
+      "GB_per_second": 20.30212100402056,
+      "primary": "pallas_carry_128",
+      "primary_speedup_vs_engine": 3.085878669780236,
+      "primary_faster_seeds": 7,
+      "seed_count": 7,
+      "ratios": [
+        3.035780869724939,
+        2.9486768243785084,
+        3.2406872345789135,
+        3.085878669780236,
+        3.094619392915314,
+        3.098820813982708,
+        3.0115535307517085
+      ]
+    },
+    {
+      "words": 8388608,
+      "engine": "philox4x32",
+      "GB_per_second": 12.193300239527638,
+      "primary": "pallas_carry_128",
+      "primary_speedup_vs_engine": 5.1171603067456495,
+      "primary_faster_seeds": 7,
+      "seed_count": 7,
+      "ratios": [
+        5.1171603067456495,
+        4.85010090150427,
+        5.317797514010355,
+        5.077304528151438,
+        5.150533409724495,
+        5.158942548419221,
+        5.046660592255125
+      ]
+    },
+    {
+      "words": 8388608,
+      "engine": "threefry_pallas_128",
+      "GB_per_second": 65.24926008750607,
+      "primary": "pallas_carry_128",
+      "primary_speedup_vs_engine": 0.9602369020501139,
+      "primary_faster_seeds": 1,
+      "seed_count": 7,
+      "ratios": [
+        0.9854341736694678,
+        0.9010460269481921,
+        0.9972076247357908,
+        0.9375898100019514,
+        0.9559647462916373,
+        1.0666561188306793,
+        0.9602369020501139
+      ]
+    },
+    {
+      "words": 8388608,
+      "engine": "write_NOT_PRNG",
+      "GB_per_second": 91.32197153199249,
+      "primary": "pallas_carry_128",
+      "primary_speedup_vs_engine": 0.6893259002112669,
+      "primary_faster_seeds": 0,
+      "seed_count": 7,
+      "ratios": [
+        0.7176654268264683,
+        0.6357147263322083,
+        0.7025538598770579,
+        0.6405069602459732,
+        0.6890770328597644,
+        0.6893259002112669,
+        0.7328564920273348
+      ]
+    },
+    {
+      "words": 8388608,
+      "engine": "rbg_same_backend",
+      "GB_per_second": 86.81050902270228,
+      "primary": "pallas_carry_128",
+      "primary_speedup_vs_engine": 0.7158506054147626,
+      "primary_faster_seeds": 0,
+      "seed_count": 7,
+      "ratios": [
+        0.7421775267484043,
+        0.6952598323889423,
+        0.7495297562489093,
+        0.7003849633663893,
+        0.6803470609250769,
+        0.7158506054147626,
+        0.7159088838268792
+      ]
+    },
+    {
+      "words": 16777216,
+      "engine": "pallas_carry_64",
+      "GB_per_second": 89.48803072327715,
+      "primary": "pallas_carry_64",
+      "primary_speedup_vs_engine": 1.0,
+      "primary_faster_seeds": 0,
+      "seed_count": 7,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "words": 16777216,
+      "engine": "pallas_carry_128",
+      "GB_per_second": 88.989635601761,
+      "primary": "pallas_carry_64",
+      "primary_speedup_vs_engine": 1.0113936247400515,
+      "primary_faster_seeds": 6,
+      "seed_count": 7,
+      "ratios": [
+        1.0113936247400515,
+        1.004482823612779,
+        1.0216607232444306,
+        0.9719371616177087,
+        1.0341903136334543,
+        1.0257387536810751,
+        1.0010892186801004
+      ]
+    },
+    {
+      "words": 16777216,
+      "engine": "pallas_original_32",
+      "GB_per_second": 73.49764696218821,
+      "primary": "pallas_carry_64",
+      "primary_speedup_vs_engine": 1.2324950072775276,
+      "primary_faster_seeds": 7,
+      "seed_count": 7,
+      "ratios": [
+        1.2349236720829866,
+        1.200225906071825,
+        1.2523287819826172,
+        1.2161118251500036,
+        1.2520668871346277,
+        1.2324950072775276,
+        1.199748442352453
+      ]
+    },
+    {
+      "words": 16777216,
+      "engine": "jax_original",
+      "GB_per_second": 66.76934189645652,
+      "primary": "pallas_carry_64",
+      "primary_speedup_vs_engine": 1.3598052373264868,
+      "primary_faster_seeds": 7,
+      "seed_count": 7,
+      "ratios": [
+        1.3477315669943903,
+        1.366225577069468,
+        1.362808639882849,
+        1.334030353682332,
+        1.367085822487732,
+        1.319798260163152,
+        1.3598052373264868
+      ]
+    },
+    {
+      "words": 16777216,
+      "engine": "threefry2x32",
+      "GB_per_second": 33.364089867307015,
+      "primary": "pallas_carry_64",
+      "primary_speedup_vs_engine": 2.6920346556741674,
+      "primary_faster_seeds": 7,
+      "seed_count": 7,
+      "ratios": [
+        2.721244278739993,
+        2.6915449724244076,
+        2.727298612900164,
+        2.6920346556741674,
+        2.677445594196714,
+        2.725065836238703,
+        2.5744137345288807
+      ]
+    },
+    {
+      "words": 16777216,
+      "engine": "threefry4x32",
+      "GB_per_second": 21.33138716757549,
+      "primary": "pallas_carry_64",
+      "primary_speedup_vs_engine": 4.240452314913591,
+      "primary_faster_seeds": 7,
+      "seed_count": 7,
+      "ratios": [
+        4.2444996235405785,
+        4.190471052787562,
+        4.261982888367616,
+        4.204837410014451,
+        4.240452314913591,
+        4.252181565853163,
+        4.0905406544388905
+      ]
+    },
+    {
+      "words": 16777216,
+      "engine": "philox2x32",
+      "GB_per_second": 20.924704243739672,
+      "primary": "pallas_carry_64",
+      "primary_speedup_vs_engine": 4.302098890548325,
+      "primary_faster_seeds": 7,
+      "seed_count": 7,
+      "ratios": [
+        4.352103420002202,
+        4.282658312404388,
+        4.33309311060189,
+        4.247790734068978,
+        4.302098890548325,
+        4.342361303862167,
+        4.159317682298251
+      ]
+    },
+    {
+      "words": 16777216,
+      "engine": "philox4x32",
+      "GB_per_second": 12.46269489772051,
+      "primary": "pallas_carry_64",
+      "primary_speedup_vs_engine": 7.18047191700448,
+      "primary_faster_seeds": 7,
+      "seed_count": 7,
+      "ratios": [
+        7.3673826804047575,
+        7.177133137397112,
+        7.278897913248634,
+        7.156416027916331,
+        7.18047191700448,
+        7.3088102088481195,
+        6.9521191138428025
+      ]
+    },
+    {
+      "words": 16777216,
+      "engine": "threefry_pallas_128",
+      "GB_per_second": 93.00588867099528,
+      "primary": "pallas_carry_64",
+      "primary_speedup_vs_engine": 0.9611064602343375,
+      "primary_faster_seeds": 0,
+      "seed_count": 7,
+      "ratios": [
+        0.9965267258835171,
+        0.9611064602343375,
+        0.9879113503545714,
+        0.9711113922870481,
+        0.9446340943033924,
+        0.9590156720712182,
+        0.9337651307386589
+      ]
+    },
+    {
+      "words": 16777216,
+      "engine": "write_NOT_PRNG",
+      "GB_per_second": 151.7544751481163,
+      "primary": "pallas_carry_64",
+      "primary_speedup_vs_engine": 0.5890340983637128,
+      "primary_faster_seeds": 0,
+      "seed_count": 7,
+      "ratios": [
+        0.5870783808346937,
+        0.5890340983637128,
+        0.6110290029965696,
+        0.5947603604083562,
+        0.5911097183699595,
+        0.5841857631249365,
+        0.5511511355753085
+      ]
+    },
+    {
+      "words": 16777216,
+      "engine": "rbg_same_backend",
+      "GB_per_second": 90.79132793527745,
+      "primary": "pallas_carry_64",
+      "primary_speedup_vs_engine": 0.9942527202901643,
+      "primary_faster_seeds": 3,
+      "seed_count": 7,
+      "ratios": [
+        1.0080427597723873,
+        1.008345604322052,
+        0.9784070724464753,
+        0.9911030014051397,
+        0.9942527202901643,
+        1.000785296009207,
+        0.9530987623104403
+      ]
+    }
+  ],
+  "samples": 3708,
+  "checked_words": 24361500672,
+  "backend": "tpu",
+  "devices": [
+    "TPU_0(process=0,(0,0,0,0))"
+  ],
+  "device_kind": "TPU v5 lite",
+  "sizes": [
+    65536,
+    1048576,
+    8388608,
+    16777216
+  ],
+  "search_seeds": [
+    0,
+    42,
+    18446744073709551615
+  ],
+  "confirm_seeds": [
+    7,
+    19,
+    20261021,
+    1393753992385309920,
+    16045690981116495207,
+    18446744073709551612,
+    9223372036854788153
+  ],
+  "baseline": "pallas_original_32",
+  "confirmation_blocks": 3,
+  "confirmation_repetitions_per_block": 3,
+  "selection_sha256": "c20774f845c2f28b58d4705d0227d13c850f0b0f0a92db7ea9d72399e1e5bbb1"
+}

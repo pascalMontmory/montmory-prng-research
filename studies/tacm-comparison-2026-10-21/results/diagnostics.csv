@@ -1,0 +1,94 @@
+engine,diagnostic,n,KS_statistic,p_value,calibration,p_Bonferroni,flag_005
+montmory,variance_PIT_identity,128,0.05778162927332264,0.7640135169198833,Chi-square variance reference exact for IID normal estimates; CLT approximation here,1.0,False
+montmory,variance_PIT_quadratic,128,0.06237604563441668,0.6780327776697216,Chi-square variance reference exact for IID normal estimates; CLT approximation here,1.0,False
+montmory,variance_PIT_sin,128,0.05910628458528092,0.739692600168224,Chi-square variance reference exact for IID normal estimates; CLT approximation here,1.0,False
+montmory,binomial_PIT_rare_099,2048,0.016011537736723203,0.6638464081520539,Binomial IID nominal; randomized PIT; finite-grid auxiliary approximation,1.0,False
+montmory,variance_PIT_pair_product,128,0.05660610415773609,0.7851065555211837,Chi-square variance reference exact for IID normal estimates; CLT approximation here,1.0,False
+montmory,binomial_PIT_pair_rare_099,2048,0.010219891253786861,0.9816138114041453,Binomial IID nominal; randomized PIT; finite-grid auxiliary approximation,1.0,False
+philox4x32_10,variance_PIT_identity,128,0.10336097297186009,0.12089156864417167,Chi-square variance reference exact for IID normal estimates; CLT approximation here,1.0,False
+philox4x32_10,variance_PIT_quadratic,128,0.10220794951053636,0.12857167935782143,Chi-square variance reference exact for IID normal estimates; CLT approximation here,1.0,False
+philox4x32_10,variance_PIT_sin,128,0.062160718613192834,0.6821368557677295,Chi-square variance reference exact for IID normal estimates; CLT approximation here,1.0,False
+philox4x32_10,binomial_PIT_rare_099,2048,0.015299018246524021,0.7178895337669722,Binomial IID nominal; randomized PIT; finite-grid auxiliary approximation,1.0,False
+philox4x32_10,variance_PIT_pair_product,128,0.06023445015114892,0.718621556819954,Chi-square variance reference exact for IID normal estimates; CLT approximation here,1.0,False
+philox4x32_10,binomial_PIT_pair_rare_099,2048,0.022072555468840793,0.26726052758440433,Binomial IID nominal; randomized PIT; finite-grid auxiliary approximation,1.0,False
+threefry2x32_20,variance_PIT_identity,128,0.07784127733575996,0.3995659097508245,Chi-square variance reference exact for IID normal estimates; CLT approximation here,1.0,False
+threefry2x32_20,variance_PIT_quadratic,128,0.09239865470995356,0.21105374323405998,Chi-square variance reference exact for IID normal estimates; CLT approximation here,1.0,False
+threefry2x32_20,variance_PIT_sin,128,0.09353110994561598,0.19983833858743946,Chi-square variance reference exact for IID normal estimates; CLT approximation here,1.0,False
+threefry2x32_20,binomial_PIT_rare_099,2048,0.028832118493222092,0.06513193686728391,Binomial IID nominal; randomized PIT; finite-grid auxiliary approximation,1.0,False
+threefry2x32_20,variance_PIT_pair_product,128,0.09440643903175072,0.1914890926536107,Chi-square variance reference exact for IID normal estimates; CLT approximation here,1.0,False
+threefry2x32_20,binomial_PIT_pair_rare_099,2048,0.02544070593735137,0.13872048994136132,Binomial IID nominal; randomized PIT; finite-grid auxiliary approximation,1.0,False
+threefry4x64_20,variance_PIT_identity,128,0.05909277400745405,0.7399431514816724,Chi-square variance reference exact for IID normal estimates; CLT approximation here,1.0,False
+threefry4x64_20,variance_PIT_quadratic,128,0.06962474999377632,0.5409527775535777,Chi-square variance reference exact for IID normal estimates; CLT approximation here,1.0,False
+threefry4x64_20,variance_PIT_sin,128,0.0431062782318421,0.9630317809588043,Chi-square variance reference exact for IID normal estimates; CLT approximation here,1.0,False
+threefry4x64_20,binomial_PIT_rare_099,2048,0.014117858579338893,0.8034724483748676,Binomial IID nominal; randomized PIT; finite-grid auxiliary approximation,1.0,False
+threefry4x64_20,variance_PIT_pair_product,128,0.07099186513558153,0.5160228981065024,Chi-square variance reference exact for IID normal estimates; CLT approximation here,1.0,False
+threefry4x64_20,binomial_PIT_pair_rare_099,2048,0.012105413899379504,0.9213489328284582,Binomial IID nominal; randomized PIT; finite-grid auxiliary approximation,1.0,False
+xoshiro256ss,variance_PIT_identity,128,0.0817726673248087,0.34038086281132374,Chi-square variance reference exact for IID normal estimates; CLT approximation here,1.0,False
+xoshiro256ss,variance_PIT_quadratic,128,0.07140528135856422,0.5085777341561357,Chi-square variance reference exact for IID normal estimates; CLT approximation here,1.0,False
+xoshiro256ss,variance_PIT_sin,128,0.16081655598562816,0.002328748906059385,Chi-square variance reference exact for IID normal estimates; CLT approximation here,0.2165736482635228,False
+xoshiro256ss,binomial_PIT_rare_099,2048,0.02684507650313339,0.1026063808205776,Binomial IID nominal; randomized PIT; finite-grid auxiliary approximation,1.0,False
+xoshiro256ss,variance_PIT_pair_product,128,0.10082822134500563,0.13827889453530864,Chi-square variance reference exact for IID normal estimates; CLT approximation here,1.0,False
+xoshiro256ss,binomial_PIT_pair_rare_099,2048,0.010749918365173916,0.9699244366813898,Binomial IID nominal; randomized PIT; finite-grid auxiliary approximation,1.0,False
+numpy_PCG64,variance_PIT_identity,128,0.08188278208547972,0.3388106366846436,Chi-square variance reference exact for IID normal estimates; CLT approximation here,1.0,False
+numpy_PCG64,variance_PIT_quadratic,128,0.07368759747941867,0.4683584409364836,Chi-square variance reference exact for IID normal estimates; CLT approximation here,1.0,False
+numpy_PCG64,variance_PIT_sin,128,0.08209100539442948,0.3358546100708023,Chi-square variance reference exact for IID normal estimates; CLT approximation here,1.0,False
+numpy_PCG64,binomial_PIT_rare_099,2048,0.028760199121195096,0.06624972086935177,Binomial IID nominal; randomized PIT; finite-grid auxiliary approximation,1.0,False
+numpy_PCG64,variance_PIT_pair_product,128,0.09572966999832999,0.17938556017843546,Chi-square variance reference exact for IID normal estimates; CLT approximation here,1.0,False
+numpy_PCG64,binomial_PIT_pair_rare_099,2048,0.01375234029887401,0.828109250414151,Binomial IID nominal; randomized PIT; finite-grid auxiliary approximation,1.0,False
+numpy_PCG64DXSM,variance_PIT_identity,128,0.07345994031693323,0.47229902655108147,Chi-square variance reference exact for IID normal estimates; CLT approximation here,1.0,False
+numpy_PCG64DXSM,variance_PIT_quadratic,128,0.08851763679441604,0.25314723306818504,Chi-square variance reference exact for IID normal estimates; CLT approximation here,1.0,False
+numpy_PCG64DXSM,variance_PIT_sin,128,0.0412605845659728,0.9750744769833046,Chi-square variance reference exact for IID normal estimates; CLT approximation here,1.0,False
+numpy_PCG64DXSM,binomial_PIT_rare_099,2048,0.02544192784833965,0.13868508323123185,Binomial IID nominal; randomized PIT; finite-grid auxiliary approximation,1.0,False
+numpy_PCG64DXSM,variance_PIT_pair_product,128,0.06286475444012868,0.6687070452351734,Chi-square variance reference exact for IID normal estimates; CLT approximation here,1.0,False
+numpy_PCG64DXSM,binomial_PIT_pair_rare_099,2048,0.0156912456664699,0.688243304540352,Binomial IID nominal; randomized PIT; finite-grid auxiliary approximation,1.0,False
+numpy_MT19937,variance_PIT_identity,128,0.09776222588442735,0.16197294837364012,Chi-square variance reference exact for IID normal estimates; CLT approximation here,1.0,False
+numpy_MT19937,variance_PIT_quadratic,128,0.11274961562034069,0.07134325606458335,Chi-square variance reference exact for IID normal estimates; CLT approximation here,1.0,False
+numpy_MT19937,variance_PIT_sin,128,0.06976564962251164,0.5383627023589218,Chi-square variance reference exact for IID normal estimates; CLT approximation here,1.0,False
+numpy_MT19937,binomial_PIT_rare_099,2048,0.017102726947980762,0.5809270522361691,Binomial IID nominal; randomized PIT; finite-grid auxiliary approximation,1.0,False
+numpy_MT19937,variance_PIT_pair_product,128,0.08336578034062936,0.31813536549825017,Chi-square variance reference exact for IID normal estimates; CLT approximation here,1.0,False
+numpy_MT19937,binomial_PIT_pair_rare_099,2048,0.02808227972706867,0.07761330680203304,Binomial IID nominal; randomized PIT; finite-grid auxiliary approximation,1.0,False
+numpy_SFC64,variance_PIT_identity,128,0.04167358476699662,0.9726458758935341,Chi-square variance reference exact for IID normal estimates; CLT approximation here,1.0,False
+numpy_SFC64,variance_PIT_quadratic,128,0.054286691249824104,0.824959259882453,Chi-square variance reference exact for IID normal estimates; CLT approximation here,1.0,False
+numpy_SFC64,variance_PIT_sin,128,0.047641809667774315,0.9199380973124226,Chi-square variance reference exact for IID normal estimates; CLT approximation here,1.0,False
+numpy_SFC64,binomial_PIT_rare_099,2048,0.019342295263477277,0.42237936116565367,Binomial IID nominal; randomized PIT; finite-grid auxiliary approximation,1.0,False
+numpy_SFC64,variance_PIT_pair_product,128,0.046004616271900334,0.9377206490771397,Chi-square variance reference exact for IID normal estimates; CLT approximation here,1.0,False
+numpy_SFC64,binomial_PIT_pair_rare_099,2048,0.021683472511359658,0.2864779888635123,Binomial IID nominal; randomized PIT; finite-grid auxiliary approximation,1.0,False
+numpy_Philox4x64,variance_PIT_identity,128,0.06315247469399243,0.663211365876319,Chi-square variance reference exact for IID normal estimates; CLT approximation here,1.0,False
+numpy_Philox4x64,variance_PIT_quadratic,128,0.06328032384750093,0.6607684947092587,Chi-square variance reference exact for IID normal estimates; CLT approximation here,1.0,False
+numpy_Philox4x64,variance_PIT_sin,128,0.06037746927266874,0.7159315717608353,Chi-square variance reference exact for IID normal estimates; CLT approximation here,1.0,False
+numpy_Philox4x64,binomial_PIT_rare_099,2048,0.026307070194403592,0.11539444175357594,Binomial IID nominal; randomized PIT; finite-grid auxiliary approximation,1.0,False
+numpy_Philox4x64,variance_PIT_pair_product,128,0.0593782610434298,0.7346391733831145,Chi-square variance reference exact for IID normal estimates; CLT approximation here,1.0,False
+numpy_Philox4x64,binomial_PIT_pair_rare_099,2048,0.020580655544153448,0.34620008557422277,Binomial IID nominal; randomized PIT; finite-grid auxiliary approximation,1.0,False
+montmory,structural_disjoint_pairs_q8,128,0.05081545513388558,0.8787418166276548,Pearson chi-square asymptotic reference; disjoint observations,1.0,False
+montmory,structural_marginal_q16,128,0.05324875131020529,0.8418654153324269,Pearson chi-square asymptotic reference; disjoint observations,1.0,False
+montmory,structural_raw_low_nibble_q16,128,0.06559472005567668,0.6165788837387838,Pearson chi-square asymptotic reference; disjoint observations,1.0,False
+numpy_MT19937,structural_disjoint_pairs_q8,128,0.04937836489369485,0.8984436332459005,Pearson chi-square asymptotic reference; disjoint observations,1.0,False
+numpy_MT19937,structural_marginal_q16,128,0.09213539566426221,0.21372871298126817,Pearson chi-square asymptotic reference; disjoint observations,1.0,False
+numpy_MT19937,structural_raw_low_nibble_q16,128,0.04615507080646569,0.936190230794049,Pearson chi-square asymptotic reference; disjoint observations,1.0,False
+numpy_PCG64,structural_disjoint_pairs_q8,128,0.09811158674388332,0.15911994078408934,Pearson chi-square asymptotic reference; disjoint observations,1.0,False
+numpy_PCG64,structural_marginal_q16,128,0.1150576570596355,0.062228393456322535,Pearson chi-square asymptotic reference; disjoint observations,1.0,False
+numpy_PCG64,structural_raw_low_nibble_q16,128,0.061294955975479626,0.6985950456406064,Pearson chi-square asymptotic reference; disjoint observations,1.0,False
+numpy_PCG64DXSM,structural_disjoint_pairs_q8,128,0.03416197797981402,0.997197186760643,Pearson chi-square asymptotic reference; disjoint observations,1.0,False
+numpy_PCG64DXSM,structural_marginal_q16,128,0.0630845710297859,0.6645086424770407,Pearson chi-square asymptotic reference; disjoint observations,1.0,False
+numpy_PCG64DXSM,structural_raw_low_nibble_q16,128,0.0779859377546808,0.3972823977169052,Pearson chi-square asymptotic reference; disjoint observations,1.0,False
+numpy_Philox4x64,structural_disjoint_pairs_q8,128,0.054831022050133904,0.815847452800173,Pearson chi-square asymptotic reference; disjoint observations,1.0,False
+numpy_Philox4x64,structural_marginal_q16,128,0.05130064084066588,0.8717253441278584,Pearson chi-square asymptotic reference; disjoint observations,1.0,False
+numpy_Philox4x64,structural_raw_low_nibble_q16,128,0.0610032858766526,0.7041200102188739,Pearson chi-square asymptotic reference; disjoint observations,1.0,False
+numpy_SFC64,structural_disjoint_pairs_q8,128,0.07435824700757754,0.45684738811563075,Pearson chi-square asymptotic reference; disjoint observations,1.0,False
+numpy_SFC64,structural_marginal_q16,128,0.03484261297237019,0.9963269777682545,Pearson chi-square asymptotic reference; disjoint observations,1.0,False
+numpy_SFC64,structural_raw_low_nibble_q16,128,0.08134970326589286,0.3464571779452847,Pearson chi-square asymptotic reference; disjoint observations,1.0,False
+philox4x32_10,structural_disjoint_pairs_q8,128,0.07460712245200929,0.45261343925482195,Pearson chi-square asymptotic reference; disjoint observations,1.0,False
+philox4x32_10,structural_marginal_q16,128,0.07384712591112175,0.4656070110171149,Pearson chi-square asymptotic reference; disjoint observations,1.0,False
+philox4x32_10,structural_raw_low_nibble_q16,128,0.050876785413039194,0.8778647261987458,Pearson chi-square asymptotic reference; disjoint observations,1.0,False
+threefry2x32_20,structural_disjoint_pairs_q8,128,0.07195579922829698,0.4987362257392131,Pearson chi-square asymptotic reference; disjoint observations,1.0,False
+threefry2x32_20,structural_marginal_q16,128,0.10407070747143754,0.11635372357018685,Pearson chi-square asymptotic reference; disjoint observations,1.0,False
+threefry2x32_20,structural_raw_low_nibble_q16,128,0.0969602708602122,0.1686757695022728,Pearson chi-square asymptotic reference; disjoint observations,1.0,False
+threefry4x64_20,structural_disjoint_pairs_q8,128,0.07642914482531782,0.4222658029899398,Pearson chi-square asymptotic reference; disjoint observations,1.0,False
+threefry4x64_20,structural_marginal_q16,128,0.07142909504505335,0.5081502809158859,Pearson chi-square asymptotic reference; disjoint observations,1.0,False
+threefry4x64_20,structural_raw_low_nibble_q16,128,0.09292299104551069,0.20580239044832968,Pearson chi-square asymptotic reference; disjoint observations,1.0,False
+xoshiro256ss,structural_disjoint_pairs_q8,128,0.06654804184331839,0.598474110710719,Pearson chi-square asymptotic reference; disjoint observations,1.0,False
+xoshiro256ss,structural_marginal_q16,128,0.042383617905786805,0.9681151444073135,Pearson chi-square asymptotic reference; disjoint observations,1.0,False
+xoshiro256ss,structural_raw_low_nibble_q16,128,0.1406080278724135,0.01137931536668346,Pearson chi-square asymptotic reference; disjoint observations,1.0,False
+montmory,lane_joint_q8,64,0.10743365270368654,0.42151748527875443,Pearson chi-square asymptotic reference; disjoint adjacent lanes,1.0,False
+philox4x32_10,lane_joint_q8,64,0.10511589253076725,0.4487826902456802,Pearson chi-square asymptotic reference; disjoint adjacent lanes,1.0,False
+threefry2x32_20,lane_joint_q8,64,0.11999455341727,0.2915583049342158,Pearson chi-square asymptotic reference; disjoint adjacent lanes,1.0,False

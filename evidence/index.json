@@ -1,0 +1,138 @@
+{
+  "schema": 1,
+  "as_of": "2026-10-21",
+  "records": [
+    {
+      "id": "exact-mathematics",
+      "level": "exact-certificate",
+      "claim": "Counter-state period, non-injective mixer, exact first mantissa-bin count and logical lane constraints.",
+      "files": [
+        "studies/audit-2026-10-21/evidence/exact.json",
+        "src/reference/reference.py",
+        "src/reference/mmc_core.c"
+      ]
+    },
+    {
+      "id": "historical-metal-testu01",
+      "level": "historical-log",
+      "claim": "Complete historical Metal logs announce SmallCrush, Crush and BigCrush passes; not a new independent rerun.",
+      "files": [
+        "studies/audit-2026-10-21/snapshot/montmory_gpu_test/montmory_gpu_test/logs/smallcrush_gpu.log",
+        "studies/audit-2026-10-21/snapshot/montmory_gpu_test/montmory_gpu_test/logs/crush_gpu.log",
+        "studies/audit-2026-10-21/snapshot/montmory_gpu_test/montmory_gpu_test/logs/bigcrush_gpu.log"
+      ]
+    },
+    {
+      "id": "historical-cuda-testu01",
+      "level": "historical-log",
+      "claim": "Historical CUDA logs, with lineage limitations; corrected CUDA source not natively rerun.",
+      "files": [
+        "studies/audit-2026-10-21/snapshot/cuda-ovh/logs/smallcrush_gpu.log",
+        "studies/audit-2026-10-21/snapshot/cuda-ovh/logs/crush_gpu.log",
+        "studies/audit-2026-10-21/snapshot/cuda-ovh/logs/bigcrush_gpu.log",
+        "studies/audit-2026-10-21/evidence/cuda-bigcrush-lineage.json"
+      ]
+    },
+    {
+      "id": "recent-m3-v3-testu01",
+      "level": "user-terminal",
+      "claim": "M3 v3 reports all batteries passed; latest complete BigCrush native archive not received.",
+      "files": [
+        "studies/audit-2026-10-21/evidence/metal-m3-v3-native-smallcrush-user-extract.log",
+        "studies/audit-2026-10-21/evidence/metal-m3-v3-native-crush-user-summary.log",
+        "evidence/user-reported/m3-v3-bigcrush-summary.txt",
+        "evidence/user-reported/m3-v3-bigcrush.json"
+      ]
+    },
+    {
+      "id": "smallcrush-cpu-replays",
+      "level": "cpu-execution",
+      "claim": "Seven archived CPU SmallCrush replays with recorded seeds/adapters.",
+      "files": [
+        "studies/audit-2026-10-21/evidence/smallcrush-runs.json"
+      ]
+    },
+    {
+      "id": "cpu-random123",
+      "level": "raw-audited",
+      "claim": "Ranking depends on comparator, compiler and access mode.",
+      "files": [
+        "studies/audit-2026-10-21/evidence/benchmark-summary.json",
+        "studies/audit-2026-10-21/evidence/benchmark-native.csv",
+        "studies/audit-2026-10-21/evidence/benchmark-portable.csv"
+      ]
+    },
+    {
+      "id": "tacm-corrected",
+      "level": "raw-audited",
+      "claim": "No advantage established in 54 planned MSE comparisons; pilot gate failed, extension gate passed.",
+      "files": [
+        "studies/tacm-comparison-2026-10-21/protocol.json",
+        "studies/tacm-comparison-2026-10-21/calibration_addendum.json",
+        "studies/tacm-comparison-2026-10-21/results/summary.json",
+        "studies/tacm-comparison-2026-10-21/results/independent_replay.json"
+      ]
+    },
+    {
+      "id": "lanes-workers",
+      "level": "cpu-execution",
+      "claim": "Fixed logical geometry, different physical CPU worker counts, stream checked.",
+      "files": [
+        "studies/lanes-study-2026-10-21/protocol.json",
+        "studies/lanes-study-2026-10-21/README.md"
+      ]
+    },
+    {
+      "id": "m3-optimization-first",
+      "level": "raw-audited",
+      "claim": "First native M3 optimization archive audited; first-use contamination identified.",
+      "files": [
+        "studies/metal-opt-2026-10-21/results/mac-analysis-20261021T162407Z-22542/analysis.json",
+        "studies/metal-opt-2026-10-21/received/mac-20261021T162407Z-22542/results/20261021T162407Z-22542/measurements.csv"
+      ]
+    },
+    {
+      "id": "m3-confirmation",
+      "level": "user-terminal",
+      "claim": "Separate M3 confirmation shows Threefry/Philox faster; raw archive pending.",
+      "files": [
+        "studies/metal-opt-2026-10-21/results/mac-confirm-reported-20261021T163954Z-22644.json"
+      ]
+    },
+    {
+      "id": "vector-native",
+      "level": "user-terminal",
+      "claim": "M3 vector and worker-pool native summaries; raw native archives pending.",
+      "files": [
+        "studies/vector-opt-2026-10-21/README.md"
+      ]
+    },
+    {
+      "id": "jax-cpu-port",
+      "level": "cpu-execution",
+      "claim": "Portable integer JAX implementation checked on CPU.",
+      "files": [
+        "studies/jax-port-2026-10-21/README.md",
+        "studies/jax-port-2026-10-21/montmory-jax-check/reference/vps-report.json"
+      ]
+    },
+    {
+      "id": "tpu-initial",
+      "level": "raw-audited",
+      "claim": "First native TPU run, 770 observations, without optimized Pallas Threefry comparator.",
+      "files": [
+        "studies/jax-tpu-2026-10-21/results/audit-20261021T180635Z-colab-tpu/audit.json"
+      ]
+    },
+    {
+      "id": "tpu-optimization",
+      "level": "raw-audited",
+      "claim": "3708 observations audited; gains against previous Montmory, optimized Pallas Threefry still faster on large volumes.",
+      "files": [
+        "studies/tpu-opt-2026-10-21/20261021T185102Z-tpu-opt/campaign/measurements.csv",
+        "studies/tpu-opt-2026-10-21/20261021T185102Z-tpu-opt/campaign/frozen-selection.json",
+        "studies/tpu-opt-2026-10-21/results/audit-20261021T185102Z-tpu-opt/audit.json"
+      ]
+    }
+  ]
+}

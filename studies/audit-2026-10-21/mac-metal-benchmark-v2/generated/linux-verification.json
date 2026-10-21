@@ -1,0 +1,16 @@
+{
+  "status": "pass",
+  "scope": "Generated Metal arithmetic emulated on x86 C++ with UBSan; not a native Metal run",
+  "generated_source_sha256": "9b762b63868bf9674e184d79180b7acea14897e1d92cc7d790746fe36c182024",
+  "words_compared": 60883200,
+  "component_checks": {
+    "feistel_f": 1140736,
+    "product_mod_64": 1048657,
+    "xor_right": 3145728,
+    "mixer": 1048585,
+    "permutation": 1048576
+  },
+  "official_known_answer_vectors": 6,
+  "guards": "all preserved",
+  "native_Mac_status": "not run on this VPS"
+}

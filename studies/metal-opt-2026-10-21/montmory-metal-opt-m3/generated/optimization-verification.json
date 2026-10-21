@@ -1,0 +1,11 @@
+{
+  "status": "pass",
+  "cases": 4256,
+  "words_compared": 581663488,
+  "component_checks": 155296,
+  "guards": "preserved",
+  "source_sha256": "0e827a1a4da76281cb8de714833c5007315cec35be9a7bd6ccded2a2cbdcacde",
+  "sanitizer": "UBSan, abort on first error",
+  "scope": "C++ transcription of all seven new kernels versus original scalar C; fallback/tiled paths, short lanes, idle threads, carry/wrap boundaries",
+  "native_Mac_status": "not run on this VPS; native full-output checks required by run.sh"
+}

@@ -1,0 +1,34 @@
+Confirmation des mesures Metal — kernels Montmory inchanges
+
+Executer sur le Mac : bash run.sh
+Attendre la fin de BigCrush et des autres benchmarks avant cette campagne.
+Le script utilise environ 600 Mio pour les references CPU et les cinq buffers
+principaux, auxquels s'ajoutent les ressources du compilateur et de Metal.
+
+Le CSV precedent montrait un fort effet de premiere utilisation des pipelines
+specialises. La cause materielle precise n'est pas isolee. Cette confirmation
+precompile tous les pipelines avant la campagne, conserve les reglages issus
+de la recherche initiale, utilise sept nouvelles seeds et mesure trois blocs
+de cinq repetitions par configuration. Seize dispatches d'echauffement precedent
+chaque bloc. Tous leurs temps sont conserves dans measurements.csv, sans filtre
+selon la vitesse. Chaque sortie chronometree reste dans un buffer distinct
+jusqu'a sa comparaison complete avec la reference CPU.
+
+Les medianes sont calculees au sein de chaque seed, puis entre les sept seeds.
+Les observations d'une meme seed ne sont pas presentees comme des seeds
+independantes. Aucune selection automatique de nouveau kernel n'est faite.
+
+generated/all.metal, les references et les helpers de dispatch/conformite sont
+identiques au kit precedent. Ce kit modifie le protocole de mesure, pas le PRNG.
+Il ne relance aucune batterie TestU01 et n'effectue aucune transmission.
+
+Le script archive les mesures et les erreurs. L'archive complete permet de
+recalculer les tableaux, les temps hote et les courbes d'echauffement.
+Les resultats mesureront generation et ecriture de nombres de 64 bits, sans
+inclure dans les chronometrages l'echauffement, la compilation et les controles.
+Le cout de ces operations n'est donc pas celui d'une application VaR complete.
+
+Validation avant livraison : sources de kernels et references comparees au kit
+precedent ; configuration figee et statistiques C++ controlees sous Linux ;
+syntaxe bash et archive verifiees. Compilation Objective-C++/Metal et execution
+GPU natives a effectuer sur le Mac.

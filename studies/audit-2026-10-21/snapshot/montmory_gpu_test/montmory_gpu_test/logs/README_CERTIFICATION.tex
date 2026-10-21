@@ -1,0 +1,104 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{setspace}
+\usepackage{titlesec}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=black,
+  citecolor=black
+}
+
+\titleformat{\section}{\large\bfseries}{\thesection}{0.6em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{0.6em}{}
+
+\title{\textbf{PRNG\_MONTMORY\_CTACM}\\\large Certification and Validation Report}
+\author{Pascal Montmory\\EnInca Consulting --- France}
+\date{November 2025}
+
+\begin{document}
+\maketitle
+\vspace{-0.5em}
+\hrule
+\vspace{1.0em}
+
+\section*{Objective}
+This document summarizes the formal validation of the proprietary random number generator \textbf{PRNG\_MONTMORY\_CTACM}, developed by EnInca Consulting, using the \textit{TestU01} framework (version 1.2.3). The objective is to certify the statistical quality through the \textit{SmallCrush}, \textit{Crush}, and \textit{BigCrush} test batteries.
+
+\section*{Confidentiality}
+The internal algorithmic structure and transformations of \textbf{PRNG\_MONTMORY\_CTACM} are proprietary and available only under non-disclosure agreement (NDA). This report discloses the validation environment and outcomes without revealing implementation details.
+
+\section{Test Environment}
+\begin{longtable}{@{}ll@{}}
+\toprule
+\textbf{Component} & \textbf{Specification} \\
+\midrule
+Platform & Apple Silicon (macOS 15) \\
+Implementation & Metal GPU (parallel 64-bit engine) with CPU wrapper \\
+Compiler & LLVM Clang++ 21.1.5 (Homebrew) \\
+Build Flags & \texttt{-O3 -std=c++17 -fobjc-arc -fobjc-abi-version=2} \\
+Libraries & TestU01 v1.2.3; libprobdist; libmylib; GMP \\
+Output Precision & 53-bit mantissa (double, uniform on $[0,1)$) \\
+GPU Execution & Deterministic streams per lane, reproducible \\
+Validation Seed & 42 \\
+GPU Threads & 8192 \\
+Draws per Thread & 16384 \\
+Total CPU Time (BigCrush) & $\approx$ 2 h 16 min \\
+\bottomrule
+\end{longtable}
+
+\section{Validation Results (TestU01 v1.2.3)}
+\subsection*{Summary}
+\begin{longtable}{@{}lll@{}}
+\toprule
+\textbf{Battery} & \textbf{Status} & \textbf{Notes} \\
+\midrule
+SmallCrush & Passed (15/15) & No anomalies reported \\
+Crush & Passed (144/144) & Stable distribution, no deviations \\
+BigCrush & Passed (160/160) & Full run completed; 0 failures \\
+\bottomrule
+\end{longtable}
+
+\subsection*{BigCrush Extract}
+\noindent\textit{TestU01 1.2.3} --- Generator: \texttt{Montmory-GPU-3R+DXSM}\\
+Number of statistics: 160 \quad Total CPU time: 02:16:17.77\\
+\textbf{All tests were passed}. No p-values below $10^{-6}$ were observed.
+
+\section{Implementation Notes}
+\begin{itemize}
+  \item The engine is implemented in C/C++17 with Objective-C++/Metal extensions for GPU execution.
+  \item Streams are deterministic and reproducible across CPU and GPU (Metal) back-ends.
+  \item A CUDA/OpenCL implementation is being prepared for cross-platform HPC deployments.
+  \item The internal algorithmic design (state transition and mixing) remains confidential and can be shared under NDA for scientific evaluation.
+\end{itemize}
+
+\section{Delivered Artefacts}
+The following files accompany this report:
+\begin{itemize}
+  \item \texttt{README\_CERTIFICATION.md} (human-readable summary)
+  \item \texttt{logs/smallcrush\_gpu.log}
+  \item \texttt{logs/crush\_gpu.log}
+  \item \texttt{logs/bigcrush\_gpu.log}
+\end{itemize}
+
+\section{Certification Statement}
+All results were produced directly with \textit{TestU01} v1.2.3 on the specified environment, without modification to the test suite. The generator \textbf{PRNG\_MONTMORY\_CTACM} successfully passed \textit{SmallCrush}, \textit{Crush}, and \textit{BigCrush} with no statistical deviations detected.
+
+\section{Contact}
+For technical evaluation, collaboration or NDA requests:
+\begin{itemize}
+  \item Pascal Montmory, EnInca Consulting (France)
+  \item Email: \href{mailto:pascal.montmory@eninca.com}{pascal.montmory@eninca.com}
+\end{itemize}
+
+\vfill
+\noindent\footnotesize{\textcopyright~2025 EnInca Consulting --- All rights reserved. Distribution and replication are subject to NDA and written authorization.}
+
+\end{document}

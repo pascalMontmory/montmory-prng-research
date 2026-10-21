@@ -1,0 +1,161 @@
+{
+  "status": "pass",
+  "requested_backend": "cpu",
+  "jax": "0.10.2",
+  "jaxlib": "0.10.2",
+  "platform": "Linux-6.1.0-50-cloud-amd64-x86_64-with-glibc2.36",
+  "scope": "single-device generation of two uint32 arrays, 8 stored bytes per word",
+  "timing": "host wall clock including dispatch, allocation and block_until_ready; excluding setup, compilation, transfers and checking",
+  "seed_setup": "all seed/key derivation is outside timed calls, including Montmory splitmix",
+  "logical_lanes": 2048,
+  "draws_per_lane": 4096,
+  "base": 4294963199,
+  "quick": false,
+  "samples": 490,
+  "checked_timed_words": 272957440,
+  "summary": [
+    {
+      "engine": "montmory_jax_portable",
+      "words": 65536,
+      "median_ns_per_word": 4.84625244140625,
+      "stored_GB_per_second": 1.650760065994131,
+      "paired_ratio_vs_montmory_jax_portable": 1.0,
+      "faster_seeds": 0,
+      "seed_count": 5
+    },
+    {
+      "engine": "montmory_jax_mulhi",
+      "words": 65536,
+      "median_ns_per_word": 4.658203125,
+      "stored_GB_per_second": 1.7174004192872117,
+      "paired_ratio_vs_montmory_jax_portable": 1.0246017459303562,
+      "faster_seeds": 3,
+      "seed_count": 5
+    },
+    {
+      "engine": "threefry2x32",
+      "words": 65536,
+      "median_ns_per_word": 18.961318969726562,
+      "stored_GB_per_second": 0.4219115776055829,
+      "paired_ratio_vs_montmory_jax_portable": 0.2524232536700285,
+      "faster_seeds": 0,
+      "seed_count": 5
+    },
+    {
+      "engine": "threefry4x32",
+      "words": 65536,
+      "median_ns_per_word": 4.638458251953125,
+      "stored_GB_per_second": 1.7247110064279276,
+      "paired_ratio_vs_montmory_jax_portable": 1.033117235860687,
+      "faster_seeds": 3,
+      "seed_count": 5
+    },
+    {
+      "engine": "philox4x32",
+      "words": 65536,
+      "median_ns_per_word": 4.18865966796875,
+      "stored_GB_per_second": 1.9099188366094977,
+      "paired_ratio_vs_montmory_jax_portable": 1.178027249670684,
+      "faster_seeds": 5,
+      "seed_count": 5
+    },
+    {
+      "engine": "philox2x32",
+      "words": 65536,
+      "median_ns_per_word": 4.0561065673828125,
+      "stored_GB_per_second": 1.9723347666286712,
+      "paired_ratio_vs_montmory_jax_portable": 1.2547876169906407,
+      "faster_seeds": 5,
+      "seed_count": 5
+    },
+    {
+      "engine": "write_baseline_NOT_PRNG",
+      "words": 65536,
+      "median_ns_per_word": 1.161224365234375,
+      "stored_GB_per_second": 6.889280176605083,
+      "paired_ratio_vs_montmory_jax_portable": 4.189418422128715,
+      "faster_seeds": 5,
+      "seed_count": 5
+    },
+    {
+      "engine": "montmory_jax_portable",
+      "words": 1048576,
+      "median_ns_per_word": 2.897711753845215,
+      "stored_GB_per_second": 2.7607990992838176,
+      "paired_ratio_vs_montmory_jax_portable": 1.0,
+      "faster_seeds": 0,
+      "seed_count": 5
+    },
+    {
+      "engine": "montmory_jax_mulhi",
+      "words": 1048576,
+      "median_ns_per_word": 2.656858444213867,
+      "stored_GB_per_second": 3.0110749849780216,
+      "paired_ratio_vs_montmory_jax_portable": 1.100139347064637,
+      "faster_seeds": 3,
+      "seed_count": 5
+    },
+    {
+      "engine": "threefry2x32",
+      "words": 1048576,
+      "median_ns_per_word": 15.635394096374512,
+      "stored_GB_per_second": 0.5116596326698932,
+      "paired_ratio_vs_montmory_jax_portable": 0.18110598575981188,
+      "faster_seeds": 0,
+      "seed_count": 5
+    },
+    {
+      "engine": "threefry4x32",
+      "words": 1048576,
+      "median_ns_per_word": 2.5540771484375,
+      "stored_GB_per_second": 3.132246809730918,
+      "paired_ratio_vs_montmory_jax_portable": 1.0554412997140095,
+      "faster_seeds": 4,
+      "seed_count": 5
+    },
+    {
+      "engine": "philox4x32",
+      "words": 1048576,
+      "median_ns_per_word": 2.0303611755371094,
+      "stored_GB_per_second": 3.9401856656777774,
+      "paired_ratio_vs_montmory_jax_portable": 1.2719573806897926,
+      "faster_seeds": 4,
+      "seed_count": 5
+    },
+    {
+      "engine": "philox2x32",
+      "words": 1048576,
+      "median_ns_per_word": 1.2690973281860352,
+      "stored_GB_per_second": 6.303693044121902,
+      "paired_ratio_vs_montmory_jax_portable": 2.034936821103968,
+      "faster_seeds": 5,
+      "seed_count": 5
+    },
+    {
+      "engine": "write_baseline_NOT_PRNG",
+      "words": 1048576,
+      "median_ns_per_word": 0.7769346237182617,
+      "stored_GB_per_second": 10.296876668610182,
+      "paired_ratio_vs_montmory_jax_portable": 3.302240095872416,
+      "faster_seeds": 5,
+      "seed_count": 5
+    }
+  ],
+  "backend": "cpu",
+  "devices": [
+    "cpu:0"
+  ],
+  "device_kind": "cpu",
+  "seeds": [
+    0,
+    1,
+    42,
+    18446744073709551615,
+    9223372036854775809
+  ],
+  "sizes": [
+    65536,
+    1048576
+  ],
+  "repetitions": 7
+}

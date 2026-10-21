@@ -1,0 +1,4 @@
+{
+  "status": "pass",
+  "checked": "All code cells parse; embedded archive extracted and every manifest hash verified. TPU execution not performed."
+}

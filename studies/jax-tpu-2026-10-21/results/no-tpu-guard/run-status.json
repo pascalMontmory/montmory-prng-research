@@ -1,0 +1,8 @@
+{
+  "status": "fail",
+  "backend_requested": "tpu",
+  "completed": [
+    "check_manifest.py"
+  ],
+  "error": "RuntimeError('verify_native.py exited with status 1')"
+}

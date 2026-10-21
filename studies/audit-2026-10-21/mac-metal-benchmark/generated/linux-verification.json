@@ -1,0 +1,9 @@
+{
+  "status": "pass",
+  "scope": "Generated Metal arithmetic emulated on x86 C++ with UBSan; not a native Metal run",
+  "words_compared": 17047296,
+  "official_known_answer_vectors": 6,
+  "guards": "all preserved",
+  "native_Mac_status": "not run on this VPS",
+  "generated_source_sha256": "c5083d99e8b18f1c595b27395e6c1889c4bae814e2fe1b168e0d4034c4c3a1d1"
+}

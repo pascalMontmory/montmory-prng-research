@@ -1,0 +1,12 @@
+{
+  "status": "pass",
+  "backend_requested": "cpu",
+  "completed": [
+    "check_manifest.py",
+    "verify_cpu.py",
+    "check_target.py",
+    "verify_native.py",
+    "verify_sharding.py",
+    "benchmark.py"
+  ]
+}

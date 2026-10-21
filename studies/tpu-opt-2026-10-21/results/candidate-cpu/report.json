@@ -1,0 +1,30 @@
+{
+  "status": "pass",
+  "backend": "cpu",
+  "interpreted_pallas": true,
+  "words_compared": 1684047,
+  "candidates": [
+    "jax_original",
+    "jax_mulhi",
+    "jax_carry",
+    "jax_carry_mulhi",
+    "pallas_original_8",
+    "pallas_carry_8",
+    "pallas_original_16",
+    "pallas_carry_16",
+    "pallas_original_32",
+    "pallas_carry_32",
+    "pallas_original_64",
+    "pallas_carry_64",
+    "pallas_original_128",
+    "pallas_carry_128",
+    "pallas_original_256",
+    "pallas_carry_256",
+    "threefry_pallas_16",
+    "threefry_pallas_32",
+    "threefry_pallas_64",
+    "threefry_pallas_128"
+  ],
+  "component_values": 1048592,
+  "compile_rejections": []
+}

@@ -1,0 +1,51 @@
+{
+  "stage": "TPU-targeted StableHLO/Mosaic export only",
+  "jax": "0.10.2",
+  "native_tpu_compilation": false,
+  "native_tpu_execution": false,
+  "cases": [
+    {
+      "name": "jax_prepared_portable",
+      "required": true,
+      "status": "export_pass",
+      "sha256": "f46ba9d4623024cb1acf87c13ab66125d97c20045c07bd68d18d45373d6d967b",
+      "characters": 74895
+    },
+    {
+      "name": "jax_prepared_mulhi",
+      "required": true,
+      "status": "export_pass",
+      "sha256": "3ca362aaba6b6dfa98454c346a23b7cec62fd78a6e512e5e4370b29593ea491c",
+      "characters": 58322
+    },
+    {
+      "name": "pallas_portable_8",
+      "required": true,
+      "status": "export_pass",
+      "sha256": "3686422f4bf36fc222cd542d2db73d357db79feee3ab78bf93ced237a89bd35f",
+      "characters": 21167
+    },
+    {
+      "name": "pallas_portable_16",
+      "required": true,
+      "status": "export_pass",
+      "sha256": "7bf7970a50fb3b3db50bf76ff97313c9d52873cff14135b4d0782cf00382bf68",
+      "characters": 21171
+    },
+    {
+      "name": "pallas_portable_32",
+      "required": true,
+      "status": "export_pass",
+      "sha256": "aad8cb8b6faadd1a8bd6cbbc3b4ae2587600141f59e1ec8a44eb5fc9fb7c4a0b",
+      "characters": 21171
+    },
+    {
+      "name": "pallas_mulhi_unsupported_probe",
+      "required": false,
+      "status": "export_failed",
+      "error_type": "NotImplementedError",
+      "error": "Unimplemented primitive in Pallas TPU lowering for tc: mulhi. Please file an issue at https://github.com/jax-ml/jax/issues/new/choose."
+    }
+  ],
+  "required_exports_passed": true
+}

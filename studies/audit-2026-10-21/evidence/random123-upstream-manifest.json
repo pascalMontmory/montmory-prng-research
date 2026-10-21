@@ -1,0 +1,179 @@
+{
+  "commit": "9545ff6413f258be2f04c1d319d99aaef7521150",
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha": "c6094acaf20c26df516f01549101dabc7fde5c93",
+      "size": 1520,
+      "sha256": "5fd0885ab205878bd90c19144677286252eb9b988c1545a3a910edfe1e27b6df"
+    },
+    {
+      "path": "include/Random123/MicroURNG.hpp",
+      "sha": "9ea77325514c07ab3e4393467dba018e42c4f412",
+      "size": 5332,
+      "sha256": "aa01d3e0f1fe545c413ab7296fcbcddf8e8f29451d3ae155de2b603ac6861caf"
+    },
+    {
+      "path": "include/Random123/ReinterpretCtr.hpp",
+      "sha": "164a38b0a56bc09232d9a7caa8601c29ebc2b0a9",
+      "size": 3840,
+      "sha256": "0ccee06a24b217e10a956acc98bb47bf479c9c9901ca0698575c08255f1abdd3"
+    },
+    {
+      "path": "include/Random123/aes.h",
+      "sha": "3095fac37de5d051b602fb53eb887ebf1ac59863",
+      "size": 13809,
+      "sha256": "09e062d7f07ae340d31ece7ce919cd3389acd39c8ccd57fe561e21ab25022042"
+    },
+    {
+      "path": "include/Random123/array.h",
+      "sha": "8076f239cbd989a1cb95b449693f918e784ad059",
+      "size": 17943,
+      "sha256": "1bd2ca75d0ab716e295dc87d76ec97d2dfd432307284ecde1467b6daabda8ade"
+    },
+    {
+      "path": "include/Random123/ars.h",
+      "sha": "a027b6fe043e55da528569cf4b22aa10296fd6a8",
+      "size": 7067,
+      "sha256": "2dd0ffd3033ae987717f49b64d9020f5e82050a38dffdff29b96bd16223f92ba"
+    },
+    {
+      "path": "include/Random123/boxmuller.hpp",
+      "sha": "9c91cf879109133a80844c7c69f26d8e448578fa",
+      "size": 5135,
+      "sha256": "e9e3cad880b2b92b0469c2a8aa960a5ccbdfd8adf698ab4e5479af9a701800ce"
+    },
+    {
+      "path": "include/Random123/conventional/Engine.hpp",
+      "sha": "bcecd29b755c071da3e71622b930ee8c5b6ddf8a",
+      "size": 9786,
+      "sha256": "5c16e94cf040914b73296a4fb7cf9564bff82a74efcfa4b4244a558c18d50655"
+    },
+    {
+      "path": "include/Random123/conventional/gsl_cbrng.h",
+      "sha": "44457d002b0d40ec5319236f67bcd3ec2a3ce629",
+      "size": 6994,
+      "sha256": "ceab40beb0bd95a825d5347359e54b8e70e0e83da5df0542b1ea4890f3c9948c"
+    },
+    {
+      "path": "include/Random123/features/clangfeatures.h",
+      "sha": "1e3c8cfdb9ccaf5e5c0491af373922e9855f1620",
+      "size": 3351,
+      "sha256": "33487033f2e9fca2f9da565dca17f80e7e930df3b2244353be1b20cb15b8ccd0"
+    },
+    {
+      "path": "include/Random123/features/compilerfeatures.h",
+      "sha": "92b4586165beffe55c11a4ab08b1e6f16dc30c53",
+      "size": 11662,
+      "sha256": "9f229513e2e7d07be226a9eb8787dc1fa3bfa1e890645390c689c5c61cba1957"
+    },
+    {
+      "path": "include/Random123/features/fujitsufeatures.h",
+      "sha": "6fff6e57053d2432bae1e0a95869ffcb029e941b",
+      "size": 1749,
+      "sha256": "bebf6ee45ba22998cb5d0c91ec12ebef5acf0e316815b58f6b90f9660c9bb3ee"
+    },
+    {
+      "path": "include/Random123/features/gccfeatures.h",
+      "sha": "51c46aa5139ffdb35302de08547327d02e0b8252",
+      "size": 8976,
+      "sha256": "9807d7dc6a9d0b888199e36a197144e0e5ece71d06705e374f572d83b5e144f8"
+    },
+    {
+      "path": "include/Random123/features/iccfeatures.h",
+      "sha": "7e72dec1d31027eac66e00fe92b4cd926b235d23",
+      "size": 6071,
+      "sha256": "b325e2750e70769156aa73736699cd4c89003826f49418d9eb64de8e637345e9"
+    },
+    {
+      "path": "include/Random123/features/metalfeatures.h",
+      "sha": "bafe51a6840cb3ae5ca7fc1145cf5442db0657e5",
+      "size": 3211,
+      "sha256": "8492f4e69d9849b78b79c75ff1010c430dc09fd8a9746fe105d9221dca6d22eb"
+    },
+    {
+      "path": "include/Random123/features/msvcfeatures.h",
+      "sha": "bf5aa156961089743b6572a348aa6f4b62e6198b",
+      "size": 5106,
+      "sha256": "0948061df7037978f7d015849a9f69c3a4245b2d0009e6f3c6311670314a4479"
+    },
+    {
+      "path": "include/Random123/features/nvccfeatures.h",
+      "sha": "591839d5ecee78d8b49fd815d0da700f50899cb8",
+      "size": 4479,
+      "sha256": "8a468a8c2896759be46bff8e06026e15dbe91cc7d49996560f4e13aeb8f1186b"
+    },
+    {
+      "path": "include/Random123/features/open64features.h",
+      "sha": "8da9f5f51efab021c644b632b4499f12fa0220d9",
+      "size": 2007,
+      "sha256": "d5a60792c695ab9ee15ea2789248e93cc41c22d3a3d44a1d87265676096989bd"
+    },
+    {
+      "path": "include/Random123/features/openclfeatures.h",
+      "sha": "af03d3092318c6c27f1a65ce8104c1609b1e66e1",
+      "size": 2794,
+      "sha256": "8aa92aac6aea06c698474f908be6cde34aaa82bd60ba4181d96cbe7bcba6a1d7"
+    },
+    {
+      "path": "include/Random123/features/pgccfeatures.h",
+      "sha": "85f8520abb1873acbadff61b5d84d78db33e7768",
+      "size": 6026,
+      "sha256": "881f325d4168e0e204c8c6a7af8d3bcd5ba8db541c6cc3658e51f8a7565ed536"
+    },
+    {
+      "path": "include/Random123/features/sse.h",
+      "sha": "0efcf49698caaa0842ddd29ff9ea0b92d763aa4a",
+      "size": 10047,
+      "sha256": "9bde154c72eacc3ad881b25b7b66091f592808ece718aa7c8c9d72c895dce799"
+    },
+    {
+      "path": "include/Random123/features/sunprofeatures.h",
+      "sha": "c9cdc00f5e8f970898ae577b14fa910ceb135a91",
+      "size": 4286,
+      "sha256": "e9da7690c167a7dcacf5e034e0b951492b49ddc9b520062cd17e6f9b701b647e"
+    },
+    {
+      "path": "include/Random123/features/xlcfeatures.h",
+      "sha": "308b599b13eda8bca07f5c1ec71bf68c90489d3e",
+      "size": 6406,
+      "sha256": "4e1c47ad3b243fd9281c7356b92e19c46fbbdddf4b9016e9ce5770dc775057af"
+    },
+    {
+      "path": "include/Random123/gsl_microrng.h",
+      "sha": "4f09412152687462506ce88650a5328f6787ae23",
+      "size": 7114,
+      "sha256": "d4d4023850767f4f60cb191a923337f435d775e555e730de73884136c0616858"
+    },
+    {
+      "path": "include/Random123/philox.h",
+      "sha": "7bf4d195772358a87b8fbb33667783b5caba61a4",
+      "size": 22028,
+      "sha256": "6c2ef219a855885499a73b338d5f41dafe079618b2dae2f60ea86ee785d771e2"
+    },
+    {
+      "path": "include/Random123/threefry.h",
+      "sha": "6cff11dd87de84f57d6e8fde2f52296f4d03481f",
+      "size": 49191,
+      "sha256": "4c210b32b5ba605b059c54d5edd6f01bf04190de49a0abeecec76420cd072a72"
+    },
+    {
+      "path": "include/Random123/u01fixedpt.h",
+      "sha": "2058f8b57efcbb14a82f7d14def1066c24732dc9",
+      "size": 7927,
+      "sha256": "55e07e08c7f93a94680e06b5238e80f109fb58ddadb2cfd09fdaa740f9fb553a"
+    },
+    {
+      "path": "include/Random123/uniform.hpp",
+      "sha": "ee4ddfbfa39720f7e6176acec7510c14197998a9",
+      "size": 11442,
+      "sha256": "921805e7617674e60ed8afa9ca04fb6d807d129aa6ef8ea1aa12b0d46f2e1848"
+    },
+    {
+      "path": "tests/kat_vectors",
+      "sha": "cafa286d803793aa8c13e91ba17fc31c9ecbbe69",
+      "size": 8885,
+      "sha256": "aab5ebabf40003f63d6d87b24cbd2c8a02652e00cf8bad64226fd50586929183"
+    }
+  ]
+}

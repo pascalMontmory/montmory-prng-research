@@ -1,0 +1,49 @@
+{
+  "status": "pass",
+  "scope": "Shell orchestration with fake Apple/build tools on Linux; not native compilation or TestU01 execution",
+  "source_sha256": "e2db0b391645d0409000bec8897314e4956f749156e1ea865087cf7d89154d57",
+  "cases": [
+    {
+      "case": "success",
+      "exit_code": 0,
+      "battery_order": [
+        "small",
+        "crush",
+        "big"
+      ],
+      "archive_created": true,
+      "last_stage": "termine"
+    },
+    {
+      "case": "probe_fail",
+      "exit_code": 1,
+      "battery_order": [],
+      "archive_created": true,
+      "last_stage": "verification du compilateur ARM64"
+    },
+    {
+      "case": "configure_fail",
+      "exit_code": 77,
+      "battery_order": [],
+      "archive_created": true,
+      "last_stage": "configuration"
+    },
+    {
+      "case": "wrapper_fail",
+      "exit_code": 2,
+      "battery_order": [],
+      "archive_created": true,
+      "last_stage": "compilation wrapper Metal"
+    },
+    {
+      "case": "battery_fail",
+      "exit_code": 3,
+      "battery_order": [
+        "small",
+        "crush"
+      ],
+      "archive_created": true,
+      "last_stage": "batterie crush"
+    }
+  ]
+}

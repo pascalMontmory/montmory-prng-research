@@ -1,0 +1,1 @@
+Partial run interrupted before completion because it overlapped kernel verification. Excluded from all conclusions. CPU source was subsequently specialized for fixed batch sizes.

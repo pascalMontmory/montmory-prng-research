@@ -1,0 +1,57 @@
+{
+  "system": "Linux-6.1.0-50-cloud-amd64-x86_64-with-glibc2.36",
+  "compiler": "c++ (Debian 12.2.0-14+deb12u1) 12.2.0",
+  "random123_commit": "9545ff6413f258be2f04c1d319d99aaef7521150",
+  "source_sha256": "e3cd718c816cffd1788ab57e7a9b946fe5c38f1bd9192125801b75d82605e751",
+  "flags": [
+    "-std=c++17",
+    "-O3",
+    "-march=native",
+    "-fopenmp",
+    "-Wall",
+    "-Wextra",
+    "-Werror"
+  ],
+  "env": {
+    "OMP_PROC_BIND": "true",
+    "OMP_PLACES": "cores"
+  },
+  "words_per_trial": 8388608,
+  "trials": 11,
+  "worker_counts": [
+    1,
+    4
+  ],
+  "key_expansion": "Repeated recovered SplitMix64, all key words populated before timer; Montmory initialization unchanged",
+  "output": "all 64-bit words from each block consumed; no round reduction; uint64 checksum verified outside timed stores",
+  "machine_note": "AMD EPYC-Milan under KVM, shared VPS; no GPU benchmark",
+  "source_file": "evidence/benchmark-bulk-source.cpp",
+  "scope": "Bulk CPU trials. Native flags below; portable run omits -march=native.",
+  "runs": [
+    {
+      "csv": "benchmark-native.csv",
+      "binary": "build/benchmark (subsequently rebuilt with sparse support)",
+      "flags": [
+        "-std=c++17",
+        "-O3",
+        "-march=native",
+        "-fopenmp",
+        "-Wall",
+        "-Wextra",
+        "-Werror"
+      ]
+    },
+    {
+      "csv": "benchmark-portable.csv",
+      "binary": "build/benchmark-portable",
+      "flags": [
+        "-std=c++17",
+        "-O3",
+        "-fopenmp",
+        "-Wall",
+        "-Wextra",
+        "-Werror"
+      ]
+    }
+  ]
+}

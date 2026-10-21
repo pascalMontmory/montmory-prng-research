@@ -1,0 +1,16 @@
+{
+  "protocol_sha256": "0d525700d1b15800694c567e03ccce0bb535e7d9dcf9ac15d9895592429d25bf",
+  "started_utc": "2026-10-21T15:17:28Z",
+  "platform": "Linux-6.1.0-50-cloud-amd64-x86_64-with-glibc2.36",
+  "versions": {
+    "numpy": "1.24.2",
+    "scipy": "1.10.1",
+    "pandas": "1.5.3"
+  },
+  "source_sha256": {
+    "run_campaign.py": "5e5f6850ea18800e3786af903a11bf86efda126f4650b8b2b2cd79b949907b53",
+    "src/engines.cpp": "fb17dbe9d87c731c4fe97f4ad4ab7ae742df2141f3f99df7063a9ed93f8879f3",
+    "protocol.json": "0d525700d1b15800694c567e03ccce0bb535e7d9dcf9ac15d9895592429d25bf"
+  },
+  "completed": []
+}

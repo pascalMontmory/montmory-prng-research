@@ -1,0 +1,700 @@
+{
+  "status": "pass",
+  "scope": "JAX CPU and Pallas CPU interpretation only",
+  "native_tpu_tested": false,
+  "statistical_batteries_run": false,
+  "logical_lanes": 2048,
+  "draws_per_lane": 4096,
+  "jax": "0.10.2",
+  "jaxlib": "0.10.2",
+  "numpy": "2.4.6",
+  "python": "3.11.2 (main, Oct  7 2026, 12:35:07) [GCC 12.2.0]",
+  "platform": "Linux-6.1.0-50-cloud-amd64-x86_64-with-glibc2.36",
+  "machine": "x86_64",
+  "devices": [
+    "cpu:0"
+  ],
+  "jax_enable_x64": false,
+  "counts": {
+    "golden_native": 1600,
+    "golden_jax": 6400,
+    "golden_mantissa": 6400,
+    "mulhi_components": 200098,
+    "random_lane_words": 65536,
+    "indexed_words": 393216,
+    "range_words": 2359296,
+    "range_mantissa": 2359296,
+    "partition_words": 32770,
+    "pallas_interpreted_words": 147474
+  },
+  "checks": 129,
+  "oracle_compile_command": [
+    "cc",
+    "-O2",
+    "-std=c11",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-fPIC",
+    "-shared",
+    "/home/pascal/prng-recovery/tpu-opt-2026-10-21/montmory-tpu-opt/reference/oracle.c",
+    "-o",
+    "../results/original-protocol/oracle.so"
+  ],
+  "reference_sha256": {
+    "mmc_core.c": "5a0c515214226c50dd79b9774b616ca981621493d4f0c6bce7ececfdf5afbc8c",
+    "mmc_core.h": "f3ca894f4242340aca0903bcb7e482746aee9b4d3fc1243269b4a557b52334bb",
+    "golden-vectors.txt": "ca5b2731b89fea75c78585350c3263f11fc2695a6126251288b287ac94acdecf"
+  },
+  "invalid_ranges_rejected": 12,
+  "output_fingerprint_sha256": "83b3c1647b315e3e28fdcec6ef494398d41cdaef0a9ceb764f1fdcd62c626033",
+  "cross_machine_comparison": "reference/vps-report.json",
+  "elapsed_validation_seconds_not_benchmark": 8.592477144673467,
+  "checked_cases": [
+    {
+      "family": "golden_native",
+      "label": "C vs frozen x86 vectors",
+      "words": 1600
+    },
+    {
+      "family": "golden_jax",
+      "label": "golden portable eager raw",
+      "words": 1600
+    },
+    {
+      "family": "golden_mantissa",
+      "label": "golden portable eager mantissa53",
+      "words": 1600
+    },
+    {
+      "family": "golden_jax",
+      "label": "golden portable jit raw",
+      "words": 1600
+    },
+    {
+      "family": "golden_mantissa",
+      "label": "golden portable jit mantissa53",
+      "words": 1600
+    },
+    {
+      "family": "golden_jax",
+      "label": "golden mulhi eager raw",
+      "words": 1600
+    },
+    {
+      "family": "golden_mantissa",
+      "label": "golden mulhi eager mantissa53",
+      "words": 1600
+    },
+    {
+      "family": "golden_jax",
+      "label": "golden mulhi jit raw",
+      "words": 1600
+    },
+    {
+      "family": "golden_mantissa",
+      "label": "golden mulhi jit mantissa53",
+      "words": 1600
+    },
+    {
+      "family": "mulhi_components",
+      "label": "high32 portable",
+      "words": 100049
+    },
+    {
+      "family": "mulhi_components",
+      "label": "high32 mulhi",
+      "words": 100049
+    },
+    {
+      "family": "random_lane_words",
+      "label": "random full-width lanes portable",
+      "words": 32768
+    },
+    {
+      "family": "random_lane_words",
+      "label": "random full-width lanes mulhi",
+      "words": 32768
+    },
+    {
+      "family": "indexed_words",
+      "label": "indexed 0 portable",
+      "words": 16384
+    },
+    {
+      "family": "indexed_words",
+      "label": "indexed 0 mulhi",
+      "words": 16384
+    },
+    {
+      "family": "indexed_words",
+      "label": "indexed 1 portable",
+      "words": 16384
+    },
+    {
+      "family": "indexed_words",
+      "label": "indexed 1 mulhi",
+      "words": 16384
+    },
+    {
+      "family": "indexed_words",
+      "label": "indexed 42 portable",
+      "words": 16384
+    },
+    {
+      "family": "indexed_words",
+      "label": "indexed 42 mulhi",
+      "words": 16384
+    },
+    {
+      "family": "indexed_words",
+      "label": "indexed 18446744073709551615 portable",
+      "words": 16384
+    },
+    {
+      "family": "indexed_words",
+      "label": "indexed 18446744073709551615 mulhi",
+      "words": 16384
+    },
+    {
+      "family": "indexed_words",
+      "label": "indexed 9223372036854775808 portable",
+      "words": 16384
+    },
+    {
+      "family": "indexed_words",
+      "label": "indexed 9223372036854775808 mulhi",
+      "words": 16384
+    },
+    {
+      "family": "indexed_words",
+      "label": "indexed 13449021770182253794 portable",
+      "words": 16384
+    },
+    {
+      "family": "indexed_words",
+      "label": "indexed 13449021770182253794 mulhi",
+      "words": 16384
+    },
+    {
+      "family": "indexed_words",
+      "label": "indexed 11517888142200659609 portable",
+      "words": 16384
+    },
+    {
+      "family": "indexed_words",
+      "label": "indexed 11517888142200659609 mulhi",
+      "words": 16384
+    },
+    {
+      "family": "indexed_words",
+      "label": "indexed 773308445583295889 portable",
+      "words": 16384
+    },
+    {
+      "family": "indexed_words",
+      "label": "indexed 773308445583295889 mulhi",
+      "words": 16384
+    },
+    {
+      "family": "indexed_words",
+      "label": "indexed 9279245768685488994 portable",
+      "words": 16384
+    },
+    {
+      "family": "indexed_words",
+      "label": "indexed 9279245768685488994 mulhi",
+      "words": 16384
+    },
+    {
+      "family": "indexed_words",
+      "label": "indexed 6566952122523817602 portable",
+      "words": 16384
+    },
+    {
+      "family": "indexed_words",
+      "label": "indexed 6566952122523817602 mulhi",
+      "words": 16384
+    },
+    {
+      "family": "indexed_words",
+      "label": "indexed 13019516026504311110 portable",
+      "words": 16384
+    },
+    {
+      "family": "indexed_words",
+      "label": "indexed 13019516026504311110 mulhi",
+      "words": 16384
+    },
+    {
+      "family": "indexed_words",
+      "label": "indexed 1956868504493307672 portable",
+      "words": 16384
+    },
+    {
+      "family": "indexed_words",
+      "label": "indexed 1956868504493307672 mulhi",
+      "words": 16384
+    },
+    {
+      "family": "range_words",
+      "label": "range 0 0 portable",
+      "words": 65536
+    },
+    {
+      "family": "range_mantissa",
+      "label": "mantissa 0 0 portable",
+      "words": 65536
+    },
+    {
+      "family": "range_words",
+      "label": "range 0 0 mulhi",
+      "words": 65536
+    },
+    {
+      "family": "range_mantissa",
+      "label": "mantissa 0 0 mulhi",
+      "words": 65536
+    },
+    {
+      "family": "range_words",
+      "label": "range 0 4095 portable",
+      "words": 65536
+    },
+    {
+      "family": "range_mantissa",
+      "label": "mantissa 0 4095 portable",
+      "words": 65536
+    },
+    {
+      "family": "range_words",
+      "label": "range 0 4095 mulhi",
+      "words": 65536
+    },
+    {
+      "family": "range_mantissa",
+      "label": "mantissa 0 4095 mulhi",
+      "words": 65536
+    },
+    {
+      "family": "range_words",
+      "label": "range 0 8388605 portable",
+      "words": 65536
+    },
+    {
+      "family": "range_mantissa",
+      "label": "mantissa 0 8388605 portable",
+      "words": 65536
+    },
+    {
+      "family": "range_words",
+      "label": "range 0 8388605 mulhi",
+      "words": 65536
+    },
+    {
+      "family": "range_mantissa",
+      "label": "mantissa 0 8388605 mulhi",
+      "words": 65536
+    },
+    {
+      "family": "range_words",
+      "label": "range 0 4294967293 portable",
+      "words": 65536
+    },
+    {
+      "family": "range_mantissa",
+      "label": "mantissa 0 4294967293 portable",
+      "words": 65536
+    },
+    {
+      "family": "range_words",
+      "label": "range 0 4294967293 mulhi",
+      "words": 65536
+    },
+    {
+      "family": "range_mantissa",
+      "label": "mantissa 0 4294967293 mulhi",
+      "words": 65536
+    },
+    {
+      "family": "range_words",
+      "label": "range 0 9223372036854775805 portable",
+      "words": 65536
+    },
+    {
+      "family": "range_mantissa",
+      "label": "mantissa 0 9223372036854775805 portable",
+      "words": 65536
+    },
+    {
+      "family": "range_words",
+      "label": "range 0 9223372036854775805 mulhi",
+      "words": 65536
+    },
+    {
+      "family": "range_mantissa",
+      "label": "mantissa 0 9223372036854775805 mulhi",
+      "words": 65536
+    },
+    {
+      "family": "range_words",
+      "label": "range 0 18446744073709486080 portable",
+      "words": 65536
+    },
+    {
+      "family": "range_mantissa",
+      "label": "mantissa 0 18446744073709486080 portable",
+      "words": 65536
+    },
+    {
+      "family": "range_words",
+      "label": "range 0 18446744073709486080 mulhi",
+      "words": 65536
+    },
+    {
+      "family": "range_mantissa",
+      "label": "mantissa 0 18446744073709486080 mulhi",
+      "words": 65536
+    },
+    {
+      "family": "range_words",
+      "label": "range 42 0 portable",
+      "words": 65536
+    },
+    {
+      "family": "range_mantissa",
+      "label": "mantissa 42 0 portable",
+      "words": 65536
+    },
+    {
+      "family": "range_words",
+      "label": "range 42 0 mulhi",
+      "words": 65536
+    },
+    {
+      "family": "range_mantissa",
+      "label": "mantissa 42 0 mulhi",
+      "words": 65536
+    },
+    {
+      "family": "range_words",
+      "label": "range 42 4095 portable",
+      "words": 65536
+    },
+    {
+      "family": "range_mantissa",
+      "label": "mantissa 42 4095 portable",
+      "words": 65536
+    },
+    {
+      "family": "range_words",
+      "label": "range 42 4095 mulhi",
+      "words": 65536
+    },
+    {
+      "family": "range_mantissa",
+      "label": "mantissa 42 4095 mulhi",
+      "words": 65536
+    },
+    {
+      "family": "range_words",
+      "label": "range 42 8388605 portable",
+      "words": 65536
+    },
+    {
+      "family": "range_mantissa",
+      "label": "mantissa 42 8388605 portable",
+      "words": 65536
+    },
+    {
+      "family": "range_words",
+      "label": "range 42 8388605 mulhi",
+      "words": 65536
+    },
+    {
+      "family": "range_mantissa",
+      "label": "mantissa 42 8388605 mulhi",
+      "words": 65536
+    },
+    {
+      "family": "range_words",
+      "label": "range 42 4294967293 portable",
+      "words": 65536
+    },
+    {
+      "family": "range_mantissa",
+      "label": "mantissa 42 4294967293 portable",
+      "words": 65536
+    },
+    {
+      "family": "range_words",
+      "label": "range 42 4294967293 mulhi",
+      "words": 65536
+    },
+    {
+      "family": "range_mantissa",
+      "label": "mantissa 42 4294967293 mulhi",
+      "words": 65536
+    },
+    {
+      "family": "range_words",
+      "label": "range 42 9223372036854775805 portable",
+      "words": 65536
+    },
+    {
+      "family": "range_mantissa",
+      "label": "mantissa 42 9223372036854775805 portable",
+      "words": 65536
+    },
+    {
+      "family": "range_words",
+      "label": "range 42 9223372036854775805 mulhi",
+      "words": 65536
+    },
+    {
+      "family": "range_mantissa",
+      "label": "mantissa 42 9223372036854775805 mulhi",
+      "words": 65536
+    },
+    {
+      "family": "range_words",
+      "label": "range 42 18446744073709486080 portable",
+      "words": 65536
+    },
+    {
+      "family": "range_mantissa",
+      "label": "mantissa 42 18446744073709486080 portable",
+      "words": 65536
+    },
+    {
+      "family": "range_words",
+      "label": "range 42 18446744073709486080 mulhi",
+      "words": 65536
+    },
+    {
+      "family": "range_mantissa",
+      "label": "mantissa 42 18446744073709486080 mulhi",
+      "words": 65536
+    },
+    {
+      "family": "range_words",
+      "label": "range 18446744073709551615 0 portable",
+      "words": 65536
+    },
+    {
+      "family": "range_mantissa",
+      "label": "mantissa 18446744073709551615 0 portable",
+      "words": 65536
+    },
+    {
+      "family": "range_words",
+      "label": "range 18446744073709551615 0 mulhi",
+      "words": 65536
+    },
+    {
+      "family": "range_mantissa",
+      "label": "mantissa 18446744073709551615 0 mulhi",
+      "words": 65536
+    },
+    {
+      "family": "range_words",
+      "label": "range 18446744073709551615 4095 portable",
+      "words": 65536
+    },
+    {
+      "family": "range_mantissa",
+      "label": "mantissa 18446744073709551615 4095 portable",
+      "words": 65536
+    },
+    {
+      "family": "range_words",
+      "label": "range 18446744073709551615 4095 mulhi",
+      "words": 65536
+    },
+    {
+      "family": "range_mantissa",
+      "label": "mantissa 18446744073709551615 4095 mulhi",
+      "words": 65536
+    },
+    {
+      "family": "range_words",
+      "label": "range 18446744073709551615 8388605 portable",
+      "words": 65536
+    },
+    {
+      "family": "range_mantissa",
+      "label": "mantissa 18446744073709551615 8388605 portable",
+      "words": 65536
+    },
+    {
+      "family": "range_words",
+      "label": "range 18446744073709551615 8388605 mulhi",
+      "words": 65536
+    },
+    {
+      "family": "range_mantissa",
+      "label": "mantissa 18446744073709551615 8388605 mulhi",
+      "words": 65536
+    },
+    {
+      "family": "range_words",
+      "label": "range 18446744073709551615 4294967293 portable",
+      "words": 65536
+    },
+    {
+      "family": "range_mantissa",
+      "label": "mantissa 18446744073709551615 4294967293 portable",
+      "words": 65536
+    },
+    {
+      "family": "range_words",
+      "label": "range 18446744073709551615 4294967293 mulhi",
+      "words": 65536
+    },
+    {
+      "family": "range_mantissa",
+      "label": "mantissa 18446744073709551615 4294967293 mulhi",
+      "words": 65536
+    },
+    {
+      "family": "range_words",
+      "label": "range 18446744073709551615 9223372036854775805 portable",
+      "words": 65536
+    },
+    {
+      "family": "range_mantissa",
+      "label": "mantissa 18446744073709551615 9223372036854775805 portable",
+      "words": 65536
+    },
+    {
+      "family": "range_words",
+      "label": "range 18446744073709551615 9223372036854775805 mulhi",
+      "words": 65536
+    },
+    {
+      "family": "range_mantissa",
+      "label": "mantissa 18446744073709551615 9223372036854775805 mulhi",
+      "words": 65536
+    },
+    {
+      "family": "range_words",
+      "label": "range 18446744073709551615 18446744073709486080 portable",
+      "words": 65536
+    },
+    {
+      "family": "range_mantissa",
+      "label": "mantissa 18446744073709551615 18446744073709486080 portable",
+      "words": 65536
+    },
+    {
+      "family": "range_words",
+      "label": "range 18446744073709551615 18446744073709486080 mulhi",
+      "words": 65536
+    },
+    {
+      "family": "range_mantissa",
+      "label": "mantissa 18446744073709551615 18446744073709486080 mulhi",
+      "words": 65536
+    },
+    {
+      "family": "partition_words",
+      "label": "reversed partitions portable",
+      "words": 16385
+    },
+    {
+      "family": "partition_words",
+      "label": "reversed partitions mulhi",
+      "words": 16385
+    },
+    {
+      "family": "pallas_interpreted_words",
+      "label": "pallas 8 42 8384511 portable",
+      "words": 8193
+    },
+    {
+      "family": "pallas_interpreted_words",
+      "label": "pallas 8 42 8384511 mulhi",
+      "words": 8193
+    },
+    {
+      "family": "pallas_interpreted_words",
+      "label": "pallas 8 0 4294963199 portable",
+      "words": 8193
+    },
+    {
+      "family": "pallas_interpreted_words",
+      "label": "pallas 8 0 4294963199 mulhi",
+      "words": 8193
+    },
+    {
+      "family": "pallas_interpreted_words",
+      "label": "pallas 8 18446744073709551615 18446744073709543423 portable",
+      "words": 8193
+    },
+    {
+      "family": "pallas_interpreted_words",
+      "label": "pallas 8 18446744073709551615 18446744073709543423 mulhi",
+      "words": 8193
+    },
+    {
+      "family": "pallas_interpreted_words",
+      "label": "pallas 16 42 8384511 portable",
+      "words": 8193
+    },
+    {
+      "family": "pallas_interpreted_words",
+      "label": "pallas 16 42 8384511 mulhi",
+      "words": 8193
+    },
+    {
+      "family": "pallas_interpreted_words",
+      "label": "pallas 16 0 4294963199 portable",
+      "words": 8193
+    },
+    {
+      "family": "pallas_interpreted_words",
+      "label": "pallas 16 0 4294963199 mulhi",
+      "words": 8193
+    },
+    {
+      "family": "pallas_interpreted_words",
+      "label": "pallas 16 18446744073709551615 18446744073709543423 portable",
+      "words": 8193
+    },
+    {
+      "family": "pallas_interpreted_words",
+      "label": "pallas 16 18446744073709551615 18446744073709543423 mulhi",
+      "words": 8193
+    },
+    {
+      "family": "pallas_interpreted_words",
+      "label": "pallas 32 42 8384511 portable",
+      "words": 8193
+    },
+    {
+      "family": "pallas_interpreted_words",
+      "label": "pallas 32 42 8384511 mulhi",
+      "words": 8193
+    },
+    {
+      "family": "pallas_interpreted_words",
+      "label": "pallas 32 0 4294963199 portable",
+      "words": 8193
+    },
+    {
+      "family": "pallas_interpreted_words",
+      "label": "pallas 32 0 4294963199 mulhi",
+      "words": 8193
+    },
+    {
+      "family": "pallas_interpreted_words",
+      "label": "pallas 32 18446744073709551615 18446744073709543423 portable",
+      "words": 8193
+    },
+    {
+      "family": "pallas_interpreted_words",
+      "label": "pallas 32 18446744073709551615 18446744073709543423 mulhi",
+      "words": 8193
+    }
+  ]
+}

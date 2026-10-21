@@ -1,0 +1,157 @@
+{
+  "kit": "montmory-metal-confirm-m3-v1",
+  "purpose": "Resolve first-use timing contamination in previous Mac optimization campaign, with generator code unchanged.",
+  "source_archive_sha256": "053d4930cf56681df3afdc242675e8308967b551f2e70ea752ac12c3eaaa0042",
+  "metal_sha256": "0e827a1a4da76281cb8de714833c5007315cec35be9a7bd6ccded2a2cbdcacde",
+  "words": 8388608,
+  "logical_lanes": 2048,
+  "draws_per_lane": 4096,
+  "configs": [
+    {
+      "physical_threads": 131072,
+      "threadgroup": 128,
+      "engine": "threefry2x32_20",
+      "format": "raw64"
+    },
+    {
+      "physical_threads": 65536,
+      "threadgroup": 64,
+      "engine": "threefry2x32_20",
+      "format": "mantissa53"
+    },
+    {
+      "physical_threads": 131072,
+      "threadgroup": 64,
+      "engine": "philox4x32_10",
+      "format": "raw64"
+    },
+    {
+      "physical_threads": 131072,
+      "threadgroup": 128,
+      "engine": "philox4x32_10",
+      "format": "mantissa53"
+    },
+    {
+      "physical_threads": 8192,
+      "threadgroup": 256,
+      "engine": "write_baseline_NOT_PRNG",
+      "format": "raw64"
+    },
+    {
+      "physical_threads": 8192,
+      "threadgroup": 128,
+      "engine": "write_baseline_NOT_PRNG",
+      "format": "mantissa53"
+    },
+    {
+      "physical_threads": 131072,
+      "threadgroup": 64,
+      "engine": "montmory_mulhi_pair",
+      "format": "raw64"
+    },
+    {
+      "physical_threads": 131072,
+      "threadgroup": 64,
+      "engine": "montmory_mulhi_pair",
+      "format": "mantissa53"
+    },
+    {
+      "physical_threads": 131072,
+      "threadgroup": 512,
+      "engine": "montmory_mulhi_quad",
+      "format": "raw64"
+    },
+    {
+      "physical_threads": 131072,
+      "threadgroup": 512,
+      "engine": "montmory_mulhi_quad",
+      "format": "mantissa53"
+    },
+    {
+      "physical_threads": 131072,
+      "threadgroup": 64,
+      "engine": "montmory_stripe_pair",
+      "format": "raw64"
+    },
+    {
+      "physical_threads": 131072,
+      "threadgroup": 256,
+      "engine": "montmory_stripe_pair",
+      "format": "mantissa53"
+    },
+    {
+      "physical_threads": 131072,
+      "threadgroup": 256,
+      "engine": "montmory_stripe_quad",
+      "format": "raw64"
+    },
+    {
+      "physical_threads": 131072,
+      "threadgroup": 256,
+      "engine": "montmory_stripe_quad",
+      "format": "mantissa53"
+    },
+    {
+      "physical_threads": 131072,
+      "threadgroup": 64,
+      "engine": "montmory_const_pair",
+      "format": "raw64"
+    },
+    {
+      "physical_threads": 131072,
+      "threadgroup": 128,
+      "engine": "montmory_const_pair",
+      "format": "mantissa53"
+    },
+    {
+      "physical_threads": 131072,
+      "threadgroup": 128,
+      "engine": "montmory_const_stripe_pair",
+      "format": "raw64"
+    },
+    {
+      "physical_threads": 131072,
+      "threadgroup": 128,
+      "engine": "montmory_const_stripe_pair",
+      "format": "mantissa53"
+    },
+    {
+      "physical_threads": 131072,
+      "threadgroup": 256,
+      "engine": "montmory_split_stripe_pair",
+      "format": "raw64"
+    },
+    {
+      "physical_threads": 131072,
+      "threadgroup": 512,
+      "engine": "montmory_split_stripe_pair",
+      "format": "mantissa53"
+    },
+    {
+      "physical_threads": 131072,
+      "threadgroup": 256,
+      "engine": "montmory_const_stripe_quad",
+      "format": "raw64"
+    },
+    {
+      "physical_threads": 131072,
+      "threadgroup": 64,
+      "engine": "montmory_const_stripe_quad",
+      "format": "mantissa53"
+    }
+  ],
+  "seeds": 7,
+  "seed_rule": "splitmix64(2000+trial), distinct from previous search and confirmation",
+  "rounds_per_seed": 3,
+  "warmup_dispatches_per_job": 16,
+  "timed_dispatches_per_job": 5,
+  "preparation": "All seed-specific pipelines compiled before campaign. CPU oracles and buffers prepared before warm-up. No pipeline creation during campaign.",
+  "timing": "Sequential dispatch+wait for every warm-up and timed dispatch. Five separate 64 MiB output buffers; every timed output checked after batch, outside timing. Warm-up times retained in CSV.",
+  "aggregation": "Median of 15 timed observations within each seed, then median across seven seeds. Ratios paired within seed. No time-based row exclusion.",
+  "limits": [
+    "Workload is GPU generation and stores, not a fused VaR application.",
+    "This is a changed timing protocol, not a drop-in new set of old campaign results.",
+    "Thermal state is logged; frequencies/utilization are not observed.",
+    "No absolute optimality claim; configurations are frozen and not retuned."
+  ]
+}

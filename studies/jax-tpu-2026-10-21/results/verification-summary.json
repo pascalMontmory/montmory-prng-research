@@ -1,0 +1,9 @@
+{
+  "status": "pass",
+  "raw_timing_rows": 490,
+  "all_output_hashes_checked": true,
+  "all_ratios_recomputed": true,
+  "cpu_workflow": "pass",
+  "missing_tpu_guard": "failed as required; no CPU fallback",
+  "native_tpu_tested": false
+}

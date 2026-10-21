@@ -1,0 +1,85 @@
+{
+  "native_tpu_execution": false,
+  "cases": [
+    {
+      "engine": "jax_original",
+      "status": "export_pass"
+    },
+    {
+      "engine": "jax_mulhi",
+      "status": "export_pass"
+    },
+    {
+      "engine": "jax_carry",
+      "status": "export_pass"
+    },
+    {
+      "engine": "jax_carry_mulhi",
+      "status": "export_pass"
+    },
+    {
+      "engine": "pallas_original_8",
+      "status": "export_pass"
+    },
+    {
+      "engine": "pallas_carry_8",
+      "status": "export_pass"
+    },
+    {
+      "engine": "pallas_original_16",
+      "status": "export_pass"
+    },
+    {
+      "engine": "pallas_carry_16",
+      "status": "export_pass"
+    },
+    {
+      "engine": "pallas_original_32",
+      "status": "export_pass"
+    },
+    {
+      "engine": "pallas_carry_32",
+      "status": "export_pass"
+    },
+    {
+      "engine": "pallas_original_64",
+      "status": "export_pass"
+    },
+    {
+      "engine": "pallas_carry_64",
+      "status": "export_pass"
+    },
+    {
+      "engine": "pallas_original_128",
+      "status": "export_pass"
+    },
+    {
+      "engine": "pallas_carry_128",
+      "status": "export_pass"
+    },
+    {
+      "engine": "pallas_original_256",
+      "status": "export_pass"
+    },
+    {
+      "engine": "pallas_carry_256",
+      "status": "export_pass"
+    },
+    {
+      "engine": "threefry_pallas_16",
+      "status": "export_pass"
+    },
+    {
+      "engine": "threefry_pallas_32",
+      "status": "export_pass"
+    },
+    {
+      "engine": "threefry_pallas_64",
+      "status": "export_pass"
+    },
+    {
+      "engine": "threefry_pallas_128",
+      "status": "export_pass"
+    }
+  ]
+}

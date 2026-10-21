@@ -1,0 +1,45 @@
+{
+  "native_conformance_status": 0,
+  "Random123_KATs": 9,
+  "Montmory_original_words": 1048656,
+  "xoshiro_official_words": 1048576,
+  "bulk_indexed_words": 82240,
+  "compiler": "g++ (Debian 12.2.0-14+deb12u1) 12.2.0",
+  "build_commands": [
+    [
+      "g++",
+      "-std=c++17",
+      "-I/home/pascal/prng-recovery/tacm-comparison-2026-10-21/deps/random123/include",
+      "-I/home/pascal/prng-recovery/tacm-comparison-2026-10-21/deps/montmory",
+      "-I/home/pascal/prng-recovery/tacm-comparison-2026-10-21/build",
+      "/home/pascal/prng-recovery/tacm-comparison-2026-10-21/src/engines.cpp",
+      "-O2",
+      "-fsanitize=undefined",
+      "-fno-sanitize-recover=undefined",
+      "-DTACM_CHECK_MAIN",
+      "-o",
+      "/home/pascal/prng-recovery/tacm-comparison-2026-10-21/build/check_engines"
+    ],
+    [
+      "g++",
+      "-std=c++17",
+      "-I/home/pascal/prng-recovery/tacm-comparison-2026-10-21/deps/random123/include",
+      "-I/home/pascal/prng-recovery/tacm-comparison-2026-10-21/deps/montmory",
+      "-I/home/pascal/prng-recovery/tacm-comparison-2026-10-21/build",
+      "/home/pascal/prng-recovery/tacm-comparison-2026-10-21/src/engines.cpp",
+      "-O3",
+      "-march=native",
+      "-fPIC",
+      "-shared",
+      "-o",
+      "/home/pascal/prng-recovery/tacm-comparison-2026-10-21/build/libtacm.so"
+    ]
+  ],
+  "source_sha256": {
+    "src/engines.cpp": "fb17dbe9d87c731c4fe97f4ad4ab7ae742df2141f3f99df7063a9ed93f8879f3",
+    "build/xoshiro_reference_prefix.h": "c74c817eeaabb1fe61563e3229b8ce7854df849453903b0369c28032c99e492c",
+    "deps/xoshiro256starstar.c": "01d518abeb28cdfc86d2d019f0ae4678fff37f25bc306c7367ee5298a7f443a7",
+    "deps/montmory/mmc_core.c": "5a0c515214226c50dd79b9774b616ca981621493d4f0c6bce7ececfdf5afbc8c",
+    "deps/montmory/mmc_core.h": "f3ca894f4242340aca0903bcb7e482746aee9b4d3fc1243269b4a557b52334bb"
+  }
+}

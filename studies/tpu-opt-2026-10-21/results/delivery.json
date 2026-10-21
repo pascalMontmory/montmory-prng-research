@@ -1,0 +1,8 @@
+{
+  "archive": "/home/pascal/prng-recovery/montmory-tpu-opt-kit.tar.gz",
+  "sha256": "a615a9c11c6c5378935090a552b7729efff17ce871aa719fdb1f600a08e1a372",
+  "bytes": 73394,
+  "manifest_files": 22,
+  "notebook": "/home/pascal/prng-recovery/Montmory_TPU_optimisation.ipynb",
+  "notebook_sha256": "e13790cd7d622c0d09aa03efd6e28e9bd7f640cf668e285793255858cc10bede"
+}

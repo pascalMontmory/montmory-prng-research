@@ -6,14 +6,16 @@ on:
 permissions:
   contents: read
 jobs:
+  # Keep the validated OS family explicit; hosted image patch revisions still update.
+  # Action commits below use Node.js 24 natively.
   application-prototypes:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 15
     env:
       JAX_PLATFORMS: cpu
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
         with:
           python-version: '3.11'
       - name: Install pinned CPU application dependencies
@@ -26,7 +28,7 @@ jobs:
         run: python applications/asian_option/run.py --backend cpu --verify-only --out build/ci-asian
       - name: Save CPU application checks
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: cpu-application-checks
           path: |
@@ -35,11 +37,11 @@ jobs:
             build/ci-asian/report.json
             build/ci-asian/error.txt
   cpu-evidence:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
         with:
           python-version: '3.11'
       - name: Integrity and curated documentation
@@ -56,7 +58,7 @@ jobs:
         run: python scripts/replay_audit.py tpu --out build/ci-tpu-audit
       - name: Save checks (not a native GPU or TPU benchmark)
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: cpu-record-verification
           path: |

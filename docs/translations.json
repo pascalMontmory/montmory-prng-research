@@ -9,8 +9,8 @@
       "reference_language": "en",
       "reference_frozen": false,
       "kind": "markdown",
-      "fr_sha256": "6c12e20afe83a48c23b83f1ed393e5779aa0cf6ce08298dd2064431dc97fcb16",
-      "en_sha256": "eec78d76ac43a02c1182d35f85bb0ea1f81e217390f74d8c68730c2d39426ac1"
+      "fr_sha256": "9294cd29c3f20a412167b4acd5b716f83dc15407b576ebc3659874c946e6e722",
+      "en_sha256": "90c28aca4911cc895ef7ff4ccdf2f3f70139f09af7c49435673788fc95c204b1"
     },
     {
       "fr": "docs/contract.md",
@@ -171,8 +171,8 @@
       "reference_language": "en",
       "reference_frozen": false,
       "kind": "markdown",
-      "fr_sha256": "126a1bdd3d8b68b7c64afe757db3cc958b83f8861853795cec05121fcbbe5ad0",
-      "en_sha256": "4c4aa47bae9de39e52166d365ee356a72ffe518a47706e60c2b03ff8da423e73"
+      "fr_sha256": "0a914e70ed3849ed910074fab87f6eac4ef3a0f9902488123fa0936f83597516",
+      "en_sha256": "58c21f53945443e7520668e5dd1ab115c8d7cb07e81273bd0408b93bfe154c82"
     },
     {
       "fr": "notebooks/Montmory_TPU_optimisation.ipynb",
@@ -245,6 +245,42 @@
       "kind": "notebook",
       "fr_sha256": "89e7597f3d348c1ba529e923c08aa9d09424efd11701326cefe7daadbd1f5df1",
       "en_sha256": "c289ca523f7b3a42a5919b4930de074387d5752dd2fa493d68776660bacf7b18"
+    },
+    {
+      "fr": "applications/diffusion/README.fr.md",
+      "en": "applications/diffusion/README.md",
+      "reference_language": "en",
+      "reference_frozen": false,
+      "kind": "markdown",
+      "fr_sha256": "58d2af1f2e6968d07f6509149c62ff8891939f9cc3a9aa623b6520f0ade009c7",
+      "en_sha256": "92a474ee8f3c7f6e2134750643323bde3024981e7e30ee052c0dec440107702f"
+    },
+    {
+      "fr": "applications/diffusion/notebooks/Eninca_Diffusion_TPU.ipynb",
+      "en": "applications/diffusion/notebooks/Eninca_Diffusion_TPU.en.ipynb",
+      "reference_language": "fr",
+      "reference_frozen": false,
+      "kind": "notebook",
+      "fr_sha256": "ff993da1f152a86dab487ed69a96ceb639347d616295a80460eec3f1bf534422",
+      "en_sha256": "c3dcf93915f2b8553441efdbf4ff3347804115c18c2605777c5a8c3fbbb9899d"
+    },
+    {
+      "fr": "applications/asian_option/README.fr.md",
+      "en": "applications/asian_option/README.md",
+      "reference_language": "en",
+      "reference_frozen": false,
+      "kind": "markdown",
+      "fr_sha256": "335f2c2c5e0e032a1e5725fd5f5b5b16fd849008d10c2b2b1a2421c5c716526c",
+      "en_sha256": "d43d472f4d720df448ec7fd20d707af840dd1f0a9daf9c515354ea4743ca37e5"
+    },
+    {
+      "fr": "applications/asian_option/notebooks/Eninca_Asian_Option_TPU.ipynb",
+      "en": "applications/asian_option/notebooks/Eninca_Asian_Option_TPU.en.ipynb",
+      "reference_language": "fr",
+      "reference_frozen": false,
+      "kind": "notebook",
+      "fr_sha256": "d5ffb437e94489f2acf1f3aa0844a5e8e2307234f19ef6314522f830046df692",
+      "en_sha256": "a362d067fc2af878c298da9d6a71a1c0e5bb9d638800fd593f18a8adb9614f24"
     }
   ]
 }

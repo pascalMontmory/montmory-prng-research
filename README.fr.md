@@ -55,6 +55,8 @@ Le [prototype Sobol32 séparé](applications/sobol/README.fr.md) étudie la gén
 
 L’[expérience d’entraînement avec dropout](applications/dropout/README.fr.md) compare Montmory et Threefry dans un petit réseau neuronal, avec génération et application du masque fusionnées dans Pallas. Les contrôles CPU, les courbes d’apprentissage et les notebooks Colab français/anglais sont disponibles. **La compilation native TPU et les gains éventuels sur l’entraînement restent à valider.**
 
+Deux autres prototypes applicatifs disposent de pilotes CPU, de données brutes et de notebooks bilingues : un [petit modèle génératif de chiffres par diffusion / flow matching](applications/diffusion/README.fr.md), et une [comparaison Monte-Carlo / Sobol sur des options asiatiques](applications/asian_option/README.fr.md). Ils mesurent respectivement l’entraînement complet et le compromis temps–erreur sur un prix. **Aucun gain natif TPU n’est encore établi pour ces applications.**
+
 ## Vérifier sans posséder de TPU
 
 Avec Python 3.11+ et un compilateur C :

@@ -7,6 +7,8 @@
 | Optimization, search and held-out confirmation | [Runbook](Montmory_TPU_optimisation.en.ipynb) | [Original](Montmory_TPU_optimisation.ipynb) |
 | Initial port validation and measurements | [Runbook](Montmory_TPU_validation.en.ipynb) | [Original](Montmory_TPU_validation.ipynb) |
 | Small-network dropout — native TPU validation pending | [Notebook](../applications/dropout/notebooks/Montmory_Dropout_TPU.en.ipynb) | [Notebook](../applications/dropout/notebooks/Montmory_Dropout_TPU.ipynb) |
+| Digit diffusion / flow matching — native TPU validation pending | [Notebook](../applications/diffusion/notebooks/Eninca_Diffusion_TPU.en.ipynb) | [Notebook](../applications/diffusion/notebooks/Eninca_Diffusion_TPU.ipynb) |
+| Asian options Monte Carlo / Sobol — native TPU validation pending | [Notebook](../applications/asian_option/notebooks/Eninca_Asian_Option_TPU.en.ipynb) | [Notebook](../applications/asian_option/notebooks/Eninca_Asian_Option_TPU.ipynb) |
 
 For raw PRNG throughput, start with the optimization notebook. For a complete training step, read the [dropout experiment and its limitations](../applications/dropout/README.md), checked on CPU only at this stage. Download your chosen notebook, open it in Colab, select an actual **TPU** runtime, and run its code cells in order. Access depends on your account and quotas. The notebook embeds the executable kit; no GitHub credential is needed after download. Keep each new result archive separately.
 

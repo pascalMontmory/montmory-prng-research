@@ -55,6 +55,8 @@ The separate [Sobol32 prototype](applications/sobol/README.md) studies exact low
 
 The [dropout training experiment](applications/dropout/README.md) compares Montmory and Threefry in a small neural network, with mask generation and application fused in Pallas. CPU checks, learning curves and English/French Colab notebooks are available. **Native TPU compilation and any training speedup remain to be validated.**
 
+Two further application prototypes provide CPU pilots, raw records and bilingual notebooks: a [small digit generator using diffusion / flow matching](applications/diffusion/README.md), and a [Monte Carlo / Sobol Asian-option comparison](applications/asian_option/README.md). They measure complete training steps and the price-error versus time tradeoff, respectively. **No native TPU application speedup has yet been established.**
+
 ## Verify this record locally
 
 Python 3.11+ and a C compiler are sufficient for the first two checks:

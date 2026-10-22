@@ -1,0 +1,159 @@
+{
+  "status": "pass",
+  "utc": "2026-10-22T09:06:23.970692+00:00",
+  "protocol": {
+    "backend": "cpu",
+    "out": "build/diffusion-cpu-published-20261022",
+    "quick": true,
+    "verify_only": false
+  },
+  "native_tpu_measurements": false,
+  "statistical_batteries_run": false,
+  "floating_cross_architecture_bit_identity": false,
+  "source_sha256": {
+    "applications/asian_option/pricing.py": "040f785da5d4a5e45a8771e4a6d20e9866f261c02a0192e19e60503eec931681",
+    "applications/asian_option/run.py": "e155e44cc5875fd31cae9f710a4f040b40cf64db3b095e0736b18d3ab656c495",
+    "applications/diffusion/model.py": "ac05978f0ee45f3ba92649606420f6e16d16c162a802175ba9655a3131a38397",
+    "applications/diffusion/run.py": "2bdc275dd2bab87a109d2a870c88836dcddabc5c8590e21621304f9e8b6c5483",
+    "applications/sobol/build_notebook.py": "ae7c07f33c097657f8577041369adabefee2c6d80cc65853fd9215f2edac217c",
+    "applications/sobol/kernels.py": "1f7c7ef0b3684ea2e7b724084e85685c6e33f36cc35a35dc4bec5be1e9f99d8a",
+    "applications/sobol/reference.py": "cbd946916d30ce4af98b595a360f854c76172d09ce54420c803b60695682b664",
+    "applications/sobol/run.py": "4726856941ddb84c7c87e8cc92cfecb9a41ca9b977ce2445c8da39e260208943",
+    "applications/sobol/verify.py": "0b428bedd7d24739eea4a28b64c83d0eca5793a762464fadbd47779d62e6bdd7",
+    "applications/stochastic/build_notebooks.py": "d83e38284cace7ff4feaeb7be61050731efa708b360d3b0b555c46f30d98ccd1",
+    "applications/stochastic/check.py": "739ca1c0baa3c962702325f829a6af77a5ed949fb03697eee89914a99a7ffa70",
+    "applications/stochastic/rng.py": "083d77afc4ac809429d32aefe50649d44170b5fd268e243e10a1fa98d73960e9",
+    "applications/stochastic/runtime.py": "432d948e89adc2a5d0bcb5a7ba849e64c4aa94b48cf70f58e6d8cc0afcd57198",
+    "studies/tpu-opt-2026-10-21/montmory-tpu-opt/kernels.py": "9540a50c8bcecf15ee76418d32eac94f0f831ff6cc12894e1c3bc14d851a5fc4",
+    "studies/tpu-opt-2026-10-21/montmory-tpu-opt/montmory_jax.py": "b6165bc908808708ee8466abe33a66efea75ca2a41ba765012f042e051ace8ab",
+    "studies/tpu-opt-2026-10-21/montmory-tpu-opt/reference/mmc_core.c": "5a0c515214226c50dd79b9774b616ca981621493d4f0c6bce7ececfdf5afbc8c",
+    "studies/tpu-opt-2026-10-21/montmory-tpu-opt/reference/mmc_core.h": "f3ca894f4242340aca0903bcb7e482746aee9b4d3fc1243269b4a557b52334bb",
+    "studies/tpu-opt-2026-10-21/montmory-tpu-opt/reference/oracle.c": "48c9670947bef455f86e2a547e878dcbe4722b4fd5cae24be9f529cada054849",
+    "studies/tpu-opt-2026-10-21/montmory-tpu-opt/support.py": "f22100ce975b7c8b6e8108c81a3086e0f91e2e12073566b845f9dca0b1b275e3"
+  },
+  "versions": {
+    "jax": "0.10.2",
+    "jaxlib": "0.10.2",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "libtpu": null,
+    "scikit-learn": "1.7.2",
+    "matplotlib": "3.10.7"
+  },
+  "python": "3.11.2",
+  "platform": "Linux-6.1.0-50-cloud-amd64-x86_64-with-glibc2.36",
+  "device": "cpu:0",
+  "device_kind": "cpu",
+  "single_device": true,
+  "jax_configuration": {
+    "enable_x64": false,
+    "threefry_partitionable": true,
+    "default_matmul_precision": "highest"
+  },
+  "scope": "CPU functional pilot",
+  "git_commit": "f25907b855a0f1ab2386852ec4ad6b27a73f189c",
+  "git_status": "M .github/workflows/validate.yml\n M README.fr.md\n M README.md\n M notebooks/README.fr.md\n M notebooks/README.md\n?? applications/asian_option/\n?? applications/diffusion/\n?? applications/stochastic/",
+  "verification": {
+    "status": "pass",
+    "uint32_words": 24960,
+    "fused_output_elements": 99840,
+    "complete_adam_updates": 2,
+    "address_checks": 3,
+    "pallas_interpreted": true
+  },
+  "dataset": {
+    "name": "sklearn digits (UCI optical handwritten digits)",
+    "train": 1400,
+    "validation": 397,
+    "sha256": "571e95f83a6efef6ec238c36178788896764152fb6ff324ede6f82d0a84ee170"
+  },
+  "inputs_sha256": "22dc64b5668cda40b8938518a65651dc7b5ff19459327742a1583b8170c6f813",
+  "configuration": {
+    "steps": 300,
+    "seeds": [
+      7,
+      19
+    ],
+    "batch": 128,
+    "width": 128,
+    "tile_rows": 8,
+    "model": "80-128-128-64 SiLU velocity MLP; Adam 0.001; uniform t; Euler 40",
+    "gaussian": "23-bit midpoint Box-Muller; native comparator uses jax.random.normal",
+    "quality": "held-out velocity MSE with fixed common noise; images illustrative, no FID claim",
+    "timing": "resident-input full training step through block_until_ready; compile, input slicing and validation excluded"
+  },
+  "compilation_seconds": {
+    "threefry_jax": 0.5898948162794113,
+    "montmory_jax": 0.2989011649042368,
+    "threefry_native": 0.4196147359907627
+  },
+  "training": [
+    {
+      "seed": 7,
+      "variant": "threefry_jax",
+      "initial_heldout_mse": 1.7784432172775269,
+      "final_heldout_mse": 0.8187028169631958,
+      "median_step_ms": 1.4230035
+    },
+    {
+      "seed": 7,
+      "variant": "montmory_jax",
+      "initial_heldout_mse": 1.7784432172775269,
+      "final_heldout_mse": 0.8203842639923096,
+      "median_step_ms": 1.131126
+    },
+    {
+      "seed": 7,
+      "variant": "threefry_native",
+      "initial_heldout_mse": 1.7784432172775269,
+      "final_heldout_mse": 0.8162822127342224,
+      "median_step_ms": 1.43857
+    },
+    {
+      "seed": 19,
+      "variant": "threefry_jax",
+      "initial_heldout_mse": 1.7620751857757568,
+      "final_heldout_mse": 0.8111798167228699,
+      "median_step_ms": 1.4473375
+    },
+    {
+      "seed": 19,
+      "variant": "montmory_jax",
+      "initial_heldout_mse": 1.7620751857757568,
+      "final_heldout_mse": 0.8127400875091553,
+      "median_step_ms": 1.076783
+    },
+    {
+      "seed": 19,
+      "variant": "threefry_native",
+      "initial_heldout_mse": 1.7620751857757568,
+      "final_heldout_mse": 0.8131176829338074,
+      "median_step_ms": 1.4202435
+    }
+  ],
+  "summary": [
+    {
+      "variant": "threefry_jax",
+      "median_seed_step_ms": 1.4351705,
+      "median_heldout_mse": 0.8149413168430328,
+      "native_reference_over_candidate": 0.9961096475952291,
+      "seeds_faster": 1
+    },
+    {
+      "variant": "montmory_jax",
+      "median_seed_step_ms": 1.1039545,
+      "median_heldout_mse": 0.8165621757507324,
+      "native_reference_over_candidate": 1.2953862954166793,
+      "seeds_faster": 2
+    },
+    {
+      "variant": "threefry_native",
+      "median_seed_step_ms": 1.42940675,
+      "median_heldout_mse": 0.8146999478340149,
+      "native_reference_over_candidate": 1.0,
+      "seeds_faster": 0
+    }
+  ],
+  "timed_steps": 1800,
+  "elapsed_seconds": 16.096843283623457
+}

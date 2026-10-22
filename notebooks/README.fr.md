@@ -7,6 +7,8 @@
 | Optimisation, recherche et confirmation sur de nouvelles seeds | [Original](Montmory_TPU_optimisation.ipynb) | [Guide traduit](Montmory_TPU_optimisation.en.ipynb) |
 | Validation du port initial et mesures | [Original](Montmory_TPU_validation.ipynb) | [Guide traduit](Montmory_TPU_validation.en.ipynb) |
 | Petit réseau avec dropout — validation native TPU en attente | [Notebook](../applications/dropout/notebooks/Montmory_Dropout_TPU.ipynb) | [Notebook](../applications/dropout/notebooks/Montmory_Dropout_TPU.en.ipynb) |
+| Diffusion / flow matching de chiffres — validation native TPU en attente | [Notebook](../applications/diffusion/notebooks/Eninca_Diffusion_TPU.ipynb) | [Notebook](../applications/diffusion/notebooks/Eninca_Diffusion_TPU.en.ipynb) |
+| Options asiatiques Monte-Carlo / Sobol — validation native TPU en attente | [Notebook](../applications/asian_option/notebooks/Eninca_Asian_Option_TPU.ipynb) | [Notebook](../applications/asian_option/notebooks/Eninca_Asian_Option_TPU.en.ipynb) |
 
 Pour les débits bruts des PRNG, commencer par le notebook d'optimisation. Pour une étape complète d’entraînement, consulter l’[expérience dropout et ses limites](../applications/dropout/README.fr.md), contrôlée sur CPU uniquement à ce stade. Télécharger le notebook choisi, l'ouvrir dans Colab, sélectionner un environnement **TPU** effectif et exécuter ses cellules de code dans l'ordre. L'accès dépend du compte et des quotas. Le notebook embarque le kit exécutable ; aucun identifiant GitHub n'est nécessaire après téléchargement. Conserver séparément chaque nouvelle archive de résultats.
 

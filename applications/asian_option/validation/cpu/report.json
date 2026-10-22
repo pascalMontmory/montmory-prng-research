@@ -1,0 +1,306 @@
+{
+  "status": "pass",
+  "utc": "2026-10-22T09:07:35.373389+00:00",
+  "protocol": {
+    "backend": "cpu",
+    "out": "build/asian-cpu-published-20261022",
+    "quick": true,
+    "verify_only": false
+  },
+  "native_tpu_measurements": false,
+  "statistical_batteries_run": false,
+  "floating_cross_architecture_bit_identity": false,
+  "source_sha256": {
+    "applications/asian_option/pricing.py": "040f785da5d4a5e45a8771e4a6d20e9866f261c02a0192e19e60503eec931681",
+    "applications/asian_option/run.py": "e155e44cc5875fd31cae9f710a4f040b40cf64db3b095e0736b18d3ab656c495",
+    "applications/diffusion/model.py": "ac05978f0ee45f3ba92649606420f6e16d16c162a802175ba9655a3131a38397",
+    "applications/diffusion/run.py": "2bdc275dd2bab87a109d2a870c88836dcddabc5c8590e21621304f9e8b6c5483",
+    "applications/sobol/build_notebook.py": "ae7c07f33c097657f8577041369adabefee2c6d80cc65853fd9215f2edac217c",
+    "applications/sobol/kernels.py": "1f7c7ef0b3684ea2e7b724084e85685c6e33f36cc35a35dc4bec5be1e9f99d8a",
+    "applications/sobol/reference.py": "cbd946916d30ce4af98b595a360f854c76172d09ce54420c803b60695682b664",
+    "applications/sobol/run.py": "4726856941ddb84c7c87e8cc92cfecb9a41ca9b977ce2445c8da39e260208943",
+    "applications/sobol/verify.py": "0b428bedd7d24739eea4a28b64c83d0eca5793a762464fadbd47779d62e6bdd7",
+    "applications/stochastic/build_notebooks.py": "d83e38284cace7ff4feaeb7be61050731efa708b360d3b0b555c46f30d98ccd1",
+    "applications/stochastic/check.py": "739ca1c0baa3c962702325f829a6af77a5ed949fb03697eee89914a99a7ffa70",
+    "applications/stochastic/rng.py": "083d77afc4ac809429d32aefe50649d44170b5fd268e243e10a1fa98d73960e9",
+    "applications/stochastic/runtime.py": "432d948e89adc2a5d0bcb5a7ba849e64c4aa94b48cf70f58e6d8cc0afcd57198",
+    "studies/tpu-opt-2026-10-21/montmory-tpu-opt/kernels.py": "9540a50c8bcecf15ee76418d32eac94f0f831ff6cc12894e1c3bc14d851a5fc4",
+    "studies/tpu-opt-2026-10-21/montmory-tpu-opt/montmory_jax.py": "b6165bc908808708ee8466abe33a66efea75ca2a41ba765012f042e051ace8ab",
+    "studies/tpu-opt-2026-10-21/montmory-tpu-opt/reference/mmc_core.c": "5a0c515214226c50dd79b9774b616ca981621493d4f0c6bce7ececfdf5afbc8c",
+    "studies/tpu-opt-2026-10-21/montmory-tpu-opt/reference/mmc_core.h": "f3ca894f4242340aca0903bcb7e482746aee9b4d3fc1243269b4a557b52334bb",
+    "studies/tpu-opt-2026-10-21/montmory-tpu-opt/reference/oracle.c": "48c9670947bef455f86e2a547e878dcbe4722b4fd5cae24be9f529cada054849",
+    "studies/tpu-opt-2026-10-21/montmory-tpu-opt/support.py": "f22100ce975b7c8b6e8108c81a3086e0f91e2e12073566b845f9dca0b1b275e3"
+  },
+  "versions": {
+    "jax": "0.10.2",
+    "jaxlib": "0.10.2",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "libtpu": null,
+    "scikit-learn": "1.7.2",
+    "matplotlib": "3.10.7"
+  },
+  "python": "3.11.2",
+  "platform": "Linux-6.1.0-50-cloud-amd64-x86_64-with-glibc2.36",
+  "device": "cpu:0",
+  "device_kind": "cpu",
+  "single_device": true,
+  "jax_configuration": {
+    "enable_x64": false,
+    "threefry_partitionable": true,
+    "default_matmul_precision": "highest"
+  },
+  "scope": "CPU functional pilot",
+  "git_commit": "f25907b855a0f1ab2386852ec4ad6b27a73f189c",
+  "git_status": "M .github/workflows/validate.yml\n M README.fr.md\n M README.md\n M notebooks/README.fr.md\n M notebooks/README.md\n?? applications/asian_option/\n?? applications/diffusion/\n?? applications/stochastic/\n?? scripts/check_application_prototypes.py",
+  "verification": {
+    "status": "pass",
+    "uint32_words": 196608,
+    "analytic_quadrature_cases": 2,
+    "deterministic_case": true,
+    "pallas_interpreted": true
+  },
+  "configuration": {
+    "paths": [
+      512,
+      2048
+    ],
+    "seeds": [
+      101,
+      211,
+      307,
+      401
+    ],
+    "repetitions": 3,
+    "dates": 128,
+    "market": [
+      100.0,
+      100.0,
+      0.029999999329447746,
+      0.20000000298023224,
+      1.0
+    ],
+    "order": "chronological Brownian increments; no bridge or control variate",
+    "normal_mapping": "23-bit midpoint inverse normal CDF; native comparator uses jax.random.normal",
+    "sobol": "LMS+shift, independent scrambles, first 2**m points including point zero",
+    "primary_accuracy": "geometric Asian RMSE against analytic continuous-normal price",
+    "arithmetic_accuracy": "RMS difference to independent float64 RQMC reference; reference uncertainty reported",
+    "timing": "resident parameters, RNG + normal conversion + paths + payoffs + means, call-to-ready; setup and reference checks excluded",
+    "accuracy_targets": [
+      0.1,
+      0.05,
+      0.02
+    ],
+    "estimated_cloud_cost": false
+  },
+  "reference": {
+    "geometric_analytic": 5.119131871432839,
+    "arithmetic": 5.312689251896453,
+    "arithmetic_95_half_width": 0.014618744357044994,
+    "replicates": [
+      [
+        5.3163334652372525,
+        5.120448452997133
+      ],
+      [
+        5.3334575687764305,
+        5.137094173138366
+      ],
+      [
+        5.3192167360491975,
+        5.122939760679112
+      ],
+      [
+        5.327954558211477,
+        5.129911457764312
+      ],
+      [
+        5.314853222306076,
+        5.119463052436072
+      ],
+      [
+        5.279236983010982,
+        5.083324167493341
+      ],
+      [
+        5.295610221170439,
+        5.09811783545951
+      ],
+      [
+        5.314851260409771,
+        5.120027277146361
+      ]
+    ],
+    "paths_per_replicate": 8192,
+    "setup_seconds": 0.3729004058986902,
+    "note": "Student interval across independent scrambles, not a certified bound"
+  },
+  "compilation_seconds": {
+    "512:threefry_jax": 0.2625463120639324,
+    "512:montmory_jax": 0.25635034777224064,
+    "512:sobol_jax": 0.2654296141117811,
+    "512:threefry_native": 0.20045831054449081,
+    "2048:threefry_jax": 0.23370252922177315,
+    "2048:montmory_jax": 0.2377480287104845,
+    "2048:sobol_jax": 0.25219379737973213,
+    "2048:threefry_native": 0.19005795381963253
+  },
+  "summary": [
+    {
+      "variant": "threefry_jax",
+      "paths": 512,
+      "replicates": 4,
+      "median_seconds": 0.0016135435,
+      "native_reference_over_candidate": 1.117951114052599,
+      "geometric_rmse": 0.35741611548919927,
+      "arithmetic_rms_reference_difference": 0.3688281271094374,
+      "arithmetic_reference_half_width": 0.014618744357044994
+    },
+    {
+      "variant": "threefry_jax",
+      "paths": 2048,
+      "replicates": 4,
+      "median_seconds": 0.002653979,
+      "native_reference_over_candidate": 0.9312328669282308,
+      "geometric_rmse": 0.1983167628617809,
+      "arithmetic_rms_reference_difference": 0.208178030175945,
+      "arithmetic_reference_half_width": 0.014618744357044994
+    },
+    {
+      "variant": "montmory_jax",
+      "paths": 512,
+      "replicates": 4,
+      "median_seconds": 0.0021911615000000002,
+      "native_reference_over_candidate": 0.7227272851943913,
+      "geometric_rmse": 0.42964066213565355,
+      "arithmetic_rms_reference_difference": 0.45073417206427574,
+      "arithmetic_reference_half_width": 0.014618744357044994
+    },
+    {
+      "variant": "montmory_jax",
+      "paths": 2048,
+      "replicates": 4,
+      "median_seconds": 0.0056452755,
+      "native_reference_over_candidate": 0.41313736915575805,
+      "geometric_rmse": 0.13553474645332472,
+      "arithmetic_rms_reference_difference": 0.14077622290932462,
+      "arithmetic_reference_half_width": 0.014618744357044994
+    },
+    {
+      "variant": "sobol_jax",
+      "paths": 512,
+      "replicates": 4,
+      "median_seconds": 0.000593821,
+      "native_reference_over_candidate": 2.74853688524733,
+      "geometric_rmse": 0.05907011271206484,
+      "arithmetic_rms_reference_difference": 0.060223146527441776,
+      "arithmetic_reference_half_width": 0.014618744357044994
+    },
+    {
+      "variant": "sobol_jax",
+      "paths": 2048,
+      "replicates": 4,
+      "median_seconds": 0.0011187215,
+      "native_reference_over_candidate": 2.223441089349776,
+      "geometric_rmse": 0.026423687001235683,
+      "arithmetic_rms_reference_difference": 0.0248608546879622,
+      "arithmetic_reference_half_width": 0.014618744357044994
+    },
+    {
+      "variant": "threefry_native",
+      "paths": 512,
+      "replicates": 4,
+      "median_seconds": 0.0016881280000000001,
+      "native_reference_over_candidate": 1.0,
+      "geometric_rmse": 0.3574274718675314,
+      "arithmetic_rms_reference_difference": 0.3688393371354786,
+      "arithmetic_reference_half_width": 0.014618744357044994
+    },
+    {
+      "variant": "threefry_native",
+      "paths": 2048,
+      "replicates": 4,
+      "median_seconds": 0.0023635195000000003,
+      "native_reference_over_candidate": 1.0,
+      "geometric_rmse": 0.19830624136060646,
+      "arithmetic_rms_reference_difference": 0.20816696996107067,
+      "arithmetic_reference_half_width": 0.014618744357044994
+    }
+  ],
+  "empirical_time_to_geometric_rmse": [
+    {
+      "variant": "threefry_jax",
+      "target": 0.1,
+      "tested_paths": null,
+      "seconds": null
+    },
+    {
+      "variant": "threefry_jax",
+      "target": 0.05,
+      "tested_paths": null,
+      "seconds": null
+    },
+    {
+      "variant": "threefry_jax",
+      "target": 0.02,
+      "tested_paths": null,
+      "seconds": null
+    },
+    {
+      "variant": "montmory_jax",
+      "target": 0.1,
+      "tested_paths": null,
+      "seconds": null
+    },
+    {
+      "variant": "montmory_jax",
+      "target": 0.05,
+      "tested_paths": null,
+      "seconds": null
+    },
+    {
+      "variant": "montmory_jax",
+      "target": 0.02,
+      "tested_paths": null,
+      "seconds": null
+    },
+    {
+      "variant": "sobol_jax",
+      "target": 0.1,
+      "tested_paths": 512,
+      "seconds": 0.000593821
+    },
+    {
+      "variant": "sobol_jax",
+      "target": 0.05,
+      "tested_paths": 2048,
+      "seconds": 0.0011187215
+    },
+    {
+      "variant": "sobol_jax",
+      "target": 0.02,
+      "tested_paths": null,
+      "seconds": null
+    },
+    {
+      "variant": "threefry_native",
+      "target": 0.1,
+      "tested_paths": null,
+      "seconds": null
+    },
+    {
+      "variant": "threefry_native",
+      "target": 0.05,
+      "tested_paths": null,
+      "seconds": null
+    },
+    {
+      "variant": "threefry_native",
+      "target": 0.02,
+      "tested_paths": null,
+      "seconds": null
+    }
+  ],
+  "timed_outputs_checked": 96,
+  "elapsed_seconds": 13.06804296001792
+}

@@ -1,0 +1,33 @@
+{
+  "versions": {
+    "jax": "0.10.2",
+    "jaxlib": "0.10.2",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1"
+  },
+  "variants": [
+    "jax_gray",
+    "jax_block_128",
+    "jax_block_256",
+    "jax_block_512"
+  ],
+  "points": [
+    512,
+    8192
+  ],
+  "search_seeds": [
+    11
+  ],
+  "confirmation_seeds": [
+    101,
+    211
+  ],
+  "repetitions": {
+    "search": 3,
+    "confirmation": 3
+  },
+  "start_rule": "(2**31) + (case_index+1)*512",
+  "parameters": "SciPy LMS+shift, exported and hashed",
+  "selection": "lowest median per-seed median time, separately within JAX and Pallas",
+  "success_rule": "all timed outputs match exactly; performance reported without a universal-win claim"
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "points": 512,
+    "variant": "jax_gray",
+    "compile_ns": 123790199
+  },
+  {
+    "points": 512,
+    "variant": "jax_block_128",
+    "compile_ns": 126884518
+  },
+  {
+    "points": 512,
+    "variant": "jax_block_256",
+    "compile_ns": 110285651
+  },
+  {
+    "points": 512,
+    "variant": "jax_block_512",
+    "compile_ns": 248023124
+  },
+  {
+    "points": 8192,
+    "variant": "jax_gray",
+    "compile_ns": 159514302
+  },
+  {
+    "points": 8192,
+    "variant": "jax_block_128",
+    "compile_ns": 137027382
+  },
+  {
+    "points": 8192,
+    "variant": "jax_block_256",
+    "compile_ns": 140823144
+  },
+  {
+    "points": 8192,
+    "variant": "jax_block_512",
+    "compile_ns": 131193676
+  }
+]

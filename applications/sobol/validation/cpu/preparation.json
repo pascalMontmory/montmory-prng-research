@@ -1,0 +1,41 @@
+[
+  {
+    "phase": "search",
+    "seed": 11,
+    "parameter_sha256": "35ddbe7eff1c66e947111ca4d42bd1dcbc89423f3381946bb9a98f91b96b1b05",
+    "parameter_ns": 5581459,
+    "local_tables_ns": 8689244,
+    "upload_ns": 426234,
+    "local_table_bytes": {
+      "128": 65536,
+      "256": 131072,
+      "512": 262144
+    }
+  },
+  {
+    "phase": "confirmation",
+    "seed": 101,
+    "parameter_sha256": "1350565f19fff273cae0ac61bda1a311e4792e46cd7569b65e3dcdccd4d9ce7d",
+    "parameter_ns": 4536466,
+    "local_tables_ns": 5329595,
+    "upload_ns": 343909,
+    "local_table_bytes": {
+      "128": 65536,
+      "256": 131072,
+      "512": 262144
+    }
+  },
+  {
+    "phase": "confirmation",
+    "seed": 211,
+    "parameter_sha256": "5a8e39c2104ab7c86d209d69b83def189b191e685c55710c3f67d8be74871ccd",
+    "parameter_ns": 4253069,
+    "local_tables_ns": 5254856,
+    "upload_ns": 302927,
+    "local_table_bytes": {
+      "128": 65536,
+      "256": 131072,
+      "512": 262144
+    }
+  }
+]

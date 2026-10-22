@@ -51,6 +51,8 @@ Un [glossaire](docs/glossary.md) explique les termes utilisés dans les protocol
 
 Le [benchmark applicatif JAX](docs/benchmark-applicatif.md) ajoute des uniformes, des normales et un calcul Monte-Carlo à la génération brute. Il est vérifié localement sur CPU ; ses performances natives TPU restent à mesurer.
 
+Le [prototype Sobol32 séparé](applications/sobol/README.fr.md) étudie la génération exacte de points à faible discrépance avec des implémentations par blocs JAX et Pallas. La conformité CPU est contrôlée ; la compilation native TPU et ses performances restent à vérifier.
+
 ## Vérifier sans posséder de TPU
 
 Avec Python 3.11+ et un compilateur C :

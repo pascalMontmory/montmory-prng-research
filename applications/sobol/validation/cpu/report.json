@@ -1,0 +1,124 @@
+{
+  "status": "pass",
+  "backend_requested": "cpu",
+  "started_utc": "2026-10-21T23:27:27.006829+00:00",
+  "python": "3.11.2 (main, Oct  7 2026, 12:35:07) [GCC 12.2.0]",
+  "host_platform": "Linux-6.1.0-50-cloud-amd64-x86_64-with-glibc2.36",
+  "statistical_tests_run": false,
+  "native_tpu_tested": false,
+  "source_sha256": {
+    "build_notebook.py": "ae7c07f33c097657f8577041369adabefee2c6d80cc65853fd9215f2edac217c",
+    "kernels.py": "1f7c7ef0b3684ea2e7b724084e85685c6e33f36cc35a35dc4bec5be1e9f99d8a",
+    "reference.py": "cbd946916d30ce4af98b595a360f854c76172d09ce54420c803b60695682b664",
+    "run.py": "4726856941ddb84c7c87e8cc92cfecb9a41ca9b977ce2445c8da39e260208943",
+    "verify.py": "0b428bedd7d24739eea4a28b64c83d0eca5793a762464fadbd47779d62e6bdd7"
+  },
+  "versions": {
+    "jax": "0.10.2",
+    "jaxlib": "0.10.2",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1"
+  },
+  "libtpu": null,
+  "devices": [
+    "cpu:0"
+  ],
+  "device_kind": "cpu",
+  "jax_enable_x64": false,
+  "verification": {
+    "status": "pass",
+    "backend": "cpu",
+    "pallas_execution": "CPU interpreter",
+    "scipy_public_words": 2097152,
+    "accelerator_words": 14314496,
+    "recurrence_words": 1575936,
+    "statistical_tests_run": false,
+    "partition_checks": 8,
+    "invalid_range_checks": 5,
+    "uniform24_words": 131072
+  },
+  "campaign": {
+    "status": "pass",
+    "backend": "cpu",
+    "quick": true,
+    "scope": "CPU functional campaign only",
+    "dimensions": 128,
+    "bits": 32,
+    "timing": "call to ready; allocation and output writes included; host reads excluded",
+    "excluded": [
+      "SciPy parameter initialization",
+      "local table preparation",
+      "device uploads",
+      "compilation",
+      "warm-up",
+      "host oracle and timed-output checks"
+    ],
+    "parameter_reuse": "one parameter set reused for all repeats; cold setup is not a throughput claim",
+    "comparison": "selected Pallas versus separately selected best JAX (Gray or block)",
+    "samples": 48,
+    "timed_words_compared": 26738688,
+    "selection": {
+      "512": {
+        "jax": "jax_block_128"
+      },
+      "8192": {
+        "jax": "jax_block_256"
+      }
+    },
+    "confirmation": [
+      {
+        "points": 512,
+        "variant": "jax_gray",
+        "selected_jax_baseline": "jax_block_128",
+        "stored_GB_per_second": 1.2829222814663284,
+        "paired_ratio_vs_selected_jax": 1.041477331510061,
+        "faster_seeds": 1,
+        "seeds": 2,
+        "per_seed_ratio": [
+          1.1358885925061477,
+          0.9470660705139741
+        ]
+      },
+      {
+        "points": 512,
+        "variant": "jax_block_128",
+        "selected_jax_baseline": "jax_block_128",
+        "stored_GB_per_second": 1.2386374911996372,
+        "paired_ratio_vs_selected_jax": 1.0,
+        "faster_seeds": 0,
+        "seeds": 2,
+        "per_seed_ratio": [
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "points": 8192,
+        "variant": "jax_gray",
+        "selected_jax_baseline": "jax_block_256",
+        "stored_GB_per_second": 2.387795684631145,
+        "paired_ratio_vs_selected_jax": 0.8612319466780227,
+        "faster_seeds": 1,
+        "seeds": 2,
+        "per_seed_ratio": [
+          0.6518306514731438,
+          1.0706332418829017
+        ]
+      },
+      {
+        "points": 8192,
+        "variant": "jax_block_256",
+        "selected_jax_baseline": "jax_block_256",
+        "stored_GB_per_second": 2.680195753852662,
+        "paired_ratio_vs_selected_jax": 1.0,
+        "faster_seeds": 0,
+        "seeds": 2,
+        "per_seed_ratio": [
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  "elapsed_seconds": 17.391908345744014
+}

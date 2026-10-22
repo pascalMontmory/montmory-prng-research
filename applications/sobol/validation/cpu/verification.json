@@ -1,0 +1,158 @@
+{
+  "status": "pass",
+  "backend": "cpu",
+  "pallas_execution": "CPU interpreter",
+  "scipy_public_words": 2097152,
+  "accelerator_words": 14314496,
+  "recurrence_words": 1575936,
+  "cases": [
+    {
+      "seed": null,
+      "start": 0,
+      "points": 513,
+      "variants": 8
+    },
+    {
+      "seed": null,
+      "start": 1,
+      "points": 513,
+      "variants": 8
+    },
+    {
+      "seed": null,
+      "start": 127,
+      "points": 513,
+      "variants": 8
+    },
+    {
+      "seed": null,
+      "start": 65535,
+      "points": 513,
+      "variants": 8
+    },
+    {
+      "seed": null,
+      "start": 2147483392,
+      "points": 513,
+      "variants": 8
+    },
+    {
+      "seed": null,
+      "start": 4294966783,
+      "points": 513,
+      "variants": 8
+    },
+    {
+      "seed": 0,
+      "start": 0,
+      "points": 513,
+      "variants": 8
+    },
+    {
+      "seed": 0,
+      "start": 1,
+      "points": 513,
+      "variants": 8
+    },
+    {
+      "seed": 0,
+      "start": 127,
+      "points": 513,
+      "variants": 8
+    },
+    {
+      "seed": 0,
+      "start": 65535,
+      "points": 513,
+      "variants": 8
+    },
+    {
+      "seed": 0,
+      "start": 2147483392,
+      "points": 513,
+      "variants": 8
+    },
+    {
+      "seed": 0,
+      "start": 4294966783,
+      "points": 513,
+      "variants": 8
+    },
+    {
+      "seed": 42,
+      "start": 0,
+      "points": 513,
+      "variants": 8
+    },
+    {
+      "seed": 42,
+      "start": 1,
+      "points": 513,
+      "variants": 8
+    },
+    {
+      "seed": 42,
+      "start": 127,
+      "points": 513,
+      "variants": 8
+    },
+    {
+      "seed": 42,
+      "start": 65535,
+      "points": 513,
+      "variants": 8
+    },
+    {
+      "seed": 42,
+      "start": 2147483392,
+      "points": 513,
+      "variants": 8
+    },
+    {
+      "seed": 42,
+      "start": 4294966783,
+      "points": 513,
+      "variants": 8
+    },
+    {
+      "seed": 18446744073709551615,
+      "start": 0,
+      "points": 513,
+      "variants": 8
+    },
+    {
+      "seed": 18446744073709551615,
+      "start": 1,
+      "points": 513,
+      "variants": 8
+    },
+    {
+      "seed": 18446744073709551615,
+      "start": 127,
+      "points": 513,
+      "variants": 8
+    },
+    {
+      "seed": 18446744073709551615,
+      "start": 65535,
+      "points": 513,
+      "variants": 8
+    },
+    {
+      "seed": 18446744073709551615,
+      "start": 2147483392,
+      "points": 513,
+      "variants": 8
+    },
+    {
+      "seed": 18446744073709551615,
+      "start": 4294966783,
+      "points": 513,
+      "variants": 8
+    }
+  ],
+  "statistical_tests_run": false,
+  "partition_checks": 8,
+  "invalid_range_checks": 5,
+  "uniform24_words": 131072
+}

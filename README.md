@@ -51,6 +51,8 @@ A [glossary](docs/en/glossary.md) explains the terminology used in the protocols
 
 The new [JAX application benchmark](docs/en/benchmark-applicatif.md) covers uniforms, normals and a complete Monte Carlo estimator. Local CPU checks are recorded separately; native TPU application performance is not yet measured.
 
+The separate [Sobol32 prototype](applications/sobol/README.md) studies exact low-discrepancy point generation with both JAX and Pallas block implementations. CPU correctness is checked; native TPU compilation and performance remain unverified.
+
 ## Verify this record locally
 
 Python 3.11+ and a C compiler are sufficient for the first two checks:

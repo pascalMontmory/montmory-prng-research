@@ -1,0 +1,83 @@
+{
+  "status": "pass",
+  "backend": "cpu",
+  "quick": true,
+  "scope": "CPU functional campaign only",
+  "dimensions": 128,
+  "bits": 32,
+  "timing": "call to ready; allocation and output writes included; host reads excluded",
+  "excluded": [
+    "SciPy parameter initialization",
+    "local table preparation",
+    "device uploads",
+    "compilation",
+    "warm-up",
+    "host oracle and timed-output checks"
+  ],
+  "parameter_reuse": "one parameter set reused for all repeats; cold setup is not a throughput claim",
+  "comparison": "selected Pallas versus separately selected best JAX (Gray or block)",
+  "samples": 48,
+  "timed_words_compared": 26738688,
+  "selection": {
+    "512": {
+      "jax": "jax_block_128"
+    },
+    "8192": {
+      "jax": "jax_block_256"
+    }
+  },
+  "confirmation": [
+    {
+      "points": 512,
+      "variant": "jax_gray",
+      "selected_jax_baseline": "jax_block_128",
+      "stored_GB_per_second": 1.2829222814663284,
+      "paired_ratio_vs_selected_jax": 1.041477331510061,
+      "faster_seeds": 1,
+      "seeds": 2,
+      "per_seed_ratio": [
+        1.1358885925061477,
+        0.9470660705139741
+      ]
+    },
+    {
+      "points": 512,
+      "variant": "jax_block_128",
+      "selected_jax_baseline": "jax_block_128",
+      "stored_GB_per_second": 1.2386374911996372,
+      "paired_ratio_vs_selected_jax": 1.0,
+      "faster_seeds": 0,
+      "seeds": 2,
+      "per_seed_ratio": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "points": 8192,
+      "variant": "jax_gray",
+      "selected_jax_baseline": "jax_block_256",
+      "stored_GB_per_second": 2.387795684631145,
+      "paired_ratio_vs_selected_jax": 0.8612319466780227,
+      "faster_seeds": 1,
+      "seeds": 2,
+      "per_seed_ratio": [
+        0.6518306514731438,
+        1.0706332418829017
+      ]
+    },
+    {
+      "points": 8192,
+      "variant": "jax_block_256",
+      "selected_jax_baseline": "jax_block_256",
+      "stored_GB_per_second": 2.680195753852662,
+      "paired_ratio_vs_selected_jax": 1.0,
+      "faster_seeds": 0,
+      "seeds": 2,
+      "per_seed_ratio": [
+        1.0,
+        1.0
+      ]
+    }
+  ]
+}

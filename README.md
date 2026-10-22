@@ -53,6 +53,8 @@ The new [JAX application benchmark](docs/en/benchmark-applicatif.md) covers unif
 
 The separate [Sobol32 prototype](applications/sobol/README.md) studies exact low-discrepancy point generation with both JAX and Pallas block implementations. CPU correctness is checked; native TPU compilation and performance remain unverified.
 
+The [dropout training experiment](applications/dropout/README.md) compares Montmory and Threefry in a small neural network, with mask generation and application fused in Pallas. CPU checks, learning curves and English/French Colab notebooks are available. **Native TPU compilation and any training speedup remain to be validated.**
+
 ## Verify this record locally
 
 Python 3.11+ and a C compiler are sufficient for the first two checks:

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "review_date": "2026-10-21",
+  "review_date": "2026-10-22",
   "scope": "Public FR/EN reader documentation; private legal editions excluded; historical sources and evidence retain their original bytes. Hashes record the reviewed revision, not linguistic certification.",
   "pairs": [
     {
@@ -9,8 +9,8 @@
       "reference_language": "en",
       "reference_frozen": false,
       "kind": "markdown",
-      "fr_sha256": "16776031abf27f8e408bf94ff1f7f980d91cb79babff0a63fdf55da1fe401cf6",
-      "en_sha256": "78e2adf53407383f85a3235c9444d7a7e716015a14cf8418739f46222f77ae21"
+      "fr_sha256": "6c12e20afe83a48c23b83f1ed393e5779aa0cf6ce08298dd2064431dc97fcb16",
+      "en_sha256": "eec78d76ac43a02c1182d35f85bb0ea1f81e217390f74d8c68730c2d39426ac1"
     },
     {
       "fr": "docs/contract.md",
@@ -171,8 +171,8 @@
       "reference_language": "en",
       "reference_frozen": false,
       "kind": "markdown",
-      "fr_sha256": "8178d78e8e4a7771a0eec7e06cf30b22f3dced40d33e82c5180b3098671782c5",
-      "en_sha256": "e359377ca3494181b3e35a1349939b032729bffc2fe19e8078032e9a37b29c04"
+      "fr_sha256": "126a1bdd3d8b68b7c64afe757db3cc958b83f8861853795cec05121fcbbe5ad0",
+      "en_sha256": "4c4aa47bae9de39e52166d365ee356a72ffe518a47706e60c2b03ff8da423e73"
     },
     {
       "fr": "notebooks/Montmory_TPU_optimisation.ipynb",
@@ -227,6 +227,24 @@
       "kind": "notebook",
       "fr_sha256": "acdfb2c70249331a8199f8f5bc56a080d8ec0a96f241e2b9c31b92d5834f32a1",
       "en_sha256": "5194b459d8a838ee21ed3bacffbe23e2d75f9567f006bd49ce1d2f39a3203361"
+    },
+    {
+      "fr": "applications/dropout/README.fr.md",
+      "en": "applications/dropout/README.md",
+      "reference_language": "en",
+      "reference_frozen": false,
+      "kind": "markdown",
+      "fr_sha256": "0d727f29f657ef474e774749ac25293187923645507bed44cd172b83696d5eac",
+      "en_sha256": "3a95e4af182b0bf4438c718ac181d8d7d8d091caf12733327fddc204843a1ec4"
+    },
+    {
+      "fr": "applications/dropout/notebooks/Montmory_Dropout_TPU.ipynb",
+      "en": "applications/dropout/notebooks/Montmory_Dropout_TPU.en.ipynb",
+      "reference_language": "fr",
+      "reference_frozen": false,
+      "kind": "notebook",
+      "fr_sha256": "89e7597f3d348c1ba529e923c08aa9d09424efd11701326cefe7daadbd1f5df1",
+      "en_sha256": "c289ca523f7b3a42a5919b4930de074387d5752dd2fa493d68776660bacf7b18"
     }
   ]
 }

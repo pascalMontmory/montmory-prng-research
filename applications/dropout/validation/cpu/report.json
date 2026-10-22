@@ -1,0 +1,220 @@
+{
+  "status": "pass",
+  "requested_backend": "cpu",
+  "started_utc": "2026-10-21T22:44:27.378784+00:00",
+  "protocol": {
+    "backend": "cpu",
+    "out": "build/dropout-cpu-final-20261021",
+    "steps": 150,
+    "seeds": [
+      7,
+      19,
+      42
+    ],
+    "rows": 32,
+    "width": 128,
+    "batch": 64
+  },
+  "statistical_batteries_run": false,
+  "native_tpu_measurements": false,
+  "cross_architecture_training_bitwise_claim": false,
+  "jax": "0.10.2",
+  "jaxlib": "0.10.2",
+  "numpy": "2.4.6",
+  "platform": "Linux-6.1.0-50-cloud-amd64-x86_64-with-glibc2.36",
+  "devices": [
+    "cpu:0"
+  ],
+  "device_kind": "cpu",
+  "matmul_precision": "highest",
+  "logical_geometry": {
+    "T": 2048,
+    "D": 4096
+  },
+  "source_sha256": {
+    "applications/dropout/dropout.py": "e4e160e5c7e4474163ac3aa6cfc51c4d71ee78a880c9223eb2cd4964aa535d48",
+    "applications/dropout/model.py": "3fc70bdebe75a8df686dd11facdce54b4908d073c553b04a950caba7e5a4bfc7",
+    "applications/dropout/run.py": "05b04375ca180d14e2fe74d93d37fa8a4639032f22576e31606762fb56730e0b",
+    "applications/dropout/verify.py": "7caa18d84018e9f72938e26c1c651dbd86a1cc2f9f07fd44beb776e853d8be7e",
+    "studies/tpu-opt-2026-10-21/montmory-tpu-opt/kernels.py": "9540a50c8bcecf15ee76418d32eac94f0f831ff6cc12894e1c3bc14d851a5fc4",
+    "studies/tpu-opt-2026-10-21/montmory-tpu-opt/montmory_jax.py": "b6165bc908808708ee8466abe33a66efea75ca2a41ba765012f042e051ace8ab",
+    "studies/tpu-opt-2026-10-21/montmory-tpu-opt/reference/mmc_core.c": "5a0c515214226c50dd79b9774b616ca981621493d4f0c6bce7ececfdf5afbc8c",
+    "studies/tpu-opt-2026-10-21/montmory-tpu-opt/reference/mmc_core.h": "f3ca894f4242340aca0903bcb7e482746aee9b4d3fc1243269b4a557b52334bb",
+    "studies/tpu-opt-2026-10-21/montmory-tpu-opt/reference/oracle.c": "48c9670947bef455f86e2a547e878dcbe4722b4fd5cae24be9f529cada054849",
+    "studies/tpu-opt-2026-10-21/montmory-tpu-opt/support.py": "f22100ce975b7c8b6e8108c81a3086e0f91e2e12073566b845f9dca0b1b275e3"
+  },
+  "libtpu": null,
+  "git_commit": "b31cb51268938034c8311a03426f0f8bb707d5bf",
+  "git_status": [
+    "?? applications/dropout/"
+  ],
+  "verification": {
+    "mode": "pallas_cpu_interpretation",
+    "mask_elements": 49672,
+    "gradient_elements": 49672,
+    "cases": [
+      {
+        "engine": "threefry",
+        "seed": 0,
+        "base": 0,
+        "count": 1,
+        "tiles": [
+          8,
+          32
+        ]
+      },
+      {
+        "engine": "threefry",
+        "seed": 42,
+        "base": 4294967289,
+        "count": 4097,
+        "tiles": [
+          8,
+          32
+        ]
+      },
+      {
+        "engine": "threefry",
+        "seed": 18446744073709551615,
+        "base": 18446744073709543424,
+        "count": 8193,
+        "tiles": [
+          8,
+          32
+        ]
+      },
+      {
+        "engine": "threefry",
+        "seed": 9223372036854775809,
+        "base": 8388607,
+        "count": 127,
+        "tiles": [
+          8,
+          32
+        ]
+      },
+      {
+        "engine": "montmory",
+        "seed": 0,
+        "base": 0,
+        "count": 1,
+        "tiles": [
+          8,
+          32
+        ]
+      },
+      {
+        "engine": "montmory",
+        "seed": 42,
+        "base": 4294967289,
+        "count": 4097,
+        "tiles": [
+          8,
+          32
+        ]
+      },
+      {
+        "engine": "montmory",
+        "seed": 18446744073709551615,
+        "base": 18446744073709543424,
+        "count": 8193,
+        "tiles": [
+          8,
+          32
+        ]
+      },
+      {
+        "engine": "montmory",
+        "seed": 9223372036854775809,
+        "base": 8388607,
+        "count": 127,
+        "tiles": [
+          8,
+          32
+        ]
+      }
+    ],
+    "training_step_comparisons": [
+      {
+        "engine": "threefry",
+        "max_absolute_difference": 0.0
+      },
+      {
+        "engine": "montmory",
+        "max_absolute_difference": 0.0
+      }
+    ],
+    "schedule_checks": 6,
+    "status": "pass"
+  },
+  "dataset_and_batch_order_sha256": "120c2a220599f1b65a1009655a79f716ec88ced0dff4c9ca2f269e84b0e79748",
+  "model": {
+    "inputs": 32,
+    "hidden": [
+      128,
+      128
+    ],
+    "classes": 4,
+    "parameters": 21252,
+    "dropout_rate": 0.25,
+    "learning_rate": 0.1,
+    "training_examples": 2048,
+    "validation_examples": 512,
+    "synthetic_task": "class of maximum of four fixed linear teacher scores"
+  },
+  "compilation_seconds": {
+    "threefry_jax": 0.4888470843434334,
+    "montmory_jax": 0.353341618552804
+  },
+  "training": [
+    {
+      "seed": 7,
+      "variant": "threefry_jax",
+      "initial_validation_loss": 1.7084988355636597,
+      "final_validation_loss": 0.43983933329582214,
+      "initial_validation_accuracy": 0.26953125,
+      "final_validation_accuracy": 0.841796875
+    },
+    {
+      "seed": 7,
+      "variant": "montmory_jax",
+      "initial_validation_loss": 1.7084988355636597,
+      "final_validation_loss": 0.4485834240913391,
+      "initial_validation_accuracy": 0.26953125,
+      "final_validation_accuracy": 0.83203125
+    },
+    {
+      "seed": 19,
+      "variant": "threefry_jax",
+      "initial_validation_loss": 1.7256931066513062,
+      "final_validation_loss": 0.4346606731414795,
+      "initial_validation_accuracy": 0.279296875,
+      "final_validation_accuracy": 0.8203125
+    },
+    {
+      "seed": 19,
+      "variant": "montmory_jax",
+      "initial_validation_loss": 1.7256931066513062,
+      "final_validation_loss": 0.458039790391922,
+      "initial_validation_accuracy": 0.279296875,
+      "final_validation_accuracy": 0.828125
+    },
+    {
+      "seed": 42,
+      "variant": "threefry_jax",
+      "initial_validation_loss": 2.395048141479492,
+      "final_validation_loss": 0.4699089527130127,
+      "initial_validation_accuracy": 0.212890625,
+      "final_validation_accuracy": 0.828125
+    },
+    {
+      "seed": 42,
+      "variant": "montmory_jax",
+      "initial_validation_loss": 2.395048141479492,
+      "final_validation_loss": 0.4444800317287445,
+      "initial_validation_accuracy": 0.212890625,
+      "final_validation_accuracy": 0.81640625
+    }
+  ],
+  "elapsed_seconds": 16.187750078737736
+}

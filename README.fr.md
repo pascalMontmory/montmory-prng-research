@@ -53,6 +53,8 @@ Le [benchmark applicatif JAX](docs/benchmark-applicatif.md) ajoute des uniformes
 
 Le [prototype Sobol32 séparé](applications/sobol/README.fr.md) étudie la génération exacte de points à faible discrépance avec des implémentations par blocs JAX et Pallas. La conformité CPU est contrôlée ; la compilation native TPU et ses performances restent à vérifier.
 
+L’[expérience d’entraînement avec dropout](applications/dropout/README.fr.md) compare Montmory et Threefry dans un petit réseau neuronal, avec génération et application du masque fusionnées dans Pallas. Les contrôles CPU, les courbes d’apprentissage et les notebooks Colab français/anglais sont disponibles. **La compilation native TPU et les gains éventuels sur l’entraînement restent à valider.**
+
 ## Vérifier sans posséder de TPU
 
 Avec Python 3.11+ et un compilateur C :

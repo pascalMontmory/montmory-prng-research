@@ -1,4 +1,4 @@
-# Résultats au 21 octobre 2026
+# Résultats au 24 octobre 2026
 
 [Français](results.md) · [English](en/results.md) · [Documentation FR/EN](languages.md)
 
@@ -46,7 +46,7 @@ Les débits du tableau comparent le temps de l'appel jusqu'au résultat prêt, a
 
 **Aucun noyau dédié aux appels matériels Pallas `prng_seed`/`prng_random_bits` n'a été chronométré dans cette campagne.** Le chiffre RBG ne représente ni le débit maximal du circuit, ni une comparaison directe avec toutes les voies matérielles possibles. Un débit logiciel supérieur à ce chemin RBG ne prouve pas que ses opérations élémentaires sont plus rapides que celles du PRNG silicium.
 
-Les sorties Montmory et Threefry sont contrôlées contre leurs références définies ; RBG est contrôlé seulement en répétabilité sur le même backend. Ce choix explicite le compromis recherché : performance et stabilité du flux. La stabilité repose sur un contrat logiciel ; nos essais natifs ne démontrent pas encore son respect sur plusieurs générations de TPU, ni un gain applicatif.
+Les sorties Montmory et Threefry sont contrôlées contre leurs références définies ; RBG est contrôlé seulement en répétabilité sur le même backend. Ce choix explicite le compromis recherché : performance et stabilité du flux. La stabilité repose sur un contrat logiciel ; ces campagnes de génération brute ne démontrent pas son respect sur plusieurs générations de TPU, ni à elles seules un gain applicatif. L’entraînement dropout est mesuré séparément ci-dessous.
 
 ## Apple M3 : conserver le meilleur chemin mesuré
 
@@ -80,6 +80,29 @@ La [comparaison CPU Random123](../studies/audit-2026-10-21/evidence/benchmark-su
 
 Le [registre TestU01](testu01.md) précise les passes disponibles et leurs limites de provenance. Les [comparaisons TACM](tacm.md) ne montrent aucun avantage statistique de Montmory selon le critère fixé. Les optimisations TPU n'ont modifié aucune constante ni aucun tour du moteur, mais n'ont pas relancé TestU01 ou TACM.
 
-Aucun benchmark de calcul VaR complet, de tarification, d'entraînement IA ou de consommation énergétique n'est présent. Le dossier démontre un travail de portage, de mesure et de validation ; il ne permet pas de chiffrer un bénéfice applicatif ou commercial encore non mesuré.
+Un petit entraînement avec dropout dispose désormais de mesures natives TPU, présentées ci-dessous. Aucun gain natif sur un calcul VaR complet, une application de tarification ou la consommation énergétique n’est établi. Ces preuves ne chiffrent pas un bénéfice commercial.
 
 Un [premier benchmark applicatif JAX](benchmark-applicatif.md) est désormais disponible : uniformes, normales et estimation Monte-Carlo avec le consommateur dans le même `jit`. Son contrôle court CPU est conservé séparément. Il n'apporte pas encore de mesure applicative native TPU ni de confirmation d'un gain sur une application cliente.
+
+## Dropout : entraînement natif TPU du 24 octobre 2026
+
+Le [rapport détaillé](../applications/dropout/validation/tpu-20261024/README.fr.md)
+conserve 1 800 mesures, les sources exactes, les contrôles et les courbes d’un MLP
+à 21 252 paramètres sur TPU v5 lite. Pallas réduit le temps d’étape de Montmory
+par rapport à Montmory JAX de **5,76 %, 5,10 % et 6,27 %** sur les trois graines.
+Les 900 paires de pertes JAX/Pallas sont numériquement identiques ; le programme
+rapporte aussi un écart nul entre les poids finaux, non exportés dans l’archive.
+
+Montmory Pallas reste proche de Threefry JAX : +0,75 %, −0,89 % et −0,98 % de temps
+par étape. Threefry Pallas prend environ 0,3–0,5 % de temps supplémentaire face à
+Threefry JAX. Le passage à Pallas change l’implémentation, pas l’algorithme Threefry ;
+le PRNG matériel TPU n’est pas utilisé ici.
+
+La précision finale moyenne vaut 82,55 % pour Montmory et 83,01 % pour Threefry.
+Une session, trois graines et une tâche synthétique ne démontrent ni supériorité
+ni équivalence statistique de qualité. Le rapprochement avec l’ancien contrôle
+CPU donne environ 1,48× pour Montmory Pallas, mais reste indicatif et ne mesure
+pas un gain propre au PRNG. Aucun entraînement GPU comparable n’est disponible.
+
+Le [prototype Sobol32](../applications/sobol/README.fr.md) et ses notebooks TPU
+sont distincts. Leur compilation native et leurs performances TPU restent à valider.

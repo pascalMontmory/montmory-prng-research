@@ -4,13 +4,13 @@
 
 [Start here: code and first checks](docs/start-here.md) · [Results](docs/en/results.md) · [Methodology](docs/en/methodology.md) · [Reproduce](docs/en/reproduce.md) · [Evidence register](docs/en/evidence.md)
 
-**A documented investigation of one deterministic integer generator across CPU, Apple Metal GPU and Google TPU.** This repository preserves the implementation, protocols, raw measurements, independent reanalysis, corrections and known limitations of work completed on **21 October 2026**. Algorithm development is paused.
+**A documented investigation of one deterministic integer generator across CPU, Apple Metal GPU and Google TPU.** This repository preserves the implementation, protocols, raw measurements, independent reanalysis, corrections and known limitations of work recorded through **24 October 2026**. Algorithm development is paused.
 
 ## Why optimize a software PRNG on TPU?
 
 TPUs include a fast sequential hardware PRNG whose implementation varies across chip generations. JAX advises against relying on its exact behavior and recommends software Threefry when stream stability matters. [JAX hardware PRNG documentation](https://docs.jax.dev/en/latest/pallas/tpu/prng.html#using-the-hardware-prng).
 
-**Our objective is to approach the accelerator's useful generation throughput while retaining an exactly specified, portable integer stream.** We optimize software implementations of Threefry and Montmory so that execution strategy can change while the defined outputs remain fixed. The stream contract is specified in software rather than by the TPU generation. Native TPU evidence currently covers **one TPU v5 lite**; validation on other generations remains future work.
+**Our objective is to approach the accelerator's useful generation throughput while retaining an exactly specified, portable integer stream.** We optimize software implementations of Threefry and Montmory so that execution strategy can change while the defined outputs remain fixed. The stream contract is specified in software rather than by the TPU generation. Native TPU evidence currently covers **the TPU v5 lite generation, with one device per run**; validation on other generations remains future work.
 
 At 128 MiB, this campaign reports **93.006 GB/s for Threefry Pallas, 89.488 GB/s for Montmory Pallas and 90.791 GB/s for JAX/XLA RBG**. The recorded RBG path is an API comparator, not a direct measurement of the hardware PRNG's maximum rate. This comparison motivates the work without claiming that software matches the silicon generator in every workload. [Hardware PRNG, measured RBG and comparison scope](docs/en/results.md#hardware-prng-and-the-measured-rbg-comparator).
 
@@ -53,9 +53,9 @@ The new [JAX application benchmark](docs/en/benchmark-applicatif.md) covers unif
 
 The separate [Sobol32 prototype](applications/sobol/README.md) studies exact low-discrepancy point generation with both JAX and Pallas block implementations. CPU correctness is checked; native TPU compilation and performance remain unverified.
 
-The [dropout training experiment](applications/dropout/README.md) compares Montmory and Threefry in a small neural network, with mask generation and application fused in Pallas. CPU checks, learning curves and English/French Colab notebooks are available. **Native TPU compilation and any training speedup remain to be validated.**
+The [dropout training experiment](applications/dropout/README.md) compares Montmory and Threefry in a small neural network, with mask generation and application fused in Pallas. The [24 October native TPU results](applications/dropout/validation/tpu-20261024/README.md) add 1,800 measurements, matching JAX/Pallas checks and **5.10–6.27% less time for Montmory Pallas against Montmory JAX**. Performance remains close to Threefry; no general advantage over this comparator or GPUs is established. Data, analysis and English/French Colab notebooks are available.
 
-Two further application prototypes provide CPU pilots, raw records and bilingual notebooks: a [small digit generator using diffusion / flow matching](applications/diffusion/README.md), and a [Monte Carlo / Sobol Asian-option comparison](applications/asian_option/README.md). They measure complete training steps and the price-error versus time tradeoff, respectively. **No native TPU application speedup has yet been established.**
+Two further application prototypes provide CPU pilots, raw records and bilingual notebooks: a [small digit generator using diffusion / flow matching](applications/diffusion/README.md), and a [Monte Carlo / Sobol Asian-option comparison](applications/asian_option/README.md). They measure complete training steps and the price-error versus time tradeoff, respectively. **No native TPU speedup has yet been established for these two prototypes.**
 
 ## Verify this record locally
 

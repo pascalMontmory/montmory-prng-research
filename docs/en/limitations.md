@@ -15,6 +15,6 @@
 9. **Output checking partly relies on hashes.** Complete buffers are not archived; retained data allow reference reconstruction and hash auditing, not reinspection of every original native buffer.
 10. **Evidence levels differ.** A value reported through the terminal remains distinct from a received, audited CSV. Missing items are listed in the [register](evidence.md).
 11. **The other PRNGs are serious comparators.** Philox and Threefry predate this work; counter-based PRNGs, splittable keys and cross-architecture ports are not presented as Montmory inventions.
-12. **No complete banking or AI application gain is demonstrated.** Generation performance alone does not establish reduced VaR error, faster pricing, regulatory compliance or accelerated training.
+12. **The measured training gain is limited to a small synthetic MLP.** [Native TPU dropout](../../applications/dropout/validation/tpu-20261024/README.md) reduces Montmory Pallas time against Montmory JAX, without a general advantage over Threefry. Generation performance alone establishes neither reduced VaR error, faster pricing nor regulatory compliance. No gain for large models, GPUs, total memory or energy is established.
 
 These limitations are part of the research result. Successful optimizations do not hide them.

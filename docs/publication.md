@@ -8,7 +8,7 @@ Les **884 fichiers scientifiques importés** conservent leurs octets et empreint
 
 La visibilité publique n'active aucune nouvelle licence générale sur les contributions originales. La [notice des droits](../LICENSE.fr.md) et les [notices des tiers](../THIRD_PARTY_NOTICES.fr.md) décrivent leurs périmètres respectifs.
 
-Commencer par les [résultats](results.md), la [méthodologie](methodology.md), la [reproduction](reproduce.md) et les [notebooks TPU](../notebooks/README.fr.md). La publication ne revendique aucun nouveau benchmark matériel natif. Citer ce dépôt public et le commit public exact utilisé.
+Commencer par les [résultats](results.md), la [méthodologie](methodology.md), la [reproduction](reproduce.md) et les [notebooks TPU](../notebooks/README.fr.md). La publication initiale du 21 octobre n’avait lancé aucun nouveau benchmark matériel natif. L’ajout du 24 octobre conserve une [nouvelle archive d’entraînement dropout TPU](../applications/dropout/validation/tpu-20261024/README.fr.md), reçue de Colab et auditée sur CPU. Citer ce dépôt public et le commit public exact utilisé.
 
 ```bash
 python3 scripts/check_repository.py

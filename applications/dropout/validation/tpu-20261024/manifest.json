@@ -1,0 +1,21 @@
+{
+  "LICENSE": "711873e5500166460ce7b91044830a050e52bb8561c7a24c1ea4ffc8e82c6431",
+  "THIRD_PARTY_NOTICES.fr.md": "8c241dee49e7a6dfdabc2e593d0cdca8338e8a4c725806376467279a2d608724",
+  "THIRD_PARTY_NOTICES.md": "eda04a7a4eb8c9c4bde82395a1d35979bd601f6c8c0e431ad5aa56b4e09df529",
+  "applications/dropout/README.fr.md": "eda2c39d59aca42e7ed688a91f4d11ae70d7dc6aa63154a594fe4cdb04120391",
+  "applications/dropout/README.md": "33642fb4b898d066cd9e9b83f7859b733e95666fb4d557d508784af3b9070d25",
+  "applications/dropout/dropout.py": "e4e160e5c7e4474163ac3aa6cfc51c4d71ee78a880c9223eb2cd4964aa535d48",
+  "applications/dropout/model.py": "3fc70bdebe75a8df686dd11facdce54b4908d073c553b04a950caba7e5a4bfc7",
+  "applications/dropout/run.py": "05b04375ca180d14e2fe74d93d37fa8a4639032f22576e31606762fb56730e0b",
+  "applications/dropout/validation/cpu/learning_curves.csv": "8053d2c83fa89944790114d02d7a08a6b095b822ba502b0c0193860c9d06ca47",
+  "applications/dropout/validation/cpu/report.json": "dca5615d2aacf719b6373358300bdf9f0aae04545affae3e6f142d3c2f3394e1",
+  "applications/dropout/validation/cpu/steps.csv": "13d3e63ca46d269b613d7be79dc5fab6c7800364a40db5e5631c703e4bb5cd56",
+  "applications/dropout/verify.py": "7caa18d84018e9f72938e26c1c651dbd86a1cc2f9f07fd44beb776e853d8be7e",
+  "studies/tpu-opt-2026-10-21/montmory-tpu-opt/kernels.py": "9540a50c8bcecf15ee76418d32eac94f0f831ff6cc12894e1c3bc14d851a5fc4",
+  "studies/tpu-opt-2026-10-21/montmory-tpu-opt/montmory_jax.py": "b6165bc908808708ee8466abe33a66efea75ca2a41ba765012f042e051ace8ab",
+  "studies/tpu-opt-2026-10-21/montmory-tpu-opt/reference/mmc_core.c": "5a0c515214226c50dd79b9774b616ca981621493d4f0c6bce7ececfdf5afbc8c",
+  "studies/tpu-opt-2026-10-21/montmory-tpu-opt/reference/mmc_core.h": "f3ca894f4242340aca0903bcb7e482746aee9b4d3fc1243269b4a557b52334bb",
+  "studies/tpu-opt-2026-10-21/montmory-tpu-opt/reference/oracle.c": "48c9670947bef455f86e2a547e878dcbe4722b4fd5cae24be9f529cada054849",
+  "studies/tpu-opt-2026-10-21/montmory-tpu-opt/support.py": "f22100ce975b7c8b6e8108c81a3086e0f91e2e12073566b845f9dca0b1b275e3",
+  "third_party/Random123-LICENSE": "5fd0885ab205878bd90c19144677286252eb9b988c1545a3a910edfe1e27b6df"
+}

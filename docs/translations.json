@@ -9,8 +9,8 @@
       "reference_language": "en",
       "reference_frozen": false,
       "kind": "markdown",
-      "fr_sha256": "9294cd29c3f20a412167b4acd5b716f83dc15407b576ebc3659874c946e6e722",
-      "en_sha256": "90c28aca4911cc895ef7ff4ccdf2f3f70139f09af7c49435673788fc95c204b1"
+      "fr_sha256": "a30365490de368e2d1e368c15d26841dfcdaf08b1c698516fd78540ef7108b05",
+      "en_sha256": "7c68d1cf630aa301491a85d144278a408ea479e6d13674ad4893b4e8cf9d11c7"
     },
     {
       "fr": "docs/contract.md",
@@ -36,8 +36,8 @@
       "reference_language": "fr",
       "reference_frozen": false,
       "kind": "markdown",
-      "fr_sha256": "f3fd56490bfbba699f1666faaac67bff1f4177c88536f68b0a91da4e247ac620",
-      "en_sha256": "dfd4f654ea2e023f922edb0390f13916bc656be817eebf9d999fe60ae7cd004f"
+      "fr_sha256": "da1e47c990321343ae3b12d72f08953b1596cc65c7c5ae87af2de1a1abd11fcb",
+      "en_sha256": "ccd0850cca90c4e6c5bf8c6b70b6ee416328f3f0cadd7e24617e1d8a3cb17286"
     },
     {
       "fr": "docs/csv-guide.md",
@@ -54,8 +54,8 @@
       "reference_language": "fr",
       "reference_frozen": false,
       "kind": "markdown",
-      "fr_sha256": "16c05ae892becb749e1848cbcb245bbfcec5014edf659fd81a7355d19be8ee13",
-      "en_sha256": "8b4a463a75eb630450aa535db906260091dfeeddc8658a29bc7561f9814502b1"
+      "fr_sha256": "1eefa5d862091a65ff25839579a9b954a3432f34662b72062b89ed60e775f140",
+      "en_sha256": "1396612f33a83e99b6449c6bb451b434e74bcca331e089bd658a1e2ce4182b9c"
     },
     {
       "fr": "docs/reproduce.md",
@@ -90,8 +90,8 @@
       "reference_language": "fr",
       "reference_frozen": false,
       "kind": "markdown",
-      "fr_sha256": "c1651b99649d525c6fbd625d116de97c4567fdc5bfc2435a69d9df22850a415b",
-      "en_sha256": "905200a5382e39026d1200814fb65bf4cb62bca21a4828e038bbf2e5fbc1ac29"
+      "fr_sha256": "0dd109165ed7b23e0b5857d5ce44bc0c93ee4baf5e50f171e4e9cc67915cae6e",
+      "en_sha256": "e8aa7a9e79454f35391dd595423f25b4bd5cce1108a39689296de60fbecdfc2e"
     },
     {
       "fr": "docs/history.md",
@@ -99,8 +99,8 @@
       "reference_language": "fr",
       "reference_frozen": false,
       "kind": "markdown",
-      "fr_sha256": "6d72c116334e2fcf6c2de4a60604915572476c3dd94f5079347492c53f1c2cbf",
-      "en_sha256": "ed0ca48b41661c791856cc34a0541dd5475f4655c8bde7249197079b92f4c009"
+      "fr_sha256": "d52de94395c51ea4337f779d177f0489cf08528d78198bf9f198ffa13df5c660",
+      "en_sha256": "c34835dcf96cef1ec850fcd4e714e3d020923d1a38daeabb88ea81ce7b7cb3b2"
     },
     {
       "fr": "docs/references.md",
@@ -171,8 +171,8 @@
       "reference_language": "en",
       "reference_frozen": false,
       "kind": "markdown",
-      "fr_sha256": "0a914e70ed3849ed910074fab87f6eac4ef3a0f9902488123fa0936f83597516",
-      "en_sha256": "58c21f53945443e7520668e5dd1ab115c8d7cb07e81273bd0408b93bfe154c82"
+      "fr_sha256": "c082d6ea56e2403f61a62bcf7235d053d26bd5b3d392e64a079d967451444c10",
+      "en_sha256": "0a2743089af34367da5bce98bdb14c5dd0297d71b249c09c81dc368d0e201a33"
     },
     {
       "fr": "notebooks/Montmory_TPU_optimisation.ipynb",
@@ -207,8 +207,8 @@
       "kind": "markdown",
       "reference_language": "fr",
       "reference_frozen": false,
-      "fr_sha256": "969bc8c3de61e7d4b5f9088634937634d98d40457671fba539fecb4808ecd445",
-      "en_sha256": "b9c2532e8c1f5c441dedf3da648a274d37e3442267d39126c2f14011d2a241c6"
+      "fr_sha256": "3b8f11ef6e8f096e2f78de766201fd78e23b05234d0cb2dc51018bf6e24366df",
+      "en_sha256": "158d817d06ae84f4b4937ed5904983716d8af22eded11d33381b7182972c9eac"
     },
     {
       "fr": "applications/sobol/README.fr.md",
@@ -234,8 +234,8 @@
       "reference_language": "en",
       "reference_frozen": false,
       "kind": "markdown",
-      "fr_sha256": "0d727f29f657ef474e774749ac25293187923645507bed44cd172b83696d5eac",
-      "en_sha256": "3a95e4af182b0bf4438c718ac181d8d7d8d091caf12733327fddc204843a1ec4"
+      "fr_sha256": "871f164f2507227f8abd9ef46c27aca585ab697c3d95e4aa4bf1d887390c3c35",
+      "en_sha256": "1a051897582b68298af79c374328233f260623df5b2259b8f3b3806aa97665d3"
     },
     {
       "fr": "applications/dropout/notebooks/Montmory_Dropout_TPU.ipynb",
@@ -281,6 +281,15 @@
       "kind": "notebook",
       "fr_sha256": "d5ffb437e94489f2acf1f3aa0844a5e8e2307234f19ef6314522f830046df692",
       "en_sha256": "a362d067fc2af878c298da9d6a71a1c0e5bb9d638800fd593f18a8adb9614f24"
+    },
+    {
+      "fr": "applications/dropout/validation/tpu-20261024/README.fr.md",
+      "en": "applications/dropout/validation/tpu-20261024/README.md",
+      "reference_language": "en",
+      "reference_frozen": false,
+      "kind": "markdown",
+      "fr_sha256": "a56d1c43d6663341c0bd04a4e1883c4ca9ae57df928a0240ded0cc9ca01349f3",
+      "en_sha256": "10773a4de2b0cedb4b194cb89058fdb0688f3af590f00b49c96cfb5921644996"
     }
   ]
 }

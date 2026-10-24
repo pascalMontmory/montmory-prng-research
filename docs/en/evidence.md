@@ -31,6 +31,7 @@ Here, “audited” means reviewed and recalculated by a separate script within 
 | JAX CPU port | [Study](../../studies/jax-port-2026-10-21/README.md) | Portable integer port and CPU checks |
 | First TPU campaign | [Data](../../studies/jax-tpu-2026-10-21/20261021T180635Z-colab-tpu) | 770 observations, native reports, CPU audit |
 | Final TPU optimization | [Data](../../studies/tpu-opt-2026-10-21/20261021T185102Z-tpu-opt) | 3,708 observations, 104 compilations, frozen selection, 44 recomputed summaries |
+| TPU dropout on 24 October | [Results and audit](../../applications/dropout/validation/tpu-20261024/README.md) | 1,800 measurements; 900 identical JAX/Pallas loss pairs; received archive and exact source kit retained |
 
 ## Native conformance matrix
 
@@ -56,4 +57,4 @@ The [initial received M3 archive](../../evidence/archives/montmory-metal-opt-res
 
 ## Evidence still missing
 
-The complete archive of the latest native M3 v3 BigCrush, native archives for the separate Metal confirmation and vector repair, and an independent new TPU session are absent. Their corresponding summaries remain explicitly labeled. These gaps do not prevent replaying audits for campaigns whose raw measurements are available.
+The complete archive of the latest native M3 v3 BigCrush, native archives for the separate Metal confirmation and vector repair, and an independent repetition of the TPU raw-throughput campaign are absent. The 24 October dropout session measures a different workload. Their corresponding summaries remain explicitly labeled. These gaps do not prevent replaying audits for campaigns whose raw measurements are available.

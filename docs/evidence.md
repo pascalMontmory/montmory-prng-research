@@ -31,6 +31,7 @@
 | Port JAX CPU | [étude](../studies/jax-port-2026-10-21/README.md) | Port entier portable et vérifications CPU |
 | Première campagne TPU | [données](../studies/jax-tpu-2026-10-21/20261021T180635Z-colab-tpu) | 770 observations, rapports natifs, audit CPU |
 | Optimisation TPU finale | [données](../studies/tpu-opt-2026-10-21/20261021T185102Z-tpu-opt) | 3 708 observations, 104 compilations, sélection figée, 44 synthèses recalculées |
+| Dropout TPU du 24 octobre | [résultats et audit](../applications/dropout/validation/tpu-20261024/README.fr.md) | 1 800 mesures ; 900 paires de pertes JAX/Pallas identiques ; archive et kit exact conservés |
 
 ## Matrice de conformité native
 
@@ -56,4 +57,4 @@ L'[archive M3 initiale reçue](../evidence/archives/montmory-metal-opt-results-2
 
 ## Pièces encore manquantes
 
-L'archive intégrale du dernier BigCrush natif M3 v3, les archives natives de confirmation Metal séparée et de réparation vectorielle, ainsi qu'une nouvelle session TPU indépendante ne sont pas présentes. Les résumés correspondants restent explicitement marqués comme tels. Ces manques n'empêchent pas de refaire les audits des campagnes dont les mesures brutes sont disponibles.
+L'archive intégrale du dernier BigCrush natif M3 v3, les archives natives de confirmation Metal séparée et de réparation vectorielle, ainsi qu’une répétition indépendante de la campagne TPU de débits bruts ne sont pas présentes. La session dropout du 24 octobre mesure une autre charge. Les résumés correspondants restent explicitement marqués comme tels. Ces manques n'empêchent pas de refaire les audits des campagnes dont les mesures brutes sont disponibles.

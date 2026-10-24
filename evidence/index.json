@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "as_of": "2026-10-21",
+  "as_of": "2026-10-24",
   "records": [
     {
       "id": "exact-mathematics",
@@ -132,6 +132,25 @@
         "studies/tpu-opt-2026-10-21/20261021T185102Z-tpu-opt/campaign/measurements.csv",
         "studies/tpu-opt-2026-10-21/20261021T185102Z-tpu-opt/campaign/frozen-selection.json",
         "studies/tpu-opt-2026-10-21/results/audit-20261021T185102Z-tpu-opt/audit.json"
+      ]
+    },
+    {
+      "id": "dropout-tpu-20261024",
+      "level": "raw-audited",
+      "claim": "Native TPU dropout training: 1800 measurements, 900 numerically identical JAX/Pallas loss pairs; Montmory Pallas saves 5.10-6.27% step time versus Montmory JAX, with no general speed advantage over Threefry established.",
+      "files": [
+        "applications/dropout/validation/tpu-20261024/report.json",
+        "applications/dropout/validation/tpu-20261024/steps.csv",
+        "applications/dropout/validation/tpu-20261024/learning_curves.csv",
+        "applications/dropout/validation/tpu-20261024/run.log",
+        "applications/dropout/validation/tpu-20261024/manifest.json",
+        "applications/dropout/validation/tpu-20261024/dropout-tpu.tar.gz",
+        "applications/dropout/validation/tpu-20261024/source-kit.tar.gz",
+        "applications/dropout/validation/tpu-20261024/SHA256SUMS",
+        "applications/dropout/validation/tpu-20261024/analysis/audit.json",
+        "applications/dropout/validation/tpu-20261024/analysis/comparisons.csv",
+        "applications/dropout/validation/tpu-20261024/analysis/cpu_comparisons.csv",
+        "applications/dropout/analyze.py"
       ]
     }
   ]

@@ -15,6 +15,6 @@
 9. **Le contrôle des sorties repose en partie sur des empreintes.** Les buffers complets ne sont pas archivés ; les données conservées permettent la recomposition des références et l'audit des empreintes, pas la réinspection de chaque buffer natif original.
 10. **Les niveaux de preuve diffèrent.** Une valeur transmise par terminal reste distincte d'un CSV reçu et audité. Les pièces manquantes sont recensées dans le [registre](evidence.md).
 11. **Les autres PRNG sont des comparateurs sérieux.** Philox et Threefry sont antérieurs à ce travail ; les PRNG à compteur, les clés séparables et le portage multiarchitecture ne sont pas présentés comme des inventions propres à Montmory.
-12. **Aucun gain bancaire ou IA complet n'est démontré.** Les performances de génération seules ne prouvent pas une réduction d'erreur VaR, un gain de tarification, une conformité réglementaire ou une accélération d'entraînement.
+12. **Le gain d’entraînement mesuré reste limité à un petit MLP synthétique.** Le [dropout natif TPU](../applications/dropout/validation/tpu-20261024/README.fr.md) réduit le temps de Montmory Pallas face à Montmory JAX, sans avantage général établi sur Threefry. Les mesures de génération seules ne prouvent ni réduction d’erreur VaR, ni gain de tarification, ni conformité réglementaire. Aucun gain sur de grands modèles, GPU, mémoire totale ou énergie n’est établi.
 
 Ces limites font partie du résultat de recherche. Elles ne sont pas masquées par les optimisations réussies.

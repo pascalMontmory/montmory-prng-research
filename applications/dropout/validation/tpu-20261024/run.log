@@ -1,0 +1,33 @@
+/usr/local/lib/python3.13/dist-packages/jax/_src/cloud_tpu_init.py:88: UserWarning: Transparent hugepages are not enabled. TPU runtime startup and shutdown time should be significantly improved on TPU v5e and newer. If not already set, you may need to enable transparent hugepages in your VM image (sudo sh -c "echo always > /sys/kernel/mm/transparent_hugepage/enabled")
+  warnings.warn(
+Backend: tpu; TPU v5 lite. Checking masks and gradients...
+threefry: masks, tails, tile invariance and gradients PASS
+montmory: masks, tails, tile invariance and gradients PASS
+threefry: full MLP update matches reference (max abs 0)
+montmory: full MLP update matches reference (max abs 0)
+Compiling complete training step: threefry_jax
+Compiling complete training step: montmory_jax
+Compiling complete training step: threefry_pallas
+Compiling complete training step: montmory_pallas
+Seed 7: 50/150 updates complete
+Seed 7: 100/150 updates complete
+Seed 7: 150/150 updates complete
+  threefry_jax: validation loss 1.7085 -> 0.4398; accuracy 27.0% -> 84.2%
+  montmory_jax: validation loss 1.7085 -> 0.4486; accuracy 27.0% -> 83.2%
+  threefry_pallas: validation loss 1.7085 -> 0.4398; accuracy 27.0% -> 84.2%
+  montmory_pallas: validation loss 1.7085 -> 0.4486; accuracy 27.0% -> 83.2%
+Seed 19: 50/150 updates complete
+Seed 19: 100/150 updates complete
+Seed 19: 150/150 updates complete
+  threefry_jax: validation loss 1.7257 -> 0.4347; accuracy 27.9% -> 82.0%
+  montmory_jax: validation loss 1.7257 -> 0.4580; accuracy 27.9% -> 82.8%
+  threefry_pallas: validation loss 1.7257 -> 0.4347; accuracy 27.9% -> 82.0%
+  montmory_pallas: validation loss 1.7257 -> 0.4580; accuracy 27.9% -> 82.8%
+Seed 42: 50/150 updates complete
+Seed 42: 100/150 updates complete
+Seed 42: 150/150 updates complete
+  threefry_jax: validation loss 2.3950 -> 0.4699; accuracy 21.3% -> 82.8%
+  montmory_jax: validation loss 2.3950 -> 0.4445; accuracy 21.3% -> 81.6%
+  threefry_pallas: validation loss 2.3950 -> 0.4699; accuracy 21.3% -> 82.8%
+  montmory_pallas: validation loss 2.3950 -> 0.4445; accuracy 21.3% -> 81.6%
+Status: pass. Results: /content/montmory-dropout-20261024T101128699520Z/results/dropout-tpu. Archive: /content/montmory-dropout-20261024T101128699520Z/results/dropout-tpu.tar.gz

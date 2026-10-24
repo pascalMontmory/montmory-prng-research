@@ -1,4 +1,4 @@
-# Results as of 21 October 2026
+# Results as of 24 October 2026
 
 [Français](../results.md) · [English](results.md) · [Documentation FR/EN](languages.md)
 
@@ -46,7 +46,7 @@ The table compares call-to-ready throughput, including allocation and writes. At
 
 **No dedicated kernel using the Pallas hardware calls `prng_seed`/`prng_random_bits` was timed in this campaign.** The RBG figure is neither the chip's maximum rate nor a direct comparison with every hardware path. Software throughput exceeding this RBG path does not prove that its elementary operations are faster than the silicon PRNG's operations.
 
-Montmory and Threefry outputs are checked against their defined references; RBG is checked only for repeatability on the same backend. This makes the intended tradeoff explicit: performance with stream stability. Stability rests on a software contract; our native tests do not yet demonstrate its preservation across multiple TPU generations or an application speedup.
+Montmory and Threefry outputs are checked against their defined references; RBG is checked only for repeatability on the same backend. This makes the intended tradeoff explicit: performance with stream stability. Stability rests on a software contract; these raw-generation campaigns do not demonstrate its preservation across multiple TPU generations or, by themselves, an application speedup. Dropout training is measured separately below.
 
 ## Apple M3: retain the best measured path
 
@@ -80,6 +80,29 @@ The [Random123 CPU comparison](../../studies/audit-2026-10-21/evidence/benchmark
 
 The [TestU01 register](testu01.md) identifies available passes and their provenance limits. [TACM comparisons](tacm.md) show no Montmory statistical advantage under the prespecified criterion. TPU optimizations changed neither engine constants nor rounds, but did not rerun TestU01 or TACM.
 
-No complete VaR, pricing, AI training or energy benchmark is present. This record demonstrates porting, measurement and validation work; it cannot quantify an application or commercial benefit that has not yet been measured.
+Small-model dropout training now has native TPU measurements, presented below. No native gain for complete VaR, pricing applications or energy consumption is established. This evidence does not quantify a commercial benefit.
 
 A [first JAX application benchmark](benchmark-applicatif.md) is now available: uniforms, normals and a Monte Carlo estimator with the consumer inside the same `jit`. Its short CPU check is retained separately. It does not yet provide native TPU application measurements or confirm gains in a customer's application.
+
+## Dropout: native TPU training on 24 October 2026
+
+The [detailed report](../../applications/dropout/validation/tpu-20261024/README.md)
+retains 1,800 measurements, exact sources, checks and learning curves for a
+21,252-parameter MLP on TPU v5 lite. Pallas reduces Montmory step time against
+Montmory JAX by **5.76%, 5.10% and 6.27%** across three seeds.
+All 900 JAX/Pallas loss pairs are numerically identical; the runner also reports
+zero final-weight differences, although weights were not exported in the archive.
+
+Montmory Pallas remains close to Threefry JAX: +0.75%, −0.89% and −0.98% step time.
+Threefry Pallas takes about 0.3–0.5% more time than Threefry JAX. Moving to Pallas
+changes the implementation, not the Threefry algorithm; the TPU hardware PRNG
+is not used here.
+
+Mean final accuracy is 82.55% for Montmory and 83.01% for Threefry. One session,
+three seeds and a synthetic task establish neither superior quality nor
+statistical equivalence. Comparing with the earlier CPU functional check gives
+about 1.48× for Montmory Pallas, but remains indicative and does not isolate a
+PRNG-specific gain. No comparable GPU training run is available.
+
+The [Sobol32 prototype](../../applications/sobol/README.md) and its TPU notebooks
+are separate. Native TPU compilation and performance remain unvalidated.

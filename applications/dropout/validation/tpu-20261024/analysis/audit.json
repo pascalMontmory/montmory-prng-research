@@ -1,0 +1,474 @@
+{
+  "status": "pass",
+  "archive_sha256": "db392503b39399a86c6307a0700d226ccef46cadd40e95e70328d99a0fdd6deb",
+  "original_started_utc": "2026-10-24T10:11:28.767048+00:00",
+  "manifest_files_verified": 19,
+  "execution_sources_verified": 10,
+  "checks_passed": 3699,
+  "training_rows": 1800,
+  "validation_rows": 36,
+  "source_checks": {
+    "LICENSE": true,
+    "THIRD_PARTY_NOTICES.fr.md": true,
+    "THIRD_PARTY_NOTICES.md": true,
+    "applications/dropout/README.fr.md": true,
+    "applications/dropout/README.md": true,
+    "applications/dropout/dropout.py": true,
+    "applications/dropout/model.py": true,
+    "applications/dropout/run.py": true,
+    "applications/dropout/validation/cpu/learning_curves.csv": true,
+    "applications/dropout/validation/cpu/report.json": true,
+    "applications/dropout/validation/cpu/steps.csv": true,
+    "applications/dropout/verify.py": true,
+    "studies/tpu-opt-2026-10-21/montmory-tpu-opt/kernels.py": true,
+    "studies/tpu-opt-2026-10-21/montmory-tpu-opt/montmory_jax.py": true,
+    "studies/tpu-opt-2026-10-21/montmory-tpu-opt/reference/mmc_core.c": true,
+    "studies/tpu-opt-2026-10-21/montmory-tpu-opt/reference/mmc_core.h": true,
+    "studies/tpu-opt-2026-10-21/montmory-tpu-opt/reference/oracle.c": true,
+    "studies/tpu-opt-2026-10-21/montmory-tpu-opt/support.py": true,
+    "third_party/Random123-LICENSE": true
+  },
+  "dataset_and_batch_order_sha256": "120c2a220599f1b65a1009655a79f716ec88ced0dff4c9ca2f269e84b0e79748",
+  "training_loss_pairs": [
+    {
+      "seed": 7,
+      "engine": "threefry",
+      "comparisons": 150,
+      "max_loss_difference": 0.0
+    },
+    {
+      "seed": 7,
+      "engine": "montmory",
+      "comparisons": 150,
+      "max_loss_difference": 0.0
+    },
+    {
+      "seed": 19,
+      "engine": "threefry",
+      "comparisons": 150,
+      "max_loss_difference": 0.0
+    },
+    {
+      "seed": 19,
+      "engine": "montmory",
+      "comparisons": 150,
+      "max_loss_difference": 0.0
+    },
+    {
+      "seed": 42,
+      "engine": "threefry",
+      "comparisons": 150,
+      "max_loss_difference": 0.0
+    },
+    {
+      "seed": 42,
+      "engine": "montmory",
+      "comparisons": 150,
+      "max_loss_difference": 0.0
+    }
+  ],
+  "recorded_validation_pairs": 18,
+  "final_weight_verification": "Zero difference recorded by the runner; weight tensors were not included in the archive.",
+  "timing_summary": [
+    {
+      "seed": 7,
+      "variant": "threefry_jax",
+      "count": 150,
+      "median_us": 298.8245,
+      "mean_us": 297.52345333333335,
+      "p10_us": 266.46999999999997,
+      "p90_us": 321.136,
+      "min_us": 244.79,
+      "max_us": 342.41
+    },
+    {
+      "seed": 7,
+      "variant": "montmory_jax",
+      "count": 150,
+      "median_us": 319.485,
+      "mean_us": 317.6664,
+      "p10_us": 287.222,
+      "p90_us": 342.051,
+      "min_us": 258.66,
+      "max_us": 381.51
+    },
+    {
+      "seed": 7,
+      "variant": "threefry_pallas",
+      "count": 150,
+      "median_us": 300.26,
+      "mean_us": 299.81871333333333,
+      "p10_us": 273.646,
+      "p90_us": 322.08599999999996,
+      "min_us": 243.57,
+      "max_us": 389.35
+    },
+    {
+      "seed": 7,
+      "variant": "montmory_pallas",
+      "count": 150,
+      "median_us": 301.08,
+      "mean_us": 298.31250666666665,
+      "p10_us": 271.194,
+      "p90_us": 318.4131,
+      "min_us": 243.65,
+      "max_us": 376.72
+    },
+    {
+      "seed": 19,
+      "variant": "threefry_jax",
+      "count": 150,
+      "median_us": 288.55,
+      "mean_us": 288.77685333333335,
+      "p10_us": 265.725,
+      "p90_us": 308.422,
+      "min_us": 250.42,
+      "max_us": 346.91
+    },
+    {
+      "seed": 19,
+      "variant": "montmory_jax",
+      "count": 150,
+      "median_us": 301.355,
+      "mean_us": 304.94874,
+      "p10_us": 282.986,
+      "p90_us": 330.837,
+      "min_us": 263.52,
+      "max_us": 368.8
+    },
+    {
+      "seed": 19,
+      "variant": "threefry_pallas",
+      "count": 150,
+      "median_us": 289.39,
+      "mean_us": 289.7001266666667,
+      "p10_us": 266.33790000000005,
+      "p90_us": 313.909,
+      "min_us": 246.43,
+      "max_us": 370.84
+    },
+    {
+      "seed": 19,
+      "variant": "montmory_pallas",
+      "count": 150,
+      "median_us": 285.975,
+      "mean_us": 287.8235133333333,
+      "p10_us": 264.87800000000004,
+      "p90_us": 312.58799999999997,
+      "min_us": 241.87,
+      "max_us": 341.22
+    },
+    {
+      "seed": 42,
+      "variant": "threefry_jax",
+      "count": 150,
+      "median_us": 283.485,
+      "mean_us": 284.7031133333333,
+      "p10_us": 260.7559,
+      "p90_us": 307.587,
+      "min_us": 249.71,
+      "max_us": 408.77
+    },
+    {
+      "seed": 42,
+      "variant": "montmory_jax",
+      "count": 150,
+      "median_us": 299.49,
+      "mean_us": 301.7852,
+      "p10_us": 278.6059,
+      "p90_us": 326.2971,
+      "min_us": 254.809,
+      "max_us": 451.95
+    },
+    {
+      "seed": 42,
+      "variant": "threefry_pallas",
+      "count": 150,
+      "median_us": 284.35,
+      "mean_us": 283.97844,
+      "p10_us": 262.7529,
+      "p90_us": 303.46509999999995,
+      "min_us": 243.02,
+      "max_us": 344.94
+    },
+    {
+      "seed": 42,
+      "variant": "montmory_pallas",
+      "count": 150,
+      "median_us": 280.7155,
+      "mean_us": 282.63683333333336,
+      "p10_us": 260.887,
+      "p90_us": 300.774,
+      "min_us": 236.63,
+      "max_us": 398.83
+    }
+  ],
+  "comparisons": [
+    {
+      "seed": 7,
+      "candidate": "montmory_pallas",
+      "baseline": "montmory_jax",
+      "baseline_median_over_candidate_median": 1.061129932243922,
+      "median_time_reduction_percent": 5.760833841964419,
+      "mean_time_reduction_percent": 6.092521378821736,
+      "median_paired_saving_us": 19.095,
+      "steps_candidate_faster": 142
+    },
+    {
+      "seed": 7,
+      "candidate": "threefry_pallas",
+      "baseline": "threefry_jax",
+      "baseline_median_over_candidate_median": 0.9952191434090455,
+      "median_time_reduction_percent": -0.4803822979708716,
+      "mean_time_reduction_percent": -0.771455148925182,
+      "median_paired_saving_us": -1.3595000000000002,
+      "steps_candidate_faster": 67
+    },
+    {
+      "seed": 7,
+      "candidate": "montmory_pallas",
+      "baseline": "threefry_jax",
+      "baseline_median_over_candidate_median": 0.9925086355785838,
+      "median_time_reduction_percent": -0.754790855502141,
+      "mean_time_reduction_percent": -0.26520710367301525,
+      "median_paired_saving_us": -1.1800000000000002,
+      "steps_candidate_faster": 67
+    },
+    {
+      "seed": 7,
+      "candidate": "montmory_pallas",
+      "baseline": "threefry_pallas",
+      "baseline_median_over_candidate_median": 0.9972764713697356,
+      "median_time_reduction_percent": -0.27309664957035906,
+      "mean_time_reduction_percent": 0.5023724669887764,
+      "median_paired_saving_us": 0.8045,
+      "steps_candidate_faster": 79
+    },
+    {
+      "seed": 19,
+      "candidate": "montmory_pallas",
+      "baseline": "montmory_jax",
+      "baseline_median_over_candidate_median": 1.0537809249060233,
+      "median_time_reduction_percent": 5.103615337392775,
+      "mean_time_reduction_percent": 5.615772233283101,
+      "median_paired_saving_us": 17.825,
+      "steps_candidate_faster": 131
+    },
+    {
+      "seed": 19,
+      "candidate": "threefry_pallas",
+      "baseline": "threefry_jax",
+      "baseline_median_over_candidate_median": 0.9970973426863403,
+      "median_time_reduction_percent": -0.2911107260439971,
+      "mean_time_reduction_percent": -0.3197186071792313,
+      "median_paired_saving_us": 0.5355000000000001,
+      "steps_candidate_faster": 76
+    },
+    {
+      "seed": 19,
+      "candidate": "montmory_pallas",
+      "baseline": "threefry_jax",
+      "baseline_median_over_candidate_median": 1.009004283591223,
+      "median_time_reduction_percent": 0.8923929994801516,
+      "mean_time_reduction_percent": 0.3301303373160591,
+      "median_paired_saving_us": 1.1549999999999998,
+      "steps_candidate_faster": 81
+    },
+    {
+      "seed": 19,
+      "candidate": "montmory_pallas",
+      "baseline": "threefry_pallas",
+      "baseline_median_over_candidate_median": 1.0119416032870006,
+      "median_time_reduction_percent": 1.180068419779523,
+      "mean_time_reduction_percent": 0.6477778780858534,
+      "median_paired_saving_us": 2.1,
+      "steps_candidate_faster": 84
+    },
+    {
+      "seed": 42,
+      "candidate": "montmory_pallas",
+      "baseline": "montmory_jax",
+      "baseline_median_over_candidate_median": 1.0668808811768498,
+      "median_time_reduction_percent": 6.268823666900392,
+      "mean_time_reduction_percent": 6.345031720132932,
+      "median_paired_saving_us": 18.619999999999997,
+      "steps_candidate_faster": 138
+    },
+    {
+      "seed": 42,
+      "candidate": "threefry_pallas",
+      "baseline": "threefry_jax",
+      "baseline_median_over_candidate_median": 0.9969579743274134,
+      "median_time_reduction_percent": -0.3051307829338379,
+      "mean_time_reduction_percent": 0.25453649763389485,
+      "median_paired_saving_us": -0.9,
+      "steps_candidate_faster": 70
+    },
+    {
+      "seed": 42,
+      "candidate": "montmory_pallas",
+      "baseline": "threefry_jax",
+      "baseline_median_over_candidate_median": 1.0098658606311373,
+      "median_time_reduction_percent": 0.9769476339136052,
+      "mean_time_reduction_percent": 0.7257665628618293,
+      "median_paired_saving_us": 1.76,
+      "steps_candidate_faster": 87
+    },
+    {
+      "seed": 42,
+      "candidate": "montmory_pallas",
+      "baseline": "threefry_pallas",
+      "baseline_median_over_candidate_median": 1.0129472722382626,
+      "median_time_reduction_percent": 1.2781783013891324,
+      "mean_time_reduction_percent": 0.47243257856709464,
+      "median_paired_saving_us": 1.2705,
+      "steps_candidate_faster": 85
+    }
+  ],
+  "order_counts": {
+    "7:threefry_jax": {
+      "0": 48,
+      "3": 44,
+      "2": 35,
+      "1": 23
+    },
+    "7:montmory_jax": {
+      "2": 31,
+      "1": 45,
+      "0": 43,
+      "3": 31
+    },
+    "7:threefry_pallas": {
+      "1": 41,
+      "2": 46,
+      "3": 31,
+      "0": 32
+    },
+    "7:montmory_pallas": {
+      "3": 44,
+      "0": 27,
+      "1": 41,
+      "2": 38
+    },
+    "19:threefry_jax": {
+      "2": 49,
+      "1": 36,
+      "3": 28,
+      "0": 37
+    },
+    "19:montmory_jax": {
+      "1": 39,
+      "3": 48,
+      "0": 34,
+      "2": 29
+    },
+    "19:threefry_pallas": {
+      "3": 38,
+      "2": 38,
+      "1": 40,
+      "0": 34
+    },
+    "19:montmory_pallas": {
+      "0": 45,
+      "3": 36,
+      "2": 34,
+      "1": 35
+    },
+    "42:threefry_jax": {
+      "3": 31,
+      "2": 37,
+      "0": 43,
+      "1": 39
+    },
+    "42:montmory_jax": {
+      "2": 48,
+      "3": 34,
+      "0": 36,
+      "1": 32
+    },
+    "42:threefry_pallas": {
+      "1": 41,
+      "2": 44,
+      "0": 28,
+      "3": 37
+    },
+    "42:montmory_pallas": {
+      "0": 43,
+      "1": 38,
+      "3": 48,
+      "2": 21
+    }
+  },
+  "cpu_comparisons": [
+    {
+      "seed": 7,
+      "cpu_variant": "montmory_jax",
+      "tpu_variant": "montmory_jax",
+      "cpu_median_step_ms": 0.447087,
+      "tpu_median_step_ms": 0.319485,
+      "cpu_over_tpu_ratio": 1.3993990328184422,
+      "time_reduction_percent": 28.540753813016252,
+      "scope": "indicative_only_separate_cpu_functional_session"
+    },
+    {
+      "seed": 7,
+      "cpu_variant": "montmory_jax",
+      "tpu_variant": "montmory_pallas",
+      "cpu_median_step_ms": 0.447087,
+      "tpu_median_step_ms": 0.30107999999999996,
+      "cpu_over_tpu_ratio": 1.4849442008768436,
+      "time_reduction_percent": 32.65740225056869,
+      "scope": "indicative_only_separate_cpu_functional_session"
+    },
+    {
+      "seed": 19,
+      "cpu_variant": "montmory_jax",
+      "tpu_variant": "montmory_jax",
+      "cpu_median_step_ms": 0.4218075,
+      "tpu_median_step_ms": 0.30135500000000004,
+      "cpu_over_tpu_ratio": 1.3997030080801711,
+      "time_reduction_percent": 28.556272707336873,
+      "scope": "indicative_only_separate_cpu_functional_session"
+    },
+    {
+      "seed": 19,
+      "cpu_variant": "montmory_jax",
+      "tpu_variant": "montmory_pallas",
+      "cpu_median_step_ms": 0.4218075,
+      "tpu_median_step_ms": 0.28597500000000003,
+      "cpu_over_tpu_ratio": 1.4749803304484657,
+      "time_reduction_percent": 32.20248573105029,
+      "scope": "indicative_only_separate_cpu_functional_session"
+    },
+    {
+      "seed": 42,
+      "cpu_variant": "montmory_jax",
+      "tpu_variant": "montmory_jax",
+      "cpu_median_step_ms": 0.4179535,
+      "tpu_median_step_ms": 0.29949000000000003,
+      "cpu_over_tpu_ratio": 1.395550769641724,
+      "time_reduction_percent": 28.343703306707557,
+      "scope": "indicative_only_separate_cpu_functional_session"
+    },
+    {
+      "seed": 42,
+      "cpu_variant": "montmory_jax",
+      "tpu_variant": "montmory_pallas",
+      "cpu_median_step_ms": 0.4179535,
+      "tpu_median_step_ms": 0.2807155,
+      "cpu_over_tpu_ratio": 1.4888864348423938,
+      "time_reduction_percent": 32.835710192641045,
+      "scope": "indicative_only_separate_cpu_functional_session"
+    }
+  ],
+  "gpu_training_measured": false,
+  "source_kit_sha256": "adbfad7224faca8b79cf91b2dc5b103eec9d8ca2826a967483e689fccbfd8c20",
+  "limitations": [
+    "One TPU session; three training seeds are not independent benchmark sessions.",
+    "Wall time includes dispatch and synchronization; no device-only profile.",
+    "Compilation, dataset preparation, batch extraction and validation are outside timed steps.",
+    "Synthetic task, 512 validation examples, 150 updates; no statistical equivalence test.",
+    "CPU ratios are indicative: a separate functional session, not a controlled hardware benchmark.",
+    "No memory, energy, large-model or distributed-training measurements."
+  ]
+}

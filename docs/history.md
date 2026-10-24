@@ -23,3 +23,14 @@ Ce tableau décrit la filiation des travaux disponibles au 21 octobre 2026. Il n
 | Constitution de ce dépôt | Documentation, provenance et audits reproductibles | Aucun changement de moteur ; pause des développements |
 
 Les erreurs d'environnement, essais rejetés et chemins non adoptés restent accessibles dans les études. Leur présence dans une archive ne signifie pas qu'ils font partie de la configuration recommandée par le protocole.
+
+## 24 octobre 2026 — réception des résultats dropout TPU
+
+L’archive Colab du [petit MLP](../applications/dropout/validation/tpu-20261024/README.fr.md)
+ajoute une exécution native et 1 800 mesures. Les sources d’exécution sont inchangées.
+Le gain de 5,10–6,27 % concerne Montmory Pallas face à Montmory JAX ; Threefry reste
+proche. La documentation distingue maintenant le générateur, son implémentation
+JAX/Pallas, la comparaison CPU indicative et l’absence d’essai GPU.
+Les sources et mentions historiques des notebooks restent conservées.
+Le prototype Sobol32 est référencé dans l’index des notebooks, avec son statut
+CPU vérifié / TPU natif encore attendu.

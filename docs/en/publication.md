@@ -8,7 +8,7 @@ All **884 imported research files** retain their recorded bytes and SHA-256 hash
 
 Public visibility does not activate a new general license for original contributions. The [rights notice](../../LICENSE) and [third-party notices](../../THIRD_PARTY_NOTICES.md) describe their respective scope.
 
-Start with [results](results.md), [methodology](methodology.md), [reproduction](reproduce.md) and the [TPU notebooks](../../notebooks/README.md). The public release does not claim a new native hardware benchmark. Cite this public repository and the exact public commit used.
+Start with [results](results.md), [methodology](methodology.md), [reproduction](reproduce.md) and the [TPU notebooks](../../notebooks/README.md). The initial 21 October publication ran no new native hardware benchmark. The 24 October addition retains a [new TPU dropout training archive](../../applications/dropout/validation/tpu-20261024/README.md), received from Colab and audited on CPU. Cite this public repository and the exact public commit used.
 
 ```bash
 python3 scripts/check_repository.py

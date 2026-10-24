@@ -4,13 +4,13 @@
 
 [Premiers contrôles](docs/start-here.fr.md) · [Résultats](docs/results.md) · [Méthodologie](docs/methodology.md) · [Reproduire](docs/reproduce.md) · [Registre des preuves](docs/evidence.md)
 
-**Ce dépôt rend vérifiable le travail réalisé sur Montmory : moteur entier déterministe, portages CPU/GPU/TPU, tests statistiques et optimisations conservant les sorties.** Il rassemble les travaux disponibles au **21 octobre 2026**. Les développements du moteur sont en pause.
+**Ce dépôt rend vérifiable le travail réalisé sur Montmory : moteur entier déterministe, portages CPU/GPU/TPU, tests statistiques et optimisations conservant les sorties.** Il rassemble les travaux disponibles au **24 octobre 2026**. Les développements du moteur sont en pause.
 
 ## Pourquoi optimiser un PRNG logiciel sur TPU ?
 
 Les TPU disposent d'un PRNG matériel séquentiel rapide dont l'implémentation varie selon la génération du circuit. JAX déconseille de dépendre de son comportement exact et recommande Threefry logiciel lorsque la stabilité du flux importe. [Documentation JAX du PRNG matériel](https://docs.jax.dev/en/latest/pallas/tpu/prng.html#using-the-hardware-prng).
 
-**Notre objectif est de nous approcher du débit utile de génération de l'accélérateur tout en conservant un flux entier exactement défini et portable.** Nous optimisons les implémentations logicielles de Threefry et de Montmory pour permettre de changer la stratégie d'exécution en conservant les sorties définies. Le contrat du flux est spécifié par le logiciel, plutôt que par la génération du TPU. Les preuves natives TPU couvrent actuellement **un seul TPU v5 lite** ; la validation sur d'autres générations reste à effectuer.
+**Notre objectif est de nous approcher du débit utile de génération de l'accélérateur tout en conservant un flux entier exactement défini et portable.** Nous optimisons les implémentations logicielles de Threefry et de Montmory pour permettre de changer la stratégie d'exécution en conservant les sorties définies. Le contrat du flux est spécifié par le logiciel, plutôt que par la génération du TPU. Les preuves natives TPU couvrent actuellement **la génération TPU v5 lite, avec un seul appareil par exécution** ; la validation sur d'autres générations reste à effectuer.
 
 À 128 Mio, cette campagne rapporte **93,006 Go/s pour Threefry Pallas, 89,488 Go/s pour Montmory Pallas et 90,791 Go/s pour JAX/XLA RBG**. Le chemin RBG mesuré est un comparateur via une API, pas une mesure directe du débit maximal du PRNG matériel. Cette comparaison motive le travail sans prétendre que le logiciel égale le générateur silicium dans toute application. [PRNG matériel, RBG mesuré et portée de la comparaison](docs/results.md#prng-matériel-et-comparateur-rbg-mesuré).
 
@@ -53,7 +53,7 @@ Le [benchmark applicatif JAX](docs/benchmark-applicatif.md) ajoute des uniformes
 
 Le [prototype Sobol32 séparé](applications/sobol/README.fr.md) étudie la génération exacte de points à faible discrépance avec des implémentations par blocs JAX et Pallas. La conformité CPU est contrôlée ; la compilation native TPU et ses performances restent à vérifier.
 
-L’[expérience d’entraînement avec dropout](applications/dropout/README.fr.md) compare Montmory et Threefry dans un petit réseau neuronal, avec génération et application du masque fusionnées dans Pallas. Les contrôles CPU, les courbes d’apprentissage et les notebooks Colab français/anglais sont disponibles. **La compilation native TPU et les gains éventuels sur l’entraînement restent à valider.**
+L’[expérience d’entraînement avec dropout](applications/dropout/README.fr.md) compare Montmory et Threefry dans un petit réseau neuronal, avec génération et application du masque fusionnées dans Pallas. Les [résultats natifs TPU du 24 octobre](applications/dropout/validation/tpu-20261024/README.fr.md) ajoutent 1 800 mesures, des contrôles JAX/Pallas concordants et **5,10 à 6,27 % de temps en moins pour Montmory Pallas face à Montmory JAX**. Les performances restent proches de Threefry ; aucun avantage général sur ce comparateur ou sur GPU n’est établi. Données, analyse et notebooks Colab français/anglais sont disponibles.
 
 Deux autres prototypes applicatifs disposent de pilotes CPU, de données brutes et de notebooks bilingues : un [petit modèle génératif de chiffres par diffusion / flow matching](applications/diffusion/README.fr.md), et une [comparaison Monte-Carlo / Sobol sur des options asiatiques](applications/asian_option/README.fr.md). Ils mesurent respectivement l’entraînement complet et le compromis temps–erreur sur un prix. **Aucun gain natif TPU n’est encore établi pour ces applications.**
 

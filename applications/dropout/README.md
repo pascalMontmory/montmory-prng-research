@@ -4,7 +4,7 @@
 
 This experiment asks whether a software PRNG optimized for TPU helps an actual training step. It adds a fixed 25% dropout to a small classifier. It changes no historical PRNG source, constants, rounds or logical Montmory geometry. Developed by Pascal Montmory for ENINCA CONSULTING; the repository [rights notice](../../LICENSE) applies.
 
-**Status: CPU functional prototype. Native TPU compilation and training performance have not yet been validated.** The existing raw-generator TPU measurements do not answer this application's performance question.
+**Status: native validation passed on one TPU v5 lite on 24 October 2026.** Pallas reduces Montmory step time by 5.10–6.27% against Montmory JAX; timings remain close to Threefry. [Results, raw data and limitations](validation/tpu-20261024/README.md) are retained separately from raw-generator measurements.
 
 [Open in Colab — English](https://colab.research.google.com/github/pascalMontmory/montmory-prng-research/blob/main/applications/dropout/notebooks/Montmory_Dropout_TPU.en.ipynb) · [Ouvrir dans Colab — français](https://colab.research.google.com/github/pascalMontmory/montmory-prng-research/blob/main/applications/dropout/notebooks/Montmory_Dropout_TPU.ipynb). The notebooks embed the sources and their hashes; running them requires an actual TPU allocation on the reader’s account. The files can also be inspected [in English](notebooks/Montmory_Dropout_TPU.en.ipynb) and [in French](notebooks/Montmory_Dropout_TPU.ipynb).
 
@@ -24,7 +24,7 @@ Keep an activation when its uint32 word is below `0xC0000000`; scale kept values
 - **Threefry:** the 20-round Threefry2x32 implementation from the frozen kit, using global flattened indices below 2³². It is checked against `jax.random.bernoulli(..., p=0.75, mode="low")` with partitionable Threefry enabled. Keys are derived from the seed, step and layer with JAX `fold_in`.
 - **Montmory:** unchanged T=2048, D=4096 stream. Activation `i` uses low32 of word `base + floor(i/2)` when even, high32 when odd. For a fixed workload, reserve `ceil(batch × width / 2)` words per layer. Layer `l` in step `s` starts at `2³² - 4097 + (2s+l) × stride`. Both hidden layers have the same width. The runner's limits keep these addresses within uint64. This is an explicitly defined application mapping; it is not a new mixing algorithm or proof of independent substreams.
 
-Changing physical tiles preserves this mapping. Changing batch size/width changes the reservation stride and therefore subsequent masks. Cross-shape and multi-device mask invariance are not claimed. Every forward/backward pair must use the same parameters. Integer and mask equality is distinct from floating-point training equality across CPU, GPU and TPU. This application has only been executed locally on CPU so far.
+Changing physical tiles preserves this mapping. Changing batch size/width changes the reservation stride and therefore subsequent masks. Cross-shape and multi-device mask invariance are not claimed. Every forward/backward pair must use the same parameters. Integer and mask equality is distinct from floating-point training equality across CPU, GPU and TPU. The received CPU and TPU runs are documented separately; no GPU training run of this model was measured.
 
 ## Local result
 
@@ -32,7 +32,7 @@ The initial CPU run passed 49,672 fused-mask element comparisons and 49,672 grad
 
 After 150 updates, held-out accuracy was 82.0–84.2% with Threefry and 81.6–83.2% with Montmory, from 21.3–27.9% initially. Both learned this simple task. These three runs establish neither superiority nor statistical equivalence of the generators. The complete initial verification and training run took about 18 seconds on this VPS, including CPU compilation. This is not a predicted TPU runtime.
 
-The archived local report and learning curves are under [validation/cpu](validation/cpu). Native TPU results are pending.
+The archived local report and learning curves are under [validation/cpu](validation/cpu). The [24 October native TPU results](validation/tpu-20261024/README.md) contain 1,800 measurements and 900 numerically identical JAX/Pallas loss pairs. Comparison with this earlier CPU check remains indicative, not a controlled hardware benchmark.
 
 ## Reproduce
 
@@ -66,4 +66,4 @@ Compile and warm all complete training-step pipelines before measurement. Random
 
 Compare Pallas and JAX loss sequences and final weights separately for each engine, with tolerances fixed in the code (rtol=2e-4, atol=2e-5). Different generators intentionally produce different masks. Report per-seed median step times and their ratios; a ratio above 1 means the Pallas version is faster. No independent repetitions beyond the three seed trajectories, confidence interval, energy measurement or large-model extrapolation is claimed. A tiny model can be dominated by launch overhead. Pallas can also prevent fusion available to ordinary JAX: a slowdown is a valid result.
 
-The implementation follows the use case described in JAX's [Pallas PRNG documentation](https://docs.jax.dev/en/latest/pallas/tpu/prng.html): generating random values in the consuming kernel. It remains necessary to measure whether that helps this particular training graph.
+The implementation follows the use case described in JAX's [Pallas PRNG documentation](https://docs.jax.dev/en/latest/pallas/tpu/prng.html): generating random values in the consuming kernel. The received run measures a Pallas gain over Montmory JAX for this graph, without establishing a general advantage over Threefry. [Analysis and JAX/Pallas distinction](validation/tpu-20261024/README.md#threefry-in-jax-and-pallas).
